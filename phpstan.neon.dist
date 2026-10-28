@@ -5,3 +5,5 @@ parameters:
 	paths:
 		- functions.php
 		- inc
+	bootstrapFiles:
+		- tests/phpstan-bootstrap.php

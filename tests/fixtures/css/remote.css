@@ -1,0 +1,4 @@
+.a { background: url(https://fonts.example/x.woff2); }
+.b { background: url("http://cdn.example/a.png"); }
+.c { background: url(//cdn.example/b.png); }
+.d { background: url(../images/local.png); }
