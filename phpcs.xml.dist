@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ruleset name="Keel">
+	<description>Coding standards for the Keel theme.</description>
+	<file>functions.php</file>
+	<file>inc</file>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+	<exclude-pattern>/build/*</exclude-pattern>
+	<arg name="extensions" value="php"/>
+	<arg name="colors"/>
+	<arg value="sp"/>
+	<config name="testVersion" value="8.3-"/>
+	<config name="minimum_wp_version" value="7.1"/>
+	<rule ref="WordPress-Extra"/>
+	<rule ref="WordPress.Security"/>
+	<rule ref="PHPCompatibilityWP"/>
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="keel"/>
+			</property>
+		</properties>
+	</rule>
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="keel"/>
+				<element value="Keel"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>
