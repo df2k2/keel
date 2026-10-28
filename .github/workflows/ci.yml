@@ -121,7 +121,7 @@ jobs:
           coverage: none
       - run: npm ci
       - run: npm audit --audit-level=high
-      - run: composer audit --no-interaction
+      - run: composer audit --locked --no-interaction
 
   license-check:
     name: license-check

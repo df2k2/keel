@@ -72,3 +72,15 @@ test( 'existing file is never overwritten', () => {
 		/exists/
 	);
 } );
+
+test( 'title with a backslash and a quote is escaped for the PHP string', () => {
+	const path = scaffoldPattern( {
+		category: 'hero',
+		slug: 'hero-quote',
+		title: "Bob's \\ Hero",
+		root: tmp,
+	} );
+	assert.ok(
+		read( path ).includes( "esc_html_e( 'Bob\\'s \\\\ Hero', 'keel' )" )
+	);
+} );

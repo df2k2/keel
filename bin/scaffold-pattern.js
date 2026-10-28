@@ -56,6 +56,16 @@ export function scaffoldPattern( { category, slug, title, root = '.' } ) {
 	return path;
 }
 
+/**
+ * Escapes a value for use inside a single-quoted PHP string literal: backslashes first, then quotes.
+ *
+ * @param {string} value Raw text.
+ * @return {string} Escaped text.
+ */
+function phpString( value ) {
+	return value.replace( /\\/g, '\\\\' ).replace( /'/g, "\\'" );
+}
+
 function template( { category, slug, title } ) {
 	return `<?php
 /**
@@ -74,7 +84,7 @@ defined( 'ABSPATH' ) || exit;
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
 	<!-- wp:heading -->
-	<h2 class="wp-block-heading"><?php esc_html_e( '${ title.replace( /'/g, "\\'" ) }', 'keel' ); ?></h2>
+	<h2 class="wp-block-heading"><?php esc_html_e( '${ phpString( title ) }', 'keel' ); ?></h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
