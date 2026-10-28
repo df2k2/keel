@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "68rem",
+			"wideSize": "90rem"
+		}
+	},
+	"templateParts": [
+		{ "name": "header", "area": "header", "title": "Header" },
+		{ "name": "footer", "area": "footer", "title": "Footer" }
+	]
+}
