@@ -96,3 +96,13 @@ test( 'real run rewrites the theme header, constants, namespace and css path', (
 	assert.match( read( join( dir, 'docs/design.md' ) ), /Keel design/ );
 	assert.match( read( join( dir, 'LICENSE' ) ), /keel is mentioned/ );
 } );
+
+test( 'display names with sed-special characters are inserted verbatim', () => {
+	const dir = makeRepo();
+	assert.equal( run( dir, 'seawall', 'Sea & Wall/Co' ).status, 0 );
+	assert.match(
+		read( join( dir, 'style.css' ) ),
+		/Theme Name: Sea & Wall\/Co/
+	);
+	assert.match( read( join( dir, 'readme.txt' ) ), /=== Sea & Wall\/Co ===/ );
+} );

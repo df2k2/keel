@@ -57,3 +57,17 @@ test( 'CLI exits 1 on the failing fixture and 0 on the theme', () => {
 	assert.equal( good.status, 0 );
 	assert.ok( read( 'tests/contrast-pairs.json' ).length > 0 );
 } );
+
+test( 'three-digit hex expands and a non-hex color fails with reason invalid', () => {
+	assert.ok( Math.abs( contrastRatio( '#FFF', '#000' ) - 21 ) < 0.01 );
+	const palette = { ...loadPalette( 'theme.json' ), accent: 'rgb(1, 2, 3)' };
+	const failures = checkPalette( palette, pairs );
+	assert.ok(
+		failures.some(
+			( f ) =>
+				f.reason === 'invalid' &&
+				( f.fg === 'accent' || f.bg === 'accent' )
+		),
+		'rgb() must be reported as invalid, not silently passed'
+	);
+} );

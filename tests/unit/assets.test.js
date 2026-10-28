@@ -7,5 +7,5 @@ test( 'built CSS contains no external url()', () => {
 } );
 
 test( 'scanner catches http, https and protocol-relative urls', () => {
-	assert.equal( scanBuiltCss( 'tests/fixtures/css' ).length, 3 );
+	assert.equal( scanBuiltCss( 'tests/fixtures/css' ).length, 5 );
 } );
