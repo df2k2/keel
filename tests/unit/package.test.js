@@ -25,6 +25,8 @@ test( 'release file list excludes every dev path and includes build output', () 
 		'.wp-env.json',
 		'composer.json',
 		'README.md',
+		'eslint.config.js',
+		'.githooks/',
 	] ) {
 		assert.ok(
 			! files.some( ( f ) => f.startsWith( bad ) || f === bad ),

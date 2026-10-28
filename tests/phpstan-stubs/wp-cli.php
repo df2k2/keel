@@ -16,6 +16,12 @@ class WP_CLI {
 	public static function success( $message ) {}
 
 	/**
+	 * @param string $message
+	 * @return void
+	 */
+	public static function log( $message ) {}
+
+	/**
 	 * @param string|\WP_Error $message
 	 * @return never
 	 */

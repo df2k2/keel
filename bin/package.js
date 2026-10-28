@@ -36,6 +36,7 @@ export const EXCLUDED = [
 	'phpcs.xml.dist',
 	'phpstan.neon.dist',
 	'postcss.config.js',
+	'eslint.config.js',
 	'playwright.config.js',
 	'README.md',
 	'CONTRIBUTING.md',
