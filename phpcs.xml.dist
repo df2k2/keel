@@ -3,6 +3,7 @@
 	<description>Coding standards for the Keel theme.</description>
 	<file>functions.php</file>
 	<file>inc</file>
+	<file>patterns</file>
 	<exclude-pattern>/vendor/*</exclude-pattern>
 	<exclude-pattern>/node_modules/*</exclude-pattern>
 	<exclude-pattern>/build/*</exclude-pattern>
