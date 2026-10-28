@@ -37,10 +37,14 @@ const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
  */
 export function scaffoldPattern( { category, slug, title, root = '.' } ) {
 	if ( ! CATEGORIES.includes( category ) ) {
-		throw new Error( `Unknown category "${ category }". Use one of: ${ CATEGORIES.join( ', ' ) }` );
+		throw new Error(
+			`Unknown category "${ category }". Use one of: ${ CATEGORIES.join( ', ' ) }`
+		);
 	}
 	if ( ! SLUG.test( slug ) ) {
-		throw new Error( `Invalid slug "${ slug }": use lowercase letters, digits and single hyphens` );
+		throw new Error(
+			`Invalid slug "${ slug }": use lowercase letters, digits and single hyphens`
+		);
 	}
 	const dir = join( root, 'patterns' );
 	const path = join( dir, `${ slug }.php` );
@@ -81,14 +85,21 @@ defined( 'ABSPATH' ) || exit;
 `;
 }
 
-if ( process.argv[ 1 ] && fileURLToPath( import.meta.url ) === process.argv[ 1 ] ) {
+if (
+	process.argv[ 1 ] &&
+	fileURLToPath( import.meta.url ) === process.argv[ 1 ]
+) {
 	const [ category, slug, title ] = process.argv.slice( 2 );
 	if ( ! category || ! slug || ! title ) {
-		process.stderr.write( 'usage: node bin/scaffold-pattern.js <category> <slug> "<Title>"\n' );
+		process.stderr.write(
+			'usage: node bin/scaffold-pattern.js <category> <slug> "<Title>"\n'
+		);
 		process.exit( 2 );
 	}
 	try {
-		process.stdout.write( `${ scaffoldPattern( { category, slug, title } ) }\n` );
+		process.stdout.write(
+			`${ scaffoldPattern( { category, slug, title } ) }\n`
+		);
 	} catch ( error ) {
 		process.stderr.write( `${ error.message }\n` );
 		process.exit( 1 );

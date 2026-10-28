@@ -1,7 +1,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { contrastRatio, checkPalette, loadPalette } from '../../bin/check-contrast.js';
+import {
+	contrastRatio,
+	checkPalette,
+	loadPalette,
+} from '../../bin/check-contrast.js';
 import { pairs, read } from './helpers.js';
 
 test( 'contrastRatio matches WCAG for black on white', () => {

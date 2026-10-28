@@ -22,7 +22,9 @@ function luminance( hex ) {
 		const c = parseInt( clean.slice( i, i + 2 ), 16 ) / 255;
 		return c <= 0.03928 ? c / 12.92 : ( ( c + 0.055 ) / 1.055 ) ** 2.4;
 	};
-	return 0.2126 * channel( 0 ) + 0.7152 * channel( 2 ) + 0.0722 * channel( 4 );
+	return (
+		0.2126 * channel( 0 ) + 0.7152 * channel( 2 ) + 0.0722 * channel( 4 )
+	);
 }
 
 /**
@@ -54,8 +56,8 @@ export function loadPalette( path ) {
 /**
  * Checks a palette against a list of pairs.
  *
- * @param {Object<string,string>} palette Palette by slug.
- * @param {Array<{fg:string,bg:string,min:number}>} pairs Pairs to check.
+ * @param {Object<string,string>}                   palette Palette by slug.
+ * @param {Array<{fg:string,bg:string,min:number}>} pairs   Pairs to check.
  * @return {Array<{fg:string,bg:string,ratio:number|null,min:number,reason:'ratio'|'missing'}>} Failures.
  */
 export function checkPalette( palette, pairs ) {
@@ -74,7 +76,11 @@ export function checkPalette( palette, pairs ) {
 }
 
 function parseArgs( argv ) {
-	const options = { pairs: 'tests/contrast-pairs.json', theme: 'theme.json', styles: 'styles' };
+	const options = {
+		pairs: 'tests/contrast-pairs.json',
+		theme: 'theme.json',
+		styles: 'styles',
+	};
 	for ( let i = 0; i < argv.length; i += 2 ) {
 		const key = argv[ i ].replace( /^--/, '' );
 		if ( key in options ) {
@@ -104,13 +110,19 @@ function main() {
 		}
 		failed = true;
 		for ( const f of failures ) {
-			const ratio = f.reason === 'missing' ? 'missing' : f.ratio.toFixed( 2 );
-			process.stdout.write( `FAIL ${ file } ${ f.fg } on ${ f.bg } ${ ratio } (min ${ f.min })\n` );
+			const ratio =
+				f.reason === 'missing' ? 'missing' : f.ratio.toFixed( 2 );
+			process.stdout.write(
+				`FAIL ${ file } ${ f.fg } on ${ f.bg } ${ ratio } (min ${ f.min })\n`
+			);
 		}
 	}
 	process.exit( failed ? 1 : 0 );
 }
 
-if ( process.argv[ 1 ] && fileURLToPath( import.meta.url ) === process.argv[ 1 ] ) {
+if (
+	process.argv[ 1 ] &&
+	fileURLToPath( import.meta.url ) === process.argv[ 1 ]
+) {
 	main();
 }

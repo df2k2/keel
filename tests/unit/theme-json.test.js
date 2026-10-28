@@ -26,7 +26,13 @@ test( 'seven fluid font sizes and eight spacing sizes', () => {
 } );
 
 test( 'custom tokens exist', () => {
-	for ( const key of [ 'radius', 'shadow', 'border', 'focus', 'typography' ] ) {
+	for ( const key of [
+		'radius',
+		'shadow',
+		'border',
+		'focus',
+		'typography',
+	] ) {
 		assert.ok( theme.settings.custom[ key ], `custom.${ key } missing` );
 	}
 } );

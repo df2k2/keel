@@ -9,7 +9,12 @@ import { read } from './helpers.js';
 const tmp = mkdtempSync( join( tmpdir(), 'keel-scaffold-' ) );
 
 test( 'scaffold writes a pattern file with the wordpress.org header', () => {
-	const path = scaffoldPattern( { category: 'hero', slug: 'hero-split', title: 'Hero: split', root: tmp } );
+	const path = scaffoldPattern( {
+		category: 'hero',
+		slug: 'hero-split',
+		title: 'Hero: split',
+		root: tmp,
+	} );
 	assert.equal( path, join( tmp, 'patterns', 'hero-split.php' ) );
 	const source = read( path );
 	for ( const line of [
@@ -27,11 +32,43 @@ test( 'scaffold writes a pattern file with the wordpress.org header', () => {
 } );
 
 test( 'invalid slug or unknown category is refused', () => {
-	assert.throws( () => scaffoldPattern( { category: 'hero', slug: 'Hero Split', title: 'x', root: tmp } ), /slug/ );
-	assert.throws( () => scaffoldPattern( { category: 'nope', slug: 'ok', title: 'x', root: tmp } ), /category/ );
+	assert.throws(
+		() =>
+			scaffoldPattern( {
+				category: 'hero',
+				slug: 'Hero Split',
+				title: 'x',
+				root: tmp,
+			} ),
+		/slug/
+	);
+	assert.throws(
+		() =>
+			scaffoldPattern( {
+				category: 'nope',
+				slug: 'ok',
+				title: 'x',
+				root: tmp,
+			} ),
+		/category/
+	);
 } );
 
 test( 'existing file is never overwritten', () => {
-	scaffoldPattern( { category: 'cta', slug: 'cta-band', title: 'x', root: tmp } );
-	assert.throws( () => scaffoldPattern( { category: 'cta', slug: 'cta-band', title: 'x', root: tmp } ), /exists/ );
+	scaffoldPattern( {
+		category: 'cta',
+		slug: 'cta-band',
+		title: 'x',
+		root: tmp,
+	} );
+	assert.throws(
+		() =>
+			scaffoldPattern( {
+				category: 'cta',
+				slug: 'cta-band',
+				title: 'x',
+				root: tmp,
+			} ),
+		/exists/
+	);
 } );
