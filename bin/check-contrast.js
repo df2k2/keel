@@ -16,8 +16,35 @@ import { fileURLToPath } from 'node:url';
  * @param {string} hex Color as #RRGGBB.
  * @return {number} Luminance between 0 and 1.
  */
+/**
+ * Normalises a CSS hex color to six lowercase hex digits, or null when it is not a hex color.
+ *
+ * @param {string} value Color as #RGB or #RRGGBB.
+ * @return {string|null} Six hex digits without the hash, or null.
+ */
+export function normalizeHex( value ) {
+	const match = /^#?([0-9a-f]{3}|[0-9a-f]{6})$/i.exec(
+		String( value ).trim()
+	);
+	if ( ! match ) {
+		return null;
+	}
+	const digits = match[ 1 ];
+	const six =
+		digits.length === 3
+			? digits
+					.split( '' )
+					.map( ( c ) => c + c )
+					.join( '' )
+			: digits;
+	return six.toLowerCase();
+}
+
 function luminance( hex ) {
-	const clean = hex.replace( '#', '' );
+	const clean = normalizeHex( hex );
+	if ( clean === null ) {
+		throw new Error( `Not a hex color: ${ hex }` );
+	}
 	const channel = ( i ) => {
 		const c = parseInt( clean.slice( i, i + 2 ), 16 ) / 255;
 		return c <= 0.03928 ? c / 12.92 : ( ( c + 0.055 ) / 1.055 ) ** 2.4;
@@ -58,13 +85,20 @@ export function loadPalette( path ) {
  *
  * @param {Object<string,string>}                   palette Palette by slug.
  * @param {Array<{fg:string,bg:string,min:number}>} pairs   Pairs to check.
- * @return {Array<{fg:string,bg:string,ratio:number|null,min:number,reason:'ratio'|'missing'}>} Failures.
+ * @return {Array<{fg:string,bg:string,ratio:number|null,min:number,reason:'ratio'|'missing'|'invalid'}>} Failures.
  */
 export function checkPalette( palette, pairs ) {
 	const failures = [];
 	for ( const { fg, bg, min } of pairs ) {
 		if ( ! palette[ fg ] || ! palette[ bg ] ) {
 			failures.push( { fg, bg, ratio: null, min, reason: 'missing' } );
+			continue;
+		}
+		if (
+			normalizeHex( palette[ fg ] ) === null ||
+			normalizeHex( palette[ bg ] ) === null
+		) {
+			failures.push( { fg, bg, ratio: null, min, reason: 'invalid' } );
 			continue;
 		}
 		const ratio = contrastRatio( palette[ fg ], palette[ bg ] );
@@ -111,7 +145,7 @@ function main() {
 		failed = true;
 		for ( const f of failures ) {
 			const ratio =
-				f.reason === 'missing' ? 'missing' : f.ratio.toFixed( 2 );
+				f.reason === 'ratio' ? f.ratio.toFixed( 2 ) : f.reason;
 			process.stdout.write(
 				`FAIL ${ file } ${ f.fg } on ${ f.bg } ${ ratio } (min ${ f.min })\n`
 			);

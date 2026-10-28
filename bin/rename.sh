@@ -33,6 +33,7 @@ if ! printf '%s' "$slug" | grep -Eq '^[a-z][a-z0-9-]*$'; then
 fi
 
 upper=$(printf '%s' "$slug" | tr 'a-z-' 'A-Z_')
+name_sed=$(printf '%s' "$name" | sed 's/[\/&\\]/\\&/g')
 pascal=$(printf '%s' "$slug" | awk -F- '{ for (i = 1; i <= NF; i++) printf "%s%s", toupper(substr($i, 1, 1)), substr($i, 2) }')
 
 while IFS= read -r file; do
@@ -46,8 +47,8 @@ while IFS= read -r file; do
 		continue
 	fi
 	sed -i \
-		-e "s/Theme Name: Keel/Theme Name: $name/" \
-		-e "s/=== Keel ===/=== $name ===/" \
+		-e "s/Theme Name: Keel/Theme Name: $name_sed/" \
+		-e "s/=== Keel ===/=== $name_sed ===/" \
 		-e "s/KEEL/$upper/g" \
 		-e "s/Keel/$pascal/g" \
 		-e "s/keel/$slug/g" \

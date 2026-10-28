@@ -34,9 +34,10 @@ export const pairs = existsSync( 'tests/contrast-pairs.json' )
 	: [];
 
 const EXTERNAL_URL = /url\(\s*['"]?\s*(?:https?:|\/\/)[^)]*\)/gi;
+const EXTERNAL_IMPORT = /@import\s+['"](?:https?:|\/\/)[^'"]*['"]/gi;
 
 /**
- * Finds every url() in the CSS files under a directory that points off-site.
+ * Finds every url() or @import in the CSS files under a directory that points off-site.
  *
  * @param {string} dir Directory to scan recursively.
  * @return {string[]} The offending url() tokens, prefixed with their file path.
@@ -51,8 +52,11 @@ export function scanBuiltCss( dir ) {
 		if ( statSync( path ).isDirectory() ) {
 			found.push( ...scanBuiltCss( path ) );
 		} else if ( path.endsWith( '.css' ) ) {
-			for ( const match of read( path ).matchAll( EXTERNAL_URL ) ) {
-				found.push( `${ path }: ${ match[ 0 ] }` );
+			const css = read( path );
+			for ( const pattern of [ EXTERNAL_URL, EXTERNAL_IMPORT ] ) {
+				for ( const match of css.matchAll( pattern ) ) {
+					found.push( `${ path }: ${ match[ 0 ] }` );
+				}
 			}
 		}
 	}
