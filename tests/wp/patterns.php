@@ -83,8 +83,29 @@ const KEEL_PATTERNS    = array(
 	'styleguide-icons',
 	'styleguide-variations',
 	'styleguide',
+	'dental-hero',
+	'dental-treatments',
+	'dental-before-after',
+	'dental-features',
+	'dental-dentists',
+	'dental-price-list',
+	'dental-payment-plan',
+	'dental-stories',
+	'dental-insurers',
+	'dental-faq',
+	'dental-booking',
+	'dental-urgent',
+	'dental-disclaimer',
+	'dental-home',
+	'dental-service-whitening',
+	'dental-service-implants',
+	'dental-provider',
+	'dental-pricing',
+	'dental-landing-implants',
+	'dental-about',
+	'dental-contact',
 );
-const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'hero-booking', 'page-service-detail', 'page-provider', 'page-pricing', 'page-landing-offer', 'page-about', 'page-contact', 'page-faq', 'styleguide', 'blog-list', '404-content', 'accessibility-statement' );
+const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'hero-booking', 'page-service-detail', 'page-provider', 'page-pricing', 'page-landing-offer', 'page-about', 'page-contact', 'page-faq', 'styleguide', 'dental-hero', 'dental-home', 'dental-service-whitening', 'dental-service-implants', 'dental-provider', 'dental-pricing', 'dental-landing-implants', 'dental-about', 'dental-contact', 'blog-list', '404-content', 'accessibility-statement' );
 
 $keel_registry = WP_Block_Patterns_Registry::get_instance();
 foreach ( KEEL_PATTERNS as $keel_slug ) {
