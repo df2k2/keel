@@ -39,3 +39,15 @@
 		animation: none;
 	}
 }
+
+/* Decorative icons: single-colour SVG images inverted on dark surfaces. */
+
+.keel-icon {
+	margin: 0;
+}
+
+.is-style-band .keel-icon img,
+.has-contrast-background-color .keel-icon img,
+.wp-block-cover .keel-icon img {
+	filter: invert( 1 );
+}
