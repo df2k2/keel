@@ -1,0 +1,13 @@
+/* core/details base rules. */
+
+.wp-block-details summary {
+	display: flex;
+	align-items: center;
+	min-block-size: 2.75rem;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.wp-block-details > :not( summary ) {
+	margin-block-start: var( --wp--preset--spacing--20 );
+}

@@ -4,7 +4,7 @@
  * variable TTF from the google/fonts repository at a fixed commit, verifies its
  * digest, subsets it to Latin as a variable WOFF2 (pinning or narrowing axes),
  * writes the OFL licence texts, a digest manifest of the output, and the
- * metric-matched fallback @font-face rules in src/css/fonts.css.
+ * metric-matched fallback font-face rules in src/css/fonts.css.
  *
  * Usage: node bin/build-fonts.js   (needs network access to raw.githubusercontent.com)
  * The only script in the repository that touches the network; CI never runs it.

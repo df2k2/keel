@@ -1,0 +1,9 @@
+/* core/cover base rules. */
+
+.wp-block-cover {
+	min-block-size: 60vh;
+}
+
+.wp-block-cover .wp-block-cover__inner-container > :first-child {
+	margin-block-start: 0;
+}

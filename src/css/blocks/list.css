@@ -1,0 +1,9 @@
+/* core/list base rules. */
+
+.wp-block-list {
+	padding-inline-start: 1.25em;
+}
+
+.wp-block-list li + li {
+	margin-block-start: 0.25em;
+}

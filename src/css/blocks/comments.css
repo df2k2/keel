@@ -1,0 +1,22 @@
+/* core/comments base rules. */
+
+.wp-block-comment-template {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wp-block-comment-template > li + li {
+	margin-block-start: var( --wp--preset--spacing--40 );
+	padding-block-start: var( --wp--preset--spacing--40 );
+	border-block-start: 1px solid var( --wp--preset--color--border );
+}
+
+.wp-block-post-comments-form input:not( [type="submit"] ),
+.wp-block-post-comments-form textarea {
+	inline-size: 100%;
+	min-block-size: 2.75rem;
+	padding: var( --wp--preset--spacing--20 );
+	border: 1px solid var( --wp--preset--color--border );
+	border-radius: var( --wp--custom--radius--md );
+}

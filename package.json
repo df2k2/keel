@@ -9,7 +9,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "build": "postcss src/css/keel.css -o build/css/keel.css && postcss src/css/editor.css -o build/css/editor.css",
+    "build": "npm run build:css",
     "lint:js": "wp-scripts lint-js bin tests",
     "lint:css": "wp-scripts lint-style \"src/**/*.css\"",
     "lint:php": "composer lint && composer analyse",
@@ -24,7 +24,8 @@
     "prepare": "git rev-parse --git-dir >/dev/null 2>&1 && git config core.hooksPath .githooks || true",
     "check:licenses": "license-checker-rseidelsohn --production --excludePrivatePackages --onlyAllow \"GPL-2.0;GPL-2.0-or-later;GPL-2.0+;GPL-3.0;GPL-3.0-or-later;LGPL-2.1;LGPL-3.0;MIT;ISC;BSD-2-Clause;BSD-3-Clause;Apache-2.0;0BSD;CC0-1.0;Unlicense;Python-2.0;BlueOak-1.0.0\"",
     "build:fonts": "node bin/build-fonts.js",
-    "test:wp": "bash bin/run-wp-tests.sh"
+    "test:wp": "bash bin/run-wp-tests.sh",
+    "build:css": "postcss src/css/keel.css -o build/css/keel.css && postcss src/css/editor.css -o build/css/editor.css && postcss \"src/css/blocks/*.css\" --dir build/css/blocks"
   },
   "devDependencies": {
     "@capsizecss/core": "4.1.3",

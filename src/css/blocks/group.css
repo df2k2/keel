@@ -1,0 +1,5 @@
+/* core/group base rules. */
+
+.wp-block-group:where( .has-background ) {
+	padding-inline: var( --wp--preset--spacing--40 );
+}

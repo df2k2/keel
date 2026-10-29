@@ -1,0 +1,10 @@
+/* core/gallery base rules. */
+
+.wp-block-gallery img {
+	border-radius: var( --wp--custom--radius--sm );
+}
+
+.wp-block-gallery .lightbox-trigger {
+	inline-size: 2.75rem;
+	block-size: 2.75rem;
+}

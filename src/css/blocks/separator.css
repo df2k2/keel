@@ -1,0 +1,6 @@
+/* core/separator base rules. */
+
+.wp-block-separator {
+	border: 0;
+	border-block-start: 1px solid var( --wp--preset--color--border );
+}

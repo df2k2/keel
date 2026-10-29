@@ -2,7 +2,9 @@
 
 :root {
 	color-scheme: light;
+	font-optical-sizing: auto;
 	scroll-padding-block-start: var( --wp--preset--spacing--60 );
+	scroll-padding-block-end: 4.5rem;
 }
 
 body {

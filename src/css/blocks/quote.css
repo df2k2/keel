@@ -1,0 +1,14 @@
+/* core/quote base rules. */
+
+.wp-block-quote {
+	margin-inline: 0;
+	padding-inline-start: var( --wp--preset--spacing--40 );
+	border-inline-start: 4px solid var( --wp--preset--color--primary );
+}
+
+.wp-block-quote cite {
+	display: block;
+	margin-block-start: var( --wp--preset--spacing--20 );
+	font-size: var( --wp--preset--font-size--sm );
+	font-style: normal;
+}
