@@ -37,11 +37,14 @@ store( 'keel-demo/switcher', {
 				return;
 			}
 			for ( const link of document.querySelectorAll( 'a[href]' ) ) {
-				const url = new URL( link.href, current );
+				const raw = link.getAttribute( 'href' ) || '';
+				if ( raw.startsWith( '#' ) ) {
+					continue;
+				}
+				const url = new URL( raw, current );
 				if (
 					url.origin === current.origin &&
-					! url.searchParams.has( 'variation' ) &&
-					! link.href.startsWith( '#' )
+					! url.searchParams.has( 'variation' )
 				) {
 					url.searchParams.set( 'variation', slug );
 					link.href = url.href;

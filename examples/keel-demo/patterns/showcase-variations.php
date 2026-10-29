@@ -45,8 +45,8 @@ $keel_demo_active = Keel_Demo\active_variation_slug();
 		<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group is-style-card">
 			<?php if ( '' !== $keel_demo_variation['image'] ) : ?>
-			<!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","className":"is-style-soft"} -->
-			<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo esc_url( $keel_demo_variation['image'] ); ?>" alt="<?php echo esc_attr( sprintf( /* translators: %s: variation name. */ __( 'The showcase home page in the %s variation', 'keel-demo' ), $keel_demo_variation['title'] ) ); ?>" style="aspect-ratio:4/3;object-fit:cover" width="600" height="450" loading="lazy" decoding="async"/></figure>
+			<!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","className":"is-style-soft keel-demo-tile"} -->
+			<figure class="wp-block-image size-full is-style-soft keel-demo-tile"><img src="<?php echo esc_url( $keel_demo_variation['image'] ); ?>" alt="<?php echo esc_attr( sprintf( /* translators: %s: variation name. */ __( 'The showcase home page in the %s variation', 'keel-demo' ), $keel_demo_variation['title'] ) ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
 			<!-- /wp:image -->
 			<?php endif; ?>
 

@@ -133,3 +133,27 @@ function filter_variation_button( string $content, array $block ): string {
 	return $processor->get_updated_html();
 }
 add_filter( 'render_block_core/button', __NAMESPACE__ . '\\filter_variation_button', 10, 2 );
+
+/**
+ * Gives the showcase's screenshot tiles their dimensions and lazy loading at render, so the saved
+ * markup stays what core's Image block writes and the tiles stay out of the image budget until seen.
+ *
+ * @param string               $content Rendered image.
+ * @param array<string, mixed> $block   Parsed block.
+ * @return string
+ */
+function filter_tile_image( string $content, array $block ): string {
+	if ( ! block_has_class( $block, 'keel-demo-tile' ) ) {
+		return $content;
+	}
+	$processor = new \WP_HTML_Tag_Processor( $content );
+	if ( ! $processor->next_tag( array( 'tag_name' => 'img' ) ) ) {
+		return $content;
+	}
+	$processor->set_attribute( 'width', '600' );
+	$processor->set_attribute( 'height', '450' );
+	$processor->set_attribute( 'loading', 'lazy' );
+	$processor->set_attribute( 'decoding', 'async' );
+	return $processor->get_updated_html();
+}
+add_filter( 'render_block_core/image', __NAMESPACE__ . '\\filter_tile_image', 10, 2 );
