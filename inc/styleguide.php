@@ -272,8 +272,11 @@ function block_style_sample( string $block, string $style ): string {
 		case 'core/paragraph':
 			return '<!-- wp:paragraph {"className":"' . $class . '"} --><p class="' . $class . '">' . $text . '</p><!-- /wp:paragraph -->';
 		case 'core/accordion':
-			$item = '<!-- wp:accordion-item --><div class="wp-block-accordion-item"><!-- wp:accordion-heading --><h4 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">' . esc_html__( 'Do you charge for estimates?', 'keel' ) . '</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h4><!-- /wp:accordion-heading --><!-- wp:accordion-panel --><div role="region" class="wp-block-accordion-panel">' . $paragraph . '</div><!-- /wp:accordion-panel --></div><!-- /wp:accordion-item -->';
-			return '<!-- wp:accordion {"className":"' . $class . '"} --><div role="group" class="wp-block-accordion ' . $class . '">' . $item . $item . '</div><!-- /wp:accordion -->';
+			$items = '';
+			foreach ( array( esc_html__( 'Do you charge for estimates?', 'keel' ), esc_html__( 'How soon can you come out?', 'keel' ) ) as $question ) {
+				$items .= '<!-- wp:accordion-item --><div class="wp-block-accordion-item"><!-- wp:accordion-heading --><h4 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">' . $question . '</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h4><!-- /wp:accordion-heading --><!-- wp:accordion-panel --><div role="region" class="wp-block-accordion-panel">' . $paragraph . '</div><!-- /wp:accordion-panel --></div><!-- /wp:accordion-item -->';
+			}
+			return '<!-- wp:accordion {"className":"' . $class . '"} --><div role="group" class="wp-block-accordion ' . $class . '">' . $items . '</div><!-- /wp:accordion -->';
 		case 'core/tabs':
 			$one = esc_html__( 'Overview', 'keel' );
 			$two = esc_html__( 'Details', 'keel' );

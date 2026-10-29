@@ -32,5 +32,5 @@ production site: it reads a query string to restyle the page and exists to show 
   object cache that stores `wp_get_global_stylesheet`, the first requested variation could be
   served to later visitors until the cache clears. wp-env runs in theme development mode, which
   disables that cache; the hosted demo must do the same or exclude the `theme_json` group.
-- Screenshots in `assets/variations/` are written by `bin/screenshot.js`; a tile shows its
-  palette strip alone until the file exists.
+- Screenshots in `assets/variations/` (600 by 450 JPEG tiles) and `assets/dental.jpg` are written
+  by `bin/screenshot.js`; a tile shows its palette strip alone until the file exists.

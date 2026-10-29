@@ -10,7 +10,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-$keel_demo_dental_shot = file_exists( plugin_dir_path( Keel_Demo\FILE ) . 'assets/dental.png' ) ? plugins_url( 'assets/dental.png', Keel_Demo\FILE ) : '';
+$keel_demo_dental_shot = file_exists( plugin_dir_path( Keel_Demo\FILE ) . 'assets/dental.jpg' ) ? plugins_url( 'assets/dental.jpg', Keel_Demo\FILE ) : '';
 $keel_demo_teasers     = array(
 	array( 'hero', __( 'Heroes', 'keel-demo' ), __( 'Image, split, video, text and booking openings.', 'keel-demo' ) ),
 	array( 'services', __( 'Services', 'keel-demo' ), __( 'Grids with prices, tiles, tabs and the service detail.', 'keel-demo' ) ),
@@ -31,7 +31,7 @@ $keel_demo_teasers     = array(
 			<div class="wp-block-group is-style-card">
 				<?php if ( '' !== $keel_demo_dental_shot ) : ?>
 				<!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"16/9","scale":"cover","sizeSlug":"full","className":"is-style-soft"} -->
-				<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo esc_url( $keel_demo_dental_shot ); ?>" alt="<?php esc_attr_e( 'The Bright Harbor Dental home page', 'keel-demo' ); ?>" style="aspect-ratio:16/9;object-fit:cover" width="1200" height="900" loading="lazy"/></figure>
+				<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo esc_url( $keel_demo_dental_shot ); ?>" alt="<?php esc_attr_e( 'The Bright Harbor Dental home page', 'keel-demo' ); ?>" style="aspect-ratio:16/9;object-fit:cover" width="600" height="450" loading="lazy" decoding="async"/></figure>
 				<!-- /wp:image -->
 				<?php endif; ?>
 

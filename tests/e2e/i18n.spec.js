@@ -1,9 +1,18 @@
 import { test, expect } from '@playwright/test';
 
-const PAGES = [ '/', '/service/', '/landing/', '/location/', '/blog/' ];
+const PAGES = [
+	'/',
+	'/home/',
+	'/service/',
+	'/landing/',
+	'/location/',
+	'/blog/',
+	'/dental/',
+];
 
 for ( const [ path, patternHeading ] of [
-	[ '/', true ],
+	[ '/home/', true ],
+	[ '/', false ],
 	[ '/service/', false ],
 	[ '/landing/', true ],
 ] ) {
@@ -60,7 +69,7 @@ test( 'rtl mirrors the carousel controls and the menu still opens', async ( {
 	page,
 } ) => {
 	await page.setViewportSize( { width: 360, height: 780 } );
-	await page.goto( '/?keel_rtl=1' );
+	await page.goto( '/home/?keel_rtl=1' );
 	const prev = await page
 		.getByRole( 'button', { name: 'Previous testimonial' } )
 		.boundingBox();

@@ -17,19 +17,23 @@ test( 'home renders with landmarks and a skip link first in tab order', async ( 
 	await expect( page.locator( ':focus' ) ).toHaveClass( /skip-link/ );
 } );
 
-test( 'only the header and announcement modules load on the front page', async ( {
-	page,
-} ) => {
-	await page.goto( '/' );
-	const sources = await page
-		.locator( 'script[src*="/themes/keel/"]' )
-		.evaluateAll( ( nodes ) =>
-			nodes.map(
-				( node ) => node.src.split( '/' ).pop().split( '?' )[ 0 ]
-			)
-		);
-	expect( sources.sort() ).toEqual( [
+test( 'only the modules a page uses load', async ( { page } ) => {
+	const sources = async ( path ) => {
+		await page.goto( path );
+		const names = await page
+			.locator( 'script[src*="/themes/keel/"]' )
+			.evaluateAll( ( nodes ) =>
+				nodes.map(
+					( node ) => node.src.split( '/' ).pop().split( '?' )[ 0 ]
+				)
+			);
+		return names.sort();
+	};
+	expect( await sources( '/' ) ).toEqual( [
 		'announcement.js',
+		'header.js',
+	] );
+	expect( await sources( '/home/' ) ).toEqual( [
 		'carousel.js',
 		'header.js',
 	] );

@@ -18,12 +18,12 @@ foreach ( false === $keel_demo_files ? array() : $keel_demo_files as $keel_demo_
 		continue;
 	}
 	$keel_demo_slug         = basename( $keel_demo_file, '.json' );
-	$keel_demo_image        = plugin_dir_path( Keel_Demo\FILE ) . 'assets/variations/' . $keel_demo_slug . '.png';
+	$keel_demo_image        = plugin_dir_path( Keel_Demo\FILE ) . 'assets/variations/' . $keel_demo_slug . '.jpg';
 	$keel_demo_variations[] = array(
 		'slug'    => $keel_demo_slug,
 		'title'   => (string) ( $keel_demo_json['title'] ?? $keel_demo_slug ),
 		'palette' => array_column( $keel_demo_json['settings']['color']['palette'] ?? array(), 'color', 'slug' ),
-		'image'   => file_exists( $keel_demo_image ) ? plugins_url( 'assets/variations/' . $keel_demo_slug . '.png', Keel_Demo\FILE ) : '',
+		'image'   => file_exists( $keel_demo_image ) ? plugins_url( 'assets/variations/' . $keel_demo_slug . '.jpg', Keel_Demo\FILE ) : '',
 	);
 }
 usort( $keel_demo_variations, static fn( array $a, array $b ): int => strcmp( $a['title'], $b['title'] ) );
@@ -41,12 +41,12 @@ $keel_demo_active = Keel_Demo\active_variation_slug();
 
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"18rem"}} -->
 	<div class="wp-block-group alignwide">
-		<?php foreach ( $keel_demo_variations as $keel_demo_index => $keel_demo_variation ) : ?>
+		<?php foreach ( $keel_demo_variations as $keel_demo_variation ) : ?>
 		<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group is-style-card">
 			<?php if ( '' !== $keel_demo_variation['image'] ) : ?>
 			<!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","className":"is-style-soft"} -->
-			<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo esc_url( $keel_demo_variation['image'] ); ?>" alt="<?php echo esc_attr( sprintf( /* translators: %s: variation name. */ __( 'The showcase home page in the %s variation', 'keel-demo' ), $keel_demo_variation['title'] ) ); ?>" style="aspect-ratio:4/3;object-fit:cover" width="1200" height="900"<?php echo $keel_demo_index > 1 ? ' loading="lazy"' : ''; ?>/></figure>
+			<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo esc_url( $keel_demo_variation['image'] ); ?>" alt="<?php echo esc_attr( sprintf( /* translators: %s: variation name. */ __( 'The showcase home page in the %s variation', 'keel-demo' ), $keel_demo_variation['title'] ) ); ?>" style="aspect-ratio:4/3;object-fit:cover" width="600" height="450" loading="lazy" decoding="async"/></figure>
 			<!-- /wp:image -->
 			<?php endif; ?>
 

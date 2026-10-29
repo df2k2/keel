@@ -22,3 +22,9 @@
 	mask-position: top, bottom;
 	mask-repeat: no-repeat, repeat-x;
 }
+
+/* Style: band. Core writes the band's link colour behind :where(), which loses to the base link rule. */
+
+.wp-block-group.is-style-band a:not( [class] ) {
+	color: inherit;
+}

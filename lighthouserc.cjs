@@ -1,6 +1,6 @@
-/* Lighthouse CI: five demo pages on the default mobile profile, median of three runs (Lighthouse refuses a 404 document, so the 404 page is covered by axe only). */
+/* Lighthouse CI: six demo pages on the default mobile profile, median of three runs (Lighthouse refuses a 404 document, so the 404 page is covered by axe only). */
 const base = process.env.WP_BASE_URL || 'http://localhost:8888';
-const pages = [ '/', '/service/', '/location/', '/blog/', '/spring-maintenance-checklist/' ];
+const pages = [ '/', '/service/', '/location/', '/blog/', '/spring-maintenance-checklist/', '/dental/' ];
 
 module.exports = {
 	ci: {

@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Keel 0.1.0\n"
+"Project-Id-Version: Keel 0.2.0\n"
 "Report-Msgid-Bugs-To: https://github.com/df2k2/keel/issues\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-29T03:06:28+00:00\n"
+"POT-Creation-Date: 2026-10-29T07:49:02+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: keel\n"
@@ -40,15 +40,18 @@ msgid "https://github.com/df2k2"
 msgstr ""
 
 #: inc/block-styles.php:41
+#: patterns/styleguide-buttons.php:18
 msgid "Secondary"
 msgstr ""
 
 #: inc/block-styles.php:51
+#: patterns/styleguide-buttons.php:19
 msgid "Ghost"
 msgstr ""
 
 #: inc/block-styles.php:66
-#: inc/block-styles.php:167
+#: inc/block-styles.php:179
+#: patterns/styleguide-buttons.php:20
 msgid "Pill"
 msgstr ""
 
@@ -61,7 +64,7 @@ msgid "Surface"
 msgstr ""
 
 #: inc/block-styles.php:93
-#: inc/block-styles.php:189
+#: inc/block-styles.php:201
 msgid "Band"
 msgstr ""
 
@@ -69,41 +72,78 @@ msgstr ""
 msgid "Bordered"
 msgstr ""
 
-#: inc/block-styles.php:123
+#: inc/block-styles.php:121
+msgid "Textured"
+msgstr ""
+
+#: inc/block-styles.php:125
+msgid "Wave bottom"
+msgstr ""
+
+#: inc/block-styles.php:131
 msgid "Soft corners"
 msgstr ""
 
-#: inc/block-styles.php:130
+#: inc/block-styles.php:138
 msgid "Framed"
 msgstr ""
 
-#: inc/block-styles.php:145
+#: inc/block-styles.php:153
 msgid "Checkmarks"
 msgstr ""
 
-#: inc/block-styles.php:151
+#: inc/block-styles.php:157
+msgid "Two columns"
+msgstr ""
+
+#: inc/block-styles.php:163
 msgid "Testimonial"
 msgstr ""
 
-#: inc/block-styles.php:157
+#: inc/block-styles.php:169
 msgid "Short"
 msgstr ""
 
-#: inc/block-styles.php:161
+#: inc/block-styles.php:173
 msgid "Wave"
 msgstr ""
 
-#: inc/block-styles.php:171
+#: inc/block-styles.php:183
 msgid "Underline"
 msgstr ""
 
-#: inc/block-styles.php:177
+#: inc/block-styles.php:189
+#: inc/block-styles.php:248
 #: inc/patterns.php:26
 msgid "FAQ"
 msgstr ""
 
-#: inc/block-styles.php:183
+#: inc/block-styles.php:195
 msgid "Equal cards"
+msgstr ""
+
+#: inc/block-styles.php:205
+msgid "Gradient overlay"
+msgstr ""
+
+#: inc/block-styles.php:211
+msgid "Striped"
+msgstr ""
+
+#: inc/block-styles.php:215
+msgid "Compact"
+msgstr ""
+
+#: inc/block-styles.php:221
+msgid "Eyebrow"
+msgstr ""
+
+#: inc/block-styles.php:236
+msgid "Lead"
+msgstr ""
+
+#: inc/block-styles.php:254
+msgid "Boxed"
 msgstr ""
 
 #: inc/interactivity.php:93
@@ -139,64 +179,224 @@ msgstr ""
 msgid "Hero"
 msgstr ""
 
+#: inc/patterns.php:19
+msgid "Openings for the top of a page: image, split, video and text-only heroes."
+msgstr ""
+
 #: inc/patterns.php:20
 msgid "Trust"
 msgstr ""
 
+#: inc/patterns.php:20
+msgid "Credentials, ratings, logos and feature lists that build confidence."
+msgstr ""
+
 #: inc/patterns.php:21
+#: inc/styleguide.php:259
 #: patterns/footer-columns.php:39
 msgid "Services"
+msgstr ""
+
+#: inc/patterns.php:21
+msgid "Service grids, tiles, tabs and detail sections with prices."
 msgstr ""
 
 #: inc/patterns.php:22
 msgid "Process"
 msgstr ""
 
+#: inc/patterns.php:22
+msgid "Steps, timelines and statistics that explain how the work goes."
+msgstr ""
+
 #: inc/patterns.php:23
 msgid "Team"
+msgstr ""
+
+#: inc/patterns.php:23
+msgid "People: team grids and provider cards with ratings and availability."
+msgstr ""
+
+#: inc/patterns.php:24
+msgid "Reviews and quotes in grids, carousels and summaries."
 msgstr ""
 
 #: inc/patterns.php:25
 msgid "Pricing"
 msgstr ""
 
+#: inc/patterns.php:25
+msgid "Price tables, comparison tables, payment plans and offers."
+msgstr ""
+
+#: inc/patterns.php:26
+msgid "Questions and answers as Details or Accordion blocks."
+msgstr ""
+
 #: inc/patterns.php:27
 msgid "Location"
+msgstr ""
+
+#: inc/patterns.php:27
+msgid "Hours, address, map placeholder and directions."
 msgstr ""
 
 #: inc/patterns.php:28
 msgid "Gallery"
 msgstr ""
 
+#: inc/patterns.php:28
+msgid "Image galleries with the lightbox on."
+msgstr ""
+
 #: inc/patterns.php:29
 msgid "Calls to action"
 msgstr ""
 
+#: inc/patterns.php:29
+msgid "Bands, split calls, phone lines, newsletter and promo blocks."
+msgstr ""
+
 #: inc/patterns.php:30
+#: inc/styleguide.php:259
 #: patterns/footer-columns.php:67
 msgid "Contact"
+msgstr ""
+
+#: inc/patterns.php:30
+msgid "Contact shells and utility rows for a form plugin to fill."
 msgstr ""
 
 #: inc/patterns.php:31
 msgid "Footers"
 msgstr ""
 
+#: inc/patterns.php:31
+msgid "Footer layouts with columns or a single line."
+msgstr ""
+
 #: inc/patterns.php:32
 msgid "Blog"
+msgstr ""
+
+#: inc/patterns.php:32
+msgid "Post lists, grids, author boxes, related posts and navigation."
 msgstr ""
 
 #: inc/patterns.php:33
 msgid "Pages"
 msgstr ""
 
+#: inc/patterns.php:33
+msgid "Whole-page content for 404, no results, accessibility and the style guide."
+msgstr ""
+
+#: inc/patterns.php:34
+msgid "Page layouts"
+msgstr ""
+
+#: inc/patterns.php:34
+msgid "Starter pages offered when a new page is created: service, provider, pricing, offer, about, contact and FAQ."
+msgstr ""
+
+#: inc/patterns.php:35
+msgid "Dental practice"
+msgstr ""
+
+#: inc/patterns.php:35
+msgid "A complete dental practice site: sections and pages with fictional copy, prices and people."
+msgstr ""
+
 #. translators: %s: pattern category name.
-#: inc/patterns.php:41
+#: inc/patterns.php:43
 #, php-format
 msgid "Keel: %s"
 msgstr ""
 
 #: inc/setup.php:48
 msgid "Skip to content"
+msgstr ""
+
+#: inc/styleguide.php:237
+msgid "Sample text for this style. Enough words to show the spacing and the colour."
+msgstr ""
+
+#: inc/styleguide.php:238
+#: patterns/service-detail.php:64
+#: patterns/trust-bar.php:30
+msgid "Licensed and insured"
+msgstr ""
+
+#: inc/styleguide.php:238
+msgid "Same-day appointments"
+msgstr ""
+
+#: inc/styleguide.php:238
+msgid "Written guarantee"
+msgstr ""
+
+#: inc/styleguide.php:238
+#: patterns/features-icons.php:19
+msgid "Plain-language advice"
+msgstr ""
+
+#: inc/styleguide.php:247
+msgid "Button"
+msgstr ""
+
+#: inc/styleguide.php:255
+msgid "A happy customer"
+msgstr ""
+
+#: inc/styleguide.php:259
+msgid "Home"
+msgstr ""
+
+#: inc/styleguide.php:261
+#: inc/styleguide.php:275
+#: patterns/faq-accordion.php:16
+#: patterns/faq.php:22
+msgid "Do you charge for estimates?"
+msgstr ""
+
+#: inc/styleguide.php:268
+#: patterns/page-pricing.php:19
+#: patterns/services-grid-prices.php:16
+msgid "Check-up"
+msgstr ""
+
+#: inc/styleguide.php:268
+msgid "30 minutes"
+msgstr ""
+
+#: inc/styleguide.php:269
+#: patterns/page-service-detail.php:39
+msgid "Service"
+msgstr ""
+
+#: inc/styleguide.php:269
+#: patterns/dental-price-list.php:42
+#: patterns/dental-service-implants.php:118
+#: patterns/dental-service-whitening.php:118
+#: patterns/page-pricing.php:50
+#: patterns/page-service-detail.php:120
+msgid "Price"
+msgstr ""
+
+#: inc/styleguide.php:269
+msgid "Duration"
+msgstr ""
+
+#: inc/styleguide.php:271
+msgid "A heading in this style"
+msgstr ""
+
+#: inc/styleguide.php:278
+msgid "Overview"
+msgstr ""
+
+#: inc/styleguide.php:279
+msgid "Details"
 msgstr ""
 
 #: patterns/404-content.php
@@ -213,6 +413,7 @@ msgid "The page you were looking for has moved or never existed. Try a search, o
 msgstr ""
 
 #: patterns/404-content.php:26
+#: patterns/styleguide-forms.php:27
 msgid "Search"
 msgstr ""
 
@@ -300,6 +501,51 @@ msgstr ""
 msgid "Reserve yours"
 msgstr ""
 
+#: patterns/author-box.php
+msgctxt "Pattern title"
+msgid "Author box"
+msgstr ""
+
+#: patterns/author-box.php:23
+msgid "Written by"
+msgstr ""
+
+#: patterns/before-after.php
+msgctxt "Pattern title"
+msgid "Before and after"
+msgstr ""
+
+#: patterns/before-after.php:20
+msgid "Real results"
+msgstr ""
+
+#: patterns/before-after.php:28
+msgid "Before the work: the original condition"
+msgstr ""
+
+#: patterns/before-after.php:28
+#: patterns/dental-before-after.php:29
+#: patterns/dental-service-implants.php:21
+#: patterns/dental-service-whitening.php:21
+#: patterns/page-service-detail.php:20
+msgid "Before"
+msgstr ""
+
+#: patterns/before-after.php:36
+msgid "After the work: the finished result"
+msgstr ""
+
+#: patterns/before-after.php:36
+#: patterns/dental-service-implants.php:23
+#: patterns/dental-service-whitening.php:23
+#: patterns/page-service-detail.php:22
+msgid "After"
+msgstr ""
+
+#: patterns/before-after.php:44
+msgid "Photos shared with the written consent of the people involved. Results vary from case to case."
+msgstr ""
+
 #: patterns/blog-grid.php
 msgctxt "Pattern title"
 msgid "Blog: grid"
@@ -319,6 +565,107 @@ msgstr ""
 msgid "Latest posts"
 msgstr ""
 
+#: patterns/category-tiles.php
+msgctxt "Pattern title"
+msgid "Category tiles"
+msgstr ""
+
+#: patterns/category-tiles.php:16
+#: patterns/dental-hero.php:18
+#: patterns/hero-booking.php:17
+msgid "Check-ups"
+msgstr ""
+
+#: patterns/category-tiles.php:17
+msgid "Protection"
+msgstr ""
+
+#: patterns/category-tiles.php:18
+#: patterns/hero-booking.php:20
+msgid "Same day"
+msgstr ""
+
+#: patterns/category-tiles.php:19
+msgid "Premium"
+msgstr ""
+
+#: patterns/category-tiles.php:20
+msgid "Locations"
+msgstr ""
+
+#: patterns/category-tiles.php:26
+msgid "Browse by category"
+msgstr ""
+
+#: patterns/comparison-table.php
+msgctxt "Pattern title"
+msgid "Comparison table"
+msgstr ""
+
+#: patterns/comparison-table.php:15
+#: patterns/pricing-table.php:26
+msgid "Essential"
+msgstr ""
+
+#: patterns/comparison-table.php:15
+msgid "Plus"
+msgstr ""
+
+#: patterns/comparison-table.php:15
+msgid "Complete"
+msgstr ""
+
+#: patterns/comparison-table.php:17
+msgid "Monthly price"
+msgstr ""
+
+#: patterns/comparison-table.php:18
+msgid "Visits per year"
+msgstr ""
+
+#: patterns/comparison-table.php:19
+msgid "Priority scheduling"
+msgstr ""
+
+#: patterns/comparison-table.php:19
+#: patterns/comparison-table.php:21
+msgid "No"
+msgstr ""
+
+#: patterns/comparison-table.php:19
+#: patterns/comparison-table.php:21
+msgid "Yes"
+msgstr ""
+
+#: patterns/comparison-table.php:20
+msgid "Discount on repairs"
+msgstr ""
+
+#: patterns/comparison-table.php:21
+#: patterns/services-tabs.php:26
+msgid "After-hours line"
+msgstr ""
+
+#: patterns/comparison-table.php:22
+msgid "Family members included"
+msgstr ""
+
+#: patterns/comparison-table.php:22
+msgid "Unlimited"
+msgstr ""
+
+#: patterns/comparison-table.php:28
+msgid "Compare the plans"
+msgstr ""
+
+#: patterns/comparison-table.php:32
+msgid "Feature"
+msgstr ""
+
+#: patterns/comparison-table.php:44
+msgid "Prices per month, cancel any time after the first year."
+msgstr ""
+
 #: patterns/contact-shell.php
 msgctxt "Pattern title"
 msgid "Contact shell"
@@ -333,24 +680,30 @@ msgid "Insert your form block here. Keel ships no forms of its own; any form plu
 msgstr ""
 
 #: patterns/contact-shell.php:38
+#: patterns/dental-contact.php:56
 msgid "Address"
 msgstr ""
 
 #: patterns/contact-shell.php:42
+#: patterns/dental-contact.php:60
 #: patterns/footer-columns.php:71
 #: patterns/hours-location.php:26
 msgid "123 Harbor Street, Suite 4"
 msgstr ""
 
 #: patterns/contact-shell.php:42
+#: patterns/dental-contact.php:60
 #: patterns/footer-columns.php:71
 #: patterns/hours-location.php:26
 msgid "Stuart, FL 34994"
 msgstr ""
 
 #: patterns/contact-shell.php:46
+#: patterns/dental-contact.php:64
+#: patterns/dental-provider.php:119
 #: patterns/footer-columns.php:79
 #: patterns/hours-location.php:30
+#: patterns/page-provider.php:124
 msgid "Hours"
 msgstr ""
 
@@ -367,6 +720,8 @@ msgid "Saturday: 9am to 1pm"
 msgstr ""
 
 #: patterns/contact-shell.php:62
+#: patterns/dental-contact.php:88
+#: patterns/styleguide-forms.php:15
 msgid "Phone"
 msgstr ""
 
@@ -402,7 +757,15 @@ msgid "Book a visit"
 msgstr ""
 
 #: patterns/cta-band-primary.php:32
+#: patterns/dental-booking.php:33
+#: patterns/dental-hero.php:51
+#: patterns/dental-landing-implants.php:55
+#: patterns/dental-service-implants.php:57
+#: patterns/dental-service-whitening.php:57
+#: patterns/hero-booking.php:50
 #: patterns/hours-location.php:50
+#: patterns/page-service-detail.php:57
+#: patterns/utility-bar.php:49
 msgid "Call (555) 555-0100"
 msgstr ""
 
@@ -436,21 +799,1125 @@ msgstr ""
 msgid "Request a quote"
 msgstr ""
 
-#: patterns/faq.php
+#: patterns/dental-about.php
 msgctxt "Pattern title"
-msgid "FAQ"
+msgid "Dental page: about"
 msgstr ""
 
+#: patterns/dental-about.php
+#: patterns/dental-before-after.php
+#: patterns/dental-booking.php
+#: patterns/dental-contact.php
+#: patterns/dental-dentists.php
+#: patterns/dental-disclaimer.php
+#: patterns/dental-faq.php
+#: patterns/dental-features.php
+#: patterns/dental-hero.php
+#: patterns/dental-home.php
+#: patterns/dental-insurers.php
+#: patterns/dental-landing-implants.php
+#: patterns/dental-payment-plan.php
+#: patterns/dental-price-list.php
+#: patterns/dental-pricing.php
+#: patterns/dental-provider.php
+#: patterns/dental-service-implants.php
+#: patterns/dental-service-whitening.php
+#: patterns/dental-stories.php
+#: patterns/dental-treatments.php
+#: patterns/dental-urgent.php
+msgctxt "Pattern description"
+msgid "Bright Harbor Dental is a fictional practice. Its people, prices, hours and reviews are invented for the demo."
+msgstr ""
+
+#: patterns/dental-about.php:21
+msgid "One chair on Harbor Street"
+msgstr ""
+
+#: patterns/dental-about.php:21
+msgid "Dr. Ramirez opens with a single treatment room and a promise that nobody leaves in pain."
+msgstr ""
+
+#: patterns/dental-about.php:22
+msgid "Dr. Tanaka joins"
+msgstr ""
+
+#: patterns/dental-about.php:22
+msgid "Implants and surgery come in-house, so patients stop travelling to a specialist across the county."
+msgstr ""
+
+#: patterns/dental-about.php:23
+msgid "The nervous-patient programme"
+msgstr ""
+
+#: patterns/dental-about.php:23
+msgid "Longer appointments, a quiet room and the stop signal become standard for anyone who asks."
+msgstr ""
+
+#: patterns/dental-about.php:24
+msgid "Four dentists, 2,300 reviews"
+msgstr ""
+
+#: patterns/dental-about.php:24
+msgid "Still on Harbor Street, still answering the phone ourselves, still seeing emergencies the same day."
+msgstr ""
+
+#: patterns/dental-about.php:34
+msgid "A neighbourhood practice since 2009"
+msgstr ""
+
+#: patterns/dental-about.php:38
+msgid "Bright Harbor Dental is four dentists, nine team members and one building on Harbor Street. We treat people the way we would want our own families treated: honestly, gently and without a hard sell."
+msgstr ""
+
+#: patterns/dental-about.php:46
+msgid "The Bright Harbor Dental team outside the practice"
+msgstr ""
+
+#: patterns/dental-about.php:58
+#: patterns/timeline.php:25
+msgid "Our story"
+msgstr ""
+
+#: patterns/dental-before-after.php
+msgctxt "Pattern title"
+msgid "Dental: before and after"
+msgstr ""
+
+#: patterns/dental-before-after.php:21
+msgid "Smiles we have finished"
+msgstr ""
+
+#: patterns/dental-before-after.php:29
+msgid "Before whitening: natural teeth with surface staining"
+msgstr ""
+
+#: patterns/dental-before-after.php:37
+msgid "After whitening: the same teeth, six shades lighter"
+msgstr ""
+
+#: patterns/dental-before-after.php:37
+msgid "After, six weeks later"
+msgstr ""
+
+#: patterns/dental-before-after.php:45
+msgid "Shared with each patient's written consent. Results vary; your dentist will tell you what to expect for your teeth."
+msgstr ""
+
+#: patterns/dental-booking.php
+msgctxt "Pattern title"
+msgid "Dental: booking"
+msgstr ""
+
+#: patterns/dental-booking.php:19
+#: patterns/features-icons.php:18
+msgid "Book in two minutes"
+msgstr ""
+
+#: patterns/dental-booking.php:23
+msgid "Choose a dentist and a time online, or call and talk to a person. New patients are seen within the week."
+msgstr ""
+
+#: patterns/dental-booking.php:29
+#: patterns/dental-hero.php:47
+#: patterns/hero-booking.php:46
+msgid "Book online"
+msgstr ""
+
+#: patterns/dental-booking.php:39
+msgid "123 Harbor Street, Suite 4, Stuart, FL 34994. Mon to Fri 7 am to 5 pm, late until 7 pm Tue and Thu, Sat 8 am to 1 pm."
+msgstr ""
+
+#: patterns/dental-contact.php
+msgctxt "Pattern title"
+msgid "Dental page: contact"
+msgstr ""
+
+#: patterns/dental-contact.php:24
+msgid "Contact and directions"
+msgstr ""
+
+#: patterns/dental-contact.php:28
+msgid "Call, book online or send a message. A person answers the phone during opening hours, and messages are answered within one working day."
+msgstr ""
+
+#: patterns/dental-contact.php:38
+msgid "Send a message"
+msgstr ""
+
+#: patterns/dental-contact.php:42
+msgid "Insert your form block here: name, email, phone, preferred time, message and a consent box. Keel ships no forms of its own; any form plugin that outputs standard blocks inherits these styles."
+msgstr ""
+
+#: patterns/dental-contact.php:48
+msgid "Map placeholder: 123 Harbor Street, Suite 4, Stuart, Florida"
+msgstr ""
+
+#: patterns/dental-contact.php:48
+msgid "Free parking behind the building. The entrance is level, with a ramp from the car park."
+msgstr ""
+
+#: patterns/dental-contact.php:60
+msgid "Bright Harbor Dental"
+msgstr ""
+
+#: patterns/dental-contact.php:70
+msgid "Monday, Wednesday, Friday: 7 am to 5 pm"
+msgstr ""
+
+#: patterns/dental-contact.php:74
+msgid "Tuesday and Thursday: 7 am to 7 pm"
+msgstr ""
+
+#: patterns/dental-contact.php:78
+msgid "Saturday: 8 am to 1 pm"
+msgstr ""
+
+#: patterns/dental-contact.php:82
+msgid "Sunday: closed, emergency line open"
+msgstr ""
+
+#: patterns/dental-dentists.php
+msgctxt "Pattern title"
+msgid "Dental: our dentists"
+msgstr ""
+
+#: patterns/dental-dentists.php:18
+#: patterns/dental-provider.php:47
+msgid "Dr. Sofia Ramirez"
+msgstr ""
+
+#: patterns/dental-dentists.php:18
+#: patterns/dental-provider.php:43
+msgid "Lead dentist and founder"
+msgstr ""
+
+#: patterns/dental-dentists.php:18
+#: patterns/dental-dentists.php:21
+#: patterns/dental-provider.php:55
+#: patterns/page-provider.php:54
+#: patterns/providers-grid.php:17
+#: patterns/providers-grid.php:19
+msgid "Available today"
+msgstr ""
+
+#: patterns/dental-dentists.php:19
+msgid "Dr. Leo Tanaka"
+msgstr ""
+
+#: patterns/dental-dentists.php:19
+msgid "Implants and oral surgery"
+msgstr ""
+
+#: patterns/dental-dentists.php:19
+#: patterns/providers-grid.php:20
+msgid "Next: Thursday"
+msgstr ""
+
+#: patterns/dental-dentists.php:20
+msgid "Dr. Priya Nair"
+msgstr ""
+
+#: patterns/dental-dentists.php:20
+msgid "Orthodontics and clear aligners"
+msgstr ""
+
+#: patterns/dental-dentists.php:20
+msgid "Available tomorrow"
+msgstr ""
+
+#: patterns/dental-dentists.php:21
+msgid "Dr. Omar Haddad"
+msgstr ""
+
+#: patterns/dental-dentists.php:21
+msgid "Family and children's dentistry"
+msgstr ""
+
+#: patterns/dental-dentists.php:27
+msgid "Choose your dentist"
+msgstr ""
+
+#: patterns/dental-dentists.php:31
+msgid "You see the same dentist every visit unless you ask to change. All four are happy to meet you first, free of charge."
+msgstr ""
+
+#. translators: %d: years of experience.
+#: patterns/dental-dentists.php:51
+#: patterns/providers-grid.php:46
+#, php-format
+msgid "%d year of experience"
+msgid_plural "%d years of experience"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: average rating such as 4.9, 2: number of reviews.
+#: patterns/dental-dentists.php:60
+#: patterns/providers-grid.php:55
+#, php-format
+msgid "Rated %1$s from %2$s reviews"
+msgstr ""
+
+#: patterns/dental-dentists.php:72
+#: patterns/mobile-cta-bar.php:28
+#: patterns/providers-grid.php:67
+msgid "Book"
+msgstr ""
+
+#: patterns/dental-disclaimer.php
+msgctxt "Pattern title"
+msgid "Dental: disclaimer"
+msgstr ""
+
+#: patterns/dental-disclaimer.php:19
+msgid "Bright Harbor Dental is a fictional practice created to show the Keel theme. The dentists, prices, hours, reviews and insurers on these pages are invented and are not medical advice. If you have a dental emergency, call your own dentist or your local emergency dental line; for a life-threatening emergency call 911."
+msgstr ""
+
+#: patterns/dental-faq.php
+msgctxt "Pattern title"
+msgid "Dental: questions"
+msgstr ""
+
+#: patterns/dental-faq.php:17
+msgid "I am scared of the dentist. What do you do differently?"
+msgstr ""
+
+#: patterns/dental-faq.php:17
+msgid "You choose a stop signal before we begin, every injection is preceded by numbing gel, and we book extra time so nothing is rushed. Many patients also bring headphones."
+msgstr ""
+
+#: patterns/dental-faq.php:18
+msgid "Do you take my insurance?"
+msgstr ""
+
+#: patterns/dental-faq.php:18
+msgid "We work with more than forty insurers and bill them directly. Send your plan details when you book and we confirm your cover before the visit."
+msgstr ""
+
+#: patterns/dental-faq.php:19
+msgid "How do the 0% plans work?"
+msgstr ""
+
+#: patterns/dental-faq.php:19
+msgid "Any treatment over $300 can be spread over 6 to 24 months with no interest, no deposit and no fees, subject to a quick approval at the desk."
+msgstr ""
+
+#: patterns/dental-faq.php:20
+msgid "What counts as an emergency?"
+msgstr ""
+
+#: patterns/dental-faq.php:20
+msgid "Pain that keeps you awake, a broken or knocked-out tooth, swelling, or a lost crown or filling. Call before noon and you are seen the same day."
+msgstr ""
+
+#: patterns/dental-faq.php:26
+msgid "Questions patients ask"
+msgstr ""
+
+#: patterns/dental-features.php
+msgctxt "Pattern title"
+msgid "Dental: why patients choose us"
+msgstr ""
+
+#: patterns/dental-features.php:17
+msgid "Early, late and Saturday"
+msgstr ""
+
+#: patterns/dental-features.php:17
+msgid "Appointments from 7 am, until 7 pm on Tuesdays and Thursdays, and Saturday mornings."
+msgstr ""
+
+#: patterns/dental-features.php:18
+msgid "Nervous patients welcome"
+msgstr ""
+
+#: patterns/dental-features.php:18
+msgid "A quiet room, numbing gel before every injection and a stop signal you choose."
+msgstr ""
+
+#: patterns/dental-features.php:19
+#: patterns/dental-payment-plan.php:23
+#: patterns/page-landing-offer.php:23
+msgid "0% payment plans"
+msgstr ""
+
+#: patterns/dental-features.php:19
+msgid "Spread any treatment over 6 to 24 months with no interest and no deposit."
+msgstr ""
+
+#: patterns/dental-features.php:20
+msgid "40+ insurers accepted"
+msgstr ""
+
+#: patterns/dental-features.php:20
+msgid "We check your cover before the visit and bill your insurer directly."
+msgstr ""
+
+#: patterns/dental-features.php:26
+msgid "Why patients choose Bright Harbor"
+msgstr ""
+
+#: patterns/dental-hero.php
+msgctxt "Pattern title"
+msgid "Dental: hero"
+msgstr ""
+
+#: patterns/dental-hero.php:19
+msgid "Whitening"
+msgstr ""
+
+#: patterns/dental-hero.php:20
+msgid "Implants"
+msgstr ""
+
+#: patterns/dental-hero.php:21
+msgid "Aligners"
+msgstr ""
+
+#: patterns/dental-hero.php:22
+msgid "Kids"
+msgstr ""
+
+#: patterns/dental-hero.php:23
+msgid "Emergency"
+msgstr ""
+
+#: patterns/dental-hero.php:33
+#: patterns/hero-booking.php:32
+msgid "Next slot: today 2:30 pm"
+msgstr ""
+
+#: patterns/dental-hero.php:37
+msgid "Gentle dentistry, clear prices, same-week appointments"
+msgstr ""
+
+#: patterns/dental-hero.php:41
+msgid "Bright Harbor Dental has looked after Stuart families since 2009. Book online in two minutes, see the price before you sit down, and tell us if you are nervous: half our patients were."
+msgstr ""
+
+#: patterns/dental-hero.php:57
+msgid "Pain-free promise: tell us to stop and we stop, every time"
+msgstr ""
+
+#: patterns/dental-hero.php:75
+msgid "A dentist greeting a patient in a bright treatment room"
+msgstr ""
+
+#: patterns/dental-home.php
+msgctxt "Pattern title"
+msgid "Dental page: home"
+msgstr ""
+
+#: patterns/dental-insurers.php
+msgctxt "Pattern title"
+msgid "Dental: insurers"
+msgstr ""
+
+#: patterns/dental-insurers.php:21
+msgid "We work with 40+ insurers"
+msgstr ""
+
+#: patterns/dental-insurers.php:25
+msgid "Send us your plan details when you book and we confirm your cover before the visit."
+msgstr ""
+
+#. translators: %d: position of the logo in the row.
+#: patterns/dental-insurers.php:32
+#, php-format
+msgid "Insurer logo %d"
+msgstr ""
+
+#: patterns/dental-landing-implants.php
+msgctxt "Pattern title"
+msgid "Dental page: implants offer"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:25
+#: patterns/dental-stories.php:29
+#: patterns/page-landing-offer.php:23
+msgid "Rated 4.9 from 2,300 reviews"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:25
+msgid "Free implant consultation"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:25
+msgid "0% plans from $200 a month"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:37
+msgid "Consultations this week: 6 left"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:41
+msgid "A fixed, natural tooth from $200 a month"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:45
+msgid "A dental implant replaces a missing tooth for good. Free 3D scan and consultation, one price in writing, and 0% plans over up to 24 months."
+msgstr ""
+
+#: patterns/dental-landing-implants.php:51
+msgid "Book the free consultation"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:61
+msgid "Ten-year guarantee on every implant we place"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:69
+msgid "A patient smiling with the dentist after an implant is fitted"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:97
+msgid "Your surgeon: Dr. Leo Tanaka"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:101
+msgid "Implants and oral surgery, 14 years, more than 1,900 implants placed, rated 4.9 from 410 reviews."
+msgstr ""
+
+#: patterns/dental-landing-implants.php:117
+msgid "This month"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:121
+msgid "Free 3D scan with your consultation"
+msgstr ""
+
+#: patterns/dental-landing-implants.php:125
+msgid "The scan normally costs $180. Book a consultation before the end of the month and it is included, whether or not you go ahead."
+msgstr ""
+
+#: patterns/dental-landing-implants.php:131
+msgid "Claim the free scan"
+msgstr ""
+
+#: patterns/dental-payment-plan.php
+msgctxt "Pattern title"
+msgid "Dental: payment plan"
+msgstr ""
+
+#: patterns/dental-payment-plan.php:27
+msgid "An implant for $200 a month"
+msgstr ""
+
+#: patterns/dental-payment-plan.php:31
+msgid "A $2,400 single implant over 12 months is $200 a month. No deposit, no interest, no fees, and you can pay it off early."
+msgstr ""
+
+#: patterns/dental-payment-plan.php:35
+msgid "Example only. Plans from 6 to 24 months, subject to approval; the full terms are shown before you sign."
+msgstr ""
+
+#: patterns/dental-payment-plan.php:45
+msgid "Ask about a plan"
+msgstr ""
+
+#: patterns/dental-price-list.php
+msgctxt "Pattern title"
+msgid "Dental: price list"
+msgstr ""
+
+#: patterns/dental-price-list.php:17
+#: patterns/dental-provider.php:89
+msgid "Check-ups and hygiene"
+msgstr ""
+
+#: patterns/dental-price-list.php:17
+msgid "New patient examination"
+msgstr ""
+
+#: patterns/dental-price-list.php:17
+msgid "Hygiene visit (30 minutes)"
+msgstr ""
+
+#: patterns/dental-price-list.php:17
+msgid "Digital x-rays (set)"
+msgstr ""
+
+#: patterns/dental-price-list.php:17
+#: patterns/page-pricing.php:22
+msgid "Children under 12"
+msgstr ""
+
+#: patterns/dental-price-list.php:18
+#: patterns/dental-service-whitening.php:39
+msgid "Cosmetic"
+msgstr ""
+
+#: patterns/dental-price-list.php:18
+#: patterns/dental-service-whitening.php:27
+msgid "In-chair whitening with trays"
+msgstr ""
+
+#: patterns/dental-price-list.php:18
+msgid "Composite bonding, per tooth"
+msgstr ""
+
+#: patterns/dental-price-list.php:18
+msgid "Porcelain veneer, per tooth"
+msgstr ""
+
+#: patterns/dental-price-list.php:18
+msgid "Clear aligners, full course"
+msgstr ""
+
+#: patterns/dental-price-list.php:18
+msgid "from $2,900"
+msgstr ""
+
+#: patterns/dental-price-list.php:19
+#: patterns/dental-service-implants.php:39
+msgid "Restorative"
+msgstr ""
+
+#: patterns/dental-price-list.php:19
+msgid "White filling"
+msgstr ""
+
+#: patterns/dental-price-list.php:19
+msgid "from $160"
+msgstr ""
+
+#: patterns/dental-price-list.php:19
+msgid "Crown"
+msgstr ""
+
+#: patterns/dental-price-list.php:19
+msgid "from $1,100"
+msgstr ""
+
+#: patterns/dental-price-list.php:19
+#: patterns/dental-service-implants.php:27
+msgid "Single implant with crown"
+msgstr ""
+
+#: patterns/dental-price-list.php:19
+#: patterns/dental-service-implants.php:27
+#: patterns/page-pricing.php:21
+msgid "from $2,400"
+msgstr ""
+
+#: patterns/dental-price-list.php:19
+msgid "Emergency visit, same day"
+msgstr ""
+
+#: patterns/dental-price-list.php:25
+msgid "Price list"
+msgstr ""
+
+#: patterns/dental-price-list.php:29
+msgid "Every price includes the examination, the local anaesthetic and the follow-up. Where a treatment depends on what we find, the range is confirmed in writing before we start."
+msgstr ""
+
+#: patterns/dental-price-list.php:42
+msgid "Treatment"
+msgstr ""
+
+#: patterns/dental-pricing.php
+msgctxt "Pattern title"
+msgid "Dental page: prices"
+msgstr ""
+
+#: patterns/dental-pricing.php:22
+#: patterns/dental-service-implants.php:114
+#: patterns/dental-service-whitening.php:114
+#: patterns/hero-booking.php:21
+#: patterns/page-pricing.php:29
+#: patterns/page-service-detail.php:116
+msgid "Prices"
+msgstr ""
+
+#: patterns/dental-pricing.php:26
+msgid "The price on this page is the price at the desk. Where treatment depends on your examination, you get the range in writing first."
+msgstr ""
+
+#: patterns/dental-provider.php
+msgctxt "Pattern title"
+msgid "Dental page: dentist profile"
+msgstr ""
+
+#: patterns/dental-provider.php:21
+#: patterns/page-provider.php:20
+msgid "Monday"
+msgstr ""
+
+#: patterns/dental-provider.php:21
+#: patterns/dental-provider.php:23
+msgid "7 am to 3 pm"
+msgstr ""
+
+#: patterns/dental-provider.php:22
+#: patterns/page-provider.php:21
+msgid "Tuesday"
+msgstr ""
+
+#: patterns/dental-provider.php:22
+#: patterns/dental-provider.php:24
+msgid "11 am to 7 pm"
+msgstr ""
+
+#: patterns/dental-provider.php:23
+#: patterns/page-provider.php:22
+msgid "Wednesday"
+msgstr ""
+
+#: patterns/dental-provider.php:24
+#: patterns/page-provider.php:23
+msgid "Thursday"
+msgstr ""
+
+#: patterns/dental-provider.php:25
+msgid "Saturday"
+msgstr ""
+
+#: patterns/dental-provider.php:25
+msgid "8 am to 1 pm, alternate weeks"
+msgstr ""
+
+#: patterns/dental-provider.php:35
+msgid "Portrait of Dr. Sofia Ramirez"
+msgstr ""
+
+#: patterns/dental-provider.php:51
+msgid "Eighteen years in practice, rated 4.9 from 640 reviews, and the dentist most of our nervous patients ask for by name."
+msgstr ""
+
+#: patterns/dental-provider.php:61
+msgid "Book with Dr. Ramirez"
+msgstr ""
+
+#: patterns/dental-provider.php:75
+msgid "About Dr. Ramirez"
+msgstr ""
+
+#: patterns/dental-provider.php:79
+msgid "Sofia qualified in 2008, spent a year in a hospital emergency department and opened Bright Harbor in 2009 with one chair and a promise: nobody leaves in pain, and nobody is sold treatment they do not need. She still takes the 7 am appointments."
+msgstr ""
+
+#: patterns/dental-provider.php:83
+#: patterns/page-provider.php:82
+msgid "Treats"
+msgstr ""
+
+#: patterns/dental-provider.php:93
+msgid "White fillings and crowns"
+msgstr ""
+
+#: patterns/dental-provider.php:97
+msgid "Root canal treatment"
+msgstr ""
+
+#: patterns/dental-provider.php:101
+#: patterns/dental-service-whitening.php:43
+#: patterns/dental-treatments.php:18
+msgid "Teeth whitening"
+msgstr ""
+
+#: patterns/dental-provider.php:105
+msgid "Nervous and phobic patients"
+msgstr ""
+
+#: patterns/dental-provider.php:109
+msgid "Emergency appointments"
+msgstr ""
+
+#: patterns/dental-provider.php:115
+#: patterns/page-provider.php:120
+msgid "Weekly schedule"
+msgstr ""
+
+#: patterns/dental-provider.php:119
+#: patterns/page-provider.php:124
+msgid "Day"
+msgstr ""
+
+#: patterns/dental-service-implants.php
+msgctxt "Pattern title"
+msgid "Dental page: dental implants"
+msgstr ""
+
+#: patterns/dental-service-implants.php:21
+msgid "A 3D scan and a free consultation. You get a written plan with the full price and the timeline before anything is booked."
+msgstr ""
+
+#: patterns/dental-service-implants.php:22
+#: patterns/dental-service-whitening.php:22
+#: patterns/page-service-detail.php:21
+msgid "During"
+msgstr ""
+
+#: patterns/dental-service-implants.php:22
+msgid "Placing the root takes about forty minutes under local anaesthetic, with sedation available. Most people are back at work the next day."
+msgstr ""
+
+#: patterns/dental-service-implants.php:23
+msgid "The root heals for three months, then the crown is fitted in one visit. Reviews at two weeks and one year are included."
+msgstr ""
+
+#: patterns/dental-service-implants.php:26
+msgid "Implant consultation with 3D scan"
+msgstr ""
+
+#: patterns/dental-service-implants.php:26
+#: patterns/dental-service-whitening.php:26
+msgid "free"
+msgstr ""
+
+#: patterns/dental-service-implants.php:28
+msgid "Bone graft, if needed"
+msgstr ""
+
+#: patterns/dental-service-implants.php:28
+msgid "from $450"
+msgstr ""
+
+#: patterns/dental-service-implants.php:29
+msgid "Implant-retained denture (4 implants)"
+msgstr ""
+
+#: patterns/dental-service-implants.php:29
+msgid "from $9,800"
+msgstr ""
+
+#: patterns/dental-service-implants.php:43
+#: patterns/dental-treatments.php:19
+msgid "Dental implants"
+msgstr ""
+
+#: patterns/dental-service-implants.php:47
+msgid "A permanent replacement tooth: a titanium root placed by Dr. Tanaka and a crown made to match your own teeth, all under one roof and one price."
+msgstr ""
+
+#: patterns/dental-service-implants.php:53
+#: patterns/dental-service-whitening.php:53
+msgid "Book a free consultation"
+msgstr ""
+
+#: patterns/dental-service-implants.php:67
+msgid "A dentist showing a patient an implant model"
+msgstr ""
+
+#: patterns/dental-service-implants.php:83
+#: patterns/dental-service-whitening.php:83
+#: patterns/page-service-detail.php:83
+msgid "Good for"
+msgstr ""
+
+#: patterns/dental-service-implants.php:89
+msgid "A single missing tooth or several"
+msgstr ""
+
+#: patterns/dental-service-implants.php:92
+msgid "A loose denture you would rather be rid of"
+msgstr ""
+
+#: patterns/dental-service-implants.php:95
+msgid "Anyone who wants a fixed tooth that lasts decades"
+msgstr ""
+
+#: patterns/dental-service-implants.php:101
+#: patterns/dental-service-whitening.php:101
+#: patterns/page-service-detail.php:103
+msgid "What to expect"
+msgstr ""
+
+#: patterns/dental-service-implants.php:118
+#: patterns/dental-service-whitening.php:118
+#: patterns/page-pricing.php:50
+#: patterns/page-service-detail.php:120
+msgid "Item"
+msgstr ""
+
+#: patterns/dental-service-implants.php:132
+#: patterns/dental-service-whitening.php:132
+#: patterns/page-service-detail.php:134
+msgid "From"
+msgstr ""
+
+#: patterns/dental-service-implants.php:140
+msgid "Or $200 a month over 12 months at 0% interest."
+msgstr ""
+
+#: patterns/dental-service-implants.php:146
+#: patterns/dental-service-whitening.php:146
+#: patterns/page-service-detail.php:148
+msgid "Book now"
+msgstr ""
+
+#: patterns/dental-service-implants.php:156
+#: patterns/dental-service-whitening.php:156
+#: patterns/page-service-detail.php:158
+msgid "Downloads"
+msgstr ""
+
+#: patterns/dental-service-implants.php:162
+#: patterns/dental-service-whitening.php:162
+#: patterns/page-service-detail.php:30
+msgid "Aftercare guide (PDF)"
+msgstr ""
+
+#: patterns/dental-service-implants.php:166
+#: patterns/dental-service-whitening.php:166
+#: patterns/page-service-detail.php:30
+msgid "Consent form (PDF)"
+msgstr ""
+
+#: patterns/dental-service-implants.php:176
+#: patterns/dental-service-whitening.php:176
+msgid "Patient desk"
+msgstr ""
+
+#: patterns/dental-service-implants.php:180
+#: patterns/dental-service-whitening.php:180
+msgid "Mon to Fri 7 am to 5 pm"
+msgstr ""
+
+#: patterns/dental-service-implants.php:188
+#: patterns/dental-service-whitening.php:188
+msgid "Not sure it is right for you?"
+msgstr ""
+
+#: patterns/dental-service-implants.php:192
+#: patterns/dental-service-whitening.php:192
+msgid "The consultation is free and there is no obligation. Ask anything."
+msgstr ""
+
+#: patterns/dental-service-implants.php:198
+#: patterns/dental-service-whitening.php:198
+#: patterns/page-service-detail.php:198
+msgid "Ask a question"
+msgstr ""
+
+#: patterns/dental-service-whitening.php
+msgctxt "Pattern title"
+msgid "Dental page: teeth whitening"
+msgstr ""
+
+#: patterns/dental-service-whitening.php:21
+msgid "A hygiene visit first so the gel reaches clean enamel, then a shade check and photos so you can see the change."
+msgstr ""
+
+#: patterns/dental-service-whitening.php:22
+msgid "About an hour in the chair. Gums are protected, the gel goes on in three short rounds, and you can pause at any time."
+msgstr ""
+
+#: patterns/dental-service-whitening.php:23
+msgid "Custom trays and gel to top up at home. Avoid dark drinks for 48 hours; most people keep the result for two years."
+msgstr ""
+
+#: patterns/dental-service-whitening.php:26
+msgid "Whitening consultation"
+msgstr ""
+
+#: patterns/dental-service-whitening.php:28
+msgid "Take-home trays only"
+msgstr ""
+
+#: patterns/dental-service-whitening.php:29
+msgid "Top-up gel (4 syringes)"
+msgstr ""
+
+#: patterns/dental-service-whitening.php:47
+msgid "In-chair whitening with custom take-home trays. Two to eight shades lighter, with your dentist choosing the strength so sensitive teeth stay comfortable."
+msgstr ""
+
+#: patterns/dental-service-whitening.php:67
+msgid "A patient smiling after a whitening appointment"
+msgstr ""
+
+#: patterns/dental-service-whitening.php:89
+msgid "Staining from coffee, tea, wine or smoking"
+msgstr ""
+
+#: patterns/dental-service-whitening.php:92
+msgid "A wedding, interview or photo day in the diary"
+msgstr ""
+
+#: patterns/dental-service-whitening.php:95
+msgid "Teeth that have darkened with age"
+msgstr ""
+
+#: patterns/dental-service-whitening.php:140
+#: patterns/page-service-detail.php:142
+msgid "Or $33 a month over 12 months at 0% interest."
+msgstr ""
+
+#: patterns/dental-stories.php
+msgctxt "Pattern title"
+msgid "Dental: patient stories"
+msgstr ""
+
+#: patterns/dental-stories.php:17
+msgid "I had not seen a dentist in nine years because I was terrified. Dr. Ramirez talked me through every step and stopped when I raised my hand. Two visits later my teeth are fixed and I am not scared any more."
+msgstr ""
+
+#: patterns/dental-stories.php:17
+msgid "Dana M., Stuart"
+msgstr ""
+
+#: patterns/dental-stories.php:18
+msgid "The implant price on the website was the price I paid. Dr. Tanaka placed it in forty minutes and the crown fits like my own tooth."
+msgstr ""
+
+#: patterns/dental-stories.php:18
+msgid "Marcus T., Jensen Beach"
+msgstr ""
+
+#: patterns/dental-stories.php:19
+msgid "Both kids actually ask to go. Dr. Haddad lets them hold the mirror and they leave with a sticker and clean teeth."
+msgstr ""
+
+#: patterns/dental-stories.php:19
+msgid "Lauren K., Palm City"
+msgstr ""
+
+#: patterns/dental-stories.php:25
+msgid "Patient stories"
+msgstr ""
+
+#: patterns/dental-treatments.php
+msgctxt "Pattern title"
+msgid "Dental: treatments"
+msgstr ""
+
+#: patterns/dental-treatments.php:17
+msgid "Check-up and hygiene"
+msgstr ""
+
+#: patterns/dental-treatments.php:17
+msgid "A full examination, x-rays if needed and a professional clean, in one visit."
+msgstr ""
+
+#: patterns/dental-treatments.php:18
+msgid "In-chair whitening with take-home trays, two to eight shades lighter."
+msgstr ""
+
+#: patterns/dental-treatments.php:19
+msgid "A permanent replacement tooth, placed by our surgeon and finished in-house."
+msgstr ""
+
+#: patterns/dental-treatments.php:20
+msgid "Clear aligners"
+msgstr ""
+
+#: patterns/dental-treatments.php:20
+msgid "Nearly invisible straightening, checked every six weeks, typically 6 to 14 months."
+msgstr ""
+
+#: patterns/dental-treatments.php:21
+msgid "Kids' dentistry"
+msgstr ""
+
+#: patterns/dental-treatments.php:21
+msgid "Short, friendly visits from age one, with fluoride and sealants when they help."
+msgstr ""
+
+#: patterns/dental-treatments.php:22
+msgid "Emergency, same day"
+msgstr ""
+
+#: patterns/dental-treatments.php:22
+msgid "Toothache, a broken tooth or a lost crown: call before noon, be seen today."
+msgstr ""
+
+#: patterns/dental-treatments.php:28
+msgid "Treatments and prices"
+msgstr ""
+
+#: patterns/dental-treatments.php:32
+msgid "Starting prices, confirmed in writing after your examination. No surprises at the desk."
+msgstr ""
+
+#. translators: %s: a starting price such as $85.
+#: patterns/dental-treatments.php:56
+#: patterns/services-grid-prices.php:55
+#, php-format
+msgid "from %s"
+msgstr ""
+
+#: patterns/dental-treatments.php:62
+msgid "About this treatment"
+msgstr ""
+
+#: patterns/dental-urgent.php
+msgctxt "Pattern title"
+msgid "Dental: emergency band"
+msgstr ""
+
+#: patterns/dental-urgent.php:21
+msgid "Toothache or a knocked-out tooth?"
+msgstr ""
+
+#: patterns/dental-urgent.php:21
+msgid "Same-day emergency slots are held every morning."
+msgstr ""
+
+#: patterns/dental-urgent.php:27
+msgid "Call (555) 555-0100 now"
+msgstr ""
+
+#: patterns/event-grid.php
+msgctxt "Pattern title"
+msgid "Event grid"
+msgstr ""
+
+#: patterns/event-grid.php:18
+msgid "Upcoming events"
+msgstr ""
+
+#: patterns/event-grid.php:36
+msgid "Event details"
+msgstr ""
+
+#: patterns/event-grid.php:43
+msgid "No events scheduled. Check back soon."
+msgstr ""
+
+#: patterns/faq-accordion.php
+msgctxt "Pattern title"
+msgid "FAQ: accordion"
+msgstr ""
+
+#: patterns/faq-accordion.php:16
+#: patterns/faq.php:24
+msgid "No. Every visit starts with a free inspection and a written quote, and you decide before any work begins."
+msgstr ""
+
+#: patterns/faq-accordion.php:17
+msgid "Can I pay monthly?"
+msgstr ""
+
+#: patterns/faq-accordion.php:17
+msgid "Yes. Plans from 6 to 24 months at 0% interest are available on most work, subject to approval."
+msgstr ""
+
+#: patterns/faq-accordion.php:18
+#: patterns/faq.php:38
+msgid "How soon can you come out?"
+msgstr ""
+
+#: patterns/faq-accordion.php:18
+msgid "Most jobs are scheduled within the week, and same-day slots are held every morning for urgent calls."
+msgstr ""
+
+#: patterns/faq-accordion.php:19
+msgid "What if something goes wrong afterwards?"
+msgstr ""
+
+#: patterns/faq-accordion.php:19
+msgid "Call us. Every job is guaranteed in writing, and a return visit under the guarantee costs nothing."
+msgstr ""
+
+#: patterns/faq-accordion.php:25
 #: patterns/faq.php:18
 msgid "Common questions"
 msgstr ""
 
-#: patterns/faq.php:22
-msgid "Do you charge for estimates?"
-msgstr ""
-
-#: patterns/faq.php:24
-msgid "No. Every visit starts with a free inspection and a written quote, and you decide before any work begins."
+#: patterns/faq.php
+msgctxt "Pattern title"
+msgid "FAQ"
 msgstr ""
 
 #: patterns/faq.php:30
@@ -459,10 +1926,6 @@ msgstr ""
 
 #: patterns/faq.php:32
 msgid "Yes. We hold a current state licence and carry full liability and workers compensation insurance."
-msgstr ""
-
-#: patterns/faq.php:38
-msgid "How soon can you come out?"
 msgstr ""
 
 #: patterns/faq.php:40
@@ -475,6 +1938,39 @@ msgstr ""
 
 #: patterns/faq.php:48
 msgid "The whole county and the neighbouring towns. Call us if you are not sure and we will tell you straight away."
+msgstr ""
+
+#: patterns/features-icons.php
+msgctxt "Pattern title"
+msgid "Feature list with icons"
+msgstr ""
+
+#: patterns/features-icons.php:16
+msgid "Open early and late"
+msgstr ""
+
+#: patterns/features-icons.php:16
+msgid "Appointments from 7 am and until 7 pm on weekdays."
+msgstr ""
+
+#: patterns/features-icons.php:17
+msgid "Guaranteed work"
+msgstr ""
+
+#: patterns/features-icons.php:17
+msgid "Every job carries a written guarantee, no small print."
+msgstr ""
+
+#: patterns/features-icons.php:18
+msgid "Choose a time online and get a reminder the day before."
+msgstr ""
+
+#: patterns/features-icons.php:19
+msgid "You get the options, the prices and our honest recommendation."
+msgstr ""
+
+#: patterns/features-icons.php:25
+msgid "Why people choose us"
 msgstr ""
 
 #: patterns/footer-columns.php
@@ -494,6 +1990,8 @@ msgid "Local, licensed and insured. Serving the whole county since 2009."
 msgstr ""
 
 #: patterns/footer-columns.php:45
+#: patterns/hero-booking.php:18
+#: patterns/page-pricing.php:20
 #: patterns/services-grid-3.php:32
 #: patterns/services-grid-4.php:32
 #: patterns/services-grid-6.php:32
@@ -544,6 +2042,35 @@ msgstr ""
 
 #: patterns/gallery.php:18
 msgid "Recent work"
+msgstr ""
+
+#: patterns/hero-booking.php
+msgctxt "Pattern title"
+msgid "Hero: booking"
+msgstr ""
+
+#: patterns/hero-booking.php:19
+msgid "Plans"
+msgstr ""
+
+#: patterns/hero-booking.php:22
+msgid "Find us"
+msgstr ""
+
+#: patterns/hero-booking.php:36
+msgid "Book a visit that fits your day"
+msgstr ""
+
+#: patterns/hero-booking.php:40
+msgid "Online booking around the clock, clear prices before you commit, and a team that explains everything in plain words."
+msgstr ""
+
+#: patterns/hero-booking.php:56
+msgid "Satisfaction promise: happy with the visit or the follow-up is free"
+msgstr ""
+
+#: patterns/hero-booking.php:74
+msgid "A member of the team greeting a visitor at the front desk"
 msgstr ""
 
 #: patterns/hero-image.php
@@ -629,25 +2156,115 @@ msgstr ""
 msgid "Map showing our location"
 msgstr ""
 
+#: patterns/listing-grid.php
+msgctxt "Pattern title"
+msgid "Listing grid"
+msgstr ""
+
+#: patterns/listing-grid.php:18
+msgid "Latest listings"
+msgstr ""
+
+#: patterns/listing-grid.php:35
+#: patterns/listing-list.php:37
+msgid "Enquire"
+msgstr ""
+
+#: patterns/listing-grid.php:39
+#: patterns/listing-list.php:41
+#: patterns/mobile-cta-bar.php:20
+msgid "Call"
+msgstr ""
+
+#: patterns/listing-list.php
+msgctxt "Pattern title"
+msgid "Listing list"
+msgstr ""
+
+#: patterns/listing-list.php:18
+msgid "All listings"
+msgstr ""
+
+#: patterns/logo-band.php
+msgctxt "Pattern title"
+msgid "Logo band"
+msgstr ""
+
+#: patterns/logo-band.php:20
+msgid "Trusted by partners, insurers and the certifying bodies that matter"
+msgstr ""
+
+#. translators: %d: position of the logo in the row.
+#: patterns/logo-band.php:27
+#, php-format
+msgid "Partner logo %d"
+msgstr ""
+
+#: patterns/media-text-steps.php
+msgctxt "Pattern title"
+msgid "Media and text steps"
+msgstr ""
+
+#: patterns/media-text-steps.php:17
+msgid "Step one: we listen"
+msgstr ""
+
+#: patterns/media-text-steps.php:17
+msgid "Tell us what is going on and what you want to happen. We ask the questions that matter and nothing more."
+msgstr ""
+
+#: patterns/media-text-steps.php:18
+msgid "Step two: a clear plan"
+msgstr ""
+
+#: patterns/media-text-steps.php:18
+msgid "You get the options with prices, and our honest recommendation on which to choose."
+msgstr ""
+
+#: patterns/media-text-steps.php:19
+msgid "Step three: the work, done right"
+msgstr ""
+
+#: patterns/media-text-steps.php:19
+msgid "We arrive when we said we would, finish on the day and check in a week later."
+msgstr ""
+
+#: patterns/media-text-steps.php:25
+msgid "How a visit goes"
+msgstr ""
+
 #: patterns/mobile-cta-bar.php
 msgctxt "Pattern title"
 msgid "Mobile CTA bar"
-msgstr ""
-
-#: patterns/mobile-cta-bar.php:20
-msgid "Call"
 msgstr ""
 
 #: patterns/mobile-cta-bar.php:24
 msgid "Text"
 msgstr ""
 
-#: patterns/mobile-cta-bar.php:28
-msgid "Book"
-msgstr ""
-
 #: patterns/mobile-cta-bar.php:32
 msgid "Directions"
+msgstr ""
+
+#: patterns/newsletter-band.php
+msgctxt "Pattern title"
+msgid "Newsletter band"
+msgstr ""
+
+#: patterns/newsletter-band.php:18
+msgid "Seasonal tips, once a month"
+msgstr ""
+
+#: patterns/newsletter-band.php:22
+msgid "Short, useful and easy to leave. No sales pressure."
+msgstr ""
+
+#: patterns/newsletter-band.php:28
+msgid "Insert your newsletter form block here: a name field, an email field and a consent box. Keel ships no forms of its own."
+msgstr ""
+
+#: patterns/newsletter-band.php:34
+msgid "Subscribe"
 msgstr ""
 
 #: patterns/no-results.php
@@ -659,6 +2276,396 @@ msgstr ""
 msgid "Nothing found. Try a different search or browse the latest posts."
 msgstr ""
 
+#: patterns/offer-card.php
+msgctxt "Pattern title"
+msgid "Offer card"
+msgstr ""
+
+#: patterns/offer-card.php:20
+msgid "New patient offer"
+msgstr ""
+
+#: patterns/offer-card.php:24
+msgid "First check-up for $49"
+msgstr ""
+
+#: patterns/offer-card.php:28
+msgid "Includes the full inspection and a written plan, a $120 value. One per household."
+msgstr ""
+
+#: patterns/offer-card.php:32
+msgid "Ends 31 March"
+msgstr ""
+
+#: patterns/offer-card.php:38
+msgid "Claim the offer"
+msgstr ""
+
+#: patterns/page-about.php
+msgctxt "Pattern title"
+msgid "Page: about"
+msgstr ""
+
+#: patterns/page-contact.php
+msgctxt "Pattern title"
+msgid "Page: contact"
+msgstr ""
+
+#: patterns/page-faq.php
+msgctxt "Pattern title"
+msgid "Page: FAQ"
+msgstr ""
+
+#: patterns/page-faq.php:21
+msgid "Questions and answers"
+msgstr ""
+
+#: patterns/page-faq.php:25
+msgid "The things people ask before they book, answered plainly. Anything missing? Call us."
+msgstr ""
+
+#: patterns/page-landing-offer.php
+msgctxt "Pattern title"
+msgid "Page: landing offer"
+msgstr ""
+
+#: patterns/page-landing-offer.php:23
+msgid "Same-week appointments"
+msgstr ""
+
+#: patterns/page-landing-offer.php:49
+msgid "You will see Jordan Lee"
+msgstr ""
+
+#: patterns/page-landing-offer.php:53
+msgid "Lead specialist, 20 years of experience, rated 4.9 from 310 reviews."
+msgstr ""
+
+#: patterns/page-landing-offer.php:73
+msgid "Still thinking about it? Book the free assessment. The decision stays yours."
+msgstr ""
+
+#: patterns/page-pricing.php
+msgctxt "Pattern title"
+msgid "Page: pricing"
+msgstr ""
+
+#: patterns/page-pricing.php:19
+msgid "Check-ups and prevention"
+msgstr ""
+
+#: patterns/page-pricing.php:19
+msgid "Full inspection with report"
+msgstr ""
+
+#: patterns/page-pricing.php:19
+msgid "Annual plan (two visits)"
+msgstr ""
+
+#: patterns/page-pricing.php:20
+msgid "Minor repair"
+msgstr ""
+
+#: patterns/page-pricing.php:20
+msgid "from $120"
+msgstr ""
+
+#: patterns/page-pricing.php:20
+msgid "Major repair"
+msgstr ""
+
+#: patterns/page-pricing.php:20
+#: patterns/page-service-detail.php:26
+msgid "from $390"
+msgstr ""
+
+#: patterns/page-pricing.php:20
+msgid "Same-day callout"
+msgstr ""
+
+#: patterns/page-pricing.php:21
+msgid "Replacements"
+msgstr ""
+
+#: patterns/page-pricing.php:21
+msgid "Standard replacement"
+msgstr ""
+
+#: patterns/page-pricing.php:21
+msgid "Premium replacement"
+msgstr ""
+
+#: patterns/page-pricing.php:21
+msgid "from $3,900"
+msgstr ""
+
+#: patterns/page-pricing.php:21
+msgid "Removal of the old unit"
+msgstr ""
+
+#: patterns/page-pricing.php:21
+#: patterns/page-service-detail.php:28
+msgid "included"
+msgstr ""
+
+#: patterns/page-pricing.php:22
+msgid "Families"
+msgstr ""
+
+#: patterns/page-pricing.php:22
+msgid "Family plan (up to 4)"
+msgstr ""
+
+#: patterns/page-pricing.php:22
+msgid "Second household visit"
+msgstr ""
+
+#: patterns/page-pricing.php:22
+msgid "half price"
+msgstr ""
+
+#: patterns/page-pricing.php:23
+#: patterns/services-tabs.php:25
+msgid "Urgent"
+msgstr ""
+
+#: patterns/page-pricing.php:23
+msgid "Same-day assessment"
+msgstr ""
+
+#: patterns/page-pricing.php:23
+msgid "After-hours visit"
+msgstr ""
+
+#: patterns/page-pricing.php:23
+msgid "Temporary fix"
+msgstr ""
+
+#: patterns/page-pricing.php:23
+msgid "from $90"
+msgstr ""
+
+#: patterns/page-pricing.php:33
+msgid "Every price here is the price you pay. Where a job depends on what we find, the range is shown and confirmed in writing before we start."
+msgstr ""
+
+#: patterns/page-pricing.php:71
+msgid "Insurance"
+msgstr ""
+
+#: patterns/page-pricing.php:75
+msgid "We bill most major insurers directly and tell you what your plan covers before the visit. Bring your card and we handle the paperwork."
+msgstr ""
+
+#: patterns/page-pricing.php:91
+msgid "Prices are correct at the time of publication and include tax. Payment plans are subject to approval. Where work depends on an assessment, the final price is confirmed in writing before it begins."
+msgstr ""
+
+#: patterns/page-provider.php
+msgctxt "Pattern title"
+msgid "Page: provider profile"
+msgstr ""
+
+#: patterns/page-provider.php:20
+#: patterns/page-provider.php:21
+#: patterns/page-provider.php:23
+msgid "8 am to 5 pm"
+msgstr ""
+
+#: patterns/page-provider.php:22
+msgid "10 am to 7 pm"
+msgstr ""
+
+#: patterns/page-provider.php:24
+msgid "Friday"
+msgstr ""
+
+#: patterns/page-provider.php:24
+msgid "8 am to 1 pm"
+msgstr ""
+
+#: patterns/page-provider.php:34
+msgid "Portrait of Jordan Lee"
+msgstr ""
+
+#: patterns/page-provider.php:42
+#: patterns/providers-grid.php:17
+msgid "Lead specialist"
+msgstr ""
+
+#: patterns/page-provider.php:46
+#: patterns/providers-grid.php:17
+#: patterns/team-grid.php:32
+msgid "Jordan Lee"
+msgstr ""
+
+#: patterns/page-provider.php:50
+msgid "Twenty years on the tools, a 4.9 rating from 310 reviews, and a habit of explaining things until they make sense."
+msgstr ""
+
+#: patterns/page-provider.php:60
+msgid "Book with Jordan"
+msgstr ""
+
+#: patterns/page-provider.php:74
+msgid "About Jordan"
+msgstr ""
+
+#: patterns/page-provider.php:78
+msgid "Jordan founded the practice in 2009 after a decade with a national firm, and still takes the first appointment of the day. Patients mention the same two things: nothing is rushed, and nothing is sold that is not needed."
+msgstr ""
+
+#: patterns/page-provider.php:88
+msgid "Routine check-ups"
+msgstr ""
+
+#: patterns/page-provider.php:92
+msgid "Complex repairs"
+msgstr ""
+
+#: patterns/page-provider.php:96
+#: patterns/services-tabs.php:22
+msgid "Full replacements"
+msgstr ""
+
+#: patterns/page-provider.php:100
+#: patterns/services-tabs.php:22
+msgid "Second opinions"
+msgstr ""
+
+#: patterns/page-provider.php:104
+msgid "Anxious first-timers"
+msgstr ""
+
+#: patterns/page-provider.php:108
+msgid "Urgent same-day cases"
+msgstr ""
+
+#: patterns/page-service-detail.php
+msgctxt "Pattern title"
+msgid "Page: service detail"
+msgstr ""
+
+#: patterns/page-service-detail.php:20
+msgid "A short assessment, a written plan and a price you can take home. Nothing starts until you say so."
+msgstr ""
+
+#: patterns/page-service-detail.php:21
+msgid "Most visits take under an hour. You can pause at any point and we explain each step as we go."
+msgstr ""
+
+#: patterns/page-service-detail.php:22
+msgid "Clear aftercare notes, a check-in call within the week and a direct line if anything feels off."
+msgstr ""
+
+#: patterns/page-service-detail.php:25
+msgid "Assessment and plan"
+msgstr ""
+
+#: patterns/page-service-detail.php:26
+msgid "Standard service"
+msgstr ""
+
+#: patterns/page-service-detail.php:27
+msgid "Extended service"
+msgstr ""
+
+#: patterns/page-service-detail.php:27
+msgid "from $620"
+msgstr ""
+
+#: patterns/page-service-detail.php:28
+msgid "Follow-up visit"
+msgstr ""
+
+#: patterns/page-service-detail.php:30
+msgid "Price list (PDF)"
+msgstr ""
+
+#: patterns/page-service-detail.php:43
+#: patterns/services-grid-prices.php:19
+msgid "Premium service"
+msgstr ""
+
+#: patterns/page-service-detail.php:47
+msgid "Our most thorough package: a full assessment, the complete service and a two-year guarantee, explained in plain words and priced before we start."
+msgstr ""
+
+#: patterns/page-service-detail.php:53
+#: patterns/services-grid-prices.php:61
+msgid "Book this service"
+msgstr ""
+
+#: patterns/page-service-detail.php:67
+msgid "The service being carried out"
+msgstr ""
+
+#: patterns/page-service-detail.php:89
+msgid "Equipment past its service date"
+msgstr ""
+
+#: patterns/page-service-detail.php:93
+msgid "Recurring faults that smaller repairs did not fix"
+msgstr ""
+
+#: patterns/page-service-detail.php:97
+msgid "Anyone who wants one visit and a long guarantee"
+msgstr ""
+
+#: patterns/page-service-detail.php:176
+msgid "Front desk"
+msgstr ""
+
+#: patterns/page-service-detail.php:180
+msgid "Mon to Fri 7 am to 7 pm"
+msgstr ""
+
+#: patterns/page-service-detail.php:188
+msgid "Not sure this is right for you?"
+msgstr ""
+
+#: patterns/page-service-detail.php:192
+msgid "A free assessment tells you. No pressure, no obligation."
+msgstr ""
+
+#: patterns/payment-plan-band.php
+msgctxt "Pattern title"
+msgid "Payment plan band"
+msgstr ""
+
+#: patterns/payment-plan-band.php:22
+msgid "0% plans"
+msgstr ""
+
+#: patterns/payment-plan-band.php:26
+msgid "Spread the cost, pay no interest"
+msgstr ""
+
+#: patterns/payment-plan-band.php:30
+msgid "A $2,400 treatment over 12 months is $200 a month. No deposit, no interest, no fees."
+msgstr ""
+
+#: patterns/payment-plan-band.php:34
+msgid "Example only. Plans are subject to approval and the terms are shown before you sign."
+msgstr ""
+
+#: patterns/payment-plan-band.php:44
+msgid "Check your options"
+msgstr ""
+
+#: patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr ""
+
+#: patterns/post-navigation.php:17
+msgid "Previous"
+msgstr ""
+
+#: patterns/post-navigation.php:19
+msgid "Next"
+msgstr ""
+
 #: patterns/pricing-table.php
 msgctxt "Pattern title"
 msgid "Pricing table"
@@ -666,10 +2673,6 @@ msgstr ""
 
 #: patterns/pricing-table.php:18
 msgid "Simple, upfront pricing"
-msgstr ""
-
-#: patterns/pricing-table.php:26
-msgid "Essential"
 msgstr ""
 
 #: patterns/pricing-table.php:34
@@ -764,6 +2767,80 @@ msgstr ""
 msgid "Approved work is completed, tested and walked through with you before we leave."
 msgstr ""
 
+#: patterns/promo-band.php
+msgctxt "Pattern title"
+msgid "Promo band"
+msgstr ""
+
+#: patterns/promo-band.php:24
+msgid "Seasonal promotion illustration"
+msgstr ""
+
+#: patterns/promo-band.php:32
+msgid "This season"
+msgstr ""
+
+#: patterns/promo-band.php:36
+msgid "Spring check-ups: book two, the second is half price"
+msgstr ""
+
+#: patterns/promo-band.php:40
+msgid "For households and small businesses. Book both visits before the end of the month and we take care of the rest."
+msgstr ""
+
+#: patterns/promo-band.php:46
+msgid "Book the pair"
+msgstr ""
+
+#: patterns/providers-grid.php
+msgctxt "Pattern title"
+msgid "Providers grid"
+msgstr ""
+
+#: patterns/providers-grid.php:18
+#: patterns/team-grid.php:56
+msgid "Priya Patel"
+msgstr ""
+
+#: patterns/providers-grid.php:18
+#: patterns/providers-grid.php:19
+#: patterns/services-tabs.php:21
+msgid "Specialist"
+msgstr ""
+
+#: patterns/providers-grid.php:18
+msgid "Next: tomorrow"
+msgstr ""
+
+#: patterns/providers-grid.php:19
+msgid "Sam Okafor"
+msgstr ""
+
+#: patterns/providers-grid.php:20
+msgid "Maria Santos"
+msgstr ""
+
+#: patterns/providers-grid.php:20
+msgid "Associate"
+msgstr ""
+
+#: patterns/providers-grid.php:26
+msgid "Choose who you see"
+msgstr ""
+
+#: patterns/related-posts.php
+msgctxt "Pattern title"
+msgid "Related posts"
+msgstr ""
+
+#: patterns/related-posts.php:18
+msgid "Keep reading"
+msgstr ""
+
+#: patterns/related-posts.php:37
+msgid "No related posts yet."
+msgstr ""
+
 #: patterns/reviews-summary.php
 msgctxt "Pattern title"
 msgid "Reviews summary"
@@ -812,11 +2889,6 @@ msgstr ""
 
 #: patterns/service-detail.php:48
 msgid "Same-week appointments in most areas"
-msgstr ""
-
-#: patterns/service-detail.php:64
-#: patterns/trust-bar.php:30
-msgid "Licensed and insured"
 msgstr ""
 
 #: patterns/service-detail.php:80
@@ -910,6 +2982,104 @@ msgstr ""
 msgid "Walk through your options with a specialist on site."
 msgstr ""
 
+#: patterns/services-grid-prices.php
+msgctxt "Pattern title"
+msgid "Services grid with prices"
+msgstr ""
+
+#: patterns/services-grid-prices.php:16
+msgid "A full inspection with a written report the same day."
+msgstr ""
+
+#: patterns/services-grid-prices.php:17
+msgid "Protection plan"
+msgstr ""
+
+#: patterns/services-grid-prices.php:17
+msgid "Two visits a year and priority scheduling."
+msgstr ""
+
+#: patterns/services-grid-prices.php:18
+msgid "Same-day repair"
+msgstr ""
+
+#: patterns/services-grid-prices.php:18
+msgid "Call before noon and we are there before close."
+msgstr ""
+
+#: patterns/services-grid-prices.php:19
+msgid "Our most thorough package, with a two-year guarantee."
+msgstr ""
+
+#: patterns/services-grid-prices.php:20
+msgid "Scheduled maintenance"
+msgstr ""
+
+#: patterns/services-grid-prices.php:20
+msgid "Quarterly visits that keep everything running."
+msgstr ""
+
+#: patterns/services-grid-prices.php:21
+msgid "Consultation"
+msgstr ""
+
+#: patterns/services-grid-prices.php:21
+msgid "Thirty minutes with a specialist, in person or by video."
+msgstr ""
+
+#: patterns/services-grid-prices.php:21
+msgid "Free"
+msgstr ""
+
+#: patterns/services-grid-prices.php:27
+msgid "Services and prices"
+msgstr ""
+
+#: patterns/services-grid-prices.php:31
+msgid "Every price is a starting price, confirmed in writing before any work begins."
+msgstr ""
+
+#: patterns/services-tabs.php
+msgctxt "Pattern title"
+msgid "Services in tabs"
+msgstr ""
+
+#: patterns/services-tabs.php:17
+msgid "Everyday"
+msgstr ""
+
+#: patterns/services-tabs.php:18
+msgid "Check-ups and inspections"
+msgstr ""
+
+#: patterns/services-tabs.php:18
+msgid "Cleaning and tune-ups"
+msgstr ""
+
+#: patterns/services-tabs.php:18
+msgid "Small repairs on the spot"
+msgstr ""
+
+#: patterns/services-tabs.php:22
+msgid "Custom installations"
+msgstr ""
+
+#: patterns/services-tabs.php:26
+msgid "Same-day callouts"
+msgstr ""
+
+#: patterns/services-tabs.php:26
+msgid "Temporary fixes while parts arrive"
+msgstr ""
+
+#: patterns/services-tabs.php:33
+msgid "Everything we do"
+msgstr ""
+
+#: patterns/services-tabs.php:62
+msgid "Ask about these services"
+msgstr ""
+
 #: patterns/stats-band.php
 msgctxt "Pattern title"
 msgid "Stats band"
@@ -931,6 +3101,321 @@ msgstr ""
 msgid "Emergency line"
 msgstr ""
 
+#: patterns/styleguide-block-styles.php
+msgctxt "Pattern title"
+msgid "Style guide: block styles"
+msgstr ""
+
+#: patterns/styleguide-block-styles.php:20
+#: patterns/styleguide.php:25
+msgid "Block styles"
+msgstr ""
+
+#: patterns/styleguide-block-styles.php:24
+msgid "One sample per registered Keel style. The list is generated from the registration table, so a new style appears here the day it ships."
+msgstr ""
+
+#: patterns/styleguide-buttons.php
+msgctxt "Pattern title"
+msgid "Style guide: buttons"
+msgstr ""
+
+#: patterns/styleguide-buttons.php:16
+msgid "Default"
+msgstr ""
+
+#: patterns/styleguide-buttons.php:16
+msgid "Primary fill. Hover and active darken the fill toward the contrast colour; focus shows the two-tone ring."
+msgstr ""
+
+#: patterns/styleguide-buttons.php:17
+msgid "Outline (core)"
+msgstr ""
+
+#: patterns/styleguide-buttons.php:17
+msgid "Core style: a border in the current text colour and no fill."
+msgstr ""
+
+#: patterns/styleguide-buttons.php:18
+msgid "Accent fill for the second action on a page."
+msgstr ""
+
+#: patterns/styleguide-buttons.php:19
+msgid "Primary text and border on a transparent background, for quiet actions."
+msgstr ""
+
+#: patterns/styleguide-buttons.php:20
+msgid "The default button with the pill radius."
+msgstr ""
+
+#: patterns/styleguide-buttons.php:26
+#: patterns/styleguide.php:23
+msgid "Buttons"
+msgstr ""
+
+#: patterns/styleguide-buttons.php:30
+msgid "Every button is at least 44 pixels tall. Hover, focus and active states come from theme.json and the focus ring, so they follow the variation."
+msgstr ""
+
+#: patterns/styleguide-colors.php
+msgctxt "Pattern title"
+msgid "Style guide: colours"
+msgstr ""
+
+#: patterns/styleguide-colors.php:21
+#: patterns/styleguide.php:19
+msgid "Colours"
+msgstr ""
+
+#: patterns/styleguide-colors.php:25
+msgid "The twelve palette slugs every pattern and block style is built on. Values are read from the active variation and your Styles edits, so this page always shows the colours in use."
+msgstr ""
+
+#: patterns/styleguide-colors.php:47
+msgid "Contrast pairs"
+msgstr ""
+
+#: patterns/styleguide-colors.php:51
+msgid "The pairs Keel promises to keep readable, checked against the live values. Text pairs need 4.5 to 1, large text and interface pairs 3 to 1."
+msgstr ""
+
+#: patterns/styleguide-colors.php:55
+msgid "Foreground"
+msgstr ""
+
+#: patterns/styleguide-colors.php:55
+msgid "Background"
+msgstr ""
+
+#: patterns/styleguide-colors.php:55
+msgid "Ratio"
+msgstr ""
+
+#: patterns/styleguide-colors.php:55
+msgid "Minimum"
+msgstr ""
+
+#: patterns/styleguide-colors.php:55
+msgid "Result"
+msgstr ""
+
+#: patterns/styleguide-colors.php:62
+msgid "Pass"
+msgstr ""
+
+#: patterns/styleguide-colors.php:62
+msgid "Fail"
+msgstr ""
+
+#: patterns/styleguide-forms.php
+msgctxt "Pattern title"
+msgid "Style guide: forms"
+msgstr ""
+
+#: patterns/styleguide-forms.php:15
+msgid "Name"
+msgstr ""
+
+#: patterns/styleguide-forms.php:15
+msgid "Email"
+msgstr ""
+
+#: patterns/styleguide-forms.php:15
+msgid "Preferred time"
+msgstr ""
+
+#: patterns/styleguide-forms.php:15
+msgid "Message"
+msgstr ""
+
+#: patterns/styleguide-forms.php:15
+msgid "Consent to be contacted"
+msgstr ""
+
+#: patterns/styleguide-forms.php:20
+#: patterns/styleguide.php:24
+msgid "Forms"
+msgstr ""
+
+#: patterns/styleguide-forms.php:24
+msgid "Keel ships no form plugin and no form markup of its own. Core's Search block shows the field and button styling that any form plugin inherits."
+msgstr ""
+
+#: patterns/styleguide-forms.php:30
+msgid "The contact shell expects"
+msgstr ""
+
+#: patterns/styleguide-icons.php
+msgctxt "Pattern title"
+msgid "Style guide: icons"
+msgstr ""
+
+#: patterns/styleguide-icons.php:20
+#: patterns/styleguide.php:26
+msgid "Icons"
+msgstr ""
+
+#: patterns/styleguide-icons.php:24
+msgid "Twelve single-colour SVG files in the theme, placed as Image blocks with the keel-icon class so they invert on dark bands. Decorative: every one has an empty alt."
+msgstr ""
+
+#: patterns/styleguide-shape.php
+msgctxt "Pattern title"
+msgid "Style guide: shape"
+msgstr ""
+
+#: patterns/styleguide-shape.php:24
+#: patterns/styleguide.php:22
+msgid "Shape"
+msgstr ""
+
+#: patterns/styleguide-shape.php:28
+msgid "Radius"
+msgstr ""
+
+#: patterns/styleguide-shape.php:46
+msgid "Shadows and borders"
+msgstr ""
+
+#. translators: %s: border width such as 1px.
+#: patterns/styleguide-shape.php:67
+#, php-format
+msgid "%s solid, in the border colour"
+msgstr ""
+
+#: patterns/styleguide-shape.php:77
+msgid "Focus"
+msgstr ""
+
+#. translators: %s: the focus ring value such as "2px solid var(--wp--preset--color--primary)".
+#: patterns/styleguide-shape.php:84
+#, php-format
+msgid "Every focusable element shows a two-tone ring: %s, with a halo in the base colour so it stays visible on any background. Press Tab to see it on the button below."
+msgstr ""
+
+#: patterns/styleguide-shape.php:92
+msgid "Focus me"
+msgstr ""
+
+#: patterns/styleguide-spacing.php
+msgctxt "Pattern title"
+msgid "Style guide: spacing"
+msgstr ""
+
+#: patterns/styleguide-spacing.php:21
+#: patterns/styleguide.php:21
+msgid "Spacing"
+msgstr ""
+
+#: patterns/styleguide-spacing.php:25
+msgid "Eight steps. The small ones are fixed, the large ones scale with the viewport, and every pattern uses them for padding and gaps."
+msgstr ""
+
+#: patterns/styleguide-typography.php
+msgctxt "Pattern title"
+msgid "Style guide: typography"
+msgstr ""
+
+#: patterns/styleguide-typography.php:18
+msgid "Clear prices, honest advice, work that lasts"
+msgstr ""
+
+#: patterns/styleguide-typography.php:23
+#: patterns/styleguide.php:20
+msgid "Typography"
+msgstr ""
+
+#. translators: 1: font family slug such as body or display, 2: font family name.
+#: patterns/styleguide-typography.php:31
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: patterns/styleguide-typography.php:33
+msgid "Fonts are served from the theme, subset to Latin, with metric-matched fallbacks so text does not jump when they load."
+msgstr ""
+
+#: patterns/styleguide-typography.php:39
+msgid "Sizes"
+msgstr ""
+
+#: patterns/styleguide-typography.php:48
+msgid "Headings"
+msgstr ""
+
+#: patterns/styleguide-typography.php:52
+msgid "Heading one (shown as a paragraph: this page already has its h1)"
+msgstr ""
+
+#. translators: %d: heading level from 2 to 6.
+#: patterns/styleguide-typography.php:59
+#, php-format
+msgid "Heading level %d"
+msgstr ""
+
+#: patterns/styleguide-typography.php:66
+msgid "Inline elements"
+msgstr ""
+
+#: patterns/styleguide-typography.php:70
+msgid "Body text with"
+msgstr ""
+
+#: patterns/styleguide-typography.php:70
+msgid "a link"
+msgstr ""
+
+#: patterns/styleguide-typography.php:70
+msgid "strong emphasis"
+msgstr ""
+
+#: patterns/styleguide-typography.php:70
+msgid "italic emphasis"
+msgstr ""
+
+#: patterns/styleguide-typography.php:70
+msgid "a highlight"
+msgstr ""
+
+#: patterns/styleguide-typography.php:70
+msgid "Web Content Accessibility Guidelines"
+msgstr ""
+
+#: patterns/styleguide-typography.php:70
+msgid "and a footnote marker"
+msgstr ""
+
+#: patterns/styleguide-variations.php
+msgctxt "Pattern title"
+msgid "Style guide: variations"
+msgstr ""
+
+#: patterns/styleguide-variations.php:20
+#: patterns/styleguide.php:27
+msgid "Variations"
+msgstr ""
+
+#: patterns/styleguide-variations.php:24
+msgid "Each variation changes only the palette, the fonts and the shape tokens. Everything above re-renders from those values, which is why the same patterns work in every one."
+msgstr ""
+
+#: patterns/styleguide-variations.php:30
+msgid "active"
+msgstr ""
+
+#: patterns/styleguide.php
+msgctxt "Pattern title"
+msgid "Page: style guide"
+msgstr ""
+
+#: patterns/styleguide.php:33
+msgid "Style guide"
+msgstr ""
+
+#: patterns/styleguide.php:37
+msgid "A living reference: every value on this page is read from the active variation and your Styles edits when the page renders."
+msgstr ""
+
 #: patterns/team-grid.php
 msgctxt "Pattern title"
 msgid "Team grid"
@@ -940,20 +3425,12 @@ msgstr ""
 msgid "Meet the team"
 msgstr ""
 
-#: patterns/team-grid.php:32
-msgid "Jordan Lee"
-msgstr ""
-
 #: patterns/team-grid.php:36
 msgid "Owner and lead technician"
 msgstr ""
 
 #: patterns/team-grid.php:40
 msgid "Twenty years on the tools and still answers the phone."
-msgstr ""
-
-#: patterns/team-grid.php:56
-msgid "Priya Patel"
 msgstr ""
 
 #: patterns/team-grid.php:60
@@ -1048,6 +3525,43 @@ msgctxt "Pattern title"
 msgid "Testimonials grid"
 msgstr ""
 
+#: patterns/timeline.php
+msgctxt "Pattern title"
+msgid "Timeline"
+msgstr ""
+
+#: patterns/timeline.php:16
+msgid "Founded"
+msgstr ""
+
+#: patterns/timeline.php:16
+msgid "Two people, one van and a promise to answer every call the same day."
+msgstr ""
+
+#: patterns/timeline.php:17
+msgid "Second location"
+msgstr ""
+
+#: patterns/timeline.php:17
+msgid "A second site opened to cover the north of the county."
+msgstr ""
+
+#: patterns/timeline.php:18
+msgid "Ten thousand jobs"
+msgstr ""
+
+#: patterns/timeline.php:18
+msgid "The ten thousandth job was a repair we did for free: a thank-you to the town."
+msgstr ""
+
+#: patterns/timeline.php:19
+msgid "Today"
+msgstr ""
+
+#: patterns/timeline.php:19
+msgid "Twenty-two people, a 4.9 rating and the same promise as day one."
+msgstr ""
+
 #: patterns/trust-bar.php
 msgctxt "Pattern title"
 msgid "Trust bar"
@@ -1073,8 +3587,30 @@ msgstr ""
 msgid "Two years on every repair"
 msgstr ""
 
+#: patterns/utility-bar.php
+msgctxt "Pattern title"
+msgid "Utility bar"
+msgstr ""
+
+#: patterns/utility-bar.php:16
+msgid "Mon to Fri 7 am to 7 pm, Sat 9 am to 1 pm"
+msgstr ""
+
+#: patterns/utility-bar.php:17
+msgid "123 Harbor Street, Suite 4, Stuart"
+msgstr ""
+
+#: patterns/utility-bar.php:45
+msgid "Urgent?"
+msgstr ""
+
+#: patterns/utility-bar.php:45
+msgid "Same-day slots held every morning."
+msgstr ""
+
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1086,6 +3622,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1097,6 +3634,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1108,6 +3646,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1119,6 +3658,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1130,6 +3670,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1141,6 +3682,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1152,6 +3694,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1163,6 +3706,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1174,6 +3718,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1185,6 +3730,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1196,6 +3742,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1207,6 +3754,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1218,6 +3766,7 @@ msgstr ""
 
 #: theme.json
 #: styles/clinic.json
+#: styles/contrast.json
 #: styles/coral.json
 #: styles/harbor.json
 #: styles/night.json
@@ -1339,6 +3888,11 @@ msgstr ""
 
 #: theme.json
 msgctxt "Template part name"
+msgid "Header with utility bar"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
 msgid "Footer"
 msgstr ""
 
@@ -1375,6 +3929,11 @@ msgstr ""
 #: styles/clinic.json
 msgctxt "Style variation name"
 msgid "Clinic"
+msgstr ""
+
+#: styles/contrast.json
+msgctxt "Style variation name"
+msgid "Contrast"
 msgstr ""
 
 #: styles/coral.json
