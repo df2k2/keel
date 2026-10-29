@@ -41,6 +41,8 @@ const KEEL_PATTERNS    = array(
 	'404-content',
 	'accessibility-statement',
 	'no-results',
+	'mobile-cta-bar',
+	'announcement-bar',
 );
 const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'blog-list', '404-content', 'accessibility-statement' );
 

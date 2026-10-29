@@ -158,8 +158,22 @@
 			"h6": { "typography": { "fontSize": "var(--wp--preset--font-size--md)" } }
 		}
 	},
+	"customTemplates": [
+		{ "name": "page-no-title", "title": "Page without title", "postTypes": [ "page" ] },
+		{ "name": "page-landing", "title": "Landing page", "postTypes": [ "page" ] },
+		{ "name": "page-service", "title": "Service page", "postTypes": [ "page" ] },
+		{ "name": "page-location", "title": "Location page", "postTypes": [ "page" ] }
+	],
 	"templateParts": [
 		{ "name": "header", "area": "header", "title": "Header" },
-		{ "name": "footer", "area": "footer", "title": "Footer" }
+		{ "name": "header-centered", "area": "header", "title": "Header: centered" },
+		{ "name": "header-transparent", "area": "header", "title": "Header: transparent" },
+		{ "name": "footer", "area": "footer", "title": "Footer" },
+		{ "name": "footer-minimal", "area": "footer", "title": "Footer: minimal" },
+		{ "name": "cta-band", "area": "uncategorized", "title": "Call-to-action band" },
+		{ "name": "mobile-cta-bar", "area": "uncategorized", "title": "Mobile CTA bar" },
+		{ "name": "announcement-bar", "area": "uncategorized", "title": "Announcement bar" },
+		{ "name": "post-meta", "area": "uncategorized", "title": "Post meta" },
+		{ "name": "comments", "area": "uncategorized", "title": "Comments" }
 	]
 }
