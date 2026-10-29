@@ -102,6 +102,10 @@ test( 'keyboard journey: skip link, menu, accordion, carousel, lightbox', async 
 	await trigger.focus();
 	await page.keyboard.press( 'Enter' );
 	await expect( page.locator( '.wp-lightbox-overlay.active' ) ).toBeVisible();
+	// Core moves focus into the dialog after it opens; Escape is handled there, so wait for that.
+	await expect(
+		page.locator( '.wp-lightbox-overlay.active :focus' )
+	).toHaveCount( 1 );
 	await page.keyboard.press( 'Escape' );
 	await expect( page.locator( '.wp-lightbox-overlay.active' ) ).toHaveCount(
 		0
