@@ -22,9 +22,9 @@ for ( const [ path, patternHeading ] of [
 				english
 			);
 		}
-		await expect(
-			page.getByText( 'Solicitar presupuesto' ).first()
-		).toBeVisible();
+		await expect( page.getByText( 'Saltar al contenido' ) ).toHaveCount(
+			1
+		);
 		expect(
 			await page.evaluate( () => document.documentElement.scrollWidth )
 		).toBeLessThanOrEqual( 360 );
