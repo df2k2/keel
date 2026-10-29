@@ -29,8 +29,20 @@ const KEEL_PATTERNS    = array(
 	'faq',
 	'hours-location',
 	'gallery',
+	'cta-band-primary',
+	'cta-band-contrast',
+	'cta-split',
+	'cta-phone',
+	'contact-shell',
+	'footer-columns',
+	'footer-simple',
+	'blog-list',
+	'blog-grid',
+	'404-content',
+	'accessibility-statement',
+	'no-results',
 );
-const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text' );
+const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'blog-list', '404-content', 'accessibility-statement' );
 
 $keel_registry = WP_Block_Patterns_Registry::get_instance();
 foreach ( KEEL_PATTERNS as $keel_slug ) {
@@ -61,5 +73,18 @@ if ( 4 !== substr_count( $keel_faq, '<details' ) || 4 !== substr_count( $keel_fa
 $keel_gallery = do_blocks( '<!-- wp:pattern {"slug":"keel/gallery"} /-->' );
 if ( 6 !== substr_count( $keel_gallery, '<img' ) ) {
 	WP_CLI::error( 'keel/gallery must render six images, found ' . substr_count( $keel_gallery, '<img' ) . '.' );
+}
+foreach ( array( 'footer-columns', 'footer-simple' ) as $keel_footer ) {
+	if ( ! str_contains( do_blocks( '<!-- wp:pattern {"slug":"keel/' . $keel_footer . '"} /-->' ), date_i18n( 'Y' ) ) ) {
+		WP_CLI::error( "keel/{$keel_footer} must print the current year." );
+	}
+}
+$keel_404 = do_blocks( '<!-- wp:pattern {"slug":"keel/404-content"} /-->' );
+if ( ! str_contains( $keel_404, 'wp-block-search' ) ) {
+	WP_CLI::error( 'keel/404-content must contain a search block.' );
+}
+$keel_a11y = do_blocks( '<!-- wp:pattern {"slug":"keel/accessibility-statement"} /-->' );
+if ( 6 !== substr_count( $keel_a11y, '<h2' ) ) {
+	WP_CLI::error( 'keel/accessibility-statement must have six h2 sections, found ' . substr_count( $keel_a11y, '<h2' ) . '.' );
 }
 WP_CLI::success( count( KEEL_PATTERNS ) . ' patterns registered and rendering.' );
