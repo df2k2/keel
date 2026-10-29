@@ -4,6 +4,11 @@
 	"settings": {
 		"appearanceTools": true,
 		"useRootPaddingAwareAlignments": true,
+		"blocks": {
+			"core/image": {
+				"lightbox": { "enabled": true, "allowEditing": true }
+			}
+		},
 		"layout": {
 			"contentSize": "68rem",
 			"wideSize": "90rem"
