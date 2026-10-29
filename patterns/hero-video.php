@@ -26,7 +26,7 @@ $keel_image = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 
 	<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 	<div class="wp-block-group">
-		<!-- wp:image {"width":"24px","height":"24px","sizeSlug":"full","className":"keel-icon"} -->
+		<!-- wp:image {"lightbox":{"enabled":false},"width":"24px","height":"24px","sizeSlug":"full","className":"keel-icon"} -->
 <figure class="wp-block-image size-full is-resized keel-icon"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/play.svg' ) ); ?>" alt="" style="width:24px;height:24px"/></figure>
 <!-- /wp:image -->
 

@@ -123,6 +123,6 @@
 		}
 	},
 	"styles": {
-		"css": ":root{color-scheme:dark}.keel-icon img{filter:invert(1)}.is-style-band .keel-icon img,.has-contrast-background-color .keel-icon img{filter:none}"
+		"css": ":root{--keel-color-scheme:dark;color-scheme:dark}.keel-icon img{filter:invert(1)}.is-style-band .keel-icon img,.has-contrast-background-color .keel-icon img{filter:none}"
 	}
 }

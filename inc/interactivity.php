@@ -33,15 +33,20 @@ add_action( 'init', __NAMESPACE__ . '\\register_script_modules' );
  *
  * @param string                $content    Block HTML.
  * @param array<string, string> $attributes Attribute name => value.
+ * @param string[]              $classes    Class names to append to the tag's class attribute.
  * @return string Updated HTML, or the original when it has no tag.
  */
-function add_directives( string $content, array $attributes ): string {
+function add_directives( string $content, array $attributes, array $classes = array() ): string {
 	$processor = new \WP_HTML_Tag_Processor( $content );
 	if ( ! $processor->next_tag() ) {
 		return $content;
 	}
 	foreach ( $attributes as $name => $value ) {
 		$processor->set_attribute( $name, $value );
+	}
+	if ( array() !== $classes ) {
+		$existing = $processor->get_attribute( 'class' );
+		$processor->set_attribute( 'class', trim( ( is_string( $existing ) ? $existing . ' ' : '' ) . implode( ' ', $classes ) ) );
 	}
 	return $processor->get_updated_html();
 }
@@ -66,7 +71,8 @@ function filter_template_part( string $content, array $block ): string {
 					'data-wp-init'                    => 'callbacks.init',
 					'data-wp-on-async-window--scroll' => 'callbacks.onScroll',
 					'data-wp-class--is-scrolled'      => 'context.scrolled',
-				)
+				),
+				'header-transparent' === $slug ? array( 'keel-header', 'keel-header--transparent' ) : array( 'keel-header' )
 			)
 		);
 	}
@@ -167,7 +173,7 @@ function filter_action_buttons( string $content, array $block ): string {
 			continue;
 		}
 		$processor = new \WP_HTML_Tag_Processor( $content );
-		if ( ! $processor->next_tag( 'button' ) ) {
+		if ( ! $processor->next_tag( array( 'tag_name' => 'button' ) ) ) {
 			return $content;
 		}
 		$processor->set_attribute( 'data-wp-on--click', $action[0] );

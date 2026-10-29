@@ -48,7 +48,7 @@ $keel_image = get_theme_file_uri( 'assets/images/placeholder-portrait.svg' );
 
 		<!-- wp:column {"verticalAlignment":"center","width":"45%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%">
-			<!-- wp:image {"sizeSlug":"large","className":"is-style-soft"} -->
+			<!-- wp:image {"lightbox":{"enabled":false},"sizeSlug":"large","className":"is-style-soft"} -->
 			<figure class="wp-block-image size-large is-style-soft"><img src="<?php echo esc_url( $keel_image ); ?>" alt=""/></figure>
 			<!-- /wp:image -->
 		</div>

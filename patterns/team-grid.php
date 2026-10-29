@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group is-style-card">
-				<!-- wp:image {"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
+				<!-- wp:image {"lightbox":{"enabled":false},"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
 				<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-avatar.svg' ) ); ?>" alt="" style="width:96px;height:96px"/></figure>
 				<!-- /wp:image -->
 
@@ -48,7 +48,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group is-style-card">
-				<!-- wp:image {"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
+				<!-- wp:image {"lightbox":{"enabled":false},"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
 				<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-avatar.svg' ) ); ?>" alt="" style="width:96px;height:96px"/></figure>
 				<!-- /wp:image -->
 
@@ -72,7 +72,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group is-style-card">
-				<!-- wp:image {"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
+				<!-- wp:image {"lightbox":{"enabled":false},"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
 				<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-avatar.svg' ) ); ?>" alt="" style="width:96px;height:96px"/></figure>
 				<!-- /wp:image -->
 
@@ -96,7 +96,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group is-style-card">
-				<!-- wp:image {"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
+				<!-- wp:image {"lightbox":{"enabled":false},"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
 				<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-avatar.svg' ) ); ?>" alt="" style="width:96px;height:96px"/></figure>
 				<!-- /wp:image -->
 

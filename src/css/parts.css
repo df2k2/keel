@@ -48,6 +48,29 @@
 	line-height: 1;
 }
 
+/* Transparent header: only when the page's first block (directly in main, or first in the post content) is a Cover, and only until scrolled. */
+.keel-header--transparent:has( + main > .wp-block-cover:first-child ),
+.keel-header--transparent:has( + main > :first-child > .wp-block-cover:first-child ) {
+	position: sticky;
+	inset-block-start: 0;
+	min-block-size: var( --keel-header-block-size );
+	margin-block-end: calc( -1 * var( --keel-header-block-size ) );
+	transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+	&:not( .is-scrolled ) {
+		background: transparent;
+		color: var( --wp--preset--color--base );
+	}
+
+	&:not( .is-scrolled ) a:not( .wp-block-button__link ) {
+		color: inherit;
+	}
+
+	&.is-scrolled {
+		box-shadow: var( --wp--custom--shadow--sm );
+	}
+}
+
 .keel-mobile-cta-bar {
 	display: none;
 }

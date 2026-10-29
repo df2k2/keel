@@ -17,11 +17,22 @@ test( 'home renders with landmarks and a skip link first in tab order', async ( 
 	await expect( page.locator( ':focus' ) ).toHaveClass( /skip-link/ );
 } );
 
-test( 'no theme JavaScript loads on the front end', async ( { page } ) => {
+test( 'only the header and announcement modules load on the front page', async ( {
+	page,
+} ) => {
 	await page.goto( '/' );
-	expect( await page.locator( 'script[src*="/themes/keel/"]' ).count() ).toBe(
-		0
-	);
+	const sources = await page
+		.locator( 'script[src*="/themes/keel/"]' )
+		.evaluateAll( ( nodes ) =>
+			nodes.map(
+				( node ) => node.src.split( '/' ).pop().split( '?' )[ 0 ]
+			)
+		);
+	expect( sources.sort() ).toEqual( [
+		'announcement.js',
+		'carousel.js',
+		'header.js',
+	] );
 } );
 
 test( 'no external requests', async ( { page } ) => {
@@ -54,5 +65,24 @@ test( 'applying the Coral variation changes the primary color token', async ( {
 		expect( value.toUpperCase() ).toBe( '#B9452F' );
 	} finally {
 		apply( 'harbor' );
+	}
+} );
+
+test( 'applying Night switches to a dark colour scheme', async ( { page } ) => {
+	apply( 'night' );
+	try {
+		await page.goto( '/' );
+		expect(
+			await page.evaluate(
+				() => getComputedStyle( document.documentElement ).colorScheme
+			)
+		).toBe( 'dark' );
+		expect(
+			await page.evaluate(
+				() => getComputedStyle( document.body ).backgroundColor
+			)
+		).toBe( 'rgb(15, 23, 36)' );
+	} finally {
+		apply( 'clinic' );
 	}
 } );
