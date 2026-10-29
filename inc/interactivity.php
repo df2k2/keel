@@ -90,8 +90,21 @@ function filter_template_part( string $content, array $block ): string {
 						)
 					),
 					'data-wp-init'         => 'callbacks.restore',
+					'aria-label'           => __( 'Announcement', 'keel' ),
 					'data-wp-bind--hidden' => 'context.dismissed',
 				)
+			)
+		);
+	}
+	if ( 'cta-band' === $slug ) {
+		return add_directives( $content, array( 'aria-label' => __( 'Call to action', 'keel' ) ) );
+	}
+	if ( 'mobile-cta-bar' === $slug ) {
+		return add_directives(
+			$content,
+			array(
+				'role'       => 'navigation',
+				'aria-label' => __( 'Quick actions', 'keel' ),
 			)
 		);
 	}
@@ -123,6 +136,16 @@ function block_has_class( array $block, string $class_name ): bool {
  * @return string Rendered group with directives.
  */
 function filter_carousel_group( string $content, array $block ): string {
+	if ( block_has_class( $block, 'keel-carousel__track' ) ) {
+		return add_directives(
+			$content,
+			array(
+				'role'       => 'region',
+				'aria-label' => __( 'Testimonials', 'keel' ),
+				'tabindex'   => '0',
+			)
+		);
+	}
 	if ( ! block_has_class( $block, 'keel-carousel' ) ) {
 		return $content;
 	}

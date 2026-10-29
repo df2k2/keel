@@ -16,6 +16,8 @@ defined( 'ABSPATH' ) || exit;
  */
 function enqueue_styles(): void {
 	wp_enqueue_style( 'keel', get_theme_file_uri( 'build/css/keel.css' ), array(), KEEL_VERSION );
+	// With a path, core inlines the stylesheet when it fits the inline size limit: one round trip less before first paint.
+	wp_style_add_data( 'keel', 'path', get_theme_file_path( 'build/css/keel.css' ) );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_styles' );
 

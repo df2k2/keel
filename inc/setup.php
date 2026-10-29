@@ -51,3 +51,16 @@ function print_skip_link(): void {
 add_action( 'wp_body_open', __NAMESPACE__ . '\\print_skip_link' );
 remove_action( 'wp_enqueue_scripts', 'wp_enqueue_block_template_skip_link' );
 remove_action( 'wp_footer', 'the_block_template_skip_link' );
+
+/**
+ * Keeps the comment form title at heading level 2 so the outline never skips a level.
+ *
+ * @param array<string, mixed> $defaults Comment form defaults.
+ * @return array<string, mixed> Defaults with an h2 reply title.
+ */
+function comment_form_title_level( array $defaults ): array {
+	$defaults['title_reply_before'] = '<h2 id="reply-title" class="comment-reply-title">';
+	$defaults['title_reply_after']  = '</h2>';
+	return $defaults;
+}
+add_filter( 'comment_form_defaults', __NAMESPACE__ . '\\comment_form_title_level' );

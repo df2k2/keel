@@ -35,8 +35,8 @@ $keel_copyright = sprintf(
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"level":3,"fontSize":"sm"} -->
-			<h3 class="wp-block-heading has-sm-font-size"><?php esc_html_e( 'Services', 'keel' ); ?></h3>
+			<!-- wp:heading {"fontSize":"sm"} -->
+			<h2 class="wp-block-heading has-sm-font-size"><?php esc_html_e( 'Services', 'keel' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:list {"fontSize":"sm"} -->
@@ -63,8 +63,8 @@ $keel_copyright = sprintf(
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"level":3,"fontSize":"sm"} -->
-			<h3 class="wp-block-heading has-sm-font-size"><?php esc_html_e( 'Contact', 'keel' ); ?></h3>
+			<!-- wp:heading {"fontSize":"sm"} -->
+			<h2 class="wp-block-heading has-sm-font-size"><?php esc_html_e( 'Contact', 'keel' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"fontSize":"sm"} -->
@@ -75,8 +75,8 @@ $keel_copyright = sprintf(
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"level":3,"fontSize":"sm"} -->
-			<h3 class="wp-block-heading has-sm-font-size"><?php esc_html_e( 'Hours', 'keel' ); ?></h3>
+			<!-- wp:heading {"fontSize":"sm"} -->
+			<h2 class="wp-block-heading has-sm-font-size"><?php esc_html_e( 'Hours', 'keel' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"fontSize":"sm"} -->

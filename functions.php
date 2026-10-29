@@ -14,4 +14,5 @@ require get_theme_file_path( 'inc/enqueue.php' );
 require get_theme_file_path( 'inc/fonts.php' );
 require get_theme_file_path( 'inc/block-styles.php' );
 require get_theme_file_path( 'inc/interactivity.php' );
+require get_theme_file_path( 'inc/speculation.php' );
 require get_theme_file_path( 'inc/patterns.php' );

@@ -54,6 +54,10 @@ function keel_seed_page( string $slug, string $title, array $patterns, string $t
 	return $id;
 }
 
+if ( $keel_attachment > 0 ) {
+	update_post_meta( $keel_attachment, '_wp_attachment_image_alt', 'Placeholder illustration' );
+}
+
 $keel_pages = array(
 	'home'     => keel_seed_page( 'home', 'Home', array( 'hero-image', 'trust-bar', 'services-grid-3', 'process-steps', 'stats-band', 'testimonials-carousel', 'faq', 'hours-location', 'cta-band-primary' ) ),
 	'service'  => keel_seed_page( 'service', 'Repairs', array( 'service-detail', 'team-grid', 'pricing-table', 'faq', 'cta-split' ), 'page-service', 'Fast, lasting fixes for the problems that stop your day.' ),
@@ -100,14 +104,8 @@ foreach ( $keel_posts as $keel_slug => $keel_post ) {
 	}
 }
 
-$keel_menu = get_posts(
-	array(
-		'post_type'      => 'wp_navigation',
-		'post_status'    => 'publish',
-		'posts_per_page' => 1,
-	)
-);
-if ( array() === $keel_menu ) {
+$keel_menu = get_page_by_path( 'primary', OBJECT, 'wp_navigation' );
+if ( ! $keel_menu instanceof WP_Post ) {
 	$keel_links      = '';
 	$keel_menu_items = array(
 		'service'  => 'Services',
