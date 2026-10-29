@@ -19,7 +19,7 @@ Requirements: Node 24 or later, PHP 8.3 or later, Composer 2, Docker (for `wp-en
 | `npm run test:e2e` | Playwright against `wp-env`: smoke, fonts, every template, interactivity, axe and keyboard, Spanish and RTL |
 | `npm run test:a11y` / `npm run test:i18n` | just the accessibility or the i18n specs |
 | `npm run test:perf` | Lighthouse CI on five demo pages with `tests/budgets.json` |
-| `npm run i18n:pot` / `npm run i18n:check` / `npm run i18n:build` | regenerate, verify or compile `languages/` |
+| `npm run i18n:pot` / `npm run i18n:check` / `npm run i18n:build` | regenerate, verify or compile `languages/` (`.po` to `.mo`; no `.l10n.php`, Theme Check rejects non-ASCII PHP) |
 | `npm run check:forbidden` | grep gate against eval, superglobals, remote calls and file writes in shipped code |
 | `npm run package` | build the release zip and manifest into `dist/` |
 

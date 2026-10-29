@@ -63,7 +63,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- wp:column {"verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center">
 			<!-- wp:image {"lightbox":{"enabled":false},"sizeSlug":"large","className":"is-style-soft"} -->
-			<figure class="wp-block-image size-large is-style-soft"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-map.svg' ) ); ?>" alt="<?php esc_html_e( 'Map showing our location', 'keel' ); ?>"/></figure>
+			<figure class="wp-block-image size-large is-style-soft"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-map.svg' ) ); ?>" alt="<?php esc_attr_e( 'Map showing our location', 'keel' ); ?>"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

@@ -7,7 +7,10 @@ module.exports = {
 		collect: {
 			url: pages.map( ( path ) => base + path ),
 			numberOfRuns: 3,
-			settings: { budgetPath: 'tests/budgets.json' },
+			settings: {
+				budgetPath: 'tests/budgets.json',
+				chromeFlags: '--no-sandbox --disable-dev-shm-usage',
+			},
 		},
 		assert: {
 			assertions: {

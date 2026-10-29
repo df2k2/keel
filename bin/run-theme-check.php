@@ -37,7 +37,7 @@ foreach ( $GLOBALS['themechecks'] as $keel_check ) {
 			$keel_level = 'INFO';
 		}
 		++$keel_counts[ $keel_level ];
-		WP_CLI::log( '[' . $keel_level . '] ' . trim( wp_strip_all_tags( html_entity_decode( $keel_error ) ) ) );
+		WP_CLI::log( '[' . $keel_level . '] ' . trim( html_entity_decode( wp_strip_all_tags( $keel_error ), ENT_QUOTES ) ) );
 	}
 }
 
