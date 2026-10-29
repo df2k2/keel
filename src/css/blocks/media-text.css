@@ -1,0 +1,17 @@
+/* core/media-text base rules. */
+
+.wp-block-media-text .wp-block-media-text__content {
+	padding-inline: var( --wp--preset--spacing--50 );
+}
+
+.wp-block-media-text .wp-block-media-text__media img {
+	border-radius: var( --wp--custom--radius--md );
+}
+
+@media ( width <= 600px ) {
+
+	.wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__content {
+		padding-block: var( --wp--preset--spacing--40 ) 0;
+		padding-inline: 0;
+	}
+}

@@ -3,3 +3,22 @@
 .wp-block-group:where( .has-background ) {
 	padding-inline: var( --wp--preset--spacing--40 );
 }
+
+/* Styles: textured, wave bottom. */
+
+.wp-block-group.is-style-textured {
+	padding: var( --wp--preset--spacing--50 ) var( --wp--preset--spacing--40 );
+	background-color: var( --wp--preset--color--surface );
+	background-image: radial-gradient( circle, color-mix( in srgb, var( --wp--preset--color--contrast ) 12%, transparent ) 1px, transparent 1.5px );
+	background-size: 14px 14px;
+}
+
+.wp-block-group.is-style-wave-bottom {
+	padding-block: var( --wp--preset--spacing--50 ) var( --wp--preset--spacing--70 );
+	padding-inline: var( --wp--preset--spacing--40 );
+	background-color: var( --wp--preset--color--surface );
+	mask-image: linear-gradient( #000, #000 ), url( "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'><path d='M0 0h120v16c-30 0-30 24-60 24S30 16 0 16z'/></svg>" );
+	mask-size: 100% calc( 100% - 2rem ), 7.5rem 2rem;
+	mask-position: top, bottom;
+	mask-repeat: no-repeat, repeat-x;
+}

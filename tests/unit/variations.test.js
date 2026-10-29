@@ -11,6 +11,7 @@ test( 'each variation declares exactly the theme palette slugs and passes contra
 		'coral',
 		'palm',
 		'night',
+		'contrast',
 	] ) {
 		const variation = JSON.parse( read( `styles/${ file }.json` ) );
 		assert.equal( variation.version, 3, `${ file } version` );

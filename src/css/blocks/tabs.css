@@ -1,0 +1,50 @@
+/* core/tabs base rules: underlined tab buttons, roomy panels. */
+
+.wp-block-tab-list {
+	border-block-end: 1px solid var( --wp--preset--color--border );
+}
+
+.wp-block-tab-list button {
+	min-block-size: 2.75rem;
+	margin-block-end: -1px;
+	padding: var( --wp--preset--spacing--10 ) var( --wp--preset--spacing--30 );
+	border: 0;
+	border-block-end: 2px solid transparent;
+	background: none;
+	color: inherit;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.wp-block-tab-list button[aria-selected="true"] {
+	border-block-end-color: var( --wp--preset--color--primary );
+	color: var( --wp--preset--color--primary );
+}
+
+.wp-block-tab-panel {
+	padding-block: var( --wp--preset--spacing--40 );
+}
+
+/* Style: boxed. */
+
+.wp-block-tabs.is-style-boxed .wp-block-tab-list {
+	border: 0;
+}
+
+.wp-block-tabs.is-style-boxed .wp-block-tab-list button {
+	margin-block-end: 0;
+	border: 0;
+	border-radius: var( --wp--custom--radius--pill );
+}
+
+.wp-block-tabs.is-style-boxed .wp-block-tab-list button[aria-selected="true"] {
+	background: var( --wp--preset--color--surface );
+	box-shadow: inset 0 0 0 1px var( --wp--preset--color--border );
+}
+
+.wp-block-tabs.is-style-boxed .wp-block-tab-panel {
+	padding: var( --wp--preset--spacing--40 );
+	border: 1px solid var( --wp--preset--color--border );
+	border-radius: var( --wp--custom--radius--md );
+}

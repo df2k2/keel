@@ -116,6 +116,14 @@ function block_styles(): array {
 					'spacing' => array( 'padding' => block_style_padding( '40' ) ),
 				),
 			),
+			array(
+				'name'  => 'textured',
+				'label' => __( 'Textured', 'keel' ),
+			),
+			array(
+				'name'  => 'wave-bottom',
+				'label' => __( 'Wave bottom', 'keel' ),
+			),
 		),
 		'core/image'      => array(
 			array(
@@ -143,6 +151,10 @@ function block_styles(): array {
 			array(
 				'name'  => 'checkmarks',
 				'label' => __( 'Checkmarks', 'keel' ),
+			),
+			array(
+				'name'  => 'two-column',
+				'label' => __( 'Two columns', 'keel' ),
 			),
 		),
 		'core/quote'      => array(
@@ -187,6 +199,59 @@ function block_styles(): array {
 			array(
 				'name'  => 'band',
 				'label' => __( 'Band', 'keel' ),
+			),
+			array(
+				'name'  => 'gradient-overlay',
+				'label' => __( 'Gradient overlay', 'keel' ),
+			),
+		),
+		'core/table'      => array(
+			array(
+				'name'  => 'striped',
+				'label' => __( 'Striped', 'keel' ),
+			),
+			array(
+				'name'  => 'compact',
+				'label' => __( 'Compact', 'keel' ),
+			),
+		),
+		'core/heading'    => array(
+			array(
+				'name'       => 'eyebrow',
+				'label'      => __( 'Eyebrow', 'keel' ),
+				'style_data' => array(
+					'color'      => array( 'text' => 'var:preset|color|primary' ),
+					'typography' => array(
+						'fontSize'      => 'var:preset|font-size|xs',
+						'fontWeight'    => '600',
+						'letterSpacing' => 'var:custom|typography|letter-spacing|wide',
+						'textTransform' => 'uppercase',
+					),
+				),
+			),
+		),
+		'core/paragraph'  => array(
+			array(
+				'name'       => 'lead',
+				'label'      => __( 'Lead', 'keel' ),
+				'style_data' => array(
+					'typography' => array(
+						'fontSize'   => 'var:preset|font-size|lg',
+						'lineHeight' => 'var:custom|typography|line-height|snug',
+					),
+				),
+			),
+		),
+		'core/accordion'  => array(
+			array(
+				'name'  => 'faq',
+				'label' => __( 'FAQ', 'keel' ),
+			),
+		),
+		'core/tabs'       => array(
+			array(
+				'name'  => 'boxed',
+				'label' => __( 'Boxed', 'keel' ),
 			),
 		),
 	);

@@ -25,6 +25,8 @@ export const CATEGORIES = [
 	'footer',
 	'blog',
 	'pages',
+	'layouts',
+	'dental',
 ];
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;

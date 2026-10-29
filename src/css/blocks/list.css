@@ -30,3 +30,14 @@
 	background: var( --wp--preset--color--success );
 	mask: url( "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>" ) center / contain no-repeat;
 }
+
+/* Style: two columns (falls back to one when the box is narrower than two 14rem columns). */
+
+.wp-block-list.is-style-two-column {
+	columns: 14rem 2;
+	column-gap: var( --wp--preset--spacing--50 );
+}
+
+.wp-block-list.is-style-two-column li {
+	break-inside: avoid;
+}

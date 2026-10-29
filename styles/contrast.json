@@ -1,0 +1,121 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+	"version": 3,
+	"title": "Contrast",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Base"
+				},
+				{
+					"slug": "contrast",
+					"color": "#000000",
+					"name": "Contrast"
+				},
+				{
+					"slug": "primary",
+					"color": "#0A3D91",
+					"name": "Primary"
+				},
+				{
+					"slug": "primary-contrast",
+					"color": "#FFFFFF",
+					"name": "Primary contrast"
+				},
+				{
+					"slug": "accent",
+					"color": "#7A0019",
+					"name": "Accent"
+				},
+				{
+					"slug": "accent-contrast",
+					"color": "#FFFFFF",
+					"name": "Accent contrast"
+				},
+				{
+					"slug": "surface",
+					"color": "#F2F2F2",
+					"name": "Surface"
+				},
+				{
+					"slug": "surface-alt",
+					"color": "#E4E4E4",
+					"name": "Surface alt"
+				},
+				{
+					"slug": "border",
+					"color": "#4A4A4A",
+					"name": "Border"
+				},
+				{
+					"slug": "success",
+					"color": "#006400",
+					"name": "Success"
+				},
+				{
+					"slug": "warning",
+					"color": "#6B3F00",
+					"name": "Warning"
+				},
+				{
+					"slug": "error",
+					"color": "#A0001C",
+					"name": "Error"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "body",
+					"name": "Body",
+					"fontFamily": "Figtree, \"Figtree Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "italic",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree-italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"slug": "display",
+					"name": "Display",
+					"fontFamily": "Figtree, \"Figtree Fallback\", Arial, sans-serif"
+				}
+			]
+		},
+		"custom": {
+			"radius": {
+				"none": "0",
+				"sm": "4px",
+				"md": "4px",
+				"lg": "4px",
+				"pill": "999px"
+			},
+			"shadow": {
+				"sm": "none",
+				"md": "none"
+			},
+			"border": {
+				"width": "2px"
+			}
+		}
+	}
+}
