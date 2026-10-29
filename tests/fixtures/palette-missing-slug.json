@@ -1,0 +1,64 @@
+{
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "base",
+          "color": "#FFFFFF",
+          "name": "Base"
+        },
+        {
+          "slug": "contrast",
+          "color": "#0F1B2D",
+          "name": "Contrast"
+        },
+        {
+          "slug": "primary",
+          "color": "#1F3A5F",
+          "name": "Primary"
+        },
+        {
+          "slug": "primary-contrast",
+          "color": "#FFFFFF",
+          "name": "Primary contrast"
+        },
+        {
+          "slug": "accent-contrast",
+          "color": "#FFFFFF",
+          "name": "Accent contrast"
+        },
+        {
+          "slug": "surface",
+          "color": "#F4F6F9",
+          "name": "Surface"
+        },
+        {
+          "slug": "surface-alt",
+          "color": "#E3E8EF",
+          "name": "Surface alt"
+        },
+        {
+          "slug": "border",
+          "color": "#7B8698",
+          "name": "Border"
+        },
+        {
+          "slug": "success",
+          "color": "#1B6F43",
+          "name": "Success"
+        },
+        {
+          "slug": "warning",
+          "color": "#8F5600",
+          "name": "Warning"
+        },
+        {
+          "slug": "error",
+          "color": "#B3261E",
+          "name": "Error"
+        }
+      ]
+    }
+  }
+}

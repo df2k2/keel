@@ -1,0 +1,17 @@
+[
+  { "fg": "contrast", "bg": "base", "min": 4.5 },
+  { "fg": "contrast", "bg": "surface", "min": 4.5 },
+  { "fg": "contrast", "bg": "surface-alt", "min": 4.5 },
+  { "fg": "primary", "bg": "base", "min": 4.5 },
+  { "fg": "primary", "bg": "surface", "min": 4.5 },
+  { "fg": "primary", "bg": "surface-alt", "min": 3 },
+  { "fg": "primary-contrast", "bg": "primary", "min": 4.5 },
+  { "fg": "accent-contrast", "bg": "accent", "min": 4.5 },
+  { "fg": "accent", "bg": "base", "min": 3 },
+  { "fg": "base", "bg": "contrast", "min": 4.5 },
+  { "fg": "border", "bg": "base", "min": 3 },
+  { "fg": "border", "bg": "surface", "min": 3 },
+  { "fg": "success", "bg": "base", "min": 4.5 },
+  { "fg": "warning", "bg": "base", "min": 4.5 },
+  { "fg": "error", "bg": "base", "min": 4.5 }
+]

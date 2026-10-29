@@ -21,4 +21,40 @@ Commits follow Conventional Commits. `main` accepts pull requests only.
 
 ## Design tokens
 
-(Documented in Task 3 of the M0 plan.)
+`theme.json` is the single source of truth. Style variations in `styles/` override the palette,
+the font families and the radius tokens only; every other token is shared.
+
+### Color (`settings.color.palette`)
+
+| Slug | Purpose | Harbor value |
+| --- | --- | --- |
+| `base` | page background | `#FFFFFF` |
+| `contrast` | body text, dark bands | `#0F1B2D` |
+| `primary` | links, buttons, headings accent | `#1F3A5F` |
+| `primary-contrast` | text on primary | `#FFFFFF` |
+| `accent` | secondary calls to action, highlights | `#8A6D0B` |
+| `accent-contrast` | text on accent | `#FFFFFF` |
+| `surface` | cards, wells | `#F4F6F9` |
+| `surface-alt` | alternating bands | `#E3E8EF` |
+| `border` | hairlines, form borders (3:1 on base and surface) | `#7B8698` |
+| `success` / `warning` / `error` | form and status text | `#1B6F43` / `#8F5600` / `#B3261E` |
+
+Every foreground and background pair the theme uses is listed in `tests/contrast-pairs.json` and
+checked by `npm run check:contrast` at 4.5:1 for text and 3:1 for UI.
+
+### Typography (`settings.typography`)
+
+Families `body` and `display` (system stack until the M0 review pins fonts). Fluid sizes `xs`
+(13 to 14 px), `sm` (14 to 16), `md` (16 to 18, the body size), `lg` (18 to 22), `xl` (22 to 28),
+`xxl` (28 to 40), `xxxl` (36 to 56). Line heights `tight` 1.15, `snug` 1.3, `normal` 1.6 and
+letter spacing `tight`, `normal`, `wide` live under `settings.custom.typography`.
+
+### Spacing (`settings.spacing.spacingSizes`)
+
+Slugs `10` through `80`: 0.25rem, 0.5rem, then fluid `clamp()` steps up to 4 to 8 rem. The
+default WordPress scale is disabled. Content width 68rem, wide width 90rem.
+
+### Shape and elevation (`settings.custom`)
+
+Radius `none`, `sm` 4px, `md` 8px, `lg` 16px, `pill`; shadows `sm` and `md`; border width 1px;
+focus ring `2px solid primary` with a 2px offset.

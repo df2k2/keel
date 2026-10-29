@@ -1,0 +1,37 @@
+/* Accessibility layer: focus, skip link, screen-reader text. */
+
+:focus-visible {
+	outline: var( --wp--custom--focus--ring );
+	outline-offset: var( --wp--custom--focus--offset );
+}
+
+.skip-link {
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	z-index: 100000;
+	padding: var( --wp--preset--spacing--20 ) var( --wp--preset--spacing--40 );
+	background: var( --wp--preset--color--contrast );
+	color: var( --wp--preset--color--base );
+	text-decoration: underline;
+}
+
+.screen-reader-text {
+	position: absolute;
+	inline-size: 1px;
+	block-size: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip-path: inset( 50% );
+	overflow-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	inline-size: auto;
+	block-size: auto;
+	margin: 0;
+	overflow: visible;
+	clip-path: none;
+}

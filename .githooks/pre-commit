@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Fast gate before every commit: PHP sniffs, JS and CSS lint, contrast check.
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+composer lint
+npm run --silent lint:js
+npm run --silent lint:css
+npm run --silent check:contrast

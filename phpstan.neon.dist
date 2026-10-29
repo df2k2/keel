@@ -5,3 +5,9 @@ parameters:
 	paths:
 		- functions.php
 		- inc
+		- patterns
+		- bin
+	bootstrapFiles:
+		- tests/phpstan-bootstrap.php
+	scanFiles:
+		- tests/phpstan-stubs/wp-cli.php
