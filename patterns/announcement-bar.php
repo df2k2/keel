@@ -17,5 +17,9 @@ defined( 'ABSPATH' ) || exit;
 	<!-- wp:paragraph -->
 	<p><?php esc_html_e( 'Now booking spring maintenance visits.', 'keel' ); ?> <a href="#contact"><?php esc_html_e( 'Reserve yours', 'keel' ); ?></a></p>
 	<!-- /wp:paragraph -->
+
+	<!-- wp:button {"tagName":"button","type":"button","className":"keel-announcement__dismiss"} -->
+	<div class="wp-block-button keel-announcement__dismiss"><button class="wp-block-button__link wp-element-button" type="button">&times;</button></div>
+	<!-- /wp:button -->
 </div>
 <!-- /wp:group -->

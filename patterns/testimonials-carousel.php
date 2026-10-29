@@ -50,6 +50,18 @@ defined( 'ABSPATH' ) || exit;
 		<!-- /wp:quote -->
 		</div>
 		<!-- /wp:group -->
+
+		<!-- wp:buttons {"className":"keel-carousel__controls","layout":{"type":"flex","justifyContent":"right"}} -->
+		<div class="wp-block-buttons keel-carousel__controls">
+			<!-- wp:button {"tagName":"button","type":"button","className":"keel-carousel__prev"} -->
+			<div class="wp-block-button keel-carousel__prev"><button class="wp-block-button__link wp-element-button" type="button">&larr;</button></div>
+			<!-- /wp:button -->
+
+			<!-- wp:button {"tagName":"button","type":"button","className":"keel-carousel__next"} -->
+			<div class="wp-block-button keel-carousel__next"><button class="wp-block-button__link wp-element-button" type="button">&rarr;</button></div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
 	</div>
 	<!-- /wp:group -->
 </div>

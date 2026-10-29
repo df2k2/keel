@@ -1,0 +1,125 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+	"version": 3,
+	"title": "Slate",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFFFF",
+					"name": "Base"
+				},
+				{
+					"slug": "contrast",
+					"color": "#1F2328",
+					"name": "Contrast"
+				},
+				{
+					"slug": "primary",
+					"color": "#2B3440",
+					"name": "Primary"
+				},
+				{
+					"slug": "primary-contrast",
+					"color": "#FFFFFF",
+					"name": "Primary contrast"
+				},
+				{
+					"slug": "accent",
+					"color": "#C2410C",
+					"name": "Accent"
+				},
+				{
+					"slug": "accent-contrast",
+					"color": "#FFFFFF",
+					"name": "Accent contrast"
+				},
+				{
+					"slug": "surface",
+					"color": "#F3F4F6",
+					"name": "Surface"
+				},
+				{
+					"slug": "surface-alt",
+					"color": "#E5E7EB",
+					"name": "Surface alt"
+				},
+				{
+					"slug": "border",
+					"color": "#6B7280",
+					"name": "Border"
+				},
+				{
+					"slug": "success",
+					"color": "#15803D",
+					"name": "Success"
+				},
+				{
+					"slug": "warning",
+					"color": "#92400E",
+					"name": "Warning"
+				},
+				{
+					"slug": "error",
+					"color": "#B91C1C",
+					"name": "Error"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "body",
+					"name": "Body",
+					"fontFamily": "Figtree, \"Figtree Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "italic",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree-italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"slug": "display",
+					"name": "Display",
+					"fontFamily": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Bricolage Grotesque",
+							"fontStyle": "normal",
+							"fontWeight": "400 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/bricolage-grotesque.woff2"
+							]
+						}
+					]
+				}
+			]
+		},
+		"custom": {
+			"radius": {
+				"none": "0",
+				"sm": "0",
+				"md": "0",
+				"lg": "0",
+				"pill": "0"
+			}
+		}
+	}
+}
