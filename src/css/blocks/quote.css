@@ -12,3 +12,32 @@
 	font-size: var( --wp--preset--font-size--sm );
 	font-style: normal;
 }
+
+/* Style: testimonial. */
+
+.wp-block-quote.is-style-testimonial {
+	position: relative;
+	margin: 0;
+	padding: var( --wp--preset--spacing--60 ) var( --wp--preset--spacing--50 ) var( --wp--preset--spacing--50 );
+	border: 0;
+	border-radius: var( --wp--custom--radius--md );
+	background: var( --wp--preset--color--surface );
+	box-shadow: var( --wp--custom--shadow--sm );
+}
+
+.wp-block-quote.is-style-testimonial::before {
+	content: "\201C";
+	position: absolute;
+	inset-block-start: var( --wp--preset--spacing--30 );
+	inset-inline-start: var( --wp--preset--spacing--50 );
+	color: var( --wp--preset--color--primary );
+	font-family: var( --wp--preset--font-family--display );
+	font-size: 4rem;
+	line-height: 1;
+	opacity: 0.35;
+}
+
+.wp-block-quote.is-style-testimonial cite {
+	color: var( --wp--preset--color--contrast );
+	font-weight: 600;
+}

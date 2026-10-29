@@ -22,3 +22,35 @@
 	min-inline-size: 2.75rem;
 	min-block-size: 2.75rem;
 }
+
+/* Styles: pill, underline. */
+
+.wp-block-navigation.is-style-pill .wp-block-navigation-item__content {
+	padding-inline: var( --wp--preset--spacing--30 );
+	border-radius: var( --wp--custom--radius--pill );
+}
+
+.wp-block-navigation.is-style-underline .wp-block-navigation-item__content {
+	position: relative;
+}
+
+.wp-block-navigation.is-style-pill .wp-block-navigation-item__content:hover,
+.wp-block-navigation.is-style-pill .current-menu-item > .wp-block-navigation-item__content {
+	background: var( --wp--preset--color--surface );
+}
+
+.wp-block-navigation.is-style-underline .wp-block-navigation-item__content::after {
+	content: "";
+	position: absolute;
+	inset-block-end: 0.35rem;
+	inset-inline: var( --wp--preset--spacing--20 );
+	block-size: 2px;
+	background: currentcolor;
+	scale: 0 1;
+	transition: scale 0.2s ease;
+}
+
+.wp-block-navigation.is-style-underline .wp-block-navigation-item__content:hover::after,
+.wp-block-navigation.is-style-underline .current-menu-item > .wp-block-navigation-item__content::after {
+	scale: 1 1;
+}

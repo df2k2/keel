@@ -7,3 +7,11 @@
 .wp-block-column > :last-child {
 	margin-block-end: 0;
 }
+
+/* Style: equal-cards. */
+
+.wp-block-columns.is-style-equal-cards > .wp-block-column {
+	padding: var( --wp--preset--spacing--40 );
+	border-radius: var( --wp--custom--radius--md );
+	background: var( --wp--preset--color--surface );
+}
