@@ -43,8 +43,31 @@ const KEEL_PATTERNS    = array(
 	'no-results',
 	'mobile-cta-bar',
 	'announcement-bar',
+	'hero-booking',
+	'services-grid-prices',
+	'category-tiles',
+	'services-tabs',
+	'logo-band',
+	'features-icons',
+	'before-after',
+	'providers-grid',
+	'payment-plan-band',
+	'comparison-table',
+	'offer-card',
+	'newsletter-band',
+	'promo-band',
+	'utility-bar',
+	'timeline',
+	'media-text-steps',
+	'author-box',
+	'related-posts',
+	'post-navigation',
+	'listing-grid',
+	'listing-list',
+	'event-grid',
+	'faq-accordion',
 );
-const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'blog-list', '404-content', 'accessibility-statement' );
+const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'hero-booking', 'blog-list', '404-content', 'accessibility-statement' );
 
 $keel_registry = WP_Block_Patterns_Registry::get_instance();
 foreach ( KEEL_PATTERNS as $keel_slug ) {
@@ -71,6 +94,10 @@ if ( ! str_contains( $keel_carousel, 'keel-carousel__track' ) || 3 !== substr_co
 $keel_faq = do_blocks( '<!-- wp:pattern {"slug":"keel/faq"} /-->' );
 if ( 4 !== substr_count( $keel_faq, '<details' ) || 4 !== substr_count( $keel_faq, 'name="keel-faq"' ) ) {
 	WP_CLI::error( 'keel/faq must render four details elements named keel-faq.' );
+}
+$keel_accordion = do_blocks( '<!-- wp:pattern {"slug":"keel/faq-accordion"} /-->' );
+if ( 4 !== substr_count( $keel_accordion, 'class="wp-block-accordion-item ' ) || 1 !== substr_count( $keel_accordion, ' is-open"' ) ) {
+	WP_CLI::error( 'keel/faq-accordion must render four accordion items with exactly the first one open.' );
 }
 $keel_gallery = do_blocks( '<!-- wp:pattern {"slug":"keel/gallery"} /-->' );
 if ( 6 !== substr_count( $keel_gallery, '<img' ) ) {

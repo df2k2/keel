@@ -180,6 +180,7 @@
 		{ "name": "header", "area": "header", "title": "Header" },
 		{ "name": "header-centered", "area": "header", "title": "Header: centered" },
 		{ "name": "header-transparent", "area": "header", "title": "Header: transparent" },
+		{ "name": "header-utility", "area": "header", "title": "Header with utility bar" },
 		{ "name": "footer", "area": "footer", "title": "Footer" },
 		{ "name": "footer-minimal", "area": "footer", "title": "Footer: minimal" },
 		{ "name": "cta-band", "area": "uncategorized", "title": "Call-to-action band" },
