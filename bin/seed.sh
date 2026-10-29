@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
-# Seeds the wp-env site: activates the theme, pretty permalinks, a Home page as the static front page.
+# Seeds the wp-env site: activates the theme, pretty permalinks, the demo pages, posts, menu and the Clinic variation.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 npx wp-env run cli wp theme activate keel
 npx wp-env run cli wp rewrite structure '/%postname%/' --hard
-npx wp-env run cli wp eval-file wp-content/themes/keel/bin/seed.php
+attachment=$(npx wp-env run cli wp post list --post_type=attachment --name=keel-placeholder --field=ID 2>/dev/null | tail -1 | tr -d '[:space:]')
+if [ -z "$attachment" ]; then
+	attachment=$(npx wp-env run cli wp media import wp-content/themes/keel/tests/fixtures/attachment.png --title="Keel placeholder" --porcelain 2>/dev/null | tail -1 | tr -d '[:space:]')
+fi
+npx wp-env run cli wp eval-file wp-content/themes/keel/bin/seed.php "$attachment"
+bash bin/apply-variation.sh clinic

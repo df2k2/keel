@@ -1,5 +1,11 @@
 {
   "extends": ["@wordpress/stylelint-config"],
   "plugins": ["stylelint-use-logical"],
-  "rules": { "csstools/use-logical": "always" }
+  "rules": {
+    "csstools/use-logical": "always",
+    "selector-class-pattern": [
+      "^[a-z][a-z0-9]*(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$",
+      { "message": "Selector should be lowercase kebab-case, optionally with a BEM __element and --modifier (selector-class-pattern)" }
+    ]
+  }
 }

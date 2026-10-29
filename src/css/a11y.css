@@ -3,6 +3,7 @@
 :focus-visible {
 	outline: var( --wp--custom--focus--ring );
 	outline-offset: var( --wp--custom--focus--offset );
+	box-shadow: 0 0 0 calc( var( --wp--custom--focus--offset ) + 2px ) var( --wp--preset--color--base );
 }
 
 .skip-link {

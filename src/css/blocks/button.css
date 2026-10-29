@@ -1,0 +1,10 @@
+/* core/button base rules. */
+
+.wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-block-size: 2.75rem;
+	font-weight: 600;
+	text-decoration: none;
+}

@@ -4,6 +4,11 @@
 	"settings": {
 		"appearanceTools": true,
 		"useRootPaddingAwareAlignments": true,
+		"blocks": {
+			"core/image": {
+				"lightbox": { "enabled": true, "allowEditing": true }
+			}
+		},
 		"layout": {
 			"contentSize": "68rem",
 			"wideSize": "90rem"
@@ -33,12 +38,43 @@
 				{
 					"slug": "body",
 					"name": "Body",
-					"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+					"fontFamily": "Figtree, \"Figtree Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "italic",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree-italic.woff2"
+							]
+						}
+					]
 				},
 				{
 					"slug": "display",
 					"name": "Display",
-					"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+					"fontFamily": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Bricolage Grotesque",
+							"fontStyle": "normal",
+							"fontWeight": "400 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/bricolage-grotesque.woff2"
+							]
+						}
+					]
 				}
 			],
 			"fontSizes": [
@@ -122,8 +158,22 @@
 			"h6": { "typography": { "fontSize": "var(--wp--preset--font-size--md)" } }
 		}
 	},
+	"customTemplates": [
+		{ "name": "page-no-title", "title": "Page without title", "postTypes": [ "page" ] },
+		{ "name": "page-landing", "title": "Landing page", "postTypes": [ "page" ] },
+		{ "name": "page-service", "title": "Service page", "postTypes": [ "page" ] },
+		{ "name": "page-location", "title": "Location page", "postTypes": [ "page" ] }
+	],
 	"templateParts": [
 		{ "name": "header", "area": "header", "title": "Header" },
-		{ "name": "footer", "area": "footer", "title": "Footer" }
+		{ "name": "header-centered", "area": "header", "title": "Header: centered" },
+		{ "name": "header-transparent", "area": "header", "title": "Header: transparent" },
+		{ "name": "footer", "area": "footer", "title": "Footer" },
+		{ "name": "footer-minimal", "area": "footer", "title": "Footer: minimal" },
+		{ "name": "cta-band", "area": "uncategorized", "title": "Call-to-action band" },
+		{ "name": "mobile-cta-bar", "area": "uncategorized", "title": "Mobile CTA bar" },
+		{ "name": "announcement-bar", "area": "uncategorized", "title": "Announcement bar" },
+		{ "name": "post-meta", "area": "uncategorized", "title": "Post meta" },
+		{ "name": "comments", "area": "uncategorized", "title": "Comments" }
 	]
 }

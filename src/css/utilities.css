@@ -1,0 +1,53 @@
+/* Utilities: full-bleed bands, stat numbers, a reduced-motion-aware reveal. */
+
+.keel-band {
+	padding-block: var( --wp--preset--spacing--70 );
+}
+
+.keel-stat__number {
+	font-family: var( --wp--preset--font-family--display );
+	font-size: var( --wp--preset--font-size--xxl );
+	font-weight: 700;
+	line-height: var( --wp--custom--typography--line-height--tight );
+}
+
+@keyframes keel-reveal {
+
+	from {
+		opacity: 0;
+		translate: 0 0.75rem;
+	}
+
+	to {
+		opacity: 1;
+		translate: 0 0;
+	}
+}
+
+@supports ( animation-timeline: view() ) {
+
+	.keel-reveal {
+		animation: keel-reveal 0.6s ease-out both;
+		animation-timeline: view();
+		animation-range: entry 0% entry 40%;
+	}
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+
+	.keel-reveal {
+		animation: none;
+	}
+}
+
+/* Decorative icons: single-colour SVG images inverted on dark surfaces. */
+
+.keel-icon {
+	margin: 0;
+}
+
+.is-style-band .keel-icon img,
+.has-contrast-background-color .keel-icon img,
+.wp-block-cover .keel-icon img {
+	filter: invert( 1 );
+}

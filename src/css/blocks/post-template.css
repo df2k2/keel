@@ -1,0 +1,14 @@
+/* core/post-template base rules. */
+
+.wp-block-post-template .wp-block-post-title a {
+	text-decoration: none;
+}
+
+.wp-block-post-template .wp-block-post-title a:hover {
+	text-decoration: underline;
+}
+
+.wp-block-post-template .wp-block-post-excerpt__more-link {
+	display: inline-block;
+	margin-block-start: var( --wp--preset--spacing--20 );
+}

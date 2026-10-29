@@ -1,0 +1,12 @@
+/* core/search base rules. */
+
+.wp-block-search__input {
+	min-block-size: 2.75rem;
+	padding-inline: var( --wp--preset--spacing--30 );
+	border: 1px solid var( --wp--preset--color--border );
+	border-radius: var( --wp--custom--radius--md );
+}
+
+.wp-block-search__button {
+	min-block-size: 2.75rem;
+}

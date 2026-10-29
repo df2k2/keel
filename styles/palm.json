@@ -1,0 +1,134 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+	"version": 3,
+	"title": "Palm",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FBFAF4",
+					"name": "Base"
+				},
+				{
+					"slug": "contrast",
+					"color": "#14261C",
+					"name": "Contrast"
+				},
+				{
+					"slug": "primary",
+					"color": "#1E5A3C",
+					"name": "Primary"
+				},
+				{
+					"slug": "primary-contrast",
+					"color": "#FFFFFF",
+					"name": "Primary contrast"
+				},
+				{
+					"slug": "accent",
+					"color": "#9A5614",
+					"name": "Accent"
+				},
+				{
+					"slug": "accent-contrast",
+					"color": "#FFFFFF",
+					"name": "Accent contrast"
+				},
+				{
+					"slug": "surface",
+					"color": "#F1EFE4",
+					"name": "Surface"
+				},
+				{
+					"slug": "surface-alt",
+					"color": "#E2DECB",
+					"name": "Surface alt"
+				},
+				{
+					"slug": "border",
+					"color": "#737F74",
+					"name": "Border"
+				},
+				{
+					"slug": "success",
+					"color": "#1E6B3A",
+					"name": "Success"
+				},
+				{
+					"slug": "warning",
+					"color": "#8A4B0F",
+					"name": "Warning"
+				},
+				{
+					"slug": "error",
+					"color": "#B3261E",
+					"name": "Error"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "body",
+					"name": "Body",
+					"fontFamily": "Figtree, \"Figtree Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "italic",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree-italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"slug": "display",
+					"name": "Display",
+					"fontFamily": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "normal",
+							"fontWeight": "300 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/fraunces.woff2"
+							]
+						},
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "italic",
+							"fontWeight": "300 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/fraunces-italic.woff2"
+							]
+						}
+					]
+				}
+			]
+		},
+		"custom": {
+			"radius": {
+				"none": "0",
+				"sm": "4px",
+				"md": "10px",
+				"lg": "20px",
+				"pill": "999px"
+			}
+		}
+	}
+}

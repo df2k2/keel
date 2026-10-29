@@ -6,3 +6,4 @@ composer lint
 npm run --silent lint:js
 npm run --silent lint:css
 npm run --silent check:contrast
+npm run --silent check:forbidden

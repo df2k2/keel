@@ -38,6 +38,7 @@ export const EXCLUDED = [
 	'postcss.config.js',
 	'eslint.config.js',
 	'playwright.config.js',
+	'lighthouserc.cjs',
 	'README.md',
 	'CONTRIBUTING.md',
 	'CODE_OF_CONDUCT.md',

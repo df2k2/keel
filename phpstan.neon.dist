@@ -7,6 +7,7 @@ parameters:
 		- inc
 		- patterns
 		- bin
+		- tests/wp
 	bootstrapFiles:
 		- tests/phpstan-bootstrap.php
 	scanFiles:

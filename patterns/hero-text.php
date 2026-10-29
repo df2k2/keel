@@ -14,8 +14,8 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <!-- wp:group {"align":"full","backgroundColor":"surface","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
-	<!-- wp:heading {"fontSize":"xxxl"} -->
-	<h2 class="wp-block-heading has-xxxl-font-size"><?php esc_html_e( 'Reliable service for your home and business', 'keel' ); ?></h2>
+	<!-- wp:heading {"level":1,"fontSize":"xxxl"} -->
+	<h1 class="wp-block-heading has-xxxl-font-size"><?php esc_html_e( 'Reliable service for your home and business', 'keel' ); ?></h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"fontSize":"lg"} -->
