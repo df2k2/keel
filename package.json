@@ -31,7 +31,9 @@
     "test:perf": "bash bin/perf.sh",
     "i18n:pot": "bash bin/make-pot.sh",
     "i18n:check": "bash bin/make-pot.sh --check",
-    "i18n:build": "wp-env run cli wp i18n make-mo wp-content/themes/keel/languages && wp-env run cli wp i18n make-php wp-content/themes/keel/languages"
+    "i18n:build": "wp-env run cli wp i18n make-mo wp-content/themes/keel/languages && wp-env run cli wp i18n make-php wp-content/themes/keel/languages",
+    "check:forbidden": "bash bin/check-forbidden.sh",
+    "test:i18n": "playwright test tests/e2e/i18n.spec.js"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

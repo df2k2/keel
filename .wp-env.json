@@ -8,5 +8,9 @@
     "WP_DEBUG": true,
     "WP_DEBUG_DISPLAY": false,
     "WP_DEVELOPMENT_MODE": "theme"
+  },
+  "mappings": {
+    "wp-content/mu-plugins/keel-test-helpers.php": "./tests/wp-env/keel-test-helpers.php",
+    "wp-content/themes/keel-child": "./examples/keel-child"
   }
 }

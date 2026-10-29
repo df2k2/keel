@@ -7,14 +7,20 @@ Requirements: Node 24 or later, PHP 8.3 or later, Composer 2, Docker (for `wp-en
 | Command | What it does |
 | --- | --- |
 | `npm install && composer install` | install every development dependency |
-| `npm run build` | compile `src/css` into `build/css` |
+| `npm run build` | compile `src/css` into `build/css` and `src/js` into `build/js` |
+| `npm run build:fonts` | re-subset the fonts from the pinned google/fonts commit (network; the only script that touches it) |
 | `npm run lint:php` | PHPCS (WordPress-Extra, WPThemeReview, PHPCompatibilityWP) and PHPStan level 6 |
 | `npm run lint:js` / `npm run lint:css` | ESLint on `bin` and `tests`; Stylelint with logical properties enforced |
 | `npm run check:contrast` | contrast gate for `theme.json` and every style variation |
-| `npm run test:unit` | unit tests for the `bin` tools |
+| `npm run test:unit` | unit tests for the `bin` tools, CSS budget, patterns and templates |
+| `npm run test:wp` | WP-CLI assertions inside `wp-env` (fonts, block CSS, block styles, patterns, templates) |
 | `npm run env:start` / `npm run env:seed` | local WordPress 7.1.3 on PHP 8.3 with seed content |
 | `npm run check:theme` | Theme Check inside `wp-env` |
-| `npm run test:e2e` | Playwright smoke tests against `wp-env` |
+| `npm run test:e2e` | Playwright against `wp-env`: smoke, fonts, every template, interactivity, axe and keyboard, Spanish and RTL |
+| `npm run test:a11y` / `npm run test:i18n` | just the accessibility or the i18n specs |
+| `npm run test:perf` | Lighthouse CI on five demo pages with `tests/budgets.json` |
+| `npm run i18n:pot` / `npm run i18n:check` / `npm run i18n:build` | regenerate, verify or compile `languages/` |
+| `npm run check:forbidden` | grep gate against eval, superglobals, remote calls and file writes in shipped code |
 | `npm run package` | build the release zip and manifest into `dist/` |
 
 Commits follow Conventional Commits. `main` accepts pull requests only.
@@ -63,3 +69,30 @@ default WordPress scale is disabled. Content width 68rem, wide width 90rem.
 
 Radius `none`, `sm` 4px, `md` 8px, `lg` 16px, `pill`; shadows `sm` and `md`; border width 1px;
 focus ring `2px solid primary` with a 2px offset.
+
+## Fonts
+
+`assets/fonts/` holds Latin subsets built by `bin/build-fonts.js` from google/fonts commit
+`9862abc0`: Figtree 20 KB roman and 21 KB italic, Bricolage Grotesque 84 KB (width pinned at 100,
+weight 400 to 800), Fraunces 65 KB roman and 79 KB italic (SOFT 50, WONK 0, weight 300 to 800).
+`src/css/fonts.css` is generated with Capsize and never edited by hand. Only the roman faces of the
+active `body` and `display` families are preloaded.
+
+## Interactivity
+
+Three stores in `src/js` (`keel/header`, `keel/announcement`, `keel/carousel`) are built by esbuild
+into `build/js` and registered in `inc/interactivity.php`. Directives are added in `render_block`
+filters, never in pattern or part markup, so the editor only ever sees core blocks. A store is
+enqueued only when its template part or pattern renders; `page-landing` loads no JavaScript.
+
+## Patterns
+
+One PHP file per pattern under `patterns/`, core blocks only, every string wrapped in
+`esc_html_e()` or `esc_attr_e()`, images and icons through `get_theme_file_uri()`, no inline SVG,
+no `core/html`. Heroes carry the page's `h1`; everything else starts at `h2`. The unit gate
+`tests/unit/patterns.test.js` enforces this; `tests/wp/patterns.php` renders every pattern.
+
+## Test helpers
+
+`tests/wp-env/keel-test-helpers.php` is mapped into `wp-env` as a must-use plugin (never shipped):
+`?keel_locale=es_ES` forces a locale and `?keel_rtl=1` forces right-to-left for the i18n specs.

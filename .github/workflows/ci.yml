@@ -26,6 +26,7 @@ jobs:
       - run: composer install --no-interaction --no-progress --prefer-dist
       - run: composer lint
       - run: composer analyse
+      - run: bash bin/check-forbidden.sh
 
   js-css-lint:
     name: js-css-lint
@@ -151,3 +152,37 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - run: semgrep scan --config p/php --config p/javascript --error --exclude node_modules --exclude vendor --exclude build --exclude dist
+
+  perf:
+    name: perf
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+      - run: npm run env:start
+      - run: npm run env:seed
+      - run: npm run test:perf
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: failure()
+        with:
+          name: lighthouse
+          path: .lighthouseci/
+
+  i18n:
+    name: i18n
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - run: npm run env:start
+      - run: npm run i18n:check
