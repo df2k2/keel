@@ -6,3 +6,5 @@ test-results/
 playwright-report/
 .wp-env.override.json
 .lighthouseci/
+# Chrome profile directories Lighthouse writes under WSL
+C:*

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-29T07:49:02+00:00\n"
+"POT-Creation-Date: 2026-10-29T08:16:58+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: keel\n"
@@ -353,7 +353,7 @@ msgid "Home"
 msgstr ""
 
 #: inc/styleguide.php:261
-#: inc/styleguide.php:275
+#: inc/styleguide.php:276
 #: patterns/faq-accordion.php:16
 #: patterns/faq.php:22
 msgid "Do you charge for estimates?"
@@ -391,11 +391,17 @@ msgstr ""
 msgid "A heading in this style"
 msgstr ""
 
-#: inc/styleguide.php:278
+#: inc/styleguide.php:276
+#: patterns/faq-accordion.php:18
+#: patterns/faq.php:38
+msgid "How soon can you come out?"
+msgstr ""
+
+#: inc/styleguide.php:281
 msgid "Overview"
 msgstr ""
 
-#: inc/styleguide.php:279
+#: inc/styleguide.php:282
 msgid "Details"
 msgstr ""
 
@@ -1891,11 +1897,6 @@ msgstr ""
 
 #: patterns/faq-accordion.php:17
 msgid "Yes. Plans from 6 to 24 months at 0% interest are available on most work, subject to approval."
-msgstr ""
-
-#: patterns/faq-accordion.php:18
-#: patterns/faq.php:38
-msgid "How soon can you come out?"
 msgstr ""
 
 #: patterns/faq-accordion.php:18
