@@ -1,0 +1,34 @@
+/* core/table base rules. */
+
+.wp-block-table table {
+	inline-size: 100%;
+	border-collapse: collapse;
+}
+
+.wp-block-table :is( th, td ) {
+	padding: var( --wp--preset--spacing--30 );
+	border-block-end: 1px solid var( --wp--preset--color--border );
+	text-align: start;
+	vertical-align: top;
+}
+
+.wp-block-table th {
+	background: var( --wp--preset--color--surface );
+	font-weight: 600;
+}
+
+.wp-block-table figcaption {
+	margin-block-start: var( --wp--preset--spacing--20 );
+	font-size: var( --wp--preset--font-size--sm );
+}
+
+/* Styles: striped, compact. */
+
+.wp-block-table.is-style-striped tbody tr:nth-child( odd ) {
+	background: var( --wp--preset--color--surface );
+}
+
+.wp-block-table.is-style-compact :is( th, td ) {
+	padding: var( --wp--preset--spacing--20 );
+	font-size: var( --wp--preset--font-size--sm );
+}

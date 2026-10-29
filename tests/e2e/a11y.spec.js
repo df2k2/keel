@@ -9,6 +9,9 @@ const PAGES = [
 	'/blog/',
 	'/spring-maintenance-checklist/',
 	'/this-page-does-not-exist/',
+	'/dental/',
+	'/style-guide/',
+	'/block-styles/',
 ];
 const TAGS = [
 	'wcag2a',
@@ -51,7 +54,7 @@ test( 'keyboard journey: skip link, menu, accordion, carousel, lightbox', async 
 	page,
 } ) => {
 	await page.setViewportSize( { width: 390, height: 844 } );
-	await page.goto( '/' );
+	await page.goto( '/home/' );
 	await page.keyboard.press( 'Tab' );
 	await expect( page.locator( ':focus' ) ).toHaveClass( /skip-link/ );
 	await page.keyboard.press( 'Enter' );

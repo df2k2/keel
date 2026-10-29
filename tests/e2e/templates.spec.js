@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 
 const PAGES = [
 	[ '/', 200, true ],
+	[ '/home/', 200, true ],
 	[ '/service/', 200, true ],
 	[ '/location/', 200, true ],
 	[ '/landing/', 200, false ],
@@ -14,6 +15,13 @@ const PAGES = [
 	[ '/?s=keel', 200, true ],
 	[ '/category/news/', 200, true ],
 	[ '/this-page-does-not-exist/', 404, true ],
+	[ '/patterns/', 200, true ],
+	[ '/style-guide/', 200, true ],
+	[ '/why-keel/', 200, true ],
+	[ '/block-styles/', 200, true ],
+	[ '/dental/', 200, true ],
+	[ '/dental/pricing/', 200, true ],
+	[ '/dental/implants-offer/', 200, false ],
 ];
 
 for ( const [ path, status, hasHeader ] of PAGES ) {
@@ -55,7 +63,7 @@ test( 'the landing template loads no JavaScript at all', async ( { page } ) => {
 test( 'header becomes solid after scrolling and transparent only over a cover', async ( {
 	page,
 } ) => {
-	await page.goto( '/' );
+	await page.goto( '/home/' );
 	const header = page.locator( 'header.keel-header' );
 	await expect( header ).not.toHaveClass( /is-scrolled/ );
 	expect(
@@ -86,7 +94,7 @@ test( 'announcement bar dismisses for the session', async ( { page } ) => {
 } );
 
 test( 'carousel controls advance the track', async ( { page } ) => {
-	await page.goto( '/' );
+	await page.goto( '/home/' );
 	const track = page.locator( '.keel-carousel__track' );
 	await track.scrollIntoViewIfNeeded();
 	const next = page.getByRole( 'button', { name: 'Next testimonial' } );

@@ -14,3 +14,11 @@
 	min-block-size: auto;
 	padding-block: var( --wp--preset--spacing--70 );
 }
+
+/* Style: gradient overlay (dark at the foot, clear at the top, so text at the bottom stays readable). */
+
+.wp-block-cover.is-style-gradient-overlay > .wp-block-cover__background {
+	background-color: transparent;
+	background-image: linear-gradient( to top, color-mix( in srgb, var( --wp--preset--color--contrast ) 70%, transparent ), transparent );
+	opacity: 1;
+}

@@ -1,7 +1,8 @@
 <?php
 /**
- * Seeds the local site with the demo content: pages built from the theme's patterns,
- * three posts, a navigation menu and the front and posts pages.
+ * Seeds the local site with the M1 example content: pages built from the theme's patterns,
+ * three posts, a navigation menu and the front and posts pages. The keel-demo plugin's seed
+ * then builds the showcase and takes over the front page and the menu.
  *
  * Run inside wp-env: wp eval-file wp-content/themes/keel/bin/seed.php [attachment-id]
  *
@@ -59,7 +60,7 @@ if ( $keel_attachment > 0 ) {
 }
 
 $keel_pages = array(
-	'home'     => keel_seed_page( 'home', 'Home', array( 'hero-image', 'trust-bar', 'services-grid-3', 'process-steps', 'stats-band', 'testimonials-carousel', 'faq', 'hours-location', 'cta-band-primary' ) ),
+	'home'     => keel_seed_page( 'home', 'Home', array( 'hero-image', 'trust-bar', 'services-grid-3', 'process-steps', 'stats-band', 'testimonials-carousel', 'faq', 'hours-location', 'cta-band-primary' ), 'page-no-title' ),
 	'service'  => keel_seed_page( 'service', 'Repairs', array( 'service-detail', 'team-grid', 'pricing-table', 'faq', 'cta-split' ), 'page-service', 'Fast, lasting fixes for the problems that stop your day.' ),
 	'location' => keel_seed_page( 'location', 'Our location', array( 'hours-location', 'gallery', 'cta-phone' ), 'page-location', 'Find us in the heart of Stuart, with parking at the door.' ),
 	'landing'  => keel_seed_page( 'landing', 'Spring offer', array( 'hero-text', 'services-grid-3', 'cta-split' ), 'page-landing' ),

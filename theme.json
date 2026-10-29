@@ -141,7 +141,19 @@
 					"background": "var(--wp--preset--color--primary)",
 					"text": "var(--wp--preset--color--primary-contrast)"
 				},
-				"border": { "radius": "var(--wp--custom--radius--md)" }
+				"border": { "radius": "var(--wp--custom--radius--md)" },
+				":hover": {
+					"color": {
+						"background": "color-mix(in srgb, var(--wp--preset--color--primary) 85%, var(--wp--preset--color--contrast))",
+						"text": "var(--wp--preset--color--primary-contrast)"
+					}
+				},
+				":active": {
+					"color": {
+						"background": "color-mix(in srgb, var(--wp--preset--color--primary) 75%, var(--wp--preset--color--contrast))",
+						"text": "var(--wp--preset--color--primary-contrast)"
+					}
+				}
 			},
 			"heading": {
 				"typography": {
@@ -168,6 +180,7 @@
 		{ "name": "header", "area": "header", "title": "Header" },
 		{ "name": "header-centered", "area": "header", "title": "Header: centered" },
 		{ "name": "header-transparent", "area": "header", "title": "Header: transparent" },
+		{ "name": "header-utility", "area": "header", "title": "Header with utility bar" },
 		{ "name": "footer", "area": "footer", "title": "Footer" },
 		{ "name": "footer-minimal", "area": "footer", "title": "Footer: minimal" },
 		{ "name": "cta-band", "area": "uncategorized", "title": "Call-to-action band" },

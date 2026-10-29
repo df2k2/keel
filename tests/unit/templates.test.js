@@ -23,6 +23,7 @@ const PARTS = [
 	'header',
 	'header-centered',
 	'header-transparent',
+	'header-utility',
 	'footer',
 	'footer-minimal',
 	'cta-band',
@@ -72,7 +73,7 @@ test( 'thirteen templates with a main landmark and the expected parts', () => {
 	}
 } );
 
-test( 'theme.json lists the custom templates and the ten parts', () => {
+test( 'theme.json lists the custom templates and the eleven parts', () => {
 	const theme = JSON.parse( read( 'theme.json' ) );
 	assert.deepEqual(
 		Object.fromEntries(

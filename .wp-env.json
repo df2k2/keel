@@ -11,6 +11,7 @@
   },
   "mappings": {
     "wp-content/mu-plugins/keel-test-helpers.php": "./tests/wp-env/keel-test-helpers.php",
-    "wp-content/themes/keel-child": "./examples/keel-child"
+    "wp-content/themes/keel-child": "./examples/keel-child",
+    "wp-content/plugins/keel-demo": "./examples/keel-demo"
   }
 }

@@ -1,0 +1,22 @@
+/* core/pullquote base rules. */
+
+.wp-block-pullquote {
+	margin-block: var( --wp--preset--spacing--60 );
+	padding-block: var( --wp--preset--spacing--50 );
+	border-block: 2px solid var( --wp--preset--color--primary );
+	text-align: center;
+}
+
+.wp-block-pullquote p {
+	font-family: var( --wp--preset--font-family--display );
+	font-size: var( --wp--preset--font-size--xl );
+	font-weight: 600;
+	line-height: var( --wp--custom--typography--line-height--snug );
+}
+
+.wp-block-pullquote cite {
+	display: block;
+	margin-block-start: var( --wp--preset--spacing--20 );
+	font-size: var( --wp--preset--font-size--sm );
+	font-style: normal;
+}

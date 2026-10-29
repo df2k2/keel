@@ -1,0 +1,60 @@
+/* core/accordion base rules: the toggle is a full-width button with a plus that turns when open. */
+
+.wp-block-accordion-heading {
+	margin: 0;
+	font-size: var( --wp--preset--font-size--md );
+}
+
+.wp-block-accordion-heading__toggle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var( --wp--preset--spacing--30 );
+	inline-size: 100%;
+	min-block-size: 2.75rem;
+	padding: var( --wp--preset--spacing--20 ) 0;
+	border: 0;
+	background: none;
+	color: inherit;
+	font: inherit;
+	font-weight: 600;
+	text-align: start;
+	cursor: pointer;
+}
+
+.wp-block-accordion-heading.has-icon-left .wp-block-accordion-heading__toggle {
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+}
+
+.wp-block-accordion-heading__toggle-icon {
+	flex: none;
+	color: var( --wp--preset--color--primary );
+	font-size: var( --wp--preset--font-size--xl );
+	line-height: 1;
+	transition: rotate 0.2s ease;
+}
+
+.wp-block-accordion-item.is-open .wp-block-accordion-heading__toggle-icon {
+	rotate: 45deg;
+}
+
+.wp-block-accordion-panel {
+	padding-block-end: var( --wp--preset--spacing--30 );
+}
+
+/* Style: faq. */
+
+.wp-block-accordion.is-style-faq .wp-block-accordion-item {
+	margin-block: 0;
+	border-block-end: 1px solid var( --wp--preset--color--border );
+}
+
+.wp-block-accordion.is-style-faq .wp-block-accordion-heading__toggle {
+	padding-block: var( --wp--preset--spacing--30 );
+}
+
+.wp-block-accordion.is-style-faq .wp-block-accordion-panel {
+	padding-block-end: var( --wp--preset--spacing--40 );
+	padding-inline-end: var( --wp--preset--spacing--60 );
+}

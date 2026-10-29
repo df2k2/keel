@@ -1,6 +1,6 @@
 {
   "name": "keel",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "A security-first block theme for local service businesses.",
@@ -33,7 +33,8 @@
     "i18n:check": "bash bin/make-pot.sh --check",
     "i18n:build": "wp-env run cli wp i18n make-mo wp-content/themes/keel/languages",
     "check:forbidden": "bash bin/check-forbidden.sh",
-    "test:i18n": "playwright test tests/e2e/i18n.spec.js"
+    "test:i18n": "playwright test tests/e2e/i18n.spec.js",
+    "docs:patterns": "node bin/pattern-docs.js"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

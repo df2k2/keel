@@ -11,15 +11,20 @@ defined( 'ABSPATH' ) || exit;
 
 $keel_expected = array(
 	'core/button'     => array( 'secondary', 'ghost', 'pill' ),
-	'core/group'      => array( 'card', 'surface', 'band', 'bordered' ),
+	'core/group'      => array( 'card', 'surface', 'band', 'bordered', 'textured', 'wave-bottom' ),
 	'core/image'      => array( 'soft', 'framed' ),
-	'core/list'       => array( 'checkmarks' ),
+	'core/list'       => array( 'checkmarks', 'two-column' ),
 	'core/quote'      => array( 'testimonial' ),
 	'core/separator'  => array( 'short', 'wave' ),
 	'core/navigation' => array( 'pill', 'underline' ),
 	'core/details'    => array( 'faq' ),
 	'core/columns'    => array( 'equal-cards' ),
-	'core/cover'      => array( 'band' ),
+	'core/cover'      => array( 'band', 'gradient-overlay' ),
+	'core/table'      => array( 'striped', 'compact' ),
+	'core/heading'    => array( 'eyebrow' ),
+	'core/paragraph'  => array( 'lead' ),
+	'core/accordion'  => array( 'faq' ),
+	'core/tabs'       => array( 'boxed' ),
 );
 $keel_registry = WP_Block_Styles_Registry::get_instance();
 foreach ( $keel_expected as $keel_block => $keel_names ) {
@@ -29,8 +34,12 @@ foreach ( $keel_expected as $keel_block => $keel_names ) {
 		WP_CLI::error( $keel_block . ' is missing styles: ' . implode( ', ', $keel_missing ) . ' (registered: ' . implode( ', ', $keel_registered ) . ')' );
 	}
 }
+$keel_eyebrow = $keel_registry->get_registered( 'core/heading', 'eyebrow' );
+if ( 'uppercase' !== ( $keel_eyebrow['style_data']['typography']['textTransform'] ?? '' ) ) {
+	WP_CLI::error( 'core/heading eyebrow must set style_data.typography.textTransform to uppercase.' );
+}
 $keel_secondary = $keel_registry->get_registered( 'core/button', 'secondary' );
 if ( 'var:preset|color|accent' !== ( $keel_secondary['style_data']['color']['background'] ?? '' ) ) {
 	WP_CLI::error( 'core/button secondary must set style_data.color.background to var:preset|color|accent.' );
 }
-WP_CLI::success( 'block-styles: 18 keel styles registered across 10 blocks.' );
+WP_CLI::success( 'block-styles: 27 keel styles registered across 15 blocks.' );

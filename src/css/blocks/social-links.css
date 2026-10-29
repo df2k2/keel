@@ -1,0 +1,9 @@
+/* core/social-links base rules: every icon is a 44px target. */
+
+.wp-block-social-links .wp-social-link a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-inline-size: 2.75rem;
+	min-block-size: 2.75rem;
+}

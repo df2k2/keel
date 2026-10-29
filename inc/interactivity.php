@@ -9,7 +9,7 @@ namespace Keel\Theme;
 
 defined( 'ABSPATH' ) || exit;
 
-const HEADER_PARTS = array( 'header', 'header-centered', 'header-transparent' );
+const HEADER_PARTS = array( 'header', 'header-centered', 'header-transparent', 'header-utility' );
 
 /**
  * Registers the three script modules; each is enqueued only when its part or pattern renders.
