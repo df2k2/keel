@@ -33,12 +33,43 @@
 				{
 					"slug": "body",
 					"name": "Body",
-					"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+					"fontFamily": "Figtree, \"Figtree Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "italic",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree-italic.woff2"
+							]
+						}
+					]
 				},
 				{
 					"slug": "display",
 					"name": "Display",
-					"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+					"fontFamily": "\"Bricolage Grotesque\", \"Bricolage Grotesque Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Bricolage Grotesque",
+							"fontStyle": "normal",
+							"fontWeight": "400 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/bricolage-grotesque.woff2"
+							]
+						}
+					]
 				}
 			],
 			"fontSizes": [

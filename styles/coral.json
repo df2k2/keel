@@ -67,6 +67,60 @@
 				}
 			]
 		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "body",
+					"name": "Body",
+					"fontFamily": "Figtree, \"Figtree Fallback\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "italic",
+							"fontWeight": "300 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree-italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"slug": "display",
+					"name": "Display",
+					"fontFamily": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "normal",
+							"fontWeight": "300 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/fraunces.woff2"
+							]
+						},
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "italic",
+							"fontWeight": "300 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/fraunces-italic.woff2"
+							]
+						}
+					]
+				}
+			]
+		},
 		"custom": {
 			"radius": {
 				"none": "0",
