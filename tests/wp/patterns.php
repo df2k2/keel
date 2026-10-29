@@ -66,8 +66,15 @@ const KEEL_PATTERNS    = array(
 	'listing-list',
 	'event-grid',
 	'faq-accordion',
+	'page-service-detail',
+	'page-provider',
+	'page-pricing',
+	'page-landing-offer',
+	'page-about',
+	'page-contact',
+	'page-faq',
 );
-const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'hero-booking', 'blog-list', '404-content', 'accessibility-statement' );
+const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'hero-booking', 'page-service-detail', 'page-provider', 'page-pricing', 'page-landing-offer', 'page-about', 'page-contact', 'page-faq', 'blog-list', '404-content', 'accessibility-statement' );
 
 $keel_registry = WP_Block_Patterns_Registry::get_instance();
 foreach ( KEEL_PATTERNS as $keel_slug ) {
