@@ -44,7 +44,12 @@ checked by `npm run check:contrast` at 4.5:1 for text and 3:1 for UI.
 
 ### Typography (`settings.typography`)
 
-Families `body` and `display` (system stack until the M0 review pins fonts). Fluid sizes `xs`
+Families `body` and `display` are roles, so patterns never name a typeface. Pinned at the M0
+design review (2026-10-29): `body` is Figtree in every variation; `display` is Bricolage Grotesque
+in Harbor, Slate and Night, Fraunces in Coral and Palm, and Figtree in Clinic. All three are OFL
+variable fonts, subset to Latin from a pinned google/fonts commit by `npm run build:fonts` (M1)
+and shipped under `assets/fonts/` with Capsize-generated `size-adjust` fallbacks (Arial for the
+sans faces, Georgia for Fraunces). M0 still renders the system stack. Fluid sizes `xs`
 (13 to 14 px), `sm` (14 to 16), `md` (16 to 18, the body size), `lg` (18 to 22), `xl` (22 to 28),
 `xxl` (28 to 40), `xxxl` (36 to 56). Line heights `tight` 1.15, `snug` 1.3, `normal` 1.6 and
 letter spacing `tight`, `normal`, `wide` live under `settings.custom.typography`.

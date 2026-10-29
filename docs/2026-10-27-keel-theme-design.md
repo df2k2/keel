@@ -1,6 +1,6 @@
 # Keel Theme Build: Design
 
-Date: 2026-10-27. Owner: Chris Snedaker. Status: awaiting approval.
+Date: 2026-10-27. Owner: Chris Snedaker. Status: approved 2026-10-28; M0 design review closed 2026-10-29 (palettes unchanged, fonts pinned).
 
 This is the build-ready design for the Keel WordPress theme, milestones M0 and M1 of the proposal at
 `docs/plan/keel-proposal/PROPOSAL.md`. The proposal is the reference for market data, positioning,
@@ -133,11 +133,15 @@ Design tokens (`theme.json`)
   pairs that pass.
 - (D) Typography: fluid, `settings.typography.fluid` on, seven size steps `xs` through `xxxl`
   defined with explicit min and max, line-height and letter-spacing per step in `custom`.
-  Three OFL variable families ship in the theme and each variation uses at most two: a humanist
-  sans for body and UI, a grotesque display sans, and a serif display face. Candidate families
-  are proposed at the M0 design review (see open items); `size-adjust` fallbacks are generated
-  for each so swapping to the web font causes no layout shift. No remote font ever. Until fonts
-  are pinned, M0 renders with the system UI stack so nothing in M0 depends on the choice.
+  Three OFL variable families ship in the theme and each variation uses at most two. Pinned at
+  the M0 design review on 2026-10-29 (C): Figtree (Erik Kennedy, OFL) for body and UI in every
+  variation; Bricolage Grotesque (Mathieu Triay, OFL) as the display face for Harbor, Slate and
+  Night; Fraunces (Undercase Type, OFL) as the display face for Coral and Palm; Clinic uses
+  Figtree alone. Sources are the google/fonts repository at a pinned commit, subset to Latin at
+  build time with the width axis of Bricolage Grotesque and the SOFT and WONK axes of Fraunces
+  pinned; `size-adjust` fallbacks (Arial for the sans faces, Georgia for Fraunces) are generated
+  so swapping to the web font causes no layout shift. No remote font ever. M0 rendered with the
+  system UI stack; M1 ships the files.
 - (D) Spacing: eight fluid steps in `spacingSizes` (slugs `10` through `80`), used for block gap,
   padding and section rhythm. Content width 68rem, wide 90rem, root-padding-aware alignments on.
 - (D) Shape and elevation in `custom`: radius `none`, `sm`, `md`, `lg`, `pill`; two shadows;
@@ -280,7 +284,8 @@ M0, foundation (proposal weeks 1 to 2)
 4. `wp-env` running with the seed content; one page rendered in each M0 variation.
 5. Checkpoint: CI green on a pull request; tokens documented in `CONTRIBUTING.md`; a design
    review with Chris of the three variations and the candidate fonts, after which fonts are
-   pinned.
+   pinned. Done 2026-10-29: Harbor, Coral and Clinic approved unchanged; fonts pinned as in
+   section 4.
 
 M1, theme MVP (proposal weeks 3 to 6)
 
@@ -310,8 +315,8 @@ three sites' content and configuration, then the hosting platform build already 
 
 - The final name, once a wordpress.org slug check and a trademark search clear one. The build
   proceeds under the codename either way.
-- Font approval at the M0 design review. The designer proposes candidates at that review.
-- Confirmation of the demo site's vertical. (D) From the vertical analysis in
+- Font approval at the M0 design review: done 2026-10-29, see Typography in section 4.
+- Demo site's vertical: confirmed by Chris on 2026-10-28 (C). From the vertical analysis in
   `docs/plan/keel-proposal/research/business-verticals.md`: a fictional dental practice on the
   Clinic variation with the Health and Dental pack, health and medical being the largest
   local-service family in Chris's data, with the biggest and best-maintained businesses and proven
