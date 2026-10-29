@@ -11,17 +11,41 @@ namespace Keel_Demo;
 defined( 'ABSPATH' ) || exit;
 
 /**
- * The requested variation slug, only when styles/<slug>.json exists in the active theme.
+ * The theme's style variations by slug, read from its styles/*.json listing.
+ *
+ * @return array<string, string> Slug => absolute path.
+ */
+function variation_files(): array {
+	static $files = null;
+	if ( is_array( $files ) ) {
+		return $files;
+	}
+	$files = array();
+	$found = glob( get_stylesheet_directory() . '/styles/*.json' );
+	foreach ( false === $found ? array() : $found as $path ) {
+		$files[ basename( $path, '.json' ) ] = $path;
+	}
+	return $files;
+}
+
+/**
+ * The requested variation slug, only when the theme ships a variation of that name. The value
+ * returned is the theme's own slug from the listing, never the request string.
  *
  * @return string|null Slug, or null for no or an unknown request.
  */
 function active_variation_slug(): ?string {
 	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- A read-only display choice for this request; nothing is stored or changed.
 	$raw = isset( $_GET['variation'] ) ? sanitize_key( wp_unslash( $_GET['variation'] ) ) : '';
-	if ( '' === $raw || 1 !== preg_match( '/^[a-z0-9-]{1,40}$/', $raw ) ) {
+	if ( '' === $raw ) {
 		return null;
 	}
-	return file_exists( get_stylesheet_directory() . '/styles/' . $raw . '.json' ) ? $raw : null;
+	foreach ( array_keys( variation_files() ) as $slug ) {
+		if ( $slug === $raw ) {
+			return $slug;
+		}
+	}
+	return null;
 }
 
 /**
@@ -37,7 +61,7 @@ function filter_user_data( \WP_Theme_JSON_Data $data ): \WP_Theme_JSON_Data {
 	}
 	static $variation = array();
 	if ( ! isset( $variation[ $slug ] ) ) {
-		$json               = file_get_contents( get_stylesheet_directory() . '/styles/' . $slug . '.json' ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents -- Local theme file.
+		$json               = file_get_contents( variation_files()[ $slug ] ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents -- Local theme file from the listing above.
 		$decoded            = false === $json ? null : json_decode( $json, true );
 		$variation[ $slug ] = is_array( $decoded ) ? $decoded : array();
 	}
