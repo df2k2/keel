@@ -8,6 +8,7 @@ parameters:
 		- patterns
 		- bin
 		- tests/wp
+		- examples/keel-demo
 	bootstrapFiles:
 		- tests/phpstan-bootstrap.php
 	scanFiles:
