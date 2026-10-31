@@ -26,13 +26,46 @@ function font_files_to_preload(): array {
 		return array();
 	}
 	$files = array();
-	foreach ( array( 'body', 'display' ) as $slug ) {
+	foreach ( preload_font_slugs() as $slug ) {
 		$file = roman_font_file( $origins, $slug );
 		if ( '' !== $file ) {
 			$files[] = $file;
 		}
 	}
 	return array_values( array_unique( $files ) );
+}
+
+/**
+ * The family slugs whose roman faces are preloaded: the body family and whichever family the
+ * headings use. Keel's own headings use `display`; a variation or a child theme may set them in
+ * `serif` or any other family, and then that is the face worth preloading.
+ *
+ * @return string[] Family slugs, deduplicated, body first.
+ */
+function preload_font_slugs(): array {
+	$slugs = array_values( array_unique( array( 'body', heading_family_slug() ) ) );
+	/**
+	 * Filters the font family slugs whose roman faces are preloaded.
+	 *
+	 * @param string[] $slugs Family slugs.
+	 */
+	return array_values( array_filter( (array) apply_filters( 'keel_preload_font_slugs', $slugs ), 'is_string' ) );
+}
+
+/**
+ * The font family slug the headings use, read from the merged global styles (theme, variation and
+ * child theme): `var:preset|font-family|serif` or `var(--wp--preset--font-family--serif)` both
+ * name `serif`.
+ *
+ * @return string Family slug; `display` when the headings set none.
+ */
+function heading_family_slug(): string {
+	$styles = wp_get_global_styles();
+	$family = $styles['elements']['heading']['typography']['fontFamily'] ?? '';
+	if ( is_string( $family ) && 1 === preg_match( '/font-family(?:\||--)([a-z0-9-]+)/', $family, $match ) ) {
+		return $match[1];
+	}
+	return 'display';
 }
 
 /**
@@ -67,7 +100,7 @@ function roman_font_file( array $origins, string $slug ): string {
 }
 
 /**
- * Adds a preload link for the roman face of each active web font.
+ * Adds a preload link for the roman face of the body family and the headings' family.
  *
  * @param array<int, array<string, string>> $resources Preload resources.
  * @return array<int, array<string, string>> Resources with the fonts added.

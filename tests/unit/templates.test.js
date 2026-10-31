@@ -29,6 +29,7 @@ const PARTS = [
 	'header-transparent',
 	'header-utility',
 	'header-sticky',
+	'header-actions',
 	'footer',
 	'footer-minimal',
 	'footer-big',

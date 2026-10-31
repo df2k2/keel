@@ -121,20 +121,29 @@ function filter_template_part( string $content, array $block ): string {
 }
 
 /**
- * The classes a header part's wrapper carries: every header is a keel-header; transparent and
- * sticky headers add their modifier, which parts.css positions.
+ * The classes a header part's wrapper carries: every header is a keel-header; the transparent and
+ * sticky parts add their modifier, which parts.css positions.
  *
  * @param string $slug Template part slug.
  * @return string[] Class names.
  */
 function header_part_classes( string $slug ): array {
+	$classes = array( 'keel-header' );
 	if ( 'header-transparent' === $slug ) {
-		return array( 'keel-header', 'keel-header--transparent' );
+		$classes[] = 'keel-header--transparent';
 	}
 	if ( 'header-sticky' === $slug ) {
-		return array( 'keel-header', 'keel-header--sticky' );
+		$classes[] = 'keel-header--sticky';
 	}
-	return array( 'keel-header' );
+	/**
+	 * Filters the classes a header part's wrapper carries. A child theme whose own `header` part
+	 * should stick or sit over a cover can add the modifier here, or set it as the className of the
+	 * part's root block, which is kept.
+	 *
+	 * @param string[] $classes Class names.
+	 * @param string   $slug    Template part slug.
+	 */
+	return array_values( array_filter( (array) apply_filters( 'keel_header_part_classes', $classes, $slug ), 'is_string' ) );
 }
 add_filter( 'render_block_core/template-part', __NAMESPACE__ . '\\filter_template_part', 10, 2 );
 

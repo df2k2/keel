@@ -218,6 +218,7 @@
 		{ "name": "header-transparent", "area": "header", "title": "Header: transparent" },
 		{ "name": "header-utility", "area": "header", "title": "Header with utility bar" },
 		{ "name": "header-sticky", "area": "header", "title": "Header: sticky" },
+		{ "name": "header-actions", "area": "uncategorized", "title": "Header actions" },
 		{ "name": "footer", "area": "footer", "title": "Footer" },
 		{ "name": "footer-minimal", "area": "footer", "title": "Footer: minimal" },
 		{ "name": "footer-big", "area": "footer", "title": "Footer: big" },
