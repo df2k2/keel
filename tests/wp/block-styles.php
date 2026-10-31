@@ -21,7 +21,7 @@ $keel_expected = array(
 	'core/columns'    => array( 'equal-cards' ),
 	'core/cover'      => array( 'band', 'gradient-overlay' ),
 	'core/table'      => array( 'striped', 'compact' ),
-	'core/heading'    => array( 'eyebrow' ),
+	'core/heading'    => array( 'eyebrow', 'accent' ),
 	'core/paragraph'  => array( 'lead' ),
 	'core/accordion'  => array( 'faq' ),
 	'core/tabs'       => array( 'boxed' ),
@@ -42,4 +42,4 @@ $keel_secondary = $keel_registry->get_registered( 'core/button', 'secondary' );
 if ( 'var:preset|color|accent' !== ( $keel_secondary['style_data']['color']['background'] ?? '' ) ) {
 	WP_CLI::error( 'core/button secondary must set style_data.color.background to var:preset|color|accent.' );
 }
-WP_CLI::success( 'block-styles: 27 keel styles registered across 15 blocks.' );
+WP_CLI::success( 'block-styles: 28 keel styles registered across 15 blocks.' );

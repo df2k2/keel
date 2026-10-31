@@ -12,10 +12,10 @@ test( 'theme.json declares version 3 and the twelve palette slugs', () => {
 	);
 } );
 
-test( 'seven fluid font sizes and eight spacing sizes', () => {
+test( 'eight fluid font sizes and eight spacing sizes', () => {
 	assert.deepEqual(
 		theme.settings.typography.fontSizes.map( ( s ) => s.slug ),
-		[ 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl' ]
+		[ 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl', 'display' ]
 	);
 	assert.equal( theme.settings.typography.fluid, true );
 	assert.deepEqual(

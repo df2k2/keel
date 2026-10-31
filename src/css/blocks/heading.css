@@ -1,0 +1,16 @@
+/* core/heading styles. */
+
+/* Style: accent (an emphasised phrase in the serif italic, in the accent colour). */
+
+.wp-block-heading.is-style-accent em {
+	color: var( --wp--preset--color--accent );
+	font-family: var( --wp--preset--font-family--serif );
+	font-style: italic;
+	font-weight: 400;
+}
+
+.is-style-band .is-style-accent em,
+.has-contrast-background-color .is-style-accent em,
+.wp-block-cover .is-style-accent em {
+	color: inherit;
+}

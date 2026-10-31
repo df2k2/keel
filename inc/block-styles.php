@@ -223,11 +223,15 @@ function block_styles(): array {
 					'color'      => array( 'text' => 'var:preset|color|primary' ),
 					'typography' => array(
 						'fontSize'      => 'var:preset|font-size|xs',
-						'fontWeight'    => '600',
+						'fontWeight'    => '700',
 						'letterSpacing' => 'var:custom|typography|letter-spacing|wide',
 						'textTransform' => 'uppercase',
 					),
 				),
+			),
+			array(
+				'name'  => 'accent',
+				'label' => __( 'Accent', 'keel' ),
 			),
 		),
 		'core/paragraph'  => array(

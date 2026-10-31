@@ -38,9 +38,18 @@ $keel_sample   = __( 'Clear prices, honest advice, work that lasts', 'keel' );
 	<!-- wp:heading {"level":3} -->
 	<h3 class="wp-block-heading"><?php esc_html_e( 'Sizes', 'keel' ); ?></h3>
 	<!-- /wp:heading -->
-	<?php foreach ( $keel_sizes as $keel_size ) : ?>
+	<?php
+	foreach ( $keel_sizes as $keel_size ) :
+		$keel_fluid = is_array( $keel_size['fluid'] ?? null ) ? $keel_size['fluid'] : array();
+		$keel_min   = (string) ( $keel_fluid['min'] ?? $keel_size['size'] );
+		$keel_max   = (string) ( $keel_fluid['max'] ?? $keel_size['size'] );
+		$keel_range = $keel_min === $keel_max ? $keel_min : $keel_min . ' to ' . $keel_max;
+		if ( str_ends_with( $keel_min, 'rem' ) && str_ends_with( $keel_max, 'rem' ) ) {
+			$keel_range .= sprintf( ' (%dpx to %dpx)', (int) round( (float) $keel_min * 16 ), (int) round( (float) $keel_max * 16 ) );
+		}
+		?>
 	<!-- wp:paragraph {"fontSize":"<?php echo esc_attr( $keel_size['slug'] ); ?>"} -->
-	<p class="has-<?php echo esc_attr( $keel_size['slug'] ); ?>-font-size"><?php echo esc_html( $keel_sample ); ?> <code><?php echo esc_html( $keel_size['slug'] . ' = ' . ( is_string( $keel_size['size'] ) ? $keel_size['size'] : wp_json_encode( $keel_size['size'] ) ) ); ?></code></p>
+	<p class="has-<?php echo esc_attr( $keel_size['slug'] ); ?>-font-size"><?php echo esc_html( $keel_sample ); ?> <code><?php echo esc_html( $keel_size['slug'] . ' = ' . $keel_range ); ?></code></p>
 	<!-- /wp:paragraph -->
 	<?php endforeach; ?>
 
@@ -48,8 +57,8 @@ $keel_sample   = __( 'Clear prices, honest advice, work that lasts', 'keel' );
 	<h3 class="wp-block-heading"><?php esc_html_e( 'Headings', 'keel' ); ?></h3>
 	<!-- /wp:heading -->
 
-	<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","lineHeight":"1.15"}},"fontSize":"xxxl","fontFamily":"display"} -->
-	<p class="has-display-font-family has-xxxl-font-size" style="font-weight:700;line-height:1.15"><?php esc_html_e( 'Heading one (shown as a paragraph: this page already has its h1)', 'keel' ); ?></p>
+	<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","lineHeight":"1.1","letterSpacing":"-0.015em"}},"fontSize":"display","fontFamily":"display"} -->
+	<p class="has-display-font-family has-display-font-size" style="font-weight:600;line-height:1.1;letter-spacing:-0.015em"><?php esc_html_e( 'Display and heading one (shown as a paragraph: this page already has its h1)', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 	<?php for ( $keel_level = 2; $keel_level <= 6; $keel_level++ ) : ?>
 	<!-- wp:heading {"level":<?php echo (int) $keel_level; ?>} -->

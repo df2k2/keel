@@ -68,7 +68,9 @@ export const SOURCES = [
 		style: 'italic',
 		url: `${ RAW }/fraunces/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf`,
 		sha256: 'b24448c43702fac4ee856781d461a0dfba8d8e594b6e8e190234b75fed2c0e01',
-		axes: { SOFT: 50, WONK: 0, wght: { min: 300, max: 800 } },
+		// A static 400 instance: the italic is only ever the accent phrase in headings, and the
+		// full variable face would push Coral pages past the 160 KB font budget.
+		axes: { SOFT: 50, WONK: 0, wght: 400 },
 	},
 ];
 

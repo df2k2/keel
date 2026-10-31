@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Seeds the wp-env site: theme, permalinks, the M1 example pages and posts, then the keel-demo plugin's showcase and dental pages, menu and front page, and the Clinic variation.
+# Seeds the wp-env site: theme, permalinks, the M1 example pages and posts, then the keel-demo plugin's showcase and dental pages, menu and front page, and the Coral variation.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 npx wp-env run cli wp theme activate keel
@@ -20,4 +20,4 @@ fi
 npx wp-env run cli wp eval-file wp-content/themes/keel/bin/seed.php "$attachment"
 npx wp-env run cli wp plugin activate keel-demo
 npx wp-env run cli wp keel-demo seed
-bash bin/apply-variation.sh clinic
+bash bin/apply-variation.sh coral

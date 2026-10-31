@@ -74,11 +74,22 @@ test( 'header becomes solid after scrolling and transparent only over a cover', 
 	await page.evaluate( () => window.scrollTo( 0, 400 ) );
 	await expect( header ).toHaveClass( /is-scrolled/ );
 	await page.goto( '/transparent-plain/' );
+	// The solid header is the base colour of whichever variation is applied.
+	const base = await page.evaluate( () => {
+		const probe = document.createElement( 'div' );
+		probe.style.backgroundColor = getComputedStyle(
+			document.documentElement
+		).getPropertyValue( '--wp--preset--color--base' );
+		document.body.append( probe );
+		const color = getComputedStyle( probe ).backgroundColor;
+		probe.remove();
+		return color;
+	} );
 	expect(
 		await page
 			.locator( 'header.keel-header' )
 			.evaluate( ( el ) => getComputedStyle( el ).backgroundColor )
-	).toBe( 'rgb(255, 255, 255)' );
+	).toBe( base );
 } );
 
 test( 'announcement bar dismisses for the session', async ( { page } ) => {

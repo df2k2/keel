@@ -16,8 +16,8 @@ $keel_image = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 ?>
 <!-- wp:cover {"url":"<?php echo esc_url( $keel_image ); ?>","dimRatio":60,"overlayColor":"contrast","isUserOverlayColor":true,"minHeight":60,"minHeightUnit":"vh","align":"full","layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignfull" style="min-height:60vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( $keel_image ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-60 has-background-dim"></span><div class="wp-block-cover__inner-container">
-	<!-- wp:heading {"level":1,"fontSize":"xxxl"} -->
-	<h1 class="wp-block-heading has-xxxl-font-size"><?php esc_html_e( 'Trusted local service, done right the first time', 'keel' ); ?></h1>
+	<!-- wp:heading {"level":1,"fontSize":"display"} -->
+	<h1 class="wp-block-heading has-display-font-size"><?php esc_html_e( 'Trusted local service, done right the first time', 'keel' ); ?></h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"fontSize":"lg"} -->

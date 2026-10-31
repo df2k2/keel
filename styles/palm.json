@@ -111,7 +111,32 @@
 						{
 							"fontFamily": "Fraunces",
 							"fontStyle": "italic",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/fraunces-italic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"slug": "serif",
+					"name": "Serif",
+					"fontFamily": "Fraunces, \"Fraunces Fallback\", Georgia, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "normal",
 							"fontWeight": "300 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/fraunces.woff2"
+							]
+						},
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "italic",
+							"fontWeight": "400",
 							"fontDisplay": "swap",
 							"src": [
 								"file:./assets/fonts/fraunces-italic.woff2"
@@ -128,6 +153,15 @@
 				"md": "10px",
 				"lg": "20px",
 				"pill": "999px"
+			}
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "500"
+				}
 			}
 		}
 	}

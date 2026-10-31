@@ -5,10 +5,14 @@
 }
 
 .keel-stat__number {
-	font-family: var( --wp--preset--font-family--display );
+	font-family: var( --wp--preset--font-family--serif );
 	font-size: var( --wp--preset--font-size--xxl );
-	font-weight: 700;
+	font-weight: 500;
 	line-height: var( --wp--custom--typography--line-height--tight );
+}
+
+.keel-stat--display .keel-stat__number {
+	font-size: var( --wp--preset--font-size--display );
 }
 
 @keyframes keel-reveal {
@@ -63,7 +67,7 @@
 	min-block-size: 2rem;
 	padding: var( --wp--preset--spacing--10 ) var( --wp--preset--spacing--30 );
 	border-radius: var( --wp--custom--radius--pill );
-	font-size: var( --wp--preset--font-size--sm );
+	font-size: var( --wp--preset--font-size--xs );
 	font-weight: 600;
 	line-height: 1.2;
 }
@@ -82,7 +86,7 @@
 .keel-eyebrow {
 	color: var( --wp--preset--color--primary );
 	font-size: var( --wp--preset--font-size--xs );
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: var( --wp--custom--typography--letter-spacing--wide );
 	text-transform: uppercase;
 }

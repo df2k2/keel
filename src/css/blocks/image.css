@@ -3,5 +3,5 @@
 .wp-block-image figcaption {
 	margin-block-start: var( --wp--preset--spacing--20 );
 	color: var( --wp--preset--color--contrast );
-	font-size: var( --wp--preset--font-size--xs );
+	font-size: var( --wp--preset--font-size--sm );
 }
