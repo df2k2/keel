@@ -20,11 +20,12 @@ button sizes, light, outline-light, glass, soft, link and icon buttons; group pa
 marquee, four callouts, search panels, ticket and rail; media-text card; cover tile; image
 polaroid; heading accent and ghost; paragraph eyebrow-rule and small print; list crosses;
 separator route; navigation wide submenu and highlight; table scroll; tabs pills; gallery mosaic;
-forms styled for any plugin. Eighty-eight new patterns for 182 in 23 categories: the card family,
+forms styled for any plugin. Ninety-one new patterns for 185 in 23 categories: the card family,
 the element gains (utility bar with contact, button row, rating, price formats, search panel,
 journal card and grid, feature article, profile and review cards, marquee band, filter chips,
 itinerary, steps row, deal cards, callouts, departures and best-time tables, breadcrumb row,
-facts bar, map card, big footer, floating call to action), six page sets (journal, places and
+facts bar, map card, big footer, floating call to action, the header actions, the 404 explore row
+and the sidebar list), six page sets (journal, places and
 listings, events and deals, company pages, utility pages) with nineteen page layouts in the
 new-page chooser, and the elements page that replaces the style guide, naming every element.
 Four templates (post: cover, with sidebar, minimal; author archive), three parts (sticky header,

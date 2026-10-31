@@ -125,6 +125,12 @@ test( 'templates and parts are core-only and offline', () => {
 					`${ dir }/${ file } contains ${ bad }`
 				);
 			}
+			// Text belongs in patterns, where it is translatable; templates and parts only compose.
+			assert.doesNotMatch(
+				html.replace( /<!--[\s\S]*?-->/g, '' ),
+				/>\s*[A-Za-z][^<]*</,
+				`${ dir }/${ file } carries literal text`
+			);
 		}
 	}
 } );

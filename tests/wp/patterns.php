@@ -192,6 +192,9 @@ const KEEL_PATTERNS    = array(
 	'page-thank-you',
 	'page-legal',
 	'page-one-page',
+	'header-actions',
+	'404-explore',
+	'sidebar-more',
 );
 const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'hero-booking', 'page-service-detail', 'page-provider', 'page-pricing', 'page-landing-offer', 'page-about', 'page-contact', 'page-faq', 'elements', 'dental-hero', 'dental-home', 'dental-service-whitening', 'dental-service-implants', 'dental-provider', 'dental-pricing', 'dental-landing-implants', 'dental-about', 'dental-contact', 'blog-list', '404-content', 'accessibility-statement', 'place-hero', 'event-header', 'utility-panel', 'page-journal', 'page-places', 'page-place', 'page-listings', 'page-listing', 'page-events', 'page-event', 'page-deals', 'page-about-story', 'page-team', 'page-careers', 'page-press', 'page-contact-map', 'page-visitor-info', 'page-coming-soon', 'page-maintenance', 'page-thank-you', 'page-legal', 'page-one-page' );
 

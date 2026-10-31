@@ -8,7 +8,7 @@ Requires WordPress 7.1 or later and PHP 8.3 or later. Licensed GPL-2.0-or-later.
 
 ## What ships
 
-- Seventeen templates, fourteen template parts and 182 patterns in 23 categories built from core blocks only, including twenty-six starter page layouts offered in the new-page chooser (journal, places, listings, events, deals, company and utility pages among them), the card family with equal heights in every row, and a dental practice pack of twenty-one patterns.
+- Seventeen templates, fourteen template parts and 185 patterns in 23 categories built from core blocks only, including twenty-six starter page layouts offered in the new-page chooser (journal, places, listings, events, deals, company and utility pages among them), the card family with equal heights in every row, and a dental practice pack of twenty-one patterns.
 - An elements page (`keel/elements`) that names every element the theme ships with its class, style or pattern, and reads colours, contrast ratios, type, spacing, shape and every block style from the active global styles when it renders.
 - Sixty-five block styles across nineteen blocks, seven style variations (Coral carries the editorial look with serif headings and the italic accent; Contrast is the high-contrast one), three self-hosted fonts as the body, display and serif families with metric fallbacks.
 - Three Interactivity API stores under 400 bytes each, loaded only where their part or pattern renders; static pages load no JavaScript.
