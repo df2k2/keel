@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Style guide: shape
- * Slug: keel/styleguide-shape
+ * Title: Elements: shape
+ * Slug: keel/elements-shape
  * Categories: keel/pages
- * Keywords: style guide, shape, radius, shadow, border, focus
+ * Keywords: elements, shape, radius, shadow, border, focus
  * Viewport Width: 1200
  * Inserter: no
  *

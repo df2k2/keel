@@ -57,7 +57,8 @@
 
 .wp-block-group.is-style-card > .keel-card__media {
 	flex: none;
-	inline-size: auto;
+	inline-size: calc( 100% + 2 * var( --wp--preset--spacing--40 ) );
+	max-inline-size: none;
 	margin-block-start: calc( -1 * var( --wp--preset--spacing--40 ) );
 	margin-inline: calc( -1 * var( --wp--preset--spacing--40 ) );
 	overflow: hidden;

@@ -3,6 +3,7 @@
 input:where( :not( [type="checkbox"], [type="radio"], [type="range"], [type="submit"], [type="button"], [type="file"], [type="hidden"] ) ),
 select,
 textarea {
+	box-sizing: border-box;
 	inline-size: 100%;
 	min-block-size: 2.75rem;
 	padding: var( --wp--preset--spacing--20 ) var( --wp--preset--spacing--30 );

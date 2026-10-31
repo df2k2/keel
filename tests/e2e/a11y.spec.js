@@ -10,8 +10,12 @@ const PAGES = [
 	'/spring-maintenance-checklist/',
 	'/this-page-does-not-exist/',
 	'/dental/',
-	'/style-guide/',
-	'/block-styles/',
+	'/elements/',
+	'/journal/',
+	'/listings/',
+	'/places/harbor-district/',
+	'/events/',
+	'/a-day-on-the-water/',
 ];
 const TAGS = [
 	'wcag2a',

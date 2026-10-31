@@ -37,6 +37,8 @@ test( 'only the modules a page uses load', async ( { page } ) => {
 		'carousel.js',
 		'header.js',
 	] );
+	expect( await sources( '/journal/' ) ).toEqual( [ 'header.js' ] );
+	await expect( page.locator( '[data-wp-router-region]' ) ).toHaveCount( 1 );
 } );
 
 test( 'no external requests', async ( { page } ) => {

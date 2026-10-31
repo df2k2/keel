@@ -1,5 +1,12 @@
 /* core/table base rules. */
 
+/* Positioned, or Chromium lets a wide table's start-side overflow widen the page in RTL even though the figure scrolls. */
+
+.wp-block-table {
+	position: relative;
+	overflow: auto hidden;
+}
+
 .wp-block-table table {
 	inline-size: 100%;
 	border-collapse: collapse;

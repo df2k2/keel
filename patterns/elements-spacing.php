@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Style guide: spacing
- * Slug: keel/styleguide-spacing
+ * Title: Elements: spacing
+ * Slug: keel/elements-spacing
  * Categories: keel/pages
- * Keywords: style guide, spacing, scale, padding
+ * Keywords: elements, spacing, scale, padding
  * Viewport Width: 1200
  * Inserter: no
  *

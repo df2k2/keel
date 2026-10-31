@@ -24,25 +24,32 @@ $keel_demo_templates = array(
 	array( 'search', __( 'Search results as a grid, with the no-results pattern.', 'keel-demo' ), '/?s=quote' ),
 	array( '404', __( 'Not found: a message, a search form and the way home.', 'keel-demo' ), '/this-page-does-not-exist/' ),
 	array( 'attachment', __( 'A media attachment page.', 'keel-demo' ), '' ),
+	array( 'single-cover', __( 'Post: cover. The featured image fills a full-bleed cover with the title and meta over it; narrow content below.', 'keel-demo' ), '/a-day-on-the-water/' ),
+	array( 'single-sidebar', __( 'Post: with sidebar. Content beside the author box and a mini list of more posts.', 'keel-demo' ), '/what-the-tide-tables-say/' ),
+	array( 'single-minimal', __( 'Post: minimal. Title, meta and content on the minimal footer, nothing else.', 'keel-demo' ), '/one-line-from-the-harbourmaster/' ),
+	array( 'author', __( 'Author archive: avatar, name and biography above the posts.', 'keel-demo' ), '/author/admin/' ),
 );
 $keel_demo_parts     = array(
 	array( 'header', __( 'Logo, site title and the primary navigation.', 'keel-demo' ) ),
 	array( 'header-centered', __( 'Stacked logo and navigation, centred.', 'keel-demo' ) ),
 	array( 'header-transparent', __( 'Transparent over a leading cover, solid once scrolled.', 'keel-demo' ) ),
 	array( 'header-utility', __( 'The standard header with the utility bar (hours, address, phone) above it.', 'keel-demo' ) ),
+	array( 'header-sticky', __( 'Sticks to the top with a search button and a primary button beside the navigation.', 'keel-demo' ) ),
 	array( 'footer', __( 'Footer columns and the copyright line.', 'keel-demo' ) ),
 	array( 'footer-minimal', __( 'A single-line footer for landing pages.', 'keel-demo' ) ),
+	array( 'footer-big', __( 'Brand and social links, two link columns, contact and hours, and a legal row.', 'keel-demo' ) ),
 	array( 'cta-band', __( 'The call-to-action band used by the service and location templates.', 'keel-demo' ) ),
 	array( 'mobile-cta-bar', __( 'Call, text, book and directions, fixed to the bottom on phones.', 'keel-demo' ) ),
 	array( 'announcement-bar', __( 'A dismissible announcement, remembered for the session.', 'keel-demo' ) ),
 	array( 'post-meta', __( 'Date, author and categories for posts.', 'keel-demo' ) ),
 	array( 'comments', __( 'The comments list and form.', 'keel-demo' ) ),
+	array( 'floating-cta', __( 'Call and book buttons fixed bottom-right on desktop; the mobile bar takes over on phones.', 'keel-demo' ) ),
 );
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--60)">
 	<!-- wp:paragraph {"className":"is-style-lead"} -->
-	<p class="is-style-lead"><?php esc_html_e( 'Thirteen templates and eleven template parts, all editable in the Site Editor. Each row links to a live example on this site where one exists.', 'keel-demo' ); ?></p>
+	<p class="is-style-lead"><?php esc_html_e( 'Seventeen templates and fourteen template parts, all editable in the Site Editor. Each row links to a live example on this site where one exists.', 'keel-demo' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:heading -->

@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Style guide: icons
- * Slug: keel/styleguide-icons
+ * Title: Elements: icons
+ * Slug: keel/elements-icons
  * Categories: keel/pages
- * Keywords: style guide, icons, svg, images
+ * Keywords: elements, icons, svg, images
  * Viewport Width: 1200
  * Inserter: no
  *

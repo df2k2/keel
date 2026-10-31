@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Style guide: typography
- * Slug: keel/styleguide-typography
+ * Title: Elements: typography
+ * Slug: keel/elements-typography
  * Categories: keel/pages
- * Keywords: style guide, typography, fonts, sizes, headings
+ * Keywords: elements, typography, fonts, sizes, headings
  * Viewport Width: 1200
  * Inserter: no
  *

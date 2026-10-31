@@ -41,3 +41,7 @@
 	--keel-callout: var( --wp--preset--color--error );
 	--keel-callout-icon: url( "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'><circle cx='12' cy='12' r='9'/><path d='m15 9-6 6M9 9l6 6'/></svg>" );
 }
+
+.wp-block-group[class*="is-style-callout-"] a:not( .wp-block-button__link ) {
+	color: inherit;
+}

@@ -186,6 +186,7 @@
 	display: inline-flex;
 	align-items: center;
 	inline-size: fit-content;
+	min-block-size: 1.5rem;
 	margin: 0;
 	padding: var( --wp--preset--spacing--10 ) var( --wp--preset--spacing--30 );
 	border-radius: var( --wp--custom--radius--pill );
@@ -228,7 +229,7 @@
 
 .keel-price s {
 	margin-inline-end: var( --wp--preset--spacing--10 );
-	color: var( --wp--preset--color--border );
+	color: color-mix( in srgb, var( --wp--preset--color--contrast ) 72%, var( --wp--preset--color--base ) );
 	font-weight: 400;
 }
 
@@ -347,6 +348,9 @@
 
 .keel-chip a,
 .keel-tag a {
+	display: inline-flex;
+	align-items: center;
+	min-block-size: 1.5rem;
 	color: inherit;
 	text-decoration: none;
 }

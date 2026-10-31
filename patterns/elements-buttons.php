@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Style guide: buttons
- * Slug: keel/styleguide-buttons
+ * Title: Elements: buttons
+ * Slug: keel/elements-buttons
  * Categories: keel/pages
- * Keywords: style guide, buttons, states, hover, focus
+ * Keywords: elements, buttons, states, hover, focus
  * Viewport Width: 1200
  * Inserter: no
  *
@@ -51,5 +51,12 @@ $keel_buttons = array(
 		<?php endforeach; ?>
 	</div>
 	<!-- /wp:group -->
+
+	<!-- wp:heading {"level":3} -->
+	<h3 class="wp-block-heading"><?php esc_html_e( 'Every style, every size', 'keel' ); ?></h3>
+	<!-- /wp:heading -->
+	<?php echo Keel\Theme\element_label( 'keel/button-row' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
+
+	<!-- wp:pattern {"slug":"keel/button-row"} /-->
 </div>
 <!-- /wp:group -->

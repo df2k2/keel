@@ -33,6 +33,10 @@ defined( 'ABSPATH' ) || exit;
 </div>
 <!-- /wp:group -->
 
+<!-- wp:heading {"level":2,"className":"screen-reader-text"} -->
+<h2 class="wp-block-heading screen-reader-text"><?php esc_html_e( 'Write to us or find us', 'keel' ); ?></h2>
+<!-- /wp:heading -->
+
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide">
 	<!-- wp:column {"width":"58%"} -->

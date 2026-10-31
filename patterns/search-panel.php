@@ -38,7 +38,7 @@ $keel_tabs = array(
 				?>
 			<!-- wp:tab-panel {"label":"<?php echo esc_attr( $keel_tab[0] ); ?>"} -->
 			<section role="tabpanel" tabindex="0" class="wp-block-tab-panel">
-				<!-- wp:search {"label":"<?php echo esc_attr( $keel_tab[0] ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr( $keel_tab[1] ); ?>","buttonText":"<?php esc_attr_e( 'Search', 'keel' ); ?>","buttonPosition":"button-inside"} /-->
+				<!-- wp:search {"label":"<?php echo esc_attr( sprintf( /* translators: %s: tab name such as Places. */ __( 'Search %s', 'keel' ), $keel_tab[0] ) ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr( $keel_tab[1] ); ?>","buttonText":"<?php esc_attr_e( 'Search', 'keel' ); ?>","buttonPosition":"button-inside"} /-->
 
 				<!-- wp:group {"className":"keel-filter-chips","layout":{"type":"flex","flexWrap":"wrap"}} -->
 				<div class="wp-block-group keel-filter-chips">

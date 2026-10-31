@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Style guide: block styles
- * Slug: keel/styleguide-block-styles
+ * Title: Elements: block styles
+ * Slug: keel/elements-block-styles
  * Categories: keel/pages
- * Keywords: style guide, block styles, samples
+ * Keywords: elements, block styles, samples
  * Viewport Width: 1200
  * Inserter: no
  *

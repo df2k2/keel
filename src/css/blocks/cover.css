@@ -72,7 +72,7 @@
 
 /* A Read More link inside a cover (the feature article) reads as a light button. */
 
-.wp-block-cover .wp-block-read-more {
+.wp-block-cover a.wp-block-read-more {
 	display: inline-flex;
 	align-items: center;
 	min-block-size: 2.75rem;

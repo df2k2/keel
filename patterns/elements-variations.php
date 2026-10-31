@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Style guide: variations
- * Slug: keel/styleguide-variations
+ * Title: Elements: variations
+ * Slug: keel/elements-variations
  * Categories: keel/pages
- * Keywords: style guide, variations, palettes, styles
+ * Keywords: elements, variations, palettes, styles
  * Viewport Width: 1200
  * Inserter: no
  *

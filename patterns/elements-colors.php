@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Style guide: colours
- * Slug: keel/styleguide-colors
+ * Title: Elements: colours
+ * Slug: keel/elements-colors
  * Categories: keel/pages
- * Keywords: style guide, colours, palette, contrast
+ * Keywords: elements, colours, palette, contrast
  * Viewport Width: 1200
  * Inserter: no
  *

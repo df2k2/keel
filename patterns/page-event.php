@@ -36,6 +36,10 @@ defined( 'ABSPATH' ) || exit;
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
 	<!-- wp:group {"anchor":"map","layout":{"type":"constrained","contentSize":"40rem"}} -->
 	<div class="wp-block-group" id="map">
+		<!-- wp:heading {"level":2} -->
+		<h2 class="wp-block-heading"><?php esc_html_e( 'Where it is', 'keel' ); ?></h2>
+		<!-- /wp:heading -->
+
 		<!-- wp:pattern {"slug":"keel/map-card"} /-->
 	</div>
 	<!-- /wp:group -->

@@ -16,12 +16,35 @@ const PAGES = [
 	[ '/category/news/', 200, true ],
 	[ '/this-page-does-not-exist/', 404, true ],
 	[ '/patterns/', 200, true ],
-	[ '/style-guide/', 200, true ],
+	[ '/elements/', 200, true ],
 	[ '/why-keel/', 200, true ],
-	[ '/block-styles/', 200, true ],
 	[ '/dental/', 200, true ],
 	[ '/dental/pricing/', 200, true ],
 	[ '/dental/implants-offer/', 200, false ],
+	[ '/journal/', 200, true ],
+	[ '/places/', 200, true ],
+	[ '/places/harbor-district/', 200, true ],
+	[ '/listings/', 200, true ],
+	[ '/listings/harbor-view-inn/', 200, true ],
+	[ '/events/', 200, true ],
+	[ '/events/harbor-night-market/', 200, true ],
+	[ '/deals/', 200, true ],
+	[ '/about/', 200, true ],
+	[ '/team/', 200, true ],
+	[ '/careers/', 200, true ],
+	[ '/press/', 200, true ],
+	[ '/contact-map/', 200, true ],
+	[ '/visitor-info/', 200, true ],
+	[ '/coming-soon/', 200, true ],
+	[ '/maintenance/', 200, true ],
+	[ '/thank-you/', 200, true ],
+	[ '/legal/', 200, true ],
+	[ '/one-page/', 200, true ],
+	[ '/a-day-on-the-water/', 200, true ],
+	[ '/the-quiet-season/', 200, true ],
+	[ '/what-the-tide-tables-say/', 200, true ],
+	[ '/one-line-from-the-harbourmaster/', 200, true ],
+	[ '/author/admin/', 200, true ],
 ];
 
 for ( const [ path, status, hasHeader ] of PAGES ) {
@@ -124,4 +147,76 @@ test( 'the page behind the open mobile menu is inert', async ( { page } ) => {
 	await expect( page.locator( 'main' ) ).toHaveAttribute( 'inert', '' );
 	await page.keyboard.press( 'Escape' );
 	await expect( page.locator( 'main' ) ).not.toHaveAttribute( 'inert', '' );
+} );
+
+test( 'equal-height listing cards pin their footers to the bottom edge', async ( {
+	page,
+} ) => {
+	const measure = async () =>
+		page
+			.locator( '.wp-block-post-template > li > .is-style-card' )
+			.evaluateAll( ( cards ) =>
+				cards.map( ( card ) => {
+					const box = card.getBoundingClientRect();
+					const footer = card
+						.querySelector( '.keel-card-footer' )
+						.getBoundingClientRect();
+					const padding = parseFloat(
+						getComputedStyle( card ).paddingBottom
+					);
+					return {
+						y: Math.round( box.y ),
+						height: box.height,
+						gap:
+							box.y +
+							box.height -
+							padding -
+							( footer.y + footer.height ),
+					};
+				} )
+			);
+	await page.setViewportSize( { width: 1280, height: 900 } );
+	await page.goto( '/listings/' );
+	const desktop = await measure();
+	expect( desktop.length ).toBeGreaterThan( 3 );
+	const rows = new Map();
+	for ( const card of desktop ) {
+		rows.set( card.y, [ ...( rows.get( card.y ) ?? [] ), card.height ] );
+	}
+	for ( const heights of rows.values() ) {
+		expect(
+			Math.max( ...heights ) - Math.min( ...heights )
+		).toBeLessThanOrEqual( 1 );
+	}
+	for ( const card of desktop ) {
+		expect( Math.abs( card.gap ) ).toBeLessThanOrEqual( 1 );
+	}
+	await page.setViewportSize( { width: 360, height: 780 } );
+	await page.goto( '/listings/' );
+	for ( const card of await measure() ) {
+		expect( Math.abs( card.gap ) ).toBeLessThanOrEqual( 1 );
+	}
+} );
+
+test( 'format labels appear only on formatted posts', async ( { page } ) => {
+	await page.goto( '/spring-maintenance-checklist/' );
+	await expect(
+		page.locator( '.wp-block-post-terms a[href*="/type/"]' )
+	).toHaveCount( 0 );
+	await page.goto( '/one-line-from-the-harbourmaster/' );
+	const label = page.locator( '.wp-block-post-terms a[href*="/type/"]' );
+	await expect( label ).toHaveCount( 1 );
+	await expect( label ).toHaveText( 'Quote' );
+} );
+
+test( 'the cover template survives a post without a featured image', async ( {
+	page,
+} ) => {
+	const errors = [];
+	page.on( 'pageerror', ( error ) => errors.push( error.message ) );
+	const response = await page.goto( '/the-quiet-season/' );
+	expect( response.status() ).toBe( 200 );
+	await expect( page.locator( '.wp-block-cover h1' ) ).toHaveCount( 1 );
+	await expect( page.locator( '.wp-block-cover img' ) ).toHaveCount( 0 );
+	expect( errors ).toEqual( [] );
 } );

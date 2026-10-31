@@ -37,6 +37,10 @@ defined( 'ABSPATH' ) || exit;
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
 	<!-- wp:pattern {"slug":"keel/filter-chips"} /-->
 
+	<!-- wp:heading {"level":2} -->
+	<h2 class="wp-block-heading"><?php esc_html_e( 'Everything in the guide', 'keel' ); ?></h2>
+	<!-- /wp:heading -->
+
 	<!-- wp:query {"queryId":35,"query":{"perPage":6,"pages":0,"offset":0,"postType":"page","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"enhancedPagination":true,"align":"wide","className":"keel-listings"} -->
 	<div class="wp-block-query alignwide keel-listings">
 		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->

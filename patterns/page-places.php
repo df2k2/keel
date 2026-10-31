@@ -35,6 +35,10 @@ defined( 'ABSPATH' ) || exit;
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+	<!-- wp:heading {"level":2} -->
+	<h2 class="wp-block-heading"><?php esc_html_e( 'The regions', 'keel' ); ?></h2>
+	<!-- /wp:heading -->
+
 	<!-- wp:pattern {"slug":"keel/tiles-grid"} /-->
 </div>
 <!-- /wp:group -->
