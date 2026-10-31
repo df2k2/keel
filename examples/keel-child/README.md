@@ -6,7 +6,8 @@ adds or overrides.
 
 - `theme.json` here merges over the parent's: this example recolours `primary`. Keep the parent's
   palette slugs so patterns keep their meaning, and run the parent's `npm run check:contrast`
-  against your values.
+  against your values. The parent ships three font families, `body`, `display` and `serif`
+  (Fraunces), so a child can set headings in the serif without redeclaring any font file.
 - Drop files into `templates/`, `parts/` or `patterns/` to override the parent's by name.
 - Add a `functions.php` only for hooks; the parent already enqueues everything it needs.
 - Translations for the `keel-child` text domain go in `languages/`.

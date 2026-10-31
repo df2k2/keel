@@ -50,15 +50,21 @@ checked by `npm run check:contrast` at 4.5:1 for text and 3:1 for UI.
 
 ### Typography (`settings.typography`)
 
-Families `body` and `display` are roles, so patterns never name a typeface. Pinned at the M0
-design review (2026-10-29): `body` is Figtree in every variation; `display` is Bricolage Grotesque
-in Harbor, Slate and Night, Fraunces in Coral and Palm, and Figtree in Clinic. All three are OFL
-variable fonts, subset to Latin from a pinned google/fonts commit by `npm run build:fonts` (M1)
-and shipped under `assets/fonts/` with Capsize-generated `size-adjust` fallbacks (Arial for the
-sans faces, Georgia for Fraunces). M0 still renders the system stack. Fluid sizes `xs`
-(13 to 14 px), `sm` (14 to 16), `md` (16 to 18, the body size), `lg` (18 to 22), `xl` (22 to 28),
-`xxl` (28 to 40), `xxxl` (36 to 56). Line heights `tight` 1.15, `snug` 1.3, `normal` 1.6 and
-letter spacing `tight`, `normal`, `wide` live under `settings.custom.typography`.
+Families `body`, `display` and `serif` are roles, so patterns never name a typeface. `body` is
+Figtree in every variation; `display` is Bricolage Grotesque in Harbor, Slate and Night, Fraunces
+in Coral and Palm, and Figtree in Clinic and Contrast; `serif` is Fraunces everywhere, so a child
+theme or a pattern can reach it without redeclaring font files (the heading `accent` style sets an
+emphasised phrase in it). Every variation lists all three families, because a variation's list
+replaces the theme's. All three are OFL fonts, subset to Latin from a pinned google/fonts commit by
+`npm run build:fonts` and shipped under `assets/fonts/` with Capsize-generated `size-adjust`
+fallbacks (Arial for the sans faces, Georgia for Fraunces); Fraunces italic is a static weight-400
+instance. Fluid sizes (M1.6): `xs` 12 to 13 px (eyebrows, chips, tags), `sm` 13 to 14 (meta,
+labels, captions), `md` 16 to 17 (the body size), `lg` 18 to 20 (card titles, leads), `xl` 22 to
+26 (h3), `xxl` 30 to 38 (h2), `xxxl` 40 to 56 (h1), `display` 48 to 68 (hero titles). Headings
+weigh 600 (500 in Coral and Palm) with letter spacing `tight` (-0.015em) at h1 and h2 and `snug`
+(-0.01em) at h3; buttons are 0.9375rem at 600; navigation is `sm` at 600. Line heights `tight` 1.1,
+`snug` 1.35, `normal` 1.65 and letter spacing `tight`, `snug`, `normal`, `wide` (0.12em, the
+eyebrow tracking) live under `settings.custom.typography`.
 
 ### Spacing (`settings.spacing.spacingSizes`)
 
@@ -74,7 +80,8 @@ focus ring `2px solid primary` with a 2px offset.
 
 `assets/fonts/` holds Latin subsets built by `bin/build-fonts.js` from google/fonts commit
 `9862abc0`: Figtree 20 KB roman and 21 KB italic, Bricolage Grotesque 84 KB (width pinned at 100,
-weight 400 to 800), Fraunces 65 KB roman and 79 KB italic (SOFT 50, WONK 0, weight 300 to 800).
+weight 400 to 800), Fraunces 65 KB roman (SOFT 50, WONK 0, weight 300 to 800) and 42 KB italic
+pinned to weight 400, so Coral pages with the italic accent stay under the font budget.
 `src/css/fonts.css` is generated with Capsize and never edited by hand. Only the roman faces of the
 active `body` and `display` families are preloaded.
 
@@ -97,13 +104,39 @@ the editor offers them for a new page; the dental pack adds a `Description` that
 is fictional. The unit gate `tests/unit/patterns.test.js` enforces the rules; `tests/wp/patterns.php`
 renders every pattern and counts its `h1`s; `npm run docs:patterns` regenerates `docs/patterns.md`.
 
-## Style guide
+### Cards
 
-`inc/styleguide.php` holds the helpers the `styleguide-*` patterns call at render:
+A card is a Group in the `card` style with the Stack layout
+(`"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}`) and a block gap of
+`spacing|30`. A column or query item that holds a card becomes a flex column, so every card in a
+row shares the row's height, and the card's last Buttons block or any block with the
+`keel-card-footer` class sits on the bottom edge. A photo bleeds to the card's edges through the
+`keel-card__media` class on a Cover or Group placed first; a `keel-tag` paragraph on the photo, a
+`keel-meta` row of icon-and-text pairs, and a `keel-price` with its `keel-price__label` make the
+listing anatomy. Row cards are Media and Text in the `card` style; tiles are Covers in the `tile`
+style; tickets are Groups in the `ticket` style; stamps are `keel-stamp` paragraphs. Never write a
+card with the constrained layout: `node bin/migrate-cards.js` rewrites any that slipped through
+(patterns, templates, parts, the style guide helper and the demo plugin by default; pass paths to
+migrate a child theme or a vertical pack).
+
+## Elements page
+
+`inc/styleguide.php` holds the helpers the `elements-*` patterns call at render:
 `active_palette()`, `contrast_pairs()` (kept in step with `tests/contrast-pairs.json` by hand),
-`contrast_ratio()`, `active_font_families()`, `style_variations()` and `block_style_sample()`,
-which returns the sample markup for one registered block style. Add a sample there when you add a
-style, and the style guide page shows it.
+`contrast_ratio()`, `active_font_families()`, `style_variations()`, `block_style_sample()`, which
+returns the sample markup for one registered block style, and `element_label()`, the small mono
+label that names an element's class, style or pattern. Add a sample when you add a style and the
+block-styles section shows it; add a labelled entry to the matching `elements-*` section when you
+add a pattern or a utility, so the page keeps naming everything the theme ships. The demo appends
+its kitchen sink to the page as the "Every core block" section.
+
+## Per-block CSS
+
+`src/css/blocks/<block>.css` loads only when that block renders. When a block's rules outgrow the
+4 KB compressed budget of one file, split them into `<block>--<part>.css` files (`group--callouts.css`,
+`group--ticket.css`, `group--marquee.css`); `inc/enqueue.php` registers each for the block named
+before the `--`. Search forms get an `aria-label` from the block's label at render, so several on
+one page stay distinct landmarks.
 
 ## Demo plugin
 
@@ -111,8 +144,8 @@ style, and the style guide page shows it.
 showcase-only patterns, measures the facts band, serves `?variation=<slug>` by laying that
 variation over the user origin for the request, and provides `wp keel-demo seed`, which
 `bin/seed.sh` runs after the M1 seed to build the showcase pages (one per pattern category from
-the registry, the kitchen sink from `fixtures/kitchen-sink.html`), the dental pages, the menu and
-the front page. PHPCS and PHPStan cover it with the theme. See its README for the known limits.
+the registry, the elements page with the kitchen sink from `fixtures/kitchen-sink.html` as its last
+section, the page-set pages, twelve journal posts), the dental pages, the menu and the front page. PHPCS and PHPStan cover it with the theme. See its README for the known limits.
 
 ## Test helpers
 
