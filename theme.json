@@ -214,12 +214,15 @@
 		{ "name": "header-centered", "area": "header", "title": "Header: centered" },
 		{ "name": "header-transparent", "area": "header", "title": "Header: transparent" },
 		{ "name": "header-utility", "area": "header", "title": "Header with utility bar" },
+		{ "name": "header-sticky", "area": "header", "title": "Header: sticky" },
 		{ "name": "footer", "area": "footer", "title": "Footer" },
 		{ "name": "footer-minimal", "area": "footer", "title": "Footer: minimal" },
+		{ "name": "footer-big", "area": "footer", "title": "Footer: big" },
 		{ "name": "cta-band", "area": "uncategorized", "title": "Call-to-action band" },
 		{ "name": "mobile-cta-bar", "area": "uncategorized", "title": "Mobile CTA bar" },
 		{ "name": "announcement-bar", "area": "uncategorized", "title": "Announcement bar" },
 		{ "name": "post-meta", "area": "uncategorized", "title": "Post meta" },
+		{ "name": "floating-cta", "area": "uncategorized", "title": "Floating call to action" },
 		{ "name": "comments", "area": "uncategorized", "title": "Comments" }
 	]
 }

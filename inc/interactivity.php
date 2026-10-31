@@ -9,7 +9,7 @@ namespace Keel\Theme;
 
 defined( 'ABSPATH' ) || exit;
 
-const HEADER_PARTS = array( 'header', 'header-centered', 'header-transparent', 'header-utility' );
+const HEADER_PARTS = array( 'header', 'header-centered', 'header-transparent', 'header-utility', 'header-sticky' );
 
 /**
  * Registers the three script modules; each is enqueued only when its part or pattern renders.
@@ -72,7 +72,7 @@ function filter_template_part( string $content, array $block ): string {
 					'data-wp-on-async-window--scroll' => 'callbacks.onScroll',
 					'data-wp-class--is-scrolled'      => 'context.scrolled',
 				),
-				'header-transparent' === $slug ? array( 'keel-header', 'keel-header--transparent' ) : array( 'keel-header' )
+				header_part_classes( $slug )
 			)
 		);
 	}
@@ -108,7 +108,33 @@ function filter_template_part( string $content, array $block ): string {
 			)
 		);
 	}
+	if ( 'floating-cta' === $slug ) {
+		return add_directives(
+			$content,
+			array(
+				'role'       => 'navigation',
+				'aria-label' => __( 'Call or book', 'keel' ),
+			)
+		);
+	}
 	return $content;
+}
+
+/**
+ * The classes a header part's wrapper carries: every header is a keel-header; transparent and
+ * sticky headers add their modifier, which parts.css positions.
+ *
+ * @param string $slug Template part slug.
+ * @return string[] Class names.
+ */
+function header_part_classes( string $slug ): array {
+	if ( 'header-transparent' === $slug ) {
+		return array( 'keel-header', 'keel-header--transparent' );
+	}
+	if ( 'header-sticky' === $slug ) {
+		return array( 'keel-header', 'keel-header--sticky' );
+	}
+	return array( 'keel-header' );
 }
 add_filter( 'render_block_core/template-part', __NAMESPACE__ . '\\filter_template_part', 10, 2 );
 

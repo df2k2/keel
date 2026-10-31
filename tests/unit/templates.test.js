@@ -24,13 +24,16 @@ const PARTS = [
 	'header-centered',
 	'header-transparent',
 	'header-utility',
+	'header-sticky',
 	'footer',
 	'footer-minimal',
+	'footer-big',
 	'cta-band',
 	'mobile-cta-bar',
 	'announcement-bar',
 	'post-meta',
 	'comments',
+	'floating-cta',
 ];
 const CUSTOM = {
 	'page-no-title': 'Page without title',
@@ -73,7 +76,7 @@ test( 'thirteen templates with a main landmark and the expected parts', () => {
 	}
 } );
 
-test( 'theme.json lists the custom templates and the eleven parts', () => {
+test( 'theme.json lists the custom templates and the fourteen parts', () => {
 	const theme = JSON.parse( read( 'theme.json' ) );
 	assert.deepEqual(
 		Object.fromEntries(

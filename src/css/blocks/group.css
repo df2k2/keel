@@ -52,6 +52,8 @@
 /* The card's photo bleeds to the card edges (the card pads 40 on every side). */
 
 .wp-block-group.is-style-card > .keel-card__media {
+	flex: none;
+	inline-size: auto;
 	margin-block-start: calc( -1 * var( --wp--preset--spacing--40 ) );
 	margin-inline: calc( -1 * var( --wp--preset--spacing--40 ) );
 	overflow: hidden;

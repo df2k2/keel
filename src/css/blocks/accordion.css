@@ -58,3 +58,11 @@
 	padding-block-end: var( --wp--preset--spacing--40 );
 	padding-inline-end: var( --wp--preset--spacing--60 );
 }
+
+/* Itinerary: a day badge inside the toggle title. */
+
+.wp-block-accordion-heading__toggle-title .keel-day {
+	display: inline-grid;
+	margin-inline-end: var( --wp--preset--spacing--20 );
+	vertical-align: middle;
+}

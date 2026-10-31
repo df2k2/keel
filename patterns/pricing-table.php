@@ -62,8 +62,8 @@ defined( 'ABSPATH' ) || exit;
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-				<!-- wp:paragraph {"fontSize":"xs"} -->
-				<p class="has-xs-font-size"><strong><?php esc_html_e( 'Most popular', 'keel' ); ?></strong></p>
+				<!-- wp:paragraph {"className":"keel-tag"} -->
+				<p class="keel-tag"><?php esc_html_e( 'Most popular', 'keel' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:heading {"level":3,"fontSize":"lg"} -->

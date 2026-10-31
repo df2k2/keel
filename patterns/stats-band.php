@@ -18,8 +18,8 @@ defined( 'ABSPATH' ) || exit;
 	<div class="wp-block-columns alignwide">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"keel-stat keel-reveal","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group keel-stat keel-reveal">
+			<!-- wp:group {"className":"keel-stat keel-stat--display keel-reveal","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group keel-stat keel-stat--display keel-reveal">
 				<!-- wp:paragraph {"align":"center","className":"keel-stat__number"} -->
 				<p class="has-text-align-center keel-stat__number">15+</p>
 				<!-- /wp:paragraph -->
@@ -34,8 +34,8 @@ defined( 'ABSPATH' ) || exit;
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"keel-stat keel-reveal","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group keel-stat keel-reveal">
+			<!-- wp:group {"className":"keel-stat keel-stat--display keel-reveal","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group keel-stat keel-stat--display keel-reveal">
 				<!-- wp:paragraph {"align":"center","className":"keel-stat__number"} -->
 				<p class="has-text-align-center keel-stat__number">4,800</p>
 				<!-- /wp:paragraph -->
@@ -50,8 +50,8 @@ defined( 'ABSPATH' ) || exit;
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"keel-stat keel-reveal","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group keel-stat keel-reveal">
+			<!-- wp:group {"className":"keel-stat keel-stat--display keel-reveal","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group keel-stat keel-stat--display keel-reveal">
 				<!-- wp:paragraph {"align":"center","className":"keel-stat__number"} -->
 				<p class="has-text-align-center keel-stat__number">4.9</p>
 				<!-- /wp:paragraph -->
@@ -66,8 +66,8 @@ defined( 'ABSPATH' ) || exit;
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"keel-stat keel-reveal","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group keel-stat keel-reveal">
+			<!-- wp:group {"className":"keel-stat keel-stat--display keel-reveal","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group keel-stat keel-stat--display keel-reveal">
 				<!-- wp:paragraph {"align":"center","className":"keel-stat__number"} -->
 				<p class="has-text-align-center keel-stat__number">24/7</p>
 				<!-- /wp:paragraph -->

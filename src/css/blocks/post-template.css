@@ -19,3 +19,14 @@
 	display: flex;
 	flex-direction: column;
 }
+
+/* A featured image straight inside a Stack card: a column flex item's base size is measured before its width is known, so the percentage-wide image contributes its tiny intrinsic size and the figure collapses. A definite width fixes the measurement. */
+
+.is-style-card.is-layout-flex > .wp-block-post-featured-image {
+	flex: none;
+	inline-size: 100%;
+}
+
+.is-style-card.is-layout-flex > .wp-block-post-featured-image a {
+	block-size: auto;
+}

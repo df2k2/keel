@@ -65,3 +65,18 @@
 .wp-block-cover.is-style-tile a:hover {
 	text-decoration: underline;
 }
+
+/* A Read More link inside a cover (the feature article) reads as a light button. */
+
+.wp-block-cover .wp-block-read-more {
+	display: inline-flex;
+	align-items: center;
+	min-block-size: 2.75rem;
+	padding: 0 1.25em;
+	border-radius: var( --wp--custom--radius--md );
+	background: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--contrast );
+	font-size: 0.9375rem;
+	font-weight: 600;
+	text-decoration: none;
+}

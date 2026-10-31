@@ -342,3 +342,28 @@
 	font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 	font-size: var( --wp--preset--font-size--xs );
 }
+
+/* Chips as links, the active filter chip, a tag pinned to a corner, and eyebrows on dark covers. */
+
+.keel-chip a,
+.keel-tag a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.keel-chip.is-active {
+	background: var( --wp--preset--color--primary );
+	color: var( --wp--preset--color--primary-contrast );
+	box-shadow: none;
+}
+
+.keel-stamp-holder > .keel-corner {
+	position: absolute;
+	inset-block-start: var( --wp--preset--spacing--30 );
+	inset-inline-start: var( --wp--preset--spacing--30 );
+	z-index: 1;
+}
+
+.wp-block-cover .keel-eyebrow {
+	color: inherit;
+}
