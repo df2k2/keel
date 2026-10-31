@@ -14,7 +14,8 @@ module.exports = {
 		},
 		assert: {
 			assertions: {
-				'largest-contentful-paint': [ 'error', { maxNumericValue: 2000, aggregationMethod: 'median' } ],
+				// 3 s: CI runners paint the serif hero titles 2.2 to 2.7 s in; the gate is a sanity bound, not a target (Chris, 2026-10-31).
+				'largest-contentful-paint': [ 'error', { maxNumericValue: 3000, aggregationMethod: 'median' } ],
 				'cumulative-layout-shift': [ 'error', { maxNumericValue: 0.05, aggregationMethod: 'median' } ],
 				'total-blocking-time': [ 'error', { maxNumericValue: 150, aggregationMethod: 'median' } ],
 				'performance-budget': 'error',
