@@ -4,6 +4,36 @@ All notable changes to Keel are recorded here. The format follows Keep a Changel
 
 ## Unreleased
 
+## 0.3.0 (2026-10-31)
+
+Elements (M1.6). The type scale matched to a travel-theme reference: body 16 to 17 px, card
+titles 18 to 20, h2 30 to 38, h1 40 to 56 and a new `display` size of 48 to 68 for hero titles;
+headings at weight 600 with tight tracking, line heights 1.1, 1.35 and 1.65, buttons at 15 px,
+navigation at the small size. A third font family, `serif` (Fraunces), in theme.json and every
+variation; Coral and Palm set headings to 500 and Coral is the showcase default; the heading
+`accent` style renders an emphasised phrase in the serif italic and the accent colour; Fraunces
+italic is now a static 400 instance. Cards are Stacks: every card in a row shares its height and
+the footer sits on the bottom edge (`bin/migrate-cards.js` rewrote the 94 existing patterns), with
+a photo-first anatomy (tag on the image, meta row, price footer) and the card family: listing, row,
+tile, mini list, ticket, polaroid, stamp. Thirty-seven new block styles for 65 across 19 blocks:
+button sizes, light, outline-light, glass, soft, link and icon buttons; group paper, dot grid,
+marquee, four callouts, search panels, ticket and rail; media-text card; cover tile; image
+polaroid; heading accent and ghost; paragraph eyebrow-rule and small print; list crosses;
+separator route; navigation wide submenu and highlight; table scroll; tabs pills; gallery mosaic;
+forms styled for any plugin. Ninety-one new patterns for 185 in 23 categories: the card family,
+the element gains (utility bar with contact, button row, rating, price formats, search panel,
+journal card and grid, feature article, profile and review cards, marquee band, filter chips,
+itinerary, steps row, deal cards, callouts, departures and best-time tables, breadcrumb row,
+facts bar, map card, big footer, floating call to action, the header actions, the 404 explore row
+and the sidebar list), six page sets (journal, places and
+listings, events and deals, company pages, utility pages) with nineteen page layouts in the
+new-page chooser, and the elements page that replaces the style guide, naming every element.
+Four templates (post: cover, with sidebar, minimal; author archive), three parts (sticky header,
+big footer, floating call to action), post formats with the format label in the post meta and
+format looks on journal cards, enhanced pagination on the query grids. Search forms are named
+after their label. The demo seeds the page-set pages and twelve journal posts and retires the
+style guide and block styles pages.
+
 ## 0.2.0 (2026-10-29)
 
 Showcase (M1.5). Sixty-one new patterns for ninety-four in all: twenty-three generic sections

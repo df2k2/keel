@@ -224,6 +224,16 @@ function is_active_palette( array $palette ): bool {
 }
 
 /**
+ * A small mono label naming the class, style or slug of the element shown after it.
+ *
+ * @param string $name Class, style name or pattern slug.
+ * @return string Serialized paragraph block.
+ */
+function element_label( string $name ): string {
+	return '<!-- wp:paragraph {"className":"keel-element-label","fontSize":"xs"} --><p class="keel-element-label has-xs-font-size"><code>' . esc_html( $name ) . '</code></p><!-- /wp:paragraph -->';
+}
+
+/**
  * Block markup for one sample of a registered Keel block style, used by the style guide.
  *
  * @param string $block Block name, e.g. core/table.
@@ -257,13 +267,25 @@ function block_style_sample( string $block, string $style ): string {
 			return '<!-- wp:separator {"className":"' . $class . '"} --><hr class="wp-block-separator has-alpha-channel-opacity ' . $class . '"/><!-- /wp:separator -->';
 		case 'core/navigation':
 			return '<!-- wp:navigation {"overlayMenu":"never","className":"' . $class . '","layout":{"type":"flex"}} --><!-- wp:navigation-link {"label":"' . esc_attr__( 'Home', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Services', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Contact', 'keel' ) . '","url":"#styleguide"} /--><!-- /wp:navigation -->';
+		case 'core/navigation-submenu':
+			return '<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex"}} --><!-- wp:navigation-submenu {"label":"' . esc_attr__( 'Explore', 'keel' ) . '","url":"#styleguide","className":"' . $class . '"} --><!-- wp:navigation-link {"label":"' . esc_attr__( 'Explore', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Beaches', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Trails', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Markets', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Museums', 'keel' ) . '","url":"#styleguide"} /--><!-- /wp:navigation-submenu --><!-- wp:navigation-link {"label":"' . esc_attr__( 'Contact', 'keel' ) . '","url":"#styleguide"} /--><!-- /wp:navigation -->';
+		case 'core/navigation-link':
+			return '<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex"}} --><!-- wp:navigation-link {"label":"' . esc_attr__( 'Home', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Services', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Book now', 'keel' ) . '","url":"#styleguide","className":"' . $class . '"} /--><!-- /wp:navigation -->';
+		case 'core/gallery':
+			$figures = '';
+			for ( $i = 0; $i < 5; $i++ ) {
+				$figures .= '<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} --><figure class="wp-block-image size-large"><img src="' . ( 0 === $i % 2 ? $wide : $image ) . '" alt=""/></figure><!-- /wp:image -->';
+			}
+			return '<!-- wp:gallery {"linkTo":"none","className":"' . $class . '"} --><figure class="wp-block-gallery has-nested-images columns-default is-cropped ' . $class . '">' . $figures . '</figure><!-- /wp:gallery -->';
 		case 'core/details':
 			return '<!-- wp:details {"className":"' . $class . '"} --><details class="wp-block-details ' . $class . '"><summary>' . esc_html__( 'Do you charge for estimates?', 'keel' ) . '</summary>' . $paragraph . '</details><!-- /wp:details -->';
 		case 'core/columns':
-			$card = '<!-- wp:column --><div class="wp-block-column"><!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} --><div class="wp-block-group is-style-card">' . $paragraph . '</div><!-- /wp:group --></div><!-- /wp:column -->';
+			$card = '<!-- wp:column --><div class="wp-block-column"><!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} --><div class="wp-block-group is-style-card">' . $paragraph . '</div><!-- /wp:group --></div><!-- /wp:column -->';
 			return '<!-- wp:columns {"className":"' . $class . '"} --><div class="wp-block-columns ' . $class . '">' . $card . $card . '</div><!-- /wp:columns -->';
 		case 'core/cover':
 			return '<!-- wp:cover {"url":"' . $wide . '","dimRatio":50,"className":"' . $class . '","layout":{"type":"constrained"}} --><div class="wp-block-cover ' . $class . '"><img class="wp-block-cover__image-background" alt="" src="' . $wide . '" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"lg"} --><p class="has-text-align-center has-lg-font-size">' . $text . '</p><!-- /wp:paragraph --></div></div><!-- /wp:cover -->';
+		case 'core/media-text':
+			return '<!-- wp:media-text {"mediaType":"image","mediaWidth":42,"className":"' . $class . '"} --><div class="wp-block-media-text is-stacked-on-mobile ' . $class . '" style="grid-template-columns:42% auto"><figure class="wp-block-media-text__media"><img src="' . $wide . '" alt=""/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4,"fontSize":"lg"} --><h4 class="wp-block-heading has-lg-font-size">' . esc_html__( 'A row card', 'keel' ) . '</h4><!-- /wp:heading -->' . $paragraph . '</div></div><!-- /wp:media-text -->';
 		case 'core/table':
 			$row = '<tr><td>' . esc_html__( 'Check-up', 'keel' ) . '</td><td>$85</td><td>' . esc_html__( '30 minutes', 'keel' ) . '</td></tr>';
 			return '<!-- wp:table {"className":"' . $class . '"} --><figure class="wp-block-table ' . $class . '"><table><thead><tr><th>' . esc_html__( 'Service', 'keel' ) . '</th><th>' . esc_html__( 'Price', 'keel' ) . '</th><th>' . esc_html__( 'Duration', 'keel' ) . '</th></tr></thead><tbody>' . $row . $row . $row . '</tbody></table></figure><!-- /wp:table -->';
@@ -273,7 +295,7 @@ function block_style_sample( string $block, string $style ): string {
 			return '<!-- wp:paragraph {"className":"' . $class . '"} --><p class="' . $class . '">' . $text . '</p><!-- /wp:paragraph -->';
 		case 'core/accordion':
 			$items = '';
-			foreach ( array( esc_html__( 'Do you charge for estimates?', 'keel' ), esc_html__( 'How soon can you come out?', 'keel' ) ) as $question ) {
+			foreach ( array( esc_html__( 'Is there parking at the door?', 'keel' ), esc_html__( 'Can I bring a dog?', 'keel' ) ) as $question ) {
 				$items .= '<!-- wp:accordion-item --><div class="wp-block-accordion-item"><!-- wp:accordion-heading --><h4 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">' . $question . '</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h4><!-- /wp:accordion-heading --><!-- wp:accordion-panel --><div role="region" class="wp-block-accordion-panel">' . $paragraph . '</div><!-- /wp:accordion-panel --></div><!-- /wp:accordion-item -->';
 			}
 			return '<!-- wp:accordion {"className":"' . $class . '"} --><div role="group" class="wp-block-accordion ' . $class . '">' . $items . '</div><!-- /wp:accordion -->';

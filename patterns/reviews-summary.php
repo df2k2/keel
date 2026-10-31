@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-	<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+	<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 	<div class="wp-block-group is-style-card">
 		<!-- wp:columns {"verticalAlignment":"center"} -->
 		<div class="wp-block-columns are-vertically-aligned-center">

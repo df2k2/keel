@@ -1,0 +1,24 @@
+/* core/group style: ticket. A dashed tear line above the price row and two notches cut with radial gradients. */
+
+.wp-block-group.is-style-ticket {
+	--keel-ticket-notch: 0.75rem;
+	--keel-ticket-line: calc( var( --wp--preset--spacing--40 ) + 2.75rem + var( --wp--preset--spacing--30 ) );
+
+	padding: var( --wp--preset--spacing--40 );
+	border: 1px solid var( --wp--preset--color--border );
+	border-radius: var( --wp--custom--radius--md );
+	background: var( --wp--preset--color--surface );
+	mask-image: radial-gradient( circle at 0 calc( 100% - var( --keel-ticket-line ) ), transparent var( --keel-ticket-notch ), #000 calc( var( --keel-ticket-notch ) + 0.5px ) ), radial-gradient( circle at 100% calc( 100% - var( --keel-ticket-line ) ), transparent var( --keel-ticket-notch ), #000 calc( var( --keel-ticket-notch ) + 0.5px ) );
+	mask-composite: intersect;
+}
+
+.wp-block-group.is-style-ticket > .keel-card-footer {
+	min-block-size: calc( 2.75rem + var( --wp--preset--spacing--30 ) );
+	margin-block-start: auto;
+	padding-block-start: var( --wp--preset--spacing--30 );
+	border-block-start: 2px dashed var( --wp--preset--color--border );
+}
+
+.wp-block-group.is-style-ticket .wp-block-heading a:not( :hover ) {
+	text-decoration: none;
+}

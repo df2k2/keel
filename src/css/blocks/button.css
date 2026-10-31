@@ -8,3 +8,103 @@
 	font-weight: 600;
 	text-decoration: none;
 }
+
+/* Styles: glass and link, and the icon family (small, large, light, outline-light and soft are tokens in block-styles.php). */
+
+.wp-block-button.is-style-glass .wp-block-button__link {
+	background: rgb( 255 255 255 / 0.22 );
+	color: var( --wp--preset--color--base );
+	box-shadow: inset 0 0 0 1px rgb( 255 255 255 / 0.35 );
+	backdrop-filter: blur( 8px );
+}
+
+@supports not ( backdrop-filter: blur( 1px ) ) {
+
+	.wp-block-button.is-style-glass .wp-block-button__link {
+		background: var( --wp--preset--color--base );
+		color: var( --wp--preset--color--contrast );
+	}
+}
+
+.wp-block-button.is-style-link .wp-block-button__link {
+	padding-inline: 0;
+	background: transparent;
+	color: var( --wp--preset--color--primary );
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	text-underline-offset: 0.15em;
+}
+
+/* Icon buttons: a mask icon beside the label that follows the text colour. */
+
+.wp-block-button[class*="is-style-icon-"] .wp-block-button__link {
+	gap: 0.5em;
+}
+
+.wp-block-button[class*="is-style-icon-"] .wp-block-button__link::before {
+	content: "";
+	flex: none;
+	inline-size: 1.1em;
+	block-size: 1.1em;
+	background: currentcolor;
+	mask: var( --keel-button-icon ) center / contain no-repeat;
+}
+
+.wp-block-button.is-style-icon-phone {
+	--keel-button-icon: url( ../../../assets/icons/phone.svg );
+}
+
+.wp-block-button.is-style-icon-search {
+	--keel-button-icon: url( ../../../assets/icons/search.svg );
+}
+
+.wp-block-button.is-style-icon-map {
+	--keel-button-icon: url( ../../../assets/icons/map-pin.svg );
+}
+
+.wp-block-button.is-style-icon-calendar {
+	--keel-button-icon: url( ../../../assets/icons/calendar.svg );
+}
+
+.wp-block-button.is-style-icon-arrow {
+	--keel-button-icon: url( ../../../assets/icons/arrow-right.svg );
+}
+
+.wp-block-button.is-style-icon-arrow .wp-block-button__link::before {
+	order: 1;
+}
+
+[dir="rtl"] .wp-block-button.is-style-icon-arrow .wp-block-button__link::before {
+	scale: -1 1;
+}
+
+/* Hover states that keep each style in its own family (theme.json's button hover would turn them primary). */
+
+.wp-block-button.is-style-glass .wp-block-button__link:hover {
+	background: rgb( 255 255 255 / 0.36 );
+	color: var( --wp--preset--color--base );
+}
+
+.wp-block-button.is-style-link .wp-block-button__link:hover {
+	background: transparent;
+	color: var( --wp--preset--color--primary );
+	text-decoration-color: currentcolor;
+}
+
+.wp-block-button.is-style-light .wp-block-button__link:hover,
+.wp-block-button.is-style-soft .wp-block-button__link:hover {
+	background: var( --wp--preset--color--surface-alt );
+}
+
+.wp-block-button.is-style-light .wp-block-button__link:hover {
+	color: var( --wp--preset--color--contrast );
+}
+
+.wp-block-button.is-style-soft .wp-block-button__link:hover {
+	color: var( --wp--preset--color--primary );
+}
+
+.wp-block-button.is-style-outline-light .wp-block-button__link:hover {
+	background: rgb( 255 255 255 / 0.16 );
+	color: var( --wp--preset--color--base );
+}

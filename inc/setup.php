@@ -18,6 +18,7 @@ function setup(): void {
 	load_theme_textdomain( 'keel', get_template_directory() . '/languages' );
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'build/css/editor.css' );
+	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'quote', 'video', 'link' ) );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
 
@@ -51,6 +52,24 @@ function print_skip_link(): void {
 add_action( 'wp_body_open', __NAMESPACE__ . '\\print_skip_link' );
 remove_action( 'wp_enqueue_scripts', 'wp_enqueue_block_template_skip_link' );
 remove_action( 'wp_footer', 'the_block_template_skip_link' );
+
+/**
+ * Names each search form landmark after the block's label, so several Search blocks on one page
+ * (a search panel, a subscribe row, the forms sample) stay distinguishable to assistive technology.
+ *
+ * @param string               $content Rendered search block.
+ * @param array<string, mixed> $block   Parsed block.
+ * @return string Rendered block with an aria-label on its form.
+ */
+function label_search_form( string $content, array $block ): string {
+	$label     = $block['attrs']['label'] ?? __( 'Search', 'keel' );
+	$processor = new \WP_HTML_Tag_Processor( $content );
+	if ( $processor->next_tag( array( 'tag_name' => 'form' ) ) && null === $processor->get_attribute( 'aria-label' ) ) {
+		$processor->set_attribute( 'aria-label', wp_strip_all_tags( (string) $label ) );
+	}
+	return $processor->get_updated_html();
+}
+add_filter( 'render_block_core/search', __NAMESPACE__ . '\\label_search_form', 10, 2 );
 
 /**
  * Keeps the comment form title at heading level 2 so the outline never skips a level.

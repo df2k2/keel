@@ -16,4 +16,8 @@ if ( ! wp_style_is( 'keel-block-details', 'enqueued' ) ) {
 if ( wp_style_is( 'keel-block-quote', 'enqueued' ) ) {
 	WP_CLI::error( 'keel-block-quote was enqueued without a Quote block on the page.' );
 }
-WP_CLI::success( 'block-css: details stylesheet enqueued on render, quote stylesheet not.' );
+do_blocks( '<!-- wp:group {"className":"is-style-ticket","layout":{"type":"constrained"}} --><div class="wp-block-group is-style-ticket"></div><!-- /wp:group -->' );
+if ( ! wp_style_is( 'keel-block-group--ticket', 'enqueued' ) ) {
+	WP_CLI::error( 'keel-block-group--ticket (a split file for core/group) was not enqueued after rendering a Group block.' );
+}
+WP_CLI::success( 'block-css: details stylesheet enqueued on render, quote stylesheet not, group--ticket split file enqueued with the group.' );

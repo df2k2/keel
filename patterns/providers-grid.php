@@ -29,7 +29,7 @@ $keel_providers = array(
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"16rem"}} -->
 	<div class="wp-block-group alignwide">
 		<?php foreach ( $keel_providers as $keel_provider ) : ?>
-		<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 		<div class="wp-block-group is-style-card">
 			<!-- wp:image {"lightbox":{"enabled":false},"width":"96px","height":"96px","sizeSlug":"full","className":"is-style-rounded"} -->
 			<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="<?php echo esc_url( $keel_avatar ); ?>" alt="" style="width:96px;height:96px"/></figure>

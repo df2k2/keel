@@ -4,7 +4,7 @@ Tags: full-site-editing, block-patterns, block-styles, accessibility-ready, cust
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 0.2.0
+Stable tag: 0.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,14 +14,15 @@ A security-first block theme for local service businesses.
 
 Keel is a block theme for local service businesses: fast and accessible by construction, with zero third-party requests, output ready for a strict content security policy, curated patterns in place of a page builder, and a companion plugin that carries hardening and monitoring. Everything is core blocks and theme.json, so the content stays portable.
 
-* Thirteen templates and eleven template parts, including service, location and landing page templates, a transparent header, a header with a utility bar and a mobile call-to-action bar.
-* Ninety-four patterns: heroes, trust, services (grids with prices, tiles, tabs), process, team and providers, testimonials, pricing (tables, comparison, payment plans, offers), FAQ on Details or the Accordion block, hours and location, gallery, calls to action, contact shell, footers, blog layouts, listings and events, 404 and an accessibility statement.
-* Seven starter page layouts offered when a new page is created: service detail, provider profile, pricing, landing offer, about, contact and FAQ.
-* A living style guide page: colours with contrast ratios, type, spacing, shape, buttons, forms, every block style, icons and variations, read from the active styles each time it renders.
+* Seventeen templates and fourteen template parts, including service, location and landing page templates, three post templates (cover, with sidebar, minimal), an author archive, a transparent header, a sticky header, a header with a utility bar, a big footer, a floating call to action and a mobile call-to-action bar.
+* One hundred and eighty-five patterns in twenty-three categories: heroes, trust, services, process, team, testimonials, pricing, FAQ, location, gallery, calls to action, contact, footers, blog and journal, cards (listing, row, tile, mini list, ticket, polaroid), elements (section titles, button rows, ratings, prices, search panel, chips, callouts, tables, breadcrumbs, marquee), places and listings, events and deals, company and utility sections, 404 and an accessibility statement.
+* Twenty-six starter page layouts offered when a new page is created: service detail, provider profile, pricing, landing offer, about, contact, FAQ, journal, places, place, listings, listing, events, event, deals, about with story, team, careers, press, contact with map, visitor information, coming soon, maintenance, thank you, legal and one page.
+* An elements page that names every element the theme ships with its class, style or pattern: colours with contrast ratios, type, spacing, shape, buttons, badges and prices, forms, search, cards, journal and team and reviews, decorations, tabs and filters, itinerary and steps, deals, callouts, tables, rails, pagination, stats and media, newsletter and footer, every block style, icons and variations, read from the active styles each time it renders.
+* Cards of equal height in every row with the footer on the bottom edge, a photo-first card anatomy, post formats with their own card looks, and enhanced pagination on the query grids.
 * A dental practice pattern pack: thirteen sections and eight pages for a fictional practice, the shape for further vertical packs.
-* Twenty-seven block styles for buttons, groups, images, lists, quotes, separators, navigation, details, columns, covers, tables, headings, paragraphs, the Accordion and the Tabs blocks.
-* Seven style variations: Harbor, Clinic, Slate, Coral, Palm, Night and Contrast (WCAG AAA colours, no shadows, 2 pixel borders).
-* Three self-hosted variable fonts (Figtree, Bricolage Grotesque, Fraunces) with metric-matched fallbacks, so text never jumps.
+* Sixty-five block styles across nineteen blocks: buttons (sizes, light, glass, soft, link, icon buttons), groups (card, band, ticket, rail, paper, dot grid, marquee, callouts, search panels), images, lists, quotes, separators, navigation, details, columns, covers, tables, headings, paragraphs, galleries, Media and Text, the Accordion and the Tabs blocks.
+* Seven style variations: Harbor, Clinic, Slate, Coral, Palm, Night and Contrast (WCAG AAA colours, no shadows, 2 pixel borders). Coral and Palm set headings in Fraunces with an italic accent style.
+* Three self-hosted fonts as three families, body, display and serif (Figtree, Bricolage Grotesque, Fraunces), with metric-matched fallbacks, so text never jumps.
 * Three tiny Interactivity API behaviours (transparent header, announcement dismiss, testimonial carousel) that load only on pages that use them; static pages load no JavaScript at all.
 * WCAG 2.2 AA by construction: one h1 per page, landmarks, a plain HTML skip link, visible focus, 24 pixel targets, reduced-motion support, and automated accessibility checks in the theme's test suite.
 * Ships with a Spanish (es_ES) translation.
@@ -47,6 +48,9 @@ Keel is presentation only. Use any form plugin that outputs standard blocks insi
 Yes. Use a child theme (an example ships in the repository under examples/keel-child) or the site editor; Keel never writes to its own files.
 
 == Changelog ==
+
+= 0.3.0 =
+* The type scale with a display size, the serif family and accent headings, Coral as the showcase default; equal-height Stack cards and the card family; thirty-seven block styles, ninety-one patterns, six page sets with nineteen page layouts, three post templates and the author archive, post formats, the elements page that replaces the style guide, three new parts.
 
 = 0.2.0 =
 * Sixty-one new patterns (generic sections, seven starter page layouts, the living style guide, the dental pack), nine block styles including Accordion and Tabs, button hover and active states, the Contrast variation, the header with utility bar, and pattern category descriptions.

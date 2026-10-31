@@ -8,6 +8,7 @@ const PAGES = [
 	'/location/',
 	'/blog/',
 	'/dental/',
+	'/elements/',
 ];
 
 for ( const [ path, patternHeading ] of [

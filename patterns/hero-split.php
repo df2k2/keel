@@ -20,8 +20,8 @@ $keel_image = get_theme_file_uri( 'assets/images/placeholder-portrait.svg' );
 	<div class="wp-block-columns alignwide are-vertically-aligned-center">
 		<!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
-			<!-- wp:heading {"level":1,"fontSize":"xxxl"} -->
-			<h1 class="wp-block-heading has-xxxl-font-size"><?php esc_html_e( 'Reliable service for your home and business', 'keel' ); ?></h1>
+			<!-- wp:heading {"level":1,"fontSize":"display"} -->
+			<h1 class="wp-block-heading has-display-font-size"><?php esc_html_e( 'Reliable service for your home and business', 'keel' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"fontSize":"lg"} -->

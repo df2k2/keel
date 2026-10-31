@@ -18,12 +18,17 @@ $keel_demo_chips = array( __( 'WordPress 7.1', 'keel-demo' ), __( 'PHP 8.3', 'ke
 	<p class="has-text-align-center keel-eyebrow"><?php esc_html_e( 'A WordPress block theme', 'keel-demo' ); ?></p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:heading {"textAlign":"center","level":1,"fontSize":"xxxl"} -->
-	<h1 class="wp-block-heading has-text-align-center has-xxxl-font-size"><?php esc_html_e( 'Keel: a security-first block theme for local service businesses', 'keel-demo' ); ?></h1>
+	<!-- wp:heading {"textAlign":"center","level":1,"className":"is-style-accent","fontSize":"display"} -->
+	<h1 class="wp-block-heading has-text-align-center is-style-accent has-display-font-size">
+	<?php
+	/* translators: 1: opening em tag, 2: closing em tag. */
+	printf( esc_html__( 'Keel: a %1$ssecurity-first%2$s block theme for local service businesses', 'keel-demo' ), '<em>', '</em>' );
+	?>
+	</h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","className":"is-style-lead"} -->
-	<p class="has-text-align-center is-style-lead"><?php esc_html_e( 'Ninety-four patterns, seven looks, a living style guide and a complete dental practice demo, built from core blocks with no page builder, no third-party requests and no JavaScript on pages that do not need it.', 'keel-demo' ); ?></p>
+	<p class="has-text-align-center is-style-lead"><?php esc_html_e( 'Patterns for every section of a site, seven looks, an elements page that names every piece, built-out page sets and a complete dental practice demo, all from core blocks with no page builder, no third-party requests and no JavaScript on pages that do not need it.', 'keel-demo' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->

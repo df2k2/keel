@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 	<p class="has-lg-font-size"><?php esc_html_e( 'The page you were looking for has moved or never existed. Try a search, or head back to the start.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:search {"label":"<?php esc_attr_e( 'Search', 'keel' ); ?>","showLabel":false,"placeholder":"<?php esc_attr_e( 'Search this site', 'keel' ); ?>","buttonText":"<?php esc_attr_e( 'Search', 'keel' ); ?>"} /-->
+	<!-- wp:pattern {"slug":"keel/search-panel"} /-->
 
 	<!-- wp:buttons -->
 	<div class="wp-block-buttons">

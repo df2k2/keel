@@ -37,8 +37,8 @@ $keel_image  = get_theme_file_uri( 'assets/images/placeholder-portrait.svg' );
 			<p class="keel-chip"><?php esc_html_e( 'Consultations this week: 6 left', 'keel' ); ?></p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:heading {"level":1,"fontSize":"xxxl"} -->
-			<h1 class="wp-block-heading has-xxxl-font-size"><?php esc_html_e( 'A fixed, natural tooth from $200 a month', 'keel' ); ?></h1>
+			<!-- wp:heading {"level":1,"fontSize":"display"} -->
+			<h1 class="wp-block-heading has-display-font-size"><?php esc_html_e( 'A fixed, natural tooth from $200 a month', 'keel' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"fontSize":"lg"} -->

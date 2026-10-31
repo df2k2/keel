@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Keel 0.2.0\n"
+"Project-Id-Version: Keel 0.3.0\n"
 "Report-Msgid-Bugs-To: https://github.com/df2k2/keel/issues\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-29T08:16:58+00:00\n"
+"POT-Creation-Date: 2026-10-31T17:47:01+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: keel\n"
@@ -40,110 +40,263 @@ msgid "https://github.com/df2k2"
 msgstr ""
 
 #: inc/block-styles.php:41
-#: patterns/styleguide-buttons.php:18
+#: patterns/button-row.php:17
+#: patterns/elements-buttons.php:18
 msgid "Secondary"
 msgstr ""
 
 #: inc/block-styles.php:51
-#: patterns/styleguide-buttons.php:19
+#: inc/block-styles.php:429
+#: patterns/button-row.php:18
+#: patterns/elements-buttons.php:19
 msgid "Ghost"
 msgstr ""
 
 #: inc/block-styles.php:66
-#: inc/block-styles.php:179
-#: patterns/styleguide-buttons.php:20
+#: inc/block-styles.php:344
+#: patterns/button-row.php:23
+#: patterns/elements-buttons.php:20
 msgid "Pill"
 msgstr ""
 
-#: inc/block-styles.php:75
-msgid "Card"
+#: inc/block-styles.php:73
+#: patterns/button-row.php:21
+msgid "Small"
 msgstr ""
 
-#: inc/block-styles.php:85
-msgid "Surface"
+#: inc/block-styles.php:88
+#: patterns/button-row.php:22
+msgid "Large"
 msgstr ""
 
-#: inc/block-styles.php:93
-#: inc/block-styles.php:201
-msgid "Band"
+#: inc/block-styles.php:103
+#: patterns/button-row.php:31
+msgid "Light"
 msgstr ""
 
-#: inc/block-styles.php:108
-msgid "Bordered"
+#: inc/block-styles.php:113
+#: patterns/button-row.php:32
+msgid "Outline light"
 msgstr ""
 
-#: inc/block-styles.php:121
-msgid "Textured"
-msgstr ""
-
-#: inc/block-styles.php:125
-msgid "Wave bottom"
-msgstr ""
-
-#: inc/block-styles.php:131
-msgid "Soft corners"
+#: inc/block-styles.php:128
+#: patterns/button-row.php:19
+msgid "Soft"
 msgstr ""
 
 #: inc/block-styles.php:138
+#: patterns/button-row.php:33
+msgid "Glass"
+msgstr ""
+
+#: inc/block-styles.php:142
+#: patterns/button-row.php:20
+msgid "Link"
+msgstr ""
+
+#: inc/block-styles.php:146
+msgid "Icon: phone"
+msgstr ""
+
+#: inc/block-styles.php:150
+msgid "Icon: search"
+msgstr ""
+
+#: inc/block-styles.php:154
+msgid "Icon: arrow"
+msgstr ""
+
+#: inc/block-styles.php:158
+msgid "Icon: map"
+msgstr ""
+
+#: inc/block-styles.php:162
+msgid "Icon: calendar"
+msgstr ""
+
+#: inc/block-styles.php:168
+#: inc/block-styles.php:392
+msgid "Card"
+msgstr ""
+
+#: inc/block-styles.php:178
+msgid "Surface"
+msgstr ""
+
+#: inc/block-styles.php:186
+#: inc/block-styles.php:378
+msgid "Band"
+msgstr ""
+
+#: inc/block-styles.php:201
+msgid "Bordered"
+msgstr ""
+
+#: inc/block-styles.php:214
+msgid "Textured"
+msgstr ""
+
+#: inc/block-styles.php:218
+msgid "Wave bottom"
+msgstr ""
+
+#: inc/block-styles.php:222
+msgid "Ticket"
+msgstr ""
+
+#: inc/block-styles.php:226
+msgid "Rail"
+msgstr ""
+
+#: inc/block-styles.php:230
+msgid "Paper"
+msgstr ""
+
+#: inc/block-styles.php:234
+msgid "Dot grid"
+msgstr ""
+
+#: inc/block-styles.php:238
+msgid "Marquee"
+msgstr ""
+
+#: inc/block-styles.php:242
+msgid "Callout: info"
+msgstr ""
+
+#: inc/block-styles.php:246
+msgid "Callout: warm"
+msgstr ""
+
+#: inc/block-styles.php:250
+msgid "Callout: success"
+msgstr ""
+
+#: inc/block-styles.php:254
+msgid "Callout: error"
+msgstr ""
+
+#: inc/block-styles.php:258
+msgid "Search panel: compact"
+msgstr ""
+
+#: inc/block-styles.php:268
+msgid "Search panel: flat"
+msgstr ""
+
+#: inc/block-styles.php:284
+msgid "Soft corners"
+msgstr ""
+
+#: inc/block-styles.php:291
 msgid "Framed"
 msgstr ""
 
-#: inc/block-styles.php:153
+#: inc/block-styles.php:304
+msgid "Polaroid"
+msgstr ""
+
+#: inc/block-styles.php:310
 msgid "Checkmarks"
 msgstr ""
 
-#: inc/block-styles.php:157
+#: inc/block-styles.php:314
 msgid "Two columns"
 msgstr ""
 
-#: inc/block-styles.php:163
+#: inc/block-styles.php:318
+msgid "Crosses"
+msgstr ""
+
+#: inc/block-styles.php:324
 msgid "Testimonial"
 msgstr ""
 
-#: inc/block-styles.php:169
+#: inc/block-styles.php:330
 msgid "Short"
 msgstr ""
 
-#: inc/block-styles.php:173
+#: inc/block-styles.php:334
 msgid "Wave"
 msgstr ""
 
-#: inc/block-styles.php:183
+#: inc/block-styles.php:338
+#: patterns/table-departures.php:23
+msgid "Route"
+msgstr ""
+
+#: inc/block-styles.php:348
 msgid "Underline"
 msgstr ""
 
-#: inc/block-styles.php:189
-#: inc/block-styles.php:248
+#: inc/block-styles.php:354
+msgid "Wide"
+msgstr ""
+
+#: inc/block-styles.php:360
+msgid "Highlight"
+msgstr ""
+
+#: inc/block-styles.php:366
+#: inc/block-styles.php:459
 #: inc/patterns.php:26
 msgid "FAQ"
 msgstr ""
 
-#: inc/block-styles.php:195
+#: inc/block-styles.php:372
 msgid "Equal cards"
 msgstr ""
 
-#: inc/block-styles.php:205
+#: inc/block-styles.php:382
 msgid "Gradient overlay"
 msgstr ""
 
-#: inc/block-styles.php:211
+#: inc/block-styles.php:386
+msgid "Tile"
+msgstr ""
+
+#: inc/block-styles.php:398
 msgid "Striped"
 msgstr ""
 
-#: inc/block-styles.php:215
+#: inc/block-styles.php:402
 msgid "Compact"
 msgstr ""
 
-#: inc/block-styles.php:221
+#: inc/block-styles.php:406
+msgid "Scroll"
+msgstr ""
+
+#: inc/block-styles.php:412
 msgid "Eyebrow"
 msgstr ""
 
-#: inc/block-styles.php:236
+#: inc/block-styles.php:425
+msgid "Accent"
+msgstr ""
+
+#: inc/block-styles.php:435
 msgid "Lead"
 msgstr ""
 
-#: inc/block-styles.php:254
+#: inc/block-styles.php:445
+msgid "Eyebrow with rule"
+msgstr ""
+
+#: inc/block-styles.php:449
+msgid "Small print"
+msgstr ""
+
+#: inc/block-styles.php:465
 msgid "Boxed"
+msgstr ""
+
+#: inc/block-styles.php:469
+msgid "Pills"
+msgstr ""
+
+#: inc/block-styles.php:475
+msgid "Mosaic"
 msgstr ""
 
 #: inc/interactivity.php:93
@@ -158,20 +311,24 @@ msgstr ""
 msgid "Quick actions"
 msgstr ""
 
-#: inc/interactivity.php:144
+#: inc/interactivity.php:116
+msgid "Call or book"
+msgstr ""
+
+#: inc/interactivity.php:170
 #: inc/patterns.php:24
 msgid "Testimonials"
 msgstr ""
 
-#: inc/interactivity.php:190
+#: inc/interactivity.php:216
 msgid "Dismiss announcement"
 msgstr ""
 
-#: inc/interactivity.php:191
+#: inc/interactivity.php:217
 msgid "Previous testimonial"
 msgstr ""
 
-#: inc/interactivity.php:192
+#: inc/interactivity.php:218
 msgid "Next testimonial"
 msgstr ""
 
@@ -192,7 +349,8 @@ msgid "Credentials, ratings, logos and feature lists that build confidence."
 msgstr ""
 
 #: inc/patterns.php:21
-#: inc/styleguide.php:259
+#: inc/styleguide.php:269
+#: inc/styleguide.php:273
 #: patterns/footer-columns.php:39
 msgid "Services"
 msgstr ""
@@ -258,7 +416,8 @@ msgid "Bands, split calls, phone lines, newsletter and promo blocks."
 msgstr ""
 
 #: inc/patterns.php:30
-#: inc/styleguide.php:259
+#: inc/styleguide.php:269
+#: inc/styleguide.php:271
 #: patterns/footer-columns.php:67
 msgid "Contact"
 msgstr ""
@@ -307,101 +466,219 @@ msgstr ""
 msgid "A complete dental practice site: sections and pages with fictional copy, prices and people."
 msgstr ""
 
+#: inc/patterns.php:36
+#: patterns/elements-cards.php:18
+#: patterns/elements.php:27
+msgid "Cards"
+msgstr ""
+
+#: inc/patterns.php:36
+msgid "Listing, row, tile, mini list, ticket and polaroid cards: equal heights in a row, the footer on the bottom edge."
+msgstr ""
+
+#: inc/patterns.php:37
+#: patterns/elements.php:47
+msgid "Elements"
+msgstr ""
+
+#: inc/patterns.php:37
+msgid "Small building blocks: section titles, button rows, ratings, prices, chips, callouts, search panels, breadcrumbs and bands."
+msgstr ""
+
+#: inc/patterns.php:38
+#: patterns/breadcrumb-row.php:17
+#: patterns/footer-big.php:15
+#: patterns/search-panel.php:16
+msgid "Places"
+msgstr ""
+
+#: inc/patterns.php:38
+msgid "Destination and listing pages: heroes with stamps, things to do, itineraries, galleries, price cards and rails."
+msgstr ""
+
+#: inc/patterns.php:39
+msgid "Events and deals"
+msgstr ""
+
+#: inc/patterns.php:39
+msgid "Event lists by month, event headers, tickets, deals and featured offers."
+msgstr ""
+
+#: inc/patterns.php:40
+msgid "Company"
+msgstr ""
+
+#: inc/patterns.php:40
+msgid "About, team, careers, press, contact and visitor information sections."
+msgstr ""
+
+#: inc/patterns.php:41
+msgid "Utility pages"
+msgstr ""
+
+#: inc/patterns.php:41
+msgid "Coming soon, maintenance, thank you, legal and one-page layouts."
+msgstr ""
+
 #. translators: %s: pattern category name.
-#: inc/patterns.php:43
+#: inc/patterns.php:49
 #, php-format
 msgid "Keel: %s"
 msgstr ""
 
-#: inc/setup.php:48
+#: inc/setup.php:49
 msgid "Skip to content"
 msgstr ""
 
-#: inc/styleguide.php:237
+#. translators: %s: tab name such as Places.
+#: inc/setup.php:65
+#: patterns/button-row.php:25
+#: patterns/elements-forms.php:27
+#: patterns/elements-search.php:18
+#: patterns/elements-search.php:33
+#: patterns/elements-search.php:41
+#: patterns/elements.php:26
+#: patterns/header-actions.php:18
+#: patterns/search-panel.php:41
+msgid "Search"
+msgstr ""
+
+#: inc/styleguide.php:247
 msgid "Sample text for this style. Enough words to show the spacing and the colour."
 msgstr ""
 
-#: inc/styleguide.php:238
+#: inc/styleguide.php:248
 #: patterns/service-detail.php:64
 #: patterns/trust-bar.php:30
 msgid "Licensed and insured"
 msgstr ""
 
-#: inc/styleguide.php:238
+#: inc/styleguide.php:248
 msgid "Same-day appointments"
 msgstr ""
 
-#: inc/styleguide.php:238
+#: inc/styleguide.php:248
 msgid "Written guarantee"
 msgstr ""
 
-#: inc/styleguide.php:238
+#: inc/styleguide.php:248
 #: patterns/features-icons.php:19
 msgid "Plain-language advice"
 msgstr ""
 
-#: inc/styleguide.php:247
+#: inc/styleguide.php:257
 msgid "Button"
 msgstr ""
 
-#: inc/styleguide.php:255
+#: inc/styleguide.php:265
 msgid "A happy customer"
 msgstr ""
 
-#: inc/styleguide.php:259
+#: inc/styleguide.php:269
+#: inc/styleguide.php:273
+#: patterns/breadcrumb-row.php:16
 msgid "Home"
 msgstr ""
 
-#: inc/styleguide.php:261
-#: inc/styleguide.php:276
+#: inc/styleguide.php:271
+#: patterns/button-row.php:26
+#: patterns/elements-decorations.php:52
+#: patterns/footer-big.php:39
+msgid "Explore"
+msgstr ""
+
+#: inc/styleguide.php:271
+#: patterns/filter-chips.php:15
+#: patterns/marquee-band.php:15
+#: patterns/search-panel.php:16
+msgid "Beaches"
+msgstr ""
+
+#: inc/styleguide.php:271
+#: patterns/marquee-band.php:15
+#: patterns/search-panel.php:16
+msgid "Trails"
+msgstr ""
+
+#: inc/styleguide.php:271
+#: patterns/marquee-band.php:15
+#: patterns/search-panel.php:18
+msgid "Markets"
+msgstr ""
+
+#: inc/styleguide.php:271
+#: patterns/search-panel.php:16
+msgid "Museums"
+msgstr ""
+
+#: inc/styleguide.php:273
+#: patterns/button-row.php:16
+#: patterns/dental-service-implants.php:146
+#: patterns/dental-service-whitening.php:146
+#: patterns/page-service-detail.php:148
+msgid "Book now"
+msgstr ""
+
+#: inc/styleguide.php:281
 #: patterns/faq-accordion.php:16
 #: patterns/faq.php:22
 msgid "Do you charge for estimates?"
 msgstr ""
 
-#: inc/styleguide.php:268
+#: inc/styleguide.php:288
+msgid "A row card"
+msgstr ""
+
+#: inc/styleguide.php:290
 #: patterns/page-pricing.php:19
 #: patterns/services-grid-prices.php:16
 msgid "Check-up"
 msgstr ""
 
-#: inc/styleguide.php:268
+#: inc/styleguide.php:290
 msgid "30 minutes"
 msgstr ""
 
-#: inc/styleguide.php:269
+#: inc/styleguide.php:291
 #: patterns/page-service-detail.php:39
 msgid "Service"
 msgstr ""
 
-#: inc/styleguide.php:269
+#: inc/styleguide.php:291
 #: patterns/dental-price-list.php:42
 #: patterns/dental-service-implants.php:118
 #: patterns/dental-service-whitening.php:118
 #: patterns/page-pricing.php:50
 #: patterns/page-service-detail.php:120
+#: patterns/table-departures.php:23
 msgid "Price"
 msgstr ""
 
-#: inc/styleguide.php:269
+#: inc/styleguide.php:291
 msgid "Duration"
 msgstr ""
 
-#: inc/styleguide.php:271
+#: inc/styleguide.php:293
 msgid "A heading in this style"
 msgstr ""
 
-#: inc/styleguide.php:276
-#: patterns/faq-accordion.php:18
-#: patterns/faq.php:38
-msgid "How soon can you come out?"
+#: inc/styleguide.php:298
+msgid "Is there parking at the door?"
 msgstr ""
 
-#: inc/styleguide.php:281
+#: inc/styleguide.php:298
+msgid "Can I bring a dog?"
+msgstr ""
+
+#: inc/styleguide.php:303
+#: patterns/elements-tabs-filters.php:30
+#: patterns/elements-tabs-filters.php:35
 msgid "Overview"
 msgstr ""
 
-#: inc/styleguide.php:282
+#: inc/styleguide.php:304
+#: patterns/elements-tabs-filters.php:30
+#: patterns/elements-tabs-filters.php:39
 msgid "Details"
 msgstr ""
 
@@ -418,15 +695,6 @@ msgstr ""
 msgid "The page you were looking for has moved or never existed. Try a search, or head back to the start."
 msgstr ""
 
-#: patterns/404-content.php:26
-#: patterns/styleguide-forms.php:27
-msgid "Search"
-msgstr ""
-
-#: patterns/404-content.php:26
-msgid "Search this site"
-msgstr ""
-
 #: patterns/404-content.php:31
 msgid "Back to the home page"
 msgstr ""
@@ -434,6 +702,15 @@ msgstr ""
 #: patterns/404-content.php:35
 #: patterns/cta-band-contrast.php:28
 msgid "Contact us"
+msgstr ""
+
+#: patterns/404-explore.php
+msgctxt "Pattern title"
+msgid "404: explore instead"
+msgstr ""
+
+#: patterns/404-explore.php:18
+msgid "Explore instead"
 msgstr ""
 
 #: patterns/accessibility-statement.php
@@ -487,6 +764,7 @@ msgid "The site works in current versions of Chrome, Firefox, Safari and Edge, w
 msgstr ""
 
 #: patterns/accessibility-statement.php:64
+#: patterns/table-departures.php:23
 msgid "Date"
 msgstr ""
 
@@ -569,6 +847,392 @@ msgstr ""
 
 #: patterns/blog-list.php:19
 msgid "Latest posts"
+msgstr ""
+
+#: patterns/breadcrumb-row.php
+msgctxt "Pattern title"
+msgid "Breadcrumb row"
+msgstr ""
+
+#: patterns/breadcrumb-row.php:20
+#: patterns/breadcrumb-row.php:21
+msgid "Breadcrumb"
+msgstr ""
+
+#: patterns/breadcrumb-row.php:27
+#: patterns/card-listing.php:18
+#: patterns/place-things-to-do.php:17
+#: patterns/rail-cards.php:17
+#: patterns/tile.php:35
+#: patterns/tiles-grid.php:17
+msgid "Harbor district"
+msgstr ""
+
+#: patterns/button-row.php
+msgctxt "Pattern title"
+msgid "Button row"
+msgstr ""
+
+#: patterns/button-row.php:24
+#: patterns/service-detail.php:112
+msgid "Call us"
+msgstr ""
+
+#: patterns/button-row.php:27
+#: patterns/mobile-cta-bar.php:32
+msgid "Directions"
+msgstr ""
+
+#: patterns/button-row.php:28
+msgid "Book a date"
+msgstr ""
+
+#: patterns/callouts.php
+msgctxt "Pattern title"
+msgid "Callouts"
+msgstr ""
+
+#: patterns/callouts.php:16
+msgid "Parking fills by 10 am on weekends. The town lot on Flagler Street is free after 6 pm."
+msgstr ""
+
+#: patterns/callouts.php:17
+msgid "Turtle season runs May to October. Lights off on the beach after 9 pm, please."
+msgstr ""
+
+#: patterns/callouts.php:18
+msgid "Your reservation is confirmed. A text with the meeting point arrives the day before."
+msgstr ""
+
+#: patterns/callouts.php:19
+msgid "The sunrise tour on Saturday is cancelled for weather. Rebook free or get a refund."
+msgstr ""
+
+#: patterns/card-listing-amenities.php
+msgctxt "Pattern title"
+msgid "Card: listing with amenities"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:17
+#: patterns/cards-row-list.php:18
+#: patterns/place-things-to-do.php:19
+#: patterns/rail-cards.php:19
+#: patterns/rail-cards.php:21
+msgid "Riverside"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:18
+#: patterns/rail-cards.php:21
+msgid "4.8 (96)"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:19
+#: patterns/page-listing.php:22
+#: patterns/rail-cards.php:21
+msgid "Check-in from 3 pm"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:21
+msgid "Wi-Fi"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:21
+msgid "Parking"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:21
+msgid "Pool"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:21
+msgid "Pets welcome"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:28
+#: patterns/footer-big.php:15
+#: patterns/page-listing.php:30
+#: patterns/rail-cards.php:21
+msgid "Stay"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:34
+#: patterns/rail-cards.php:21
+msgid "The Boathouse Inn"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:66
+#: patterns/rail-cards.php:21
+msgid "Twelve rooms over the water, breakfast on the deck and bikes at the door."
+msgstr ""
+
+#: patterns/card-listing-amenities.php:72
+#: patterns/rail-cards.php:21
+msgid "Per night"
+msgstr ""
+
+#: patterns/card-listing-amenities.php:78
+msgid "Check rates"
+msgstr ""
+
+#: patterns/card-listing.php
+msgctxt "Pattern title"
+msgid "Card: listing"
+msgstr ""
+
+#: patterns/card-listing.php:17
+#: patterns/place-things-to-do.php:17
+#: patterns/rail-cards.php:17
+msgid "2 hours"
+msgstr ""
+
+#: patterns/card-listing.php:19
+#: patterns/place-things-to-do.php:17
+#: patterns/rail-cards.php:17
+msgid "4.9 (312)"
+msgstr ""
+
+#: patterns/card-listing.php:27
+#: patterns/place-things-to-do.php:17
+#: patterns/rail-cards.php:17
+msgid "Beach"
+msgstr ""
+
+#: patterns/card-listing.php:33
+#: patterns/place-things-to-do.php:17
+#: patterns/rail-cards.php:17
+msgid "Harbor Point Beach"
+msgstr ""
+
+#: patterns/card-listing.php:55
+#: patterns/place-things-to-do.php:17
+#: patterns/rail-cards.php:17
+msgid "A calm lagoon behind the reef, warm shallows for small children and shade under the sea grapes."
+msgstr ""
+
+#: patterns/card-listing.php:61
+#: patterns/dental-service-implants.php:132
+#: patterns/dental-service-whitening.php:132
+#: patterns/event-header.php:69
+#: patterns/page-listings.php:66
+#: patterns/page-service-detail.php:134
+#: patterns/place-things-to-do.php:17
+#: patterns/price-formats.php:20
+#: patterns/rail-cards.php:17
+#: patterns/ticket.php:44
+#: patterns/tickets-list.php:16
+msgid "From"
+msgstr ""
+
+#: patterns/card-listing.php:67
+#: patterns/card-row.php:63
+#: patterns/cards-row-list.php:69
+#: patterns/dental-dentists.php:72
+#: patterns/floating-cta.php:24
+#: patterns/mobile-cta-bar.php:28
+#: patterns/place-things-to-do.php:82
+#: patterns/providers-grid.php:67
+#: patterns/rail-cards.php:75
+#: patterns/table-departures.php:23
+#: patterns/table-departures.php:25
+msgid "Book"
+msgstr ""
+
+#: patterns/card-row.php
+msgctxt "Pattern title"
+msgid "Card: row"
+msgstr ""
+
+#: patterns/card-row.php:17
+#: patterns/cards-row-list.php:17
+#: patterns/place-things-to-do.php:18
+#: patterns/rail-cards.php:18
+msgid "Half day"
+msgstr ""
+
+#: patterns/card-row.php:18
+msgid "Departs from the town dock"
+msgstr ""
+
+#: patterns/card-row.php:19
+#: patterns/cards-row-list.php:17
+#: patterns/place-things-to-do.php:18
+#: patterns/rail-cards.php:18
+msgid "5.0 (41)"
+msgstr ""
+
+#: patterns/card-row.php:25
+#: patterns/cards-row-list.php:17
+#: patterns/place-things-to-do.php:18
+#: patterns/rail-cards.php:18
+msgid "Tour"
+msgstr ""
+
+#: patterns/card-row.php:29
+#: patterns/cards-row-list.php:17
+#: patterns/itinerary.php:17
+#: patterns/place-things-to-do.php:18
+#: patterns/rail-cards.php:18
+msgid "Sunrise paddle on the inlet"
+msgstr ""
+
+#: patterns/card-row.php:51
+#: patterns/cards-row-list.php:17
+#: patterns/place-things-to-do.php:18
+#: patterns/rail-cards.php:18
+msgid "Two hours on glassy water before the wind picks up, with a guide who knows every sandbar."
+msgstr ""
+
+#: patterns/card-row.php:57
+#: patterns/cards-row-list.php:17
+#: patterns/place-things-to-do.php:18
+#: patterns/rail-cards.php:18
+#: patterns/tickets-list.php:18
+msgid "Per person"
+msgstr ""
+
+#: patterns/cards-row-list.php
+msgctxt "Pattern title"
+msgid "Cards: row list"
+msgstr ""
+
+#: patterns/cards-row-list.php:17
+#: patterns/place-things-to-do.php:18
+#: patterns/rail-cards.php:18
+msgid "Town dock"
+msgstr ""
+
+#: patterns/cards-row-list.php:18
+#: patterns/place-things-to-do.php:19
+#: patterns/profiles-grid.php:18
+#: patterns/rail-cards.php:19
+msgid "Food"
+msgstr ""
+
+#: patterns/cards-row-list.php:18
+#: patterns/place-things-to-do.php:19
+#: patterns/rail-cards.php:19
+msgid "The Boathouse Kitchen"
+msgstr ""
+
+#: patterns/cards-row-list.php:18
+#: patterns/place-things-to-do.php:19
+#: patterns/rail-cards.php:19
+msgid "Fish from the morning boats, a long deck and a short menu that changes with the catch."
+msgstr ""
+
+#: patterns/cards-row-list.php:18
+#: patterns/place-things-to-do.php:19
+#: patterns/rail-cards.php:19
+msgid "Mains from"
+msgstr ""
+
+#: patterns/cards-row-list.php:18
+#: patterns/place-things-to-do.php:19
+#: patterns/rail-cards.php:19
+msgid "Noon to 10 pm"
+msgstr ""
+
+#: patterns/cards-row-list.php:18
+#: patterns/place-things-to-do.php:19
+#: patterns/rail-cards.php:19
+msgid "4.7 (820)"
+msgstr ""
+
+#: patterns/cards-row-list.php:19
+#: patterns/place-things-to-do.php:20
+#: patterns/rail-cards.php:20
+msgid "Rental"
+msgstr ""
+
+#: patterns/cards-row-list.php:19
+#: patterns/place-things-to-do.php:20
+#: patterns/rail-cards.php:20
+msgid "Old Town Bike Hire"
+msgstr ""
+
+#: patterns/cards-row-list.php:19
+#: patterns/place-things-to-do.php:20
+#: patterns/rail-cards.php:20
+msgid "Comfortable cruisers, child seats and a map of the quiet lanes, open every day of the season."
+msgstr ""
+
+#: patterns/cards-row-list.php:19
+#: patterns/place-things-to-do.php:20
+#: patterns/rail-cards.php:20
+msgid "Per day"
+msgstr ""
+
+#: patterns/cards-row-list.php:19
+#: patterns/place-things-to-do.php:20
+#: patterns/rail-cards.php:20
+msgid "9 am to 6 pm"
+msgstr ""
+
+#: patterns/cards-row-list.php:19
+#: patterns/place-things-to-do.php:20
+#: patterns/places-rail.php:19
+#: patterns/rail-cards.php:20
+#: patterns/tiles-grid.php:20
+msgid "Old town"
+msgstr ""
+
+#: patterns/cards-row-list.php:19
+#: patterns/place-things-to-do.php:20
+#: patterns/rail-cards.php:20
+msgid "4.9 (233)"
+msgstr ""
+
+#: patterns/careers-openings.php
+msgctxt "Pattern title"
+msgid "Careers: openings"
+msgstr ""
+
+#: patterns/careers-openings.php:16
+#: patterns/profile-card.php:36
+#: patterns/profiles-grid.php:17
+msgid "Editor, places and trails"
+msgstr ""
+
+#: patterns/careers-openings.php:16
+msgid "Harbor district office"
+msgstr ""
+
+#: patterns/careers-openings.php:16
+msgid "Full time"
+msgstr ""
+
+#: patterns/careers-openings.php:17
+msgid "Photographer, seasonal"
+msgstr ""
+
+#: patterns/careers-openings.php:17
+msgid "On the water, mostly"
+msgstr ""
+
+#: patterns/careers-openings.php:17
+msgid "November to April"
+msgstr ""
+
+#: patterns/careers-openings.php:18
+msgid "Visitor centre host"
+msgstr ""
+
+#: patterns/careers-openings.php:18
+#: patterns/event-header.php:17
+#: patterns/place-things-to-do.php:22
+msgid "Riverside green"
+msgstr ""
+
+#: patterns/careers-openings.php:18
+msgid "Weekends"
+msgstr ""
+
+#: patterns/careers-openings.php:24
+msgid "Open roles"
+msgstr ""
+
+#: patterns/careers-openings.php:62
+msgid "Apply"
 msgstr ""
 
 #: patterns/category-tiles.php
@@ -672,6 +1336,52 @@ msgstr ""
 msgid "Prices per month, cancel any time after the first year."
 msgstr ""
 
+#: patterns/contact-hours.php
+msgctxt "Pattern title"
+msgid "Contact hours"
+msgstr ""
+
+#: patterns/contact-hours.php:16
+msgid "Monday to Friday"
+msgstr ""
+
+#: patterns/contact-hours.php:16
+msgid "9 am to 5 pm"
+msgstr ""
+
+#: patterns/contact-hours.php:17
+#: patterns/dental-provider.php:25
+msgid "Saturday"
+msgstr ""
+
+#: patterns/contact-hours.php:17
+msgid "9 am to 1 pm"
+msgstr ""
+
+#: patterns/contact-hours.php:18
+msgid "Sunday"
+msgstr ""
+
+#: patterns/contact-hours.php:18
+msgid "Closed"
+msgstr ""
+
+#: patterns/contact-hours.php:19
+msgid "Public holidays"
+msgstr ""
+
+#: patterns/contact-hours.php:19
+msgid "10 am to 2 pm"
+msgstr ""
+
+#: patterns/contact-hours.php:27
+msgid "Visitor centre hours"
+msgstr ""
+
+#: patterns/contact-hours.php:45
+msgid "Walk-ins welcome. For group visits of ten or more, call a day ahead and we will have the maps and the coffee ready."
+msgstr ""
+
 #: patterns/contact-shell.php
 msgctxt "Pattern title"
 msgid "Contact shell"
@@ -692,15 +1402,19 @@ msgstr ""
 
 #: patterns/contact-shell.php:42
 #: patterns/dental-contact.php:60
+#: patterns/footer-big.php:79
 #: patterns/footer-columns.php:71
 #: patterns/hours-location.php:26
+#: patterns/map-card.php:28
 msgid "123 Harbor Street, Suite 4"
 msgstr ""
 
 #: patterns/contact-shell.php:42
 #: patterns/dental-contact.php:60
+#: patterns/footer-big.php:79
 #: patterns/footer-columns.php:71
 #: patterns/hours-location.php:26
+#: patterns/map-card.php:28
 msgid "Stuart, FL 34994"
 msgstr ""
 
@@ -727,7 +1441,7 @@ msgstr ""
 
 #: patterns/contact-shell.php:62
 #: patterns/dental-contact.php:88
-#: patterns/styleguide-forms.php:15
+#: patterns/elements-forms.php:15
 msgid "Phone"
 msgstr ""
 
@@ -803,6 +1517,103 @@ msgstr ""
 
 #: patterns/cta-split.php:36
 msgid "Request a quote"
+msgstr ""
+
+#: patterns/deal-card.php
+msgctxt "Pattern title"
+msgid "Deal card"
+msgstr ""
+
+#: patterns/deal-card.php:18
+#: patterns/deals-grid.php:16
+#: patterns/elements-badges-prices.php:60
+msgid "Save 20%"
+msgstr ""
+
+#: patterns/deal-card.php:22
+#: patterns/deals-grid.php:16
+msgid "Midweek paddle"
+msgstr ""
+
+#: patterns/deal-card.php:26
+#: patterns/deals-grid.php:16
+msgid "Tuesday to Thursday departures through March, same guide, same route."
+msgstr ""
+
+#: patterns/deal-card.php:32
+#: patterns/deals-grid.php:16
+#: patterns/price-formats.php:24
+msgid "per person"
+msgstr ""
+
+#: patterns/deal-card.php:38
+#: patterns/deals-grid.php:55
+msgid "Claim deal"
+msgstr ""
+
+#: patterns/deal-featured.php
+msgctxt "Pattern title"
+msgid "Deal: featured"
+msgstr ""
+
+#: patterns/deal-featured.php:20
+msgid "This week only"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/deal-featured.php:27
+#, php-format
+msgid "Third night %1$sfree%2$s at the inn"
+msgstr ""
+
+#: patterns/deal-featured.php:33
+msgid "Book two nights at the Boathouse Inn before the end of April and stay a third on the house. Breakfast and the bikes included, as always."
+msgstr ""
+
+#: patterns/deal-featured.php:39
+#: patterns/deals-grid.php:17
+msgid "for three nights"
+msgstr ""
+
+#: patterns/deal-featured.php:45
+msgid "Claim the deal"
+msgstr ""
+
+#: patterns/deals-grid.php
+msgctxt "Pattern title"
+msgid "Deals grid"
+msgstr ""
+
+#: patterns/deals-grid.php:17
+msgid "Third night free"
+msgstr ""
+
+#: patterns/deals-grid.php:17
+msgid "Stay longer at the inn"
+msgstr ""
+
+#: patterns/deals-grid.php:17
+msgid "Book two nights at the Boathouse Inn and the third is on the house, until the end of April."
+msgstr ""
+
+#: patterns/deals-grid.php:18
+msgid "Kids free"
+msgstr ""
+
+#: patterns/deals-grid.php:18
+msgid "Family market tour"
+msgstr ""
+
+#: patterns/deals-grid.php:18
+msgid "One adult ticket brings two children along on Saturday mornings."
+msgstr ""
+
+#: patterns/deals-grid.php:18
+msgid "per family"
+msgstr ""
+
+#: patterns/deals-grid.php:24
+msgid "Deals this season"
 msgstr ""
 
 #: patterns/dental-about.php
@@ -1061,12 +1872,6 @@ msgstr[1] ""
 #: patterns/providers-grid.php:55
 #, php-format
 msgid "Rated %1$s from %2$s reviews"
-msgstr ""
-
-#: patterns/dental-dentists.php:72
-#: patterns/mobile-cta-bar.php:28
-#: patterns/providers-grid.php:67
-msgid "Book"
 msgstr ""
 
 #: patterns/dental-disclaimer.php
@@ -1432,6 +2237,7 @@ msgstr ""
 #: patterns/hero-booking.php:21
 #: patterns/page-pricing.php:29
 #: patterns/page-service-detail.php:116
+#: patterns/table-best-time.php:20
 msgid "Prices"
 msgstr ""
 
@@ -1472,10 +2278,6 @@ msgstr ""
 #: patterns/dental-provider.php:24
 #: patterns/page-provider.php:23
 msgid "Thursday"
-msgstr ""
-
-#: patterns/dental-provider.php:25
-msgid "Saturday"
 msgstr ""
 
 #: patterns/dental-provider.php:25
@@ -1636,20 +2438,8 @@ msgstr ""
 msgid "Item"
 msgstr ""
 
-#: patterns/dental-service-implants.php:132
-#: patterns/dental-service-whitening.php:132
-#: patterns/page-service-detail.php:134
-msgid "From"
-msgstr ""
-
 #: patterns/dental-service-implants.php:140
 msgid "Or $200 a month over 12 months at 0% interest."
-msgstr ""
-
-#: patterns/dental-service-implants.php:146
-#: patterns/dental-service-whitening.php:146
-#: patterns/page-service-detail.php:148
-msgid "Book now"
 msgstr ""
 
 #: patterns/dental-service-implants.php:156
@@ -1864,6 +2654,629 @@ msgstr ""
 msgid "Call (555) 555-0100 now"
 msgstr ""
 
+#: patterns/elements-badges-prices.php
+msgctxt "Pattern title"
+msgid "Elements: badges and prices"
+msgstr ""
+
+#: patterns/elements-badges-prices.php:18
+#: patterns/elements.php:24
+msgid "Badges and prices"
+msgstr ""
+
+#: patterns/elements-badges-prices.php:22
+msgid "Small labels and the price formats. Chips are quiet, badges carry colour, tags sit on photos, status labels say what is left."
+msgstr ""
+
+#: patterns/elements-badges-prices.php:30
+msgid "Free parking"
+msgstr ""
+
+#: patterns/elements-badges-prices.php:34
+msgid "Lifeguard in season"
+msgstr ""
+
+#: patterns/elements-badges-prices.php:38
+msgid "Open now"
+msgstr ""
+
+#: patterns/elements-badges-prices.php:48
+#: patterns/elements-decorations.php:34
+#: patterns/places-rail.php:19
+#: patterns/table-departures.php:18
+#: patterns/tiles-grid.php:20
+msgid "New"
+msgstr ""
+
+#: patterns/elements-badges-prices.php:52
+#: patterns/table-departures.php:16
+#: patterns/table-departures.php:19
+msgid "Guaranteed"
+msgstr ""
+
+#: patterns/elements-badges-prices.php:56
+#: patterns/table-departures.php:17
+msgid "3 seats left"
+msgstr ""
+
+#: patterns/elements-block-styles.php
+msgctxt "Pattern title"
+msgid "Elements: block styles"
+msgstr ""
+
+#: patterns/elements-block-styles.php:20
+#: patterns/elements.php:39
+msgid "Block styles"
+msgstr ""
+
+#: patterns/elements-block-styles.php:24
+msgid "One sample per registered Keel style. The list is generated from the registration table, so a new style appears here the day it ships."
+msgstr ""
+
+#: patterns/elements-buttons.php
+msgctxt "Pattern title"
+msgid "Elements: buttons"
+msgstr ""
+
+#: patterns/elements-buttons.php:16
+msgid "Default"
+msgstr ""
+
+#: patterns/elements-buttons.php:16
+msgid "Primary fill. Hover and active darken the fill toward the contrast colour; focus shows the two-tone ring."
+msgstr ""
+
+#: patterns/elements-buttons.php:17
+msgid "Outline (core)"
+msgstr ""
+
+#: patterns/elements-buttons.php:17
+msgid "Core style: a border in the current text colour and no fill."
+msgstr ""
+
+#: patterns/elements-buttons.php:18
+msgid "Accent fill for the second action on a page."
+msgstr ""
+
+#: patterns/elements-buttons.php:19
+msgid "Primary text and border on a transparent background, for quiet actions."
+msgstr ""
+
+#: patterns/elements-buttons.php:20
+msgid "The default button with the pill radius."
+msgstr ""
+
+#: patterns/elements-buttons.php:26
+#: patterns/elements.php:23
+msgid "Buttons"
+msgstr ""
+
+#: patterns/elements-buttons.php:30
+msgid "Every button is at least 44 pixels tall. Hover, focus and active states come from theme.json and the focus ring, so they follow the variation."
+msgstr ""
+
+#: patterns/elements-buttons.php:56
+msgid "Every style, every size"
+msgstr ""
+
+#: patterns/elements-callouts.php
+msgctxt "Pattern title"
+msgid "Elements: callouts"
+msgstr ""
+
+#: patterns/elements-callouts.php:18
+#: patterns/elements.php:33
+msgid "Callouts"
+msgstr ""
+
+#: patterns/elements-callouts.php:22
+msgid "Four group styles with a coloured edge, a tint and an icon: info, warm, success and error."
+msgstr ""
+
+#: patterns/elements-cards.php
+msgctxt "Pattern title"
+msgid "Elements: cards"
+msgstr ""
+
+#: patterns/elements-cards.php:22
+msgid "Every card is a Stack: in a row they share a height and the footer sits on the bottom edge. The photo bleeds to the edges through keel-card__media."
+msgstr ""
+
+#: patterns/elements-colors.php
+msgctxt "Pattern title"
+msgid "Elements: colours"
+msgstr ""
+
+#: patterns/elements-colors.php:21
+#: patterns/elements.php:19
+msgid "Colours"
+msgstr ""
+
+#: patterns/elements-colors.php:25
+msgid "The twelve palette slugs every pattern and block style is built on. Values are read from the active variation and your Styles edits, so this page always shows the colours in use."
+msgstr ""
+
+#: patterns/elements-colors.php:47
+msgid "Contrast pairs"
+msgstr ""
+
+#: patterns/elements-colors.php:51
+msgid "The pairs Keel promises to keep readable, checked against the live values. Text pairs need 4.5 to 1, large text and interface pairs 3 to 1."
+msgstr ""
+
+#: patterns/elements-colors.php:55
+msgid "Foreground"
+msgstr ""
+
+#: patterns/elements-colors.php:55
+msgid "Background"
+msgstr ""
+
+#: patterns/elements-colors.php:55
+msgid "Ratio"
+msgstr ""
+
+#: patterns/elements-colors.php:55
+msgid "Minimum"
+msgstr ""
+
+#: patterns/elements-colors.php:55
+msgid "Result"
+msgstr ""
+
+#: patterns/elements-colors.php:62
+msgid "Pass"
+msgstr ""
+
+#: patterns/elements-colors.php:62
+msgid "Fail"
+msgstr ""
+
+#: patterns/elements-deals.php
+msgctxt "Pattern title"
+msgid "Elements: prices and deals"
+msgstr ""
+
+#: patterns/elements-deals.php:18
+#: patterns/elements.php:32
+msgid "Prices and deals"
+msgstr ""
+
+#: patterns/elements-deals.php:22
+msgid "The pricing table with its popular tag, and deal cards on the ticket style with was and now prices."
+msgstr ""
+
+#: patterns/elements-decorations.php
+msgctxt "Pattern title"
+msgid "Elements: decorations"
+msgstr ""
+
+#: patterns/elements-decorations.php:18
+#: patterns/elements.php:29
+msgid "Decorations"
+msgstr ""
+
+#: patterns/elements-decorations.php:22
+msgid "The travel-poster details: a stamp, a dashed route, a ghost word behind a heading, paper and dot-grid surfaces, and a marquee that never duplicates its content."
+msgstr ""
+
+#: patterns/elements-decorations.php:30
+#: patterns/place-hero.php:26
+#: patterns/tile.php:27
+#: patterns/tiles-grid.php:17
+msgid "Top pick"
+msgstr ""
+
+#: patterns/elements-decorations.php:38
+#: patterns/story-timeline.php:28
+msgid "Since 2009"
+msgstr ""
+
+#: patterns/elements-decorations.php:56
+msgid "Six places, one coast"
+msgstr ""
+
+#: patterns/elements-decorations.php:64
+msgid "A paper grain over the surface colour, for a note or an aside."
+msgstr ""
+
+#: patterns/elements-decorations.php:74
+msgid "A dot grid on the base colour, wider than the textured style."
+msgstr ""
+
+#: patterns/elements-footer.php
+msgctxt "Pattern title"
+msgid "Elements: newsletter and footer"
+msgstr ""
+
+#: patterns/elements-footer.php:18
+#: patterns/elements.php:38
+msgid "Newsletter and footer"
+msgstr ""
+
+#: patterns/elements-footer.php:22
+msgid "The one-row subscribe and the big footer: brand, two link columns, contact and hours, and a legal row."
+msgstr ""
+
+#: patterns/elements-forms.php
+msgctxt "Pattern title"
+msgid "Elements: forms"
+msgstr ""
+
+#: patterns/elements-forms.php:15
+msgid "Name"
+msgstr ""
+
+#: patterns/elements-forms.php:15
+msgid "Email"
+msgstr ""
+
+#: patterns/elements-forms.php:15
+msgid "Preferred time"
+msgstr ""
+
+#: patterns/elements-forms.php:15
+msgid "Message"
+msgstr ""
+
+#: patterns/elements-forms.php:15
+msgid "Consent to be contacted"
+msgstr ""
+
+#: patterns/elements-forms.php:20
+#: patterns/elements.php:25
+msgid "Forms"
+msgstr ""
+
+#: patterns/elements-forms.php:24
+msgid "Keel ships no form plugin and no form markup of its own. Core's Search block shows the field and button styling that any form plugin inherits."
+msgstr ""
+
+#: patterns/elements-forms.php:27
+msgid "Search the site"
+msgstr ""
+
+#: patterns/elements-forms.php:30
+msgid "States and messages"
+msgstr ""
+
+#: patterns/elements-forms.php:34
+msgid "Email address with a mistake"
+msgstr ""
+
+#: patterns/elements-forms.php:34
+msgid "not an email"
+msgstr ""
+
+#: patterns/elements-forms.php:34
+msgid "Send"
+msgstr ""
+
+#: patterns/elements-forms.php:38
+msgid "That does not look like an email address. Check it and try again."
+msgstr ""
+
+#: patterns/elements-forms.php:42
+msgid "Sent. We reply within a working day."
+msgstr ""
+
+#: patterns/elements-forms.php:46
+msgid "The switch (input.keel-switch) and the range input are styled too; the demo shows them in the Every core block section, since patterns carry no raw inputs."
+msgstr ""
+
+#: patterns/elements-forms.php:50
+msgid "The one-row subscribe field is in the newsletter and footer section below."
+msgstr ""
+
+#: patterns/elements-forms.php:54
+msgid "The contact shell expects"
+msgstr ""
+
+#: patterns/elements-icons.php
+msgctxt "Pattern title"
+msgid "Elements: icons"
+msgstr ""
+
+#: patterns/elements-icons.php:20
+#: patterns/elements.php:40
+msgid "Icons"
+msgstr ""
+
+#: patterns/elements-icons.php:24
+msgid "Twelve single-colour SVG files in the theme, placed as Image blocks with the keel-icon class so they invert on dark bands. Decorative: every one has an empty alt."
+msgstr ""
+
+#: patterns/elements-itinerary-steps.php
+msgctxt "Pattern title"
+msgid "Elements: itinerary and steps"
+msgstr ""
+
+#: patterns/elements-itinerary-steps.php:18
+#: patterns/elements.php:31
+msgid "Itinerary and steps"
+msgstr ""
+
+#: patterns/elements-itinerary-steps.php:22
+msgid "A day-by-day plan on the Accordion with day badges, numbered steps in a row and the timeline."
+msgstr ""
+
+#: patterns/elements-pagination.php
+msgctxt "Pattern title"
+msgid "Elements: pagination and breadcrumbs"
+msgstr ""
+
+#: patterns/elements-pagination.php:18
+#: patterns/elements.php:36
+msgid "Pagination and breadcrumbs"
+msgstr ""
+
+#: patterns/elements-pagination.php:22
+msgid "Core pagination with enhanced pagination on (the page does not reload), and the static breadcrumb row for pages that know their parent."
+msgstr ""
+
+#: patterns/elements-people.php
+msgctxt "Pattern title"
+msgid "Elements: journal, team and reviews"
+msgstr ""
+
+#: patterns/elements-people.php:18
+#: patterns/elements.php:28
+msgid "Journal, team and reviews"
+msgstr ""
+
+#: patterns/elements-people.php:22
+msgid "Cards for posts and people: the journal card reads the post, the feature article takes the sticky post, profile and review cards are static."
+msgstr ""
+
+#: patterns/elements-rails.php
+msgctxt "Pattern title"
+msgid "Elements: rails"
+msgstr ""
+
+#: patterns/elements-rails.php:18
+#: patterns/elements.php:35
+msgid "Rails"
+msgstr ""
+
+#: patterns/elements-rails.php:22
+msgid "A scroll-snap row of cards with no buttons and no script: swipe, scroll, or tab through the links."
+msgstr ""
+
+#: patterns/elements-search.php
+msgctxt "Pattern title"
+msgid "Elements: search"
+msgstr ""
+
+#: patterns/elements-search.php:22
+msgid "The search panel: core Tabs holding a Search block and filter chips. The compact and flat styles are the panel without the card."
+msgstr ""
+
+#: patterns/elements-search.php:33
+msgid "Search places, compact"
+msgstr ""
+
+#: patterns/elements-search.php:33
+#: patterns/elements-search.php:41
+#: patterns/search-panel.php:16
+msgid "Where to?"
+msgstr ""
+
+#: patterns/elements-search.php:41
+msgid "Search places, flat"
+msgstr ""
+
+#: patterns/elements-shape.php
+msgctxt "Pattern title"
+msgid "Elements: shape"
+msgstr ""
+
+#: patterns/elements-shape.php:24
+#: patterns/elements.php:22
+msgid "Shape"
+msgstr ""
+
+#: patterns/elements-shape.php:28
+msgid "Radius"
+msgstr ""
+
+#: patterns/elements-shape.php:46
+msgid "Shadows and borders"
+msgstr ""
+
+#. translators: %s: border width such as 1px.
+#: patterns/elements-shape.php:67
+#, php-format
+msgid "%s solid, in the border colour"
+msgstr ""
+
+#: patterns/elements-shape.php:77
+msgid "Focus"
+msgstr ""
+
+#. translators: %s: the focus ring value such as "2px solid var(--wp--preset--color--primary)".
+#: patterns/elements-shape.php:84
+#, php-format
+msgid "Every focusable element shows a two-tone ring: %s, with a halo in the base colour so it stays visible on any background. Press Tab to see it on the button below."
+msgstr ""
+
+#: patterns/elements-shape.php:92
+msgid "Focus me"
+msgstr ""
+
+#: patterns/elements-spacing.php
+msgctxt "Pattern title"
+msgid "Elements: spacing"
+msgstr ""
+
+#: patterns/elements-spacing.php:21
+#: patterns/elements.php:21
+msgid "Spacing"
+msgstr ""
+
+#: patterns/elements-spacing.php:25
+msgid "Eight steps. The small ones are fixed, the large ones scale with the viewport, and every pattern uses them for padding and gaps."
+msgstr ""
+
+#: patterns/elements-stats-media.php
+msgctxt "Pattern title"
+msgid "Elements: stats, facts and media"
+msgstr ""
+
+#: patterns/elements-stats-media.php:18
+#: patterns/elements.php:37
+msgid "Stats, facts and media"
+msgstr ""
+
+#: patterns/elements-stats-media.php:22
+msgid "Numbers in the serif at the display size, a facts bar with icons, a map card with no embed, and the mosaic gallery."
+msgstr ""
+
+#: patterns/elements-tables.php
+msgctxt "Pattern title"
+msgid "Elements: tables"
+msgstr ""
+
+#: patterns/elements-tables.php:18
+#: patterns/elements.php:34
+msgid "Tables"
+msgstr ""
+
+#: patterns/elements-tables.php:22
+msgid "Two table patterns: departures with status labels and a button column, and the best-time grid on the scroll style that fades at the edge on phones."
+msgstr ""
+
+#: patterns/elements-tabs-filters.php
+msgctxt "Pattern title"
+msgid "Elements: tabs, filters and accordion"
+msgstr ""
+
+#: patterns/elements-tabs-filters.php:18
+#: patterns/elements.php:30
+msgid "Tabs, filters and accordion"
+msgstr ""
+
+#: patterns/elements-tabs-filters.php:22
+msgid "Pill tabs, a row of filter chips with an active state, and the FAQ accordion."
+msgstr ""
+
+#: patterns/elements-tabs-filters.php:30
+#: patterns/elements-tabs-filters.php:43
+msgid "Reviews"
+msgstr ""
+
+#: patterns/elements-tabs-filters.php:36
+msgid "Pill tabs: the selected one is filled in the primary colour."
+msgstr ""
+
+#: patterns/elements-tabs-filters.php:40
+msgid "Core Tabs with the pills style."
+msgstr ""
+
+#: patterns/elements-tabs-filters.php:44
+msgid "Nothing loads until a tab is chosen."
+msgstr ""
+
+#: patterns/elements-typography.php
+msgctxt "Pattern title"
+msgid "Elements: typography"
+msgstr ""
+
+#: patterns/elements-typography.php:18
+msgid "Clear prices, honest advice, work that lasts"
+msgstr ""
+
+#: patterns/elements-typography.php:23
+#: patterns/elements.php:20
+msgid "Typography"
+msgstr ""
+
+#. translators: 1: font family slug such as body or display, 2: font family name.
+#: patterns/elements-typography.php:31
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: patterns/elements-typography.php:33
+msgid "Fonts are served from the theme, subset to Latin, with metric-matched fallbacks so text does not jump when they load."
+msgstr ""
+
+#: patterns/elements-typography.php:39
+msgid "Sizes"
+msgstr ""
+
+#: patterns/elements-typography.php:57
+msgid "Headings"
+msgstr ""
+
+#: patterns/elements-typography.php:61
+msgid "Display and heading one (shown as a paragraph: this page already has its h1)"
+msgstr ""
+
+#. translators: %d: heading level from 2 to 6.
+#: patterns/elements-typography.php:68
+#, php-format
+msgid "Heading level %d"
+msgstr ""
+
+#: patterns/elements-typography.php:75
+msgid "Inline elements"
+msgstr ""
+
+#: patterns/elements-typography.php:79
+msgid "Body text with"
+msgstr ""
+
+#: patterns/elements-typography.php:79
+msgid "a link"
+msgstr ""
+
+#: patterns/elements-typography.php:79
+msgid "strong emphasis"
+msgstr ""
+
+#: patterns/elements-typography.php:79
+msgid "italic emphasis"
+msgstr ""
+
+#: patterns/elements-typography.php:79
+msgid "a highlight"
+msgstr ""
+
+#: patterns/elements-typography.php:79
+msgid "Web Content Accessibility Guidelines"
+msgstr ""
+
+#: patterns/elements-typography.php:79
+msgid "and a footnote marker"
+msgstr ""
+
+#: patterns/elements-variations.php
+msgctxt "Pattern title"
+msgid "Elements: variations"
+msgstr ""
+
+#: patterns/elements-variations.php:20
+#: patterns/elements.php:41
+msgid "Variations"
+msgstr ""
+
+#: patterns/elements-variations.php:24
+msgid "Each variation changes only the palette, the fonts and the shape tokens. Everything above re-renders from those values, which is why the same patterns work in every one."
+msgstr ""
+
+#: patterns/elements-variations.php:30
+msgid "active"
+msgstr ""
+
+#: patterns/elements.php
+msgctxt "Pattern title"
+msgid "Page: elements"
+msgstr ""
+
+#: patterns/elements.php:51
+msgid "Every element the theme ships, named with the class, style or pattern that makes it, and read from the active variation each time the page renders."
+msgstr ""
+
 #: patterns/event-grid.php
 msgctxt "Pattern title"
 msgid "Event grid"
@@ -1879,6 +3292,80 @@ msgstr ""
 
 #: patterns/event-grid.php:43
 msgid "No events scheduled. Check back soon."
+msgstr ""
+
+#: patterns/event-header.php
+msgctxt "Pattern title"
+msgid "Event header"
+msgstr ""
+
+#: patterns/event-header.php:16
+msgid "Saturday 14 March, 7 to 10 pm"
+msgstr ""
+
+#: patterns/event-header.php:18
+msgid "Doors 6:30 pm"
+msgstr ""
+
+#: patterns/event-header.php:32
+#: patterns/place-things-to-do.php:22
+msgid "Market"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/event-header.php:39
+#, php-format
+msgid "Harbor %1$snight market%2$s"
+msgstr ""
+
+#: patterns/event-header.php:75
+#: patterns/ticket.php:50
+#: patterns/tickets-list.php:59
+msgid "Get tickets"
+msgstr ""
+
+#: patterns/events-month.php
+msgctxt "Pattern title"
+msgid "Events: month"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/events-month.php:21
+#, php-format
+msgid "March, %1$sthe busy month%2$s"
+msgstr ""
+
+#: patterns/facts-bar.php
+msgctxt "Pattern title"
+msgid "Facts bar"
+msgstr ""
+
+#: patterns/facts-bar.php:16
+msgid "Nov to Apr"
+msgstr ""
+
+#: patterns/facts-bar.php:16
+msgid "Best season"
+msgstr ""
+
+#: patterns/facts-bar.php:17
+msgid "Low 70s"
+msgstr ""
+
+#: patterns/facts-bar.php:17
+msgid "Water temperature"
+msgstr ""
+
+#: patterns/facts-bar.php:18
+msgid "14 miles"
+msgstr ""
+
+#: patterns/facts-bar.php:18
+msgid "Of beaches"
+msgstr ""
+
+#: patterns/facts-bar.php:19
+msgid "Visitor rating"
 msgstr ""
 
 #: patterns/faq-accordion.php
@@ -1897,6 +3384,11 @@ msgstr ""
 
 #: patterns/faq-accordion.php:17
 msgid "Yes. Plans from 6 to 24 months at 0% interest are available on most work, subject to approval."
+msgstr ""
+
+#: patterns/faq-accordion.php:18
+#: patterns/faq.php:38
+msgid "How soon can you come out?"
 msgstr ""
 
 #: patterns/faq-accordion.php:18
@@ -1941,6 +3433,23 @@ msgstr ""
 msgid "The whole county and the neighbouring towns. Call us if you are not sure and we will tell you straight away."
 msgstr ""
 
+#: patterns/feature-article.php
+msgctxt "Pattern title"
+msgid "Feature article"
+msgstr ""
+
+#: patterns/feature-article.php:22
+msgid "Featured"
+msgstr ""
+
+#: patterns/feature-article.php:29
+msgid "Read the story"
+msgstr ""
+
+#: patterns/feature-article.php:36
+msgid "Make a post sticky and it appears here as the feature."
+msgstr ""
+
 #: patterns/features-icons.php
 msgctxt "Pattern title"
 msgid "Feature list with icons"
@@ -1972,6 +3481,147 @@ msgstr ""
 
 #: patterns/features-icons.php:25
 msgid "Why people choose us"
+msgstr ""
+
+#: patterns/filter-chips.php
+msgctxt "Pattern title"
+msgid "Filter chips"
+msgstr ""
+
+#: patterns/filter-chips.php:15
+#: patterns/search-panel.php:16
+#: patterns/search-panel.php:17
+#: patterns/search-panel.php:18
+msgid "All"
+msgstr ""
+
+#: patterns/filter-chips.php:15
+#: patterns/listing-included.php:16
+#: patterns/marquee-band.php:15
+msgid "Boat tours"
+msgstr ""
+
+#: patterns/filter-chips.php:15
+msgid "Food and drink"
+msgstr ""
+
+#: patterns/filter-chips.php:15
+#: patterns/profiles-grid.php:20
+msgid "Family"
+msgstr ""
+
+#: patterns/filter-chips.php:15
+#: patterns/place-things-to-do.php:22
+#: patterns/services-grid-prices.php:21
+msgid "Free"
+msgstr ""
+
+#: patterns/floating-cta.php
+msgctxt "Pattern title"
+msgid "Floating call to action"
+msgstr ""
+
+#: patterns/floating-cta.php:20
+#: patterns/listing-grid.php:39
+#: patterns/listing-list.php:41
+#: patterns/mobile-cta-bar.php:20
+msgid "Call"
+msgstr ""
+
+#: patterns/footer-big.php
+msgctxt "Pattern title"
+msgid "Footer: big"
+msgstr ""
+
+#: patterns/footer-big.php:15
+msgid "Things to do"
+msgstr ""
+
+#: patterns/footer-big.php:15
+#: patterns/search-panel.php:18
+msgid "Events"
+msgstr ""
+
+#: patterns/footer-big.php:15
+msgid "Deals"
+msgstr ""
+
+#: patterns/footer-big.php:16
+msgid "Itineraries"
+msgstr ""
+
+#: patterns/footer-big.php:16
+msgid "Visitor information"
+msgstr ""
+
+#: patterns/footer-big.php:16
+msgid "Journal"
+msgstr ""
+
+#: patterns/footer-big.php:16
+#: patterns/page-events.php:63
+msgid "Submit an event"
+msgstr ""
+
+#: patterns/footer-big.php:16
+msgid "Press"
+msgstr ""
+
+#: patterns/footer-big.php:27
+msgid "An independent guide to the coast, written by the people who live here. No sponsored listings, no booking fees."
+msgstr ""
+
+#: patterns/footer-big.php:31
+msgid "Instagram"
+msgstr ""
+
+#: patterns/footer-big.php:31
+msgid "Facebook"
+msgstr ""
+
+#: patterns/footer-big.php:31
+msgid "YouTube"
+msgstr ""
+
+#: patterns/footer-big.php:57
+msgid "Plan"
+msgstr ""
+
+#: patterns/footer-big.php:75
+msgid "Contact and hours"
+msgstr ""
+
+#: patterns/footer-big.php:79
+#: patterns/utility-bar-contact.php:16
+msgid "(555) 555-0100"
+msgstr ""
+
+#: patterns/footer-big.php:83
+msgid "Visitor centre open daily 9 am to 5 pm."
+msgstr ""
+
+#: patterns/footer-big.php:83
+msgid "Closed Tuesdays in summer."
+msgstr ""
+
+#. translators: %s: the current year.
+#: patterns/footer-big.php:100
+#, php-format
+msgid "Copyright %s. No payments are taken on this site; bookings go directly to each business."
+msgstr ""
+
+#: patterns/footer-big.php:106
+#: patterns/footer-columns.php:101
+msgid "Privacy"
+msgstr ""
+
+#: patterns/footer-big.php:106
+#: patterns/footer-columns.php:101
+msgid "Accessibility"
+msgstr ""
+
+#: patterns/footer-big.php:106
+msgid "Photo credits"
 msgstr ""
 
 #: patterns/footer-columns.php
@@ -2023,14 +3673,6 @@ msgstr ""
 msgid "Sunday: emergencies only"
 msgstr ""
 
-#: patterns/footer-columns.php:101
-msgid "Privacy"
-msgstr ""
-
-#: patterns/footer-columns.php:101
-msgid "Accessibility"
-msgstr ""
-
 #: patterns/footer-simple.php
 msgctxt "Pattern title"
 msgid "Footer: simple"
@@ -2045,6 +3687,15 @@ msgstr ""
 msgid "Recent work"
 msgstr ""
 
+#: patterns/header-actions.php
+msgctxt "Pattern title"
+msgid "Header actions"
+msgstr ""
+
+#: patterns/header-actions.php:22
+msgid "Plan a trip"
+msgstr ""
+
 #: patterns/hero-booking.php
 msgctxt "Pattern title"
 msgid "Hero: booking"
@@ -2055,6 +3706,7 @@ msgid "Plans"
 msgstr ""
 
 #: patterns/hero-booking.php:22
+#: patterns/map-card.php:24
 msgid "Find us"
 msgstr ""
 
@@ -2150,11 +3802,156 @@ msgid "Visit us"
 msgstr ""
 
 #: patterns/hours-location.php:56
+#: patterns/map-card.php:38
 msgid "Get directions"
 msgstr ""
 
 #: patterns/hours-location.php:66
 msgid "Map showing our location"
+msgstr ""
+
+#: patterns/itinerary.php
+msgctxt "Pattern title"
+msgid "Itinerary"
+msgstr ""
+
+#: patterns/itinerary.php:16
+msgid "Day 1: Arrive and settle in"
+msgstr ""
+
+#: patterns/itinerary.php:16
+msgid "Check in, walk the harbour front and eat early at the fish counter before the crowd."
+msgstr ""
+
+#: patterns/itinerary.php:16
+msgid "Harbour walk at golden hour"
+msgstr ""
+
+#: patterns/itinerary.php:16
+msgid "Dinner at the Boathouse Kitchen"
+msgstr ""
+
+#: patterns/itinerary.php:16
+msgid "Tide check for tomorrow"
+msgstr ""
+
+#: patterns/itinerary.php:17
+msgid "Day 2: On the water"
+msgstr ""
+
+#: patterns/itinerary.php:17
+msgid "A sunrise paddle, a long lunch and the sandbar at low tide."
+msgstr ""
+
+#: patterns/itinerary.php:17
+#: patterns/mini-list.php:17
+msgid "Low tide at the sandbar"
+msgstr ""
+
+#: patterns/itinerary.php:17
+msgid "Sunset from the pier"
+msgstr ""
+
+#: patterns/itinerary.php:18
+msgid "Day 3: Old town and home"
+msgstr ""
+
+#: patterns/itinerary.php:18
+msgid "Coffee in the old town, the Saturday market and one last swim."
+msgstr ""
+
+#: patterns/itinerary.php:18
+#: patterns/mini-list.php:18
+#: patterns/place-things-to-do.php:22
+#: patterns/polaroid-trio.php:16
+msgid "The Saturday market"
+msgstr ""
+
+#: patterns/itinerary.php:18
+#: patterns/tickets-list.php:18
+msgid "Old town walking tour"
+msgstr ""
+
+#: patterns/itinerary.php:18
+msgid "A last swim at Harbor Point Beach"
+msgstr ""
+
+#: patterns/itinerary.php:24
+msgid "Three days, done well"
+msgstr ""
+
+#: patterns/journal-card.php
+msgctxt "Pattern title"
+msgid "Journal card"
+msgstr ""
+
+#: patterns/journal-grid.php
+msgctxt "Pattern title"
+msgid "Journal grid"
+msgstr ""
+
+#: patterns/legal-contents.php
+msgctxt "Pattern title"
+msgid "Legal contents"
+msgstr ""
+
+#: patterns/legal-contents.php:16
+#: patterns/page-legal.php:37
+msgid "What we collect"
+msgstr ""
+
+#: patterns/legal-contents.php:17
+#: patterns/page-legal.php:45
+msgid "How we use it"
+msgstr ""
+
+#: patterns/legal-contents.php:18
+#: patterns/page-legal.php:53
+msgid "Cookies"
+msgstr ""
+
+#: patterns/legal-contents.php:19
+#: patterns/page-legal.php:61
+msgid "Who we share it with"
+msgstr ""
+
+#: patterns/legal-contents.php:20
+#: patterns/page-legal.php:69
+msgid "Your rights"
+msgstr ""
+
+#: patterns/legal-contents.php:21
+#: patterns/page-legal.php:77
+msgid "How to reach us"
+msgstr ""
+
+#: patterns/legal-contents.php:27
+msgid "Contents"
+msgstr ""
+
+#: patterns/listing-gallery.php
+msgctxt "Pattern title"
+msgid "Listing gallery"
+msgstr ""
+
+#: patterns/listing-gallery.php:17
+msgid "The inn from the water at dusk"
+msgstr ""
+
+#: patterns/listing-gallery.php:17
+msgid "A room with the window open to the river"
+msgstr ""
+
+#: patterns/listing-gallery.php:17
+msgid "Breakfast laid out on the deck"
+msgstr ""
+
+#: patterns/listing-gallery.php:17
+msgid "Bikes lined up by the door"
+msgstr ""
+
+#: patterns/listing-gallery.php:17
+msgid "The dock at low tide"
 msgstr ""
 
 #: patterns/listing-grid.php
@@ -2171,10 +3968,49 @@ msgstr ""
 msgid "Enquire"
 msgstr ""
 
-#: patterns/listing-grid.php:39
-#: patterns/listing-list.php:41
-#: patterns/mobile-cta-bar.php:20
-msgid "Call"
+#: patterns/listing-included.php
+msgctxt "Pattern title"
+msgid "Listing: included and not included"
+msgstr ""
+
+#: patterns/listing-included.php:15
+msgid "Breakfast on the deck"
+msgstr ""
+
+#: patterns/listing-included.php:15
+msgid "Two bikes per room"
+msgstr ""
+
+#: patterns/listing-included.php:15
+msgid "Kayaks at the dock"
+msgstr ""
+
+#: patterns/listing-included.php:15
+msgid "Parking at the door"
+msgstr ""
+
+#: patterns/listing-included.php:15
+msgid "Late checkout on Sundays"
+msgstr ""
+
+#: patterns/listing-included.php:16
+msgid "Dinner (the kitchen next door is open late)"
+msgstr ""
+
+#: patterns/listing-included.php:16
+msgid "Pets in the water-side rooms"
+msgstr ""
+
+#: patterns/listing-included.php:16
+msgid "Airport transfers"
+msgstr ""
+
+#: patterns/listing-included.php:23
+msgid "Included"
+msgstr ""
+
+#: patterns/listing-included.php:41
+msgid "Not included"
 msgstr ""
 
 #: patterns/listing-list.php
@@ -2184,6 +4020,37 @@ msgstr ""
 
 #: patterns/listing-list.php:18
 msgid "All listings"
+msgstr ""
+
+#: patterns/listing-price-card.php
+msgctxt "Pattern title"
+msgid "Listing price card"
+msgstr ""
+
+#: patterns/listing-price-card.php:16
+#: patterns/page-listing.php:21
+msgid "4.8 (96 reviews)"
+msgstr ""
+
+#: patterns/listing-price-card.php:17
+msgid "Riverside, 6 min walk to the market"
+msgstr ""
+
+#: patterns/listing-price-card.php:23
+#: patterns/price-formats.php:28
+msgid "per night"
+msgstr ""
+
+#: patterns/listing-price-card.php:47
+msgid "Check availability"
+msgstr ""
+
+#: patterns/listing-price-card.php:51
+msgid "Message the host"
+msgstr ""
+
+#: patterns/listing-price-card.php:57
+msgid "Free cancellation up to seven days before arrival. No booking fees on this site."
 msgstr ""
 
 #: patterns/logo-band.php
@@ -2199,6 +4066,44 @@ msgstr ""
 #: patterns/logo-band.php:27
 #, php-format
 msgid "Partner logo %d"
+msgstr ""
+
+#: patterns/map-card.php
+msgctxt "Pattern title"
+msgid "Map card"
+msgstr ""
+
+#: patterns/map-card.php:20
+msgid "Map of the area around the office"
+msgstr ""
+
+#: patterns/map-card.php:32
+msgid "Open daily 9 am to 5 pm, closed Tuesdays in summer."
+msgstr ""
+
+#: patterns/map-card.php:44
+msgid "Paste your map link into the button. The theme embeds no maps, so nothing loads from another site."
+msgstr ""
+
+#: patterns/marquee-band.php
+msgctxt "Pattern title"
+msgid "Marquee band"
+msgstr ""
+
+#: patterns/marquee-band.php:15
+msgid "Fishing"
+msgstr ""
+
+#: patterns/marquee-band.php:15
+msgid "Live music"
+msgstr ""
+
+#: patterns/marquee-band.php:15
+msgid "Sunsets"
+msgstr ""
+
+#: patterns/marquee-band.php:15
+msgid "Local food"
 msgstr ""
 
 #: patterns/media-text-steps.php
@@ -2234,6 +4139,37 @@ msgstr ""
 msgid "How a visit goes"
 msgstr ""
 
+#: patterns/mini-list-posts.php
+msgctxt "Pattern title"
+msgid "Mini list: posts"
+msgstr ""
+
+#: patterns/mini-list-posts.php:40
+msgid "Nothing to list yet."
+msgstr ""
+
+#: patterns/mini-list.php
+msgctxt "Pattern title"
+msgid "Mini list"
+msgstr ""
+
+#: patterns/mini-list.php:17
+msgid "Harbor district · 15 min walk"
+msgstr ""
+
+#: patterns/mini-list.php:18
+msgid "Riverside green · Saturdays from 8 am"
+msgstr ""
+
+#: patterns/mini-list.php:19
+#: patterns/place-things-to-do.php:21
+msgid "Lighthouse climb"
+msgstr ""
+
+#: patterns/mini-list.php:19
+msgid "North beach · $8, book ahead"
+msgstr ""
+
 #: patterns/mobile-cta-bar.php
 msgctxt "Pattern title"
 msgid "Mobile CTA bar"
@@ -2241,10 +4177,6 @@ msgstr ""
 
 #: patterns/mobile-cta-bar.php:24
 msgid "Text"
-msgstr ""
-
-#: patterns/mobile-cta-bar.php:32
-msgid "Directions"
 msgstr ""
 
 #: patterns/newsletter-band.php
@@ -2265,6 +4197,7 @@ msgid "Insert your newsletter form block here: a name field, an email field and 
 msgstr ""
 
 #: patterns/newsletter-band.php:34
+#: patterns/subscribe-inline.php:21
 msgid "Subscribe"
 msgstr ""
 
@@ -2302,14 +4235,191 @@ msgstr ""
 msgid "Claim the offer"
 msgstr ""
 
+#: patterns/page-about-story.php
+msgctxt "Pattern title"
+msgid "Page: about with story"
+msgstr ""
+
+#: patterns/page-about-story.php
+msgctxt "Pattern description"
+msgid "An about page: split hero, the story timeline with polaroids, the stats band, the team and a closing call."
+msgstr ""
+
 #: patterns/page-about.php
 msgctxt "Pattern title"
 msgid "Page: about"
 msgstr ""
 
+#: patterns/page-careers.php
+msgctxt "Pattern title"
+msgid "Page: careers"
+msgstr ""
+
+#: patterns/page-careers.php
+msgctxt "Pattern description"
+msgid "The careers page: an intro, the open roles as cards and the callouts about how hiring works."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-careers.php:25
+#, php-format
+msgid "Work %1$swhere you would rather be%2$s"
+msgstr ""
+
+#: patterns/page-careers.php:31
+msgid "Small team, real hours, a desk by the water and a bike for the commute."
+msgstr ""
+
+#: patterns/page-coming-soon.php
+msgctxt "Pattern title"
+msgid "Page: coming soon"
+msgstr ""
+
+#: patterns/page-coming-soon.php
+msgctxt "Pattern description"
+msgid "A coming-soon page for the Page without title template: a centred panel with a subscribe row."
+msgstr ""
+
+#: patterns/page-coming-soon.php:22
+#: patterns/utility-panel.php:18
+msgid "Opening spring 2027"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-coming-soon.php:29
+#: patterns/utility-panel.php:25
+#, php-format
+msgid "Something good is %1$snearly ready%2$s"
+msgstr ""
+
+#: patterns/page-coming-soon.php:35
+#: patterns/utility-panel.php:31
+msgid "We are building the guide now. Leave your email and we will tell you the day it opens."
+msgstr ""
+
+#: patterns/page-coming-soon.php:41
+#: patterns/utility-panel.php:37
+msgid "Tell me when"
+msgstr ""
+
+#: patterns/page-contact-map.php
+msgctxt "Pattern title"
+msgid "Page: contact with map"
+msgstr ""
+
+#: patterns/page-contact-map.php
+msgctxt "Pattern description"
+msgid "A contact page: an intro, the contact shell beside a map card, and the hours table with a callout."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-contact-map.php:25
+#, php-format
+msgid "Say %1$shello%2$s"
+msgstr ""
+
+#: patterns/page-contact-map.php:31
+msgid "Questions, corrections, a tip about a place we have missed: all welcome."
+msgstr ""
+
+#: patterns/page-contact-map.php:37
+msgid "Write to us or find us"
+msgstr ""
+
 #: patterns/page-contact.php
 msgctxt "Pattern title"
 msgid "Page: contact"
+msgstr ""
+
+#: patterns/page-deals.php
+msgctxt "Pattern title"
+msgid "Page: deals"
+msgstr ""
+
+#: patterns/page-deals.php
+msgctxt "Pattern description"
+msgid "The deals page: an intro, the featured deal and the deals grid, with a note on how deals work."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-deals.php:25
+#, php-format
+msgid "Deals, %1$swhile they last%2$s"
+msgstr ""
+
+#: patterns/page-deals.php:31
+msgid "Offers from the businesses in the guide. We list them; they honour them."
+msgstr ""
+
+#: patterns/page-deals.php:47
+msgid "Deals are set by each business and can end early. Nothing is paid through this site."
+msgstr ""
+
+#: patterns/page-event.php
+msgctxt "Pattern title"
+msgid "Page: event"
+msgstr ""
+
+#: patterns/page-event.php
+msgctxt "Pattern description"
+msgid "One event: breadcrumb, the ticket header, the story, a venue map card and more events this month."
+msgstr ""
+
+#: patterns/page-event.php:26
+msgid "Forty stalls on the green, the fish counter open late, two bands and the lanterns going up at dusk. Bring a bag for the bread and cash for the tastings; everything else takes cards."
+msgstr ""
+
+#: patterns/page-event.php:30
+msgid "Parking fills early. The town lot on Flagler Street is free after 6 pm, and the bike racks by the clock tower are lit all night."
+msgstr ""
+
+#: patterns/page-event.php:40
+msgid "Where it is"
+msgstr ""
+
+#: patterns/page-event.php:52
+msgid "More this month"
+msgstr ""
+
+#: patterns/page-events.php
+msgctxt "Pattern title"
+msgid "Page: events"
+msgstr ""
+
+#: patterns/page-events.php
+msgctxt "Pattern description"
+msgid "The events page: an intro, three months of tickets and a callout for submitting an event."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-events.php:25
+#, php-format
+msgid "What is %1$son%2$s"
+msgstr ""
+
+#: patterns/page-events.php:31
+msgid "Markets, regattas, walks and music, listed by month. Free unless a price is shown."
+msgstr ""
+
+#: patterns/page-events.php:39
+msgid "March"
+msgstr ""
+
+#: patterns/page-events.php:45
+msgid "April"
+msgstr ""
+
+#: patterns/page-events.php:51
+#: patterns/table-best-time.php:15
+msgid "May"
+msgstr ""
+
+#: patterns/page-events.php:63
+msgid "Running something?"
+msgstr ""
+
+#: patterns/page-events.php:63
+msgid "Send us the date, the place and a line about it and we will list it for free."
 msgstr ""
 
 #: patterns/page-faq.php
@@ -2323,6 +4433,26 @@ msgstr ""
 
 #: patterns/page-faq.php:25
 msgid "The things people ask before they book, answered plainly. Anything missing? Call us."
+msgstr ""
+
+#: patterns/page-journal.php
+msgctxt "Pattern title"
+msgid "Page: journal"
+msgstr ""
+
+#: patterns/page-journal.php
+msgctxt "Pattern description"
+msgid "A magazine home: the sticky feature article, category chips, the journal grid with enhanced pagination and a subscribe row."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-journal.php:25
+#, php-format
+msgid "The %1$sjournal%2$s"
+msgstr ""
+
+#: patterns/page-journal.php:31
+msgid "Stories from the water, the markets and the quiet lanes, from the people who live here."
 msgstr ""
 
 #: patterns/page-landing-offer.php
@@ -2344,6 +4474,203 @@ msgstr ""
 
 #: patterns/page-landing-offer.php:73
 msgid "Still thinking about it? Book the free assessment. The decision stays yours."
+msgstr ""
+
+#: patterns/page-legal.php
+msgctxt "Pattern title"
+msgid "Page: legal"
+msgstr ""
+
+#: patterns/page-legal.php
+msgctxt "Pattern description"
+msgid "A legal page: the title, a contents box with anchors and six headed sections of placeholder copy."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-legal.php:25
+#, php-format
+msgid "Privacy %1$spolicy%2$s"
+msgstr ""
+
+#: patterns/page-legal.php:31
+msgid "Last updated: 1 March 2027"
+msgstr ""
+
+#: patterns/page-legal.php:41
+#: patterns/page-legal.php:49
+#: patterns/page-legal.php:57
+#: patterns/page-legal.php:65
+#: patterns/page-legal.php:73
+#: patterns/page-legal.php:81
+msgid "Replace this paragraph with your own wording. Keep the heading, so the contents list above still points to the right place, and say what you do in plain words."
+msgstr ""
+
+#: patterns/page-listing.php
+msgctxt "Pattern title"
+msgid "Page: listing"
+msgstr ""
+
+#: patterns/page-listing.php
+msgctxt "Pattern description"
+msgid "One listing: breadcrumb, title and meta, a mosaic gallery, the body beside a sticky price card, what is included, reviews, a map and more listings."
+msgstr ""
+
+#: patterns/page-listing.php:20
+msgid "Riverside, Harbor district"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-listing.php:37
+#, php-format
+msgid "The Boathouse %1$sInn%2$s"
+msgstr ""
+
+#: patterns/page-listing.php:73
+msgid "About the inn"
+msgstr ""
+
+#: patterns/page-listing.php:77
+msgid "Twelve rooms over the water in a boathouse that stored nets until 1998. Floors creak, windows open, breakfast is on the deck and the bikes by the door are yours for the stay."
+msgstr ""
+
+#: patterns/page-listing.php:81
+msgid "The water-side rooms face the inlet and the sunrise; the garden rooms are quieter and a little bigger. Either way you are six minutes from the market and ten from the beach."
+msgstr ""
+
+#: patterns/page-listing.php:117
+msgid "More places to stay"
+msgstr ""
+
+#: patterns/page-listings.php
+msgctxt "Pattern title"
+msgid "Page: listings"
+msgstr ""
+
+#: patterns/page-listings.php
+msgctxt "Pattern description"
+msgid "A listings index: filter chips and a Query Loop of the pages beneath it shown as listing cards with enhanced pagination. Set the Parents filter of the Query Loop to the page itself."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-listings.php:25
+#, php-format
+msgid "Where to %1$seat, stay and play%2$s"
+msgstr ""
+
+#: patterns/page-listings.php:31
+msgid "Every listing is a page of its own beneath this one. The grid below reads them in; add a page and it appears here."
+msgstr ""
+
+#: patterns/page-listings.php:41
+msgid "Everything in the guide"
+msgstr ""
+
+#: patterns/page-listings.php:54
+msgid "Listing"
+msgstr ""
+
+#: patterns/page-listings.php:69
+msgid "See listing"
+msgstr ""
+
+#: patterns/page-listings.php:84
+msgid "No listings yet. Add a page beneath this one and set the Parents filter of this Query Loop to this page."
+msgstr ""
+
+#: patterns/page-listings.php:93
+msgid "Prices and hours change with the season. Each listing shows the current ones; the chips above filter by kind."
+msgstr ""
+
+#: patterns/page-maintenance.php
+msgctxt "Pattern title"
+msgid "Page: maintenance"
+msgstr ""
+
+#: patterns/page-maintenance.php
+msgctxt "Pattern description"
+msgid "A maintenance page for the Page without title template: a centred panel with a subscribe row."
+msgstr ""
+
+#: patterns/page-maintenance.php:22
+msgid "Back in a few hours"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-maintenance.php:29
+#, php-format
+msgid "We are %1$sfixing the boat%2$s"
+msgstr ""
+
+#: patterns/page-maintenance.php:35
+msgid "The site is down for planned work. Everything will be where you left it, a little faster."
+msgstr ""
+
+#: patterns/page-maintenance.php:41
+msgid "Check again"
+msgstr ""
+
+#: patterns/page-one-page.php
+msgctxt "Pattern title"
+msgid "Page: one page"
+msgstr ""
+
+#: patterns/page-one-page.php
+msgctxt "Pattern description"
+msgid "A one-page site for the Landing page template, which has no header of its own: the sticky header part on top, then every section with an anchor."
+msgstr ""
+
+#: patterns/page-place.php
+msgctxt "Pattern title"
+msgid "Page: place"
+msgstr ""
+
+#: patterns/page-place.php
+msgctxt "Pattern description"
+msgid "One place: breadcrumb, hero with a stamp, facts bar, things to do, an itinerary, questions, a map and nearby places."
+msgstr ""
+
+#: patterns/page-places.php
+msgctxt "Pattern title"
+msgid "Page: places"
+msgstr ""
+
+#: patterns/page-places.php
+msgctxt "Pattern description"
+msgid "The places index: an intro, a tiles grid of regions, a map card and the facts bar."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-places.php:25
+#, php-format
+msgid "Six places, %1$sone coast%2$s"
+msgstr ""
+
+#: patterns/page-places.php:31
+msgid "Each region has its own pace. Pick one for a day, or thread them together over a long weekend."
+msgstr ""
+
+#: patterns/page-places.php:39
+msgid "The regions"
+msgstr ""
+
+#: patterns/page-press.php
+msgctxt "Pattern title"
+msgid "Page: press"
+msgstr ""
+
+#: patterns/page-press.php
+msgctxt "Pattern description"
+msgid "The press page: an intro, the logo band, the press kit and a contact shell."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-press.php:25
+#, php-format
+msgid "For the %1$spress%2$s"
+msgstr ""
+
+#: patterns/page-press.php:31
+msgid "Facts, photos and people, ready to use. Ask for anything else and we will send it the same day."
 msgstr ""
 
 #: patterns/page-pricing.php
@@ -2495,6 +4822,8 @@ msgid "Lead specialist"
 msgstr ""
 
 #: patterns/page-provider.php:46
+#: patterns/profile-card.php:32
+#: patterns/profiles-grid.php:17
 #: patterns/providers-grid.php:17
 #: patterns/team-grid.php:32
 msgid "Jordan Lee"
@@ -2629,6 +4958,86 @@ msgstr ""
 msgid "A free assessment tells you. No pressure, no obligation."
 msgstr ""
 
+#: patterns/page-team.php
+msgctxt "Pattern title"
+msgid "Page: team"
+msgstr ""
+
+#: patterns/page-team.php
+msgctxt "Pattern description"
+msgid "The team page: an intro, the profiles grid and a callout on how to join."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-team.php:25
+#, php-format
+msgid "The %1$speople%2$s behind the guide"
+msgstr ""
+
+#: patterns/page-team.php:31
+msgid "Editors, guides and hosts who live here all year and write about it in their own words."
+msgstr ""
+
+#: patterns/page-team.php:43
+msgid "Know the coast better than we do? We are always looking for one more voice."
+msgstr ""
+
+#: patterns/page-team.php:43
+msgid "See the open roles"
+msgstr ""
+
+#: patterns/page-thank-you.php
+msgctxt "Pattern title"
+msgid "Page: thank you"
+msgstr ""
+
+#: patterns/page-thank-you.php
+msgctxt "Pattern description"
+msgid "A thank-you page for the Page without title template: a centred panel with one next step."
+msgstr ""
+
+#: patterns/page-thank-you.php:22
+msgid "All done"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-thank-you.php:29
+#, php-format
+msgid "Thank you, %1$swe have it%2$s"
+msgstr ""
+
+#: patterns/page-thank-you.php:35
+msgid "Your message is in. A real person reads every one and replies within a working day."
+msgstr ""
+
+#: patterns/page-thank-you.php:41
+msgid "Back to the guide"
+msgstr ""
+
+#: patterns/page-visitor-info.php
+msgctxt "Pattern title"
+msgid "Page: visitor information"
+msgstr ""
+
+#: patterns/page-visitor-info.php
+msgctxt "Pattern description"
+msgid "Visitor information: an intro, callouts for seasons and safety, the best-time table and questions."
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/page-visitor-info.php:25
+#, php-format
+msgid "Before you %1$sarrive%2$s"
+msgstr ""
+
+#: patterns/page-visitor-info.php:31
+msgid "The practical page: when to come, what to bring, what to watch for and who to call."
+msgstr ""
+
+#: patterns/page-visitor-info.php:45
+msgid "The best time to visit"
+msgstr ""
+
 #: patterns/payment-plan-band.php
 msgctxt "Pattern title"
 msgid "Payment plan band"
@@ -2654,6 +5063,153 @@ msgstr ""
 msgid "Check your options"
 msgstr ""
 
+#: patterns/place-hero.php
+msgctxt "Pattern title"
+msgid "Place hero"
+msgstr ""
+
+#: patterns/place-hero.php:22
+#: patterns/places-rail.php:17
+#: patterns/places-rail.php:18
+#: patterns/places-rail.php:19
+#: patterns/places-rail.php:20
+#: patterns/places-rail.php:21
+#: patterns/tile.php:24
+#: patterns/tiles-grid.php:17
+#: patterns/tiles-grid.php:18
+#: patterns/tiles-grid.php:19
+#: patterns/tiles-grid.php:20
+#: patterns/tiles-grid.php:21
+#: patterns/tiles-grid.php:22
+msgid "Region"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/place-hero.php:35
+#, php-format
+msgid "Harbor district, %1$swhere the town meets the water%2$s"
+msgstr ""
+
+#: patterns/place-hero.php:41
+msgid "Working docks, the Saturday market, a beach ten minutes from the coffee, and the best sunset bench in the county."
+msgstr ""
+
+#: patterns/place-hero.php:47
+#: patterns/place-things-to-do.php:28
+msgid "Things to do here"
+msgstr ""
+
+#: patterns/place-hero.php:51
+msgid "See the map"
+msgstr ""
+
+#: patterns/place-things-to-do.php
+msgctxt "Pattern title"
+msgid "Place: things to do"
+msgstr ""
+
+#: patterns/place-things-to-do.php:21
+msgid "Walk"
+msgstr ""
+
+#: patterns/place-things-to-do.php:21
+msgid "A hundred and twelve steps, a keeper who tells the story and the best view of the inlet."
+msgstr ""
+
+#: patterns/place-things-to-do.php:21
+#: patterns/place-things-to-do.php:22
+#: patterns/tickets-list.php:17
+msgid "Entry"
+msgstr ""
+
+#: patterns/place-things-to-do.php:21
+msgid "1 hour"
+msgstr ""
+
+#: patterns/place-things-to-do.php:21
+#: patterns/places-rail.php:17
+#: patterns/tiles-grid.php:18
+msgid "North beach"
+msgstr ""
+
+#: patterns/place-things-to-do.php:21
+msgid "4.8 (510)"
+msgstr ""
+
+#: patterns/place-things-to-do.php:22
+msgid "Forty stalls on the green: produce, bread, the fish counter and someone playing the fiddle."
+msgstr ""
+
+#: patterns/place-things-to-do.php:22
+msgid "Saturdays 8 am to 1 pm"
+msgstr ""
+
+#: patterns/place-things-to-do.php:22
+msgid "4.9 (1,204)"
+msgstr ""
+
+#: patterns/places-rail.php
+msgctxt "Pattern title"
+msgid "Places rail"
+msgstr ""
+
+#: patterns/places-rail.php:17
+#: patterns/tiles-grid.php:18
+msgid "8 places to see"
+msgstr ""
+
+#: patterns/places-rail.php:18
+#: patterns/tiles-grid.php:19
+msgid "River bend"
+msgstr ""
+
+#: patterns/places-rail.php:18
+#: patterns/tiles-grid.php:19
+msgid "9 places to see"
+msgstr ""
+
+#: patterns/places-rail.php:19
+#: patterns/tiles-grid.php:20
+msgid "15 places to see"
+msgstr ""
+
+#: patterns/places-rail.php:20
+#: patterns/tiles-grid.php:21
+msgid "The islands"
+msgstr ""
+
+#: patterns/places-rail.php:20
+#: patterns/tiles-grid.php:21
+msgid "6 places to see"
+msgstr ""
+
+#: patterns/places-rail.php:21
+#: patterns/tiles-grid.php:22
+msgid "Inland trails"
+msgstr ""
+
+#: patterns/places-rail.php:21
+#: patterns/tiles-grid.php:22
+msgid "7 places to see"
+msgstr ""
+
+#: patterns/places-rail.php:27
+msgid "Nearby places"
+msgstr ""
+
+#: patterns/polaroid-trio.php
+msgctxt "Pattern title"
+msgid "Polaroid trio"
+msgstr ""
+
+#: patterns/polaroid-trio.php:16
+msgid "Low tide, October"
+msgstr ""
+
+#: patterns/polaroid-trio.php:16
+msgid "Last light on the pier"
+msgstr ""
+
 #: patterns/post-navigation.php
 msgctxt "Pattern title"
 msgid "Post navigation"
@@ -2665,6 +5221,60 @@ msgstr ""
 
 #: patterns/post-navigation.php:19
 msgid "Next"
+msgstr ""
+
+#: patterns/press-kit.php
+msgctxt "Pattern title"
+msgid "Press kit"
+msgstr ""
+
+#: patterns/press-kit.php:17
+msgid "Logo pack"
+msgstr ""
+
+#: patterns/press-kit.php:17
+msgid "SVG and PNG, light and dark, 2 MB"
+msgstr ""
+
+#: patterns/press-kit.php:18
+msgid "Photo library"
+msgstr ""
+
+#: patterns/press-kit.php:18
+msgid "Forty images, credited, free for editorial use, 180 MB"
+msgstr ""
+
+#: patterns/press-kit.php:19
+msgid "Fact sheet"
+msgstr ""
+
+#: patterns/press-kit.php:19
+msgid "Who we are, the numbers and the people, 1 page"
+msgstr ""
+
+#: patterns/press-kit.php:25
+msgid "Press kit"
+msgstr ""
+
+#: patterns/press-kit.php:59
+msgid "Press enquiries: "
+msgstr ""
+
+#: patterns/press-kit.php:59
+msgid "Same-day replies on weekdays."
+msgstr ""
+
+#: patterns/price-formats.php
+msgctxt "Pattern title"
+msgid "Price formats"
+msgstr ""
+
+#: patterns/price-formats.php:32
+msgid "this month"
+msgstr ""
+
+#: patterns/price-formats.php:38
+msgid "Prices are samples. Replace them with yours, and say what they include."
 msgstr ""
 
 #: patterns/pricing-table.php
@@ -2768,6 +5378,74 @@ msgstr ""
 msgid "Approved work is completed, tested and walked through with you before we leave."
 msgstr ""
 
+#: patterns/profile-card.php
+msgctxt "Pattern title"
+msgid "Profile card"
+msgstr ""
+
+#: patterns/profile-card.php:26
+#: patterns/profiles-grid.php:17
+msgid "Local expert"
+msgstr ""
+
+#: patterns/profile-card.php:40
+#: patterns/profiles-grid.php:17
+msgid "Grew up on the river and still walks the old rail line every Sunday. Ask about the quiet beaches."
+msgstr ""
+
+#: patterns/profiles-grid.php
+msgctxt "Pattern title"
+msgid "Profiles grid"
+msgstr ""
+
+#: patterns/profiles-grid.php:18
+#: patterns/providers-grid.php:18
+#: patterns/team-grid.php:56
+msgid "Priya Patel"
+msgstr ""
+
+#: patterns/profiles-grid.php:18
+msgid "Editor, food and markets"
+msgstr ""
+
+#: patterns/profiles-grid.php:18
+msgid "Knows which boat the fish came off and which stall sells out first."
+msgstr ""
+
+#: patterns/profiles-grid.php:19
+msgid "On the water"
+msgstr ""
+
+#: patterns/profiles-grid.php:19
+#: patterns/team-grid.php:80
+msgid "Sam Rivera"
+msgstr ""
+
+#: patterns/profiles-grid.php:19
+msgid "Guide and photographer"
+msgstr ""
+
+#: patterns/profiles-grid.php:19
+msgid "Twenty seasons of charters and a camera that is never dry."
+msgstr ""
+
+#: patterns/profiles-grid.php:20
+#: patterns/team-grid.php:104
+msgid "Casey Nguyen"
+msgstr ""
+
+#: patterns/profiles-grid.php:20
+msgid "Writer, family days out"
+msgstr ""
+
+#: patterns/profiles-grid.php:20
+msgid "Tests every playground, splash pad and rainy-day plan with three small critics."
+msgstr ""
+
+#: patterns/profiles-grid.php:26
+msgid "The people behind the guide"
+msgstr ""
+
 #: patterns/promo-band.php
 msgctxt "Pattern title"
 msgid "Promo band"
@@ -2799,11 +5477,6 @@ msgid "Providers grid"
 msgstr ""
 
 #: patterns/providers-grid.php:18
-#: patterns/team-grid.php:56
-msgid "Priya Patel"
-msgstr ""
-
-#: patterns/providers-grid.php:18
 #: patterns/providers-grid.php:19
 #: patterns/services-tabs.php:21
 msgid "Specialist"
@@ -2829,6 +5502,20 @@ msgstr ""
 msgid "Choose who you see"
 msgstr ""
 
+#: patterns/rail-cards.php
+msgctxt "Pattern title"
+msgid "Rail of cards"
+msgstr ""
+
+#: patterns/rating.php
+msgctxt "Pattern title"
+msgid "Rating"
+msgstr ""
+
+#: patterns/rating.php:34
+msgid "312 reviews"
+msgstr ""
+
 #: patterns/related-posts.php
 msgctxt "Pattern title"
 msgid "Related posts"
@@ -2842,6 +5529,59 @@ msgstr ""
 msgid "No related posts yet."
 msgstr ""
 
+#: patterns/review-card.php
+msgctxt "Pattern title"
+msgid "Review card"
+msgstr ""
+
+#: patterns/review-card.php:30
+#: patterns/reviews-row.php:17
+msgid "We followed the two-day plan to the letter and still found an hour for the sandbar. The tide note saved us."
+msgstr ""
+
+#: patterns/review-card.php:36
+#: patterns/reviews-row.php:17
+msgid "Maya R."
+msgstr ""
+
+#: patterns/review-card.php:40
+#: patterns/reviews-row.php:17
+msgid "Visited in March, review via Google"
+msgstr ""
+
+#: patterns/reviews-row.php
+msgctxt "Pattern title"
+msgid "Reviews row"
+msgstr ""
+
+#: patterns/reviews-row.php:18
+msgid "The listing said quiet and it was quiet. Breakfast on the deck with the pelicans, every morning."
+msgstr ""
+
+#: patterns/reviews-row.php:18
+msgid "Tom and Ines"
+msgstr ""
+
+#: patterns/reviews-row.php:18
+msgid "Stayed four nights, review via the site"
+msgstr ""
+
+#: patterns/reviews-row.php:19
+msgid "Booked the sunrise paddle on a whim. Best thing we did all week, and the kids still talk about the dolphins."
+msgstr ""
+
+#: patterns/reviews-row.php:19
+msgid "The Okafor family"
+msgstr ""
+
+#: patterns/reviews-row.php:19
+msgid "Visited in April, review via Tripadvisor"
+msgstr ""
+
+#: patterns/reviews-row.php:25
+msgid "What visitors say"
+msgstr ""
+
 #: patterns/reviews-summary.php
 msgctxt "Pattern title"
 msgid "Reviews summary"
@@ -2853,6 +5593,68 @@ msgstr ""
 
 #: patterns/reviews-summary.php:66
 msgid "Read our reviews"
+msgstr ""
+
+#: patterns/search-panel.php
+msgctxt "Pattern title"
+msgid "Search panel"
+msgstr ""
+
+#: patterns/search-panel.php:17
+msgid "Stays"
+msgstr ""
+
+#: patterns/search-panel.php:17
+msgid "Town or neighbourhood"
+msgstr ""
+
+#: patterns/search-panel.php:17
+msgid "Hotels"
+msgstr ""
+
+#: patterns/search-panel.php:17
+msgid "Rentals"
+msgstr ""
+
+#: patterns/search-panel.php:17
+msgid "Camping"
+msgstr ""
+
+#: patterns/search-panel.php:18
+msgid "What is on?"
+msgstr ""
+
+#: patterns/search-panel.php:18
+msgid "This weekend"
+msgstr ""
+
+#: patterns/search-panel.php:18
+msgid "Music"
+msgstr ""
+
+#. translators: %s: tab name such as Places.
+#: patterns/search-panel.php:41
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: patterns/section-title-accent.php
+msgctxt "Pattern title"
+msgid "Section title with accent"
+msgstr ""
+
+#: patterns/section-title-accent.php:18
+msgid "Plan your visit"
+msgstr ""
+
+#. translators: 1: opening em tag, 2: closing em tag.
+#: patterns/section-title-accent.php:25
+#, php-format
+msgid "Everything you need for a %1$sweekend by the water%2$s"
+msgstr ""
+
+#: patterns/section-title-accent.php:31
+msgid "Beaches, boats, markets and the quiet lanes between them, picked by people who live here."
 msgstr ""
 
 #: patterns/service-detail.php
@@ -2900,10 +5702,6 @@ msgstr ""
 #: patterns/service-detail.php:96
 #: patterns/trust-bar.php:78
 msgid "Same-day service"
-msgstr ""
-
-#: patterns/service-detail.php:112
-msgid "Call us"
 msgstr ""
 
 #: patterns/services-grid-3.php
@@ -3028,10 +5826,6 @@ msgstr ""
 msgid "Thirty minutes with a specialist, in person or by video."
 msgstr ""
 
-#: patterns/services-grid-prices.php:21
-msgid "Free"
-msgstr ""
-
 #: patterns/services-grid-prices.php:27
 msgid "Services and prices"
 msgstr ""
@@ -3081,6 +5875,15 @@ msgstr ""
 msgid "Ask about these services"
 msgstr ""
 
+#: patterns/sidebar-more.php
+msgctxt "Pattern title"
+msgid "Sidebar: more to read"
+msgstr ""
+
+#: patterns/sidebar-more.php:16
+msgid "More to read"
+msgstr ""
+
 #: patterns/stats-band.php
 msgctxt "Pattern title"
 msgid "Stats band"
@@ -3102,319 +5905,197 @@ msgstr ""
 msgid "Emergency line"
 msgstr ""
 
-#: patterns/styleguide-block-styles.php
+#: patterns/steps-row.php
 msgctxt "Pattern title"
-msgid "Style guide: block styles"
+msgid "Steps row"
 msgstr ""
 
-#: patterns/styleguide-block-styles.php:20
-#: patterns/styleguide.php:25
-msgid "Block styles"
+#: patterns/steps-row.php:16
+msgid "Pick your days"
 msgstr ""
 
-#: patterns/styleguide-block-styles.php:24
-msgid "One sample per registered Keel style. The list is generated from the registration table, so a new style appears here the day it ships."
+#: patterns/steps-row.php:16
+msgid "Check the best-time table and the tides, then choose a weekend."
 msgstr ""
 
-#: patterns/styleguide-buttons.php
+#: patterns/steps-row.php:17
+msgid "Book the water"
+msgstr ""
+
+#: patterns/steps-row.php:17
+msgid "Tours and charters fill first. Book them, then everything else."
+msgstr ""
+
+#: patterns/steps-row.php:18
+msgid "Choose a base"
+msgstr ""
+
+#: patterns/steps-row.php:18
+msgid "Harbor district for walking, North beach for quiet, the islands for both."
+msgstr ""
+
+#: patterns/steps-row.php:19
+msgid "Leave room"
+msgstr ""
+
+#: patterns/steps-row.php:19
+msgid "One empty afternoon. Something will turn up, it always does."
+msgstr ""
+
+#: patterns/steps-row.php:25
+msgid "How to plan it"
+msgstr ""
+
+#: patterns/story-timeline.php
 msgctxt "Pattern title"
-msgid "Style guide: buttons"
+msgid "Story timeline"
 msgstr ""
 
-#: patterns/styleguide-buttons.php:16
-msgid "Default"
-msgstr ""
-
-#: patterns/styleguide-buttons.php:16
-msgid "Primary fill. Hover and active darken the fill toward the contrast colour; focus shows the two-tone ring."
-msgstr ""
-
-#: patterns/styleguide-buttons.php:17
-msgid "Outline (core)"
-msgstr ""
-
-#: patterns/styleguide-buttons.php:17
-msgid "Core style: a border in the current text colour and no fill."
-msgstr ""
-
-#: patterns/styleguide-buttons.php:18
-msgid "Accent fill for the second action on a page."
-msgstr ""
-
-#: patterns/styleguide-buttons.php:19
-msgid "Primary text and border on a transparent background, for quiet actions."
-msgstr ""
-
-#: patterns/styleguide-buttons.php:20
-msgid "The default button with the pill radius."
-msgstr ""
-
-#: patterns/styleguide-buttons.php:26
-#: patterns/styleguide.php:23
-msgid "Buttons"
-msgstr ""
-
-#: patterns/styleguide-buttons.php:30
-msgid "Every button is at least 44 pixels tall. Hover, focus and active states come from theme.json and the focus ring, so they follow the variation."
-msgstr ""
-
-#: patterns/styleguide-colors.php
+#: patterns/subscribe-inline.php
 msgctxt "Pattern title"
-msgid "Style guide: colours"
+msgid "Subscribe inline"
 msgstr ""
 
-#: patterns/styleguide-colors.php:21
-#: patterns/styleguide.php:19
-msgid "Colours"
+#: patterns/subscribe-inline.php:18
+msgid "Monthly tips, no noise."
 msgstr ""
 
-#: patterns/styleguide-colors.php:25
-msgid "The twelve palette slugs every pattern and block style is built on. Values are read from the active variation and your Styles edits, so this page always shows the colours in use."
+#: patterns/subscribe-inline.php:18
+msgid "One email a month with what is on and what is new."
 msgstr ""
 
-#: patterns/styleguide-colors.php:47
-msgid "Contrast pairs"
+#: patterns/subscribe-inline.php:21
+msgid "Email address for the newsletter"
 msgstr ""
 
-#: patterns/styleguide-colors.php:51
-msgid "The pairs Keel promises to keep readable, checked against the live values. Text pairs need 4.5 to 1, large text and interface pairs 3 to 1."
+#: patterns/subscribe-inline.php:21
+msgid "you@example.com"
 msgstr ""
 
-#: patterns/styleguide-colors.php:55
-msgid "Foreground"
+#: patterns/subscribe-inline.php:24
+msgid "The field above is the Search block standing in for your newsletter form. Replace it with your form plugin block; the styling carries over."
 msgstr ""
 
-#: patterns/styleguide-colors.php:55
-msgid "Background"
-msgstr ""
-
-#: patterns/styleguide-colors.php:55
-msgid "Ratio"
-msgstr ""
-
-#: patterns/styleguide-colors.php:55
-msgid "Minimum"
-msgstr ""
-
-#: patterns/styleguide-colors.php:55
-msgid "Result"
-msgstr ""
-
-#: patterns/styleguide-colors.php:62
-msgid "Pass"
-msgstr ""
-
-#: patterns/styleguide-colors.php:62
-msgid "Fail"
-msgstr ""
-
-#: patterns/styleguide-forms.php
+#: patterns/table-best-time.php
 msgctxt "Pattern title"
-msgid "Style guide: forms"
+msgid "Table: best time to visit"
 msgstr ""
 
-#: patterns/styleguide-forms.php:15
-msgid "Name"
+#: patterns/table-best-time.php:15
+msgid "Jan"
 msgstr ""
 
-#: patterns/styleguide-forms.php:15
-msgid "Email"
+#: patterns/table-best-time.php:15
+msgid "Feb"
 msgstr ""
 
-#: patterns/styleguide-forms.php:15
-msgid "Preferred time"
+#: patterns/table-best-time.php:15
+msgid "Mar"
 msgstr ""
 
-#: patterns/styleguide-forms.php:15
-msgid "Message"
+#: patterns/table-best-time.php:15
+msgid "Apr"
 msgstr ""
 
-#: patterns/styleguide-forms.php:15
-msgid "Consent to be contacted"
+#: patterns/table-best-time.php:15
+msgid "Jun"
 msgstr ""
 
-#: patterns/styleguide-forms.php:20
-#: patterns/styleguide.php:24
-msgid "Forms"
+#: patterns/table-best-time.php:15
+msgid "Jul"
 msgstr ""
 
-#: patterns/styleguide-forms.php:24
-msgid "Keel ships no form plugin and no form markup of its own. Core's Search block shows the field and button styling that any form plugin inherits."
+#: patterns/table-best-time.php:15
+msgid "Aug"
 msgstr ""
 
-#: patterns/styleguide-forms.php:30
-msgid "The contact shell expects"
+#: patterns/table-best-time.php:15
+msgid "Sep"
 msgstr ""
 
-#: patterns/styleguide-icons.php
+#: patterns/table-best-time.php:15
+msgid "Oct"
+msgstr ""
+
+#: patterns/table-best-time.php:15
+msgid "Nov"
+msgstr ""
+
+#: patterns/table-best-time.php:15
+msgid "Dec"
+msgstr ""
+
+#: patterns/table-best-time.php:17
+msgid "Weather"
+msgstr ""
+
+#: patterns/table-best-time.php:18
+msgid "Water"
+msgstr ""
+
+#: patterns/table-best-time.php:19
+msgid "Crowds"
+msgstr ""
+
+#: patterns/table-best-time.php:23
+msgid "Best"
+msgstr ""
+
+#: patterns/table-best-time.php:24
+msgid "Good"
+msgstr ""
+
+#: patterns/table-best-time.php:25
+msgid "Fair"
+msgstr ""
+
+#: patterns/table-best-time.php:29
+msgid "Condition"
+msgstr ""
+
+#: patterns/table-best-time.php:41
+msgid "Best, good and fair months at a glance. Scroll sideways on a phone."
+msgstr ""
+
+#: patterns/table-departures.php
 msgctxt "Pattern title"
-msgid "Style guide: icons"
+msgid "Table: departures"
 msgstr ""
 
-#: patterns/styleguide-icons.php:20
-#: patterns/styleguide.php:26
-msgid "Icons"
+#: patterns/table-departures.php:16
+msgid "Sat 14 Mar"
 msgstr ""
 
-#: patterns/styleguide-icons.php:24
-msgid "Twelve single-colour SVG files in the theme, placed as Image blocks with the keel-icon class so they invert on dark bands. Decorative: every one has an empty alt."
+#: patterns/table-departures.php:16
+msgid "Harbor to the islands"
 msgstr ""
 
-#: patterns/styleguide-shape.php
-msgctxt "Pattern title"
-msgid "Style guide: shape"
+#: patterns/table-departures.php:17
+msgid "Sun 15 Mar"
 msgstr ""
 
-#: patterns/styleguide-shape.php:24
-#: patterns/styleguide.php:22
-msgid "Shape"
+#: patterns/table-departures.php:17
+msgid "Sunrise reef run"
 msgstr ""
 
-#: patterns/styleguide-shape.php:28
-msgid "Radius"
+#: patterns/table-departures.php:18
+msgid "Sat 21 Mar"
 msgstr ""
 
-#: patterns/styleguide-shape.php:46
-msgid "Shadows and borders"
+#: patterns/table-departures.php:18
+msgid "River bend by kayak"
 msgstr ""
 
-#. translators: %s: border width such as 1px.
-#: patterns/styleguide-shape.php:67
-#, php-format
-msgid "%s solid, in the border colour"
+#: patterns/table-departures.php:19
+msgid "Sun 22 Mar"
 msgstr ""
 
-#: patterns/styleguide-shape.php:77
-msgid "Focus"
+#: patterns/table-departures.php:19
+msgid "Old town walk"
 msgstr ""
 
-#. translators: %s: the focus ring value such as "2px solid var(--wp--preset--color--primary)".
-#: patterns/styleguide-shape.php:84
-#, php-format
-msgid "Every focusable element shows a two-tone ring: %s, with a halo in the base colour so it stays visible on any background. Press Tab to see it on the button below."
-msgstr ""
-
-#: patterns/styleguide-shape.php:92
-msgid "Focus me"
-msgstr ""
-
-#: patterns/styleguide-spacing.php
-msgctxt "Pattern title"
-msgid "Style guide: spacing"
-msgstr ""
-
-#: patterns/styleguide-spacing.php:21
-#: patterns/styleguide.php:21
-msgid "Spacing"
-msgstr ""
-
-#: patterns/styleguide-spacing.php:25
-msgid "Eight steps. The small ones are fixed, the large ones scale with the viewport, and every pattern uses them for padding and gaps."
-msgstr ""
-
-#: patterns/styleguide-typography.php
-msgctxt "Pattern title"
-msgid "Style guide: typography"
-msgstr ""
-
-#: patterns/styleguide-typography.php:18
-msgid "Clear prices, honest advice, work that lasts"
-msgstr ""
-
-#: patterns/styleguide-typography.php:23
-#: patterns/styleguide.php:20
-msgid "Typography"
-msgstr ""
-
-#. translators: 1: font family slug such as body or display, 2: font family name.
-#: patterns/styleguide-typography.php:31
-#, php-format
-msgid "%1$s: %2$s"
-msgstr ""
-
-#: patterns/styleguide-typography.php:33
-msgid "Fonts are served from the theme, subset to Latin, with metric-matched fallbacks so text does not jump when they load."
-msgstr ""
-
-#: patterns/styleguide-typography.php:39
-msgid "Sizes"
-msgstr ""
-
-#: patterns/styleguide-typography.php:48
-msgid "Headings"
-msgstr ""
-
-#: patterns/styleguide-typography.php:52
-msgid "Heading one (shown as a paragraph: this page already has its h1)"
-msgstr ""
-
-#. translators: %d: heading level from 2 to 6.
-#: patterns/styleguide-typography.php:59
-#, php-format
-msgid "Heading level %d"
-msgstr ""
-
-#: patterns/styleguide-typography.php:66
-msgid "Inline elements"
-msgstr ""
-
-#: patterns/styleguide-typography.php:70
-msgid "Body text with"
-msgstr ""
-
-#: patterns/styleguide-typography.php:70
-msgid "a link"
-msgstr ""
-
-#: patterns/styleguide-typography.php:70
-msgid "strong emphasis"
-msgstr ""
-
-#: patterns/styleguide-typography.php:70
-msgid "italic emphasis"
-msgstr ""
-
-#: patterns/styleguide-typography.php:70
-msgid "a highlight"
-msgstr ""
-
-#: patterns/styleguide-typography.php:70
-msgid "Web Content Accessibility Guidelines"
-msgstr ""
-
-#: patterns/styleguide-typography.php:70
-msgid "and a footnote marker"
-msgstr ""
-
-#: patterns/styleguide-variations.php
-msgctxt "Pattern title"
-msgid "Style guide: variations"
-msgstr ""
-
-#: patterns/styleguide-variations.php:20
-#: patterns/styleguide.php:27
-msgid "Variations"
-msgstr ""
-
-#: patterns/styleguide-variations.php:24
-msgid "Each variation changes only the palette, the fonts and the shape tokens. Everything above re-renders from those values, which is why the same patterns work in every one."
-msgstr ""
-
-#: patterns/styleguide-variations.php:30
-msgid "active"
-msgstr ""
-
-#: patterns/styleguide.php
-msgctxt "Pattern title"
-msgid "Page: style guide"
-msgstr ""
-
-#: patterns/styleguide.php:33
-msgid "Style guide"
-msgstr ""
-
-#: patterns/styleguide.php:37
-msgid "A living reference: every value on this page is read from the active variation and your Styles edits when the page renders."
+#: patterns/table-departures.php:23
+msgid "Seats"
 msgstr ""
 
 #: patterns/team-grid.php
@@ -3442,20 +6123,12 @@ msgstr ""
 msgid "Keeps every job on schedule and every customer informed."
 msgstr ""
 
-#: patterns/team-grid.php:80
-msgid "Sam Rivera"
-msgstr ""
-
 #: patterns/team-grid.php:84
 msgid "Senior technician"
 msgstr ""
 
 #: patterns/team-grid.php:88
 msgid "Diagnostics specialist with a reputation for tidy work."
-msgstr ""
-
-#: patterns/team-grid.php:104
-msgid "Casey Nguyen"
 msgstr ""
 
 #: patterns/team-grid.php:108
@@ -3526,6 +6199,66 @@ msgctxt "Pattern title"
 msgid "Testimonials grid"
 msgstr ""
 
+#: patterns/ticket.php
+msgctxt "Pattern title"
+msgid "Ticket"
+msgstr ""
+
+#: patterns/ticket.php:26
+#: patterns/tickets-list.php:16
+msgid "Saturday 14 March, 7 pm"
+msgstr ""
+
+#: patterns/ticket.php:30
+#: patterns/tickets-list.php:16
+msgid "Harbor night market"
+msgstr ""
+
+#: patterns/ticket.php:34
+#: patterns/tickets-list.php:16
+msgid "Riverside green · Free entry, tickets for the tastings"
+msgstr ""
+
+#: patterns/tickets-list.php
+msgctxt "Pattern title"
+msgid "Tickets list"
+msgstr ""
+
+#: patterns/tickets-list.php:17
+msgid "Saturday 21 March, 6 am"
+msgstr ""
+
+#: patterns/tickets-list.php:17
+msgid "Sunrise regatta"
+msgstr ""
+
+#: patterns/tickets-list.php:17
+msgid "North beach · Watch from the pier for free"
+msgstr ""
+
+#: patterns/tickets-list.php:18
+msgid "Saturday 28 March, 10 am"
+msgstr ""
+
+#: patterns/tickets-list.php:18
+msgid "Meets at the clock tower · Ninety minutes"
+msgstr ""
+
+#: patterns/tile.php
+msgctxt "Pattern title"
+msgid "Tile"
+msgstr ""
+
+#: patterns/tile.php:39
+#: patterns/tiles-grid.php:17
+msgid "12 places to see"
+msgstr ""
+
+#: patterns/tiles-grid.php
+msgctxt "Pattern title"
+msgid "Tiles grid"
+msgstr ""
+
 #: patterns/timeline.php
 msgctxt "Pattern title"
 msgid "Timeline"
@@ -3588,6 +6321,19 @@ msgstr ""
 msgid "Two years on every repair"
 msgstr ""
 
+#: patterns/utility-bar-contact.php
+msgctxt "Pattern title"
+msgid "Utility bar: contact"
+msgstr ""
+
+#: patterns/utility-bar-contact.php:17
+msgid "hello@example.com"
+msgstr ""
+
+#: patterns/utility-bar-contact.php:43
+msgid "Free changes on every booking"
+msgstr ""
+
 #: patterns/utility-bar.php
 msgctxt "Pattern title"
 msgid "Utility bar"
@@ -3607,6 +6353,11 @@ msgstr ""
 
 #: patterns/utility-bar.php:45
 msgid "Same-day slots held every morning."
+msgstr ""
+
+#: patterns/utility-panel.php
+msgctxt "Pattern title"
+msgid "Utility panel"
 msgstr ""
 
 #: theme.json
@@ -3778,6 +6529,18 @@ msgid "Display"
 msgstr ""
 
 #: theme.json
+#: styles/clinic.json
+#: styles/contrast.json
+#: styles/coral.json
+#: styles/harbor.json
+#: styles/night.json
+#: styles/palm.json
+#: styles/slate.json
+msgctxt "Font family name"
+msgid "Serif"
+msgstr ""
+
+#: theme.json
 msgctxt "Font size name"
 msgid "Extra small"
 msgstr ""
@@ -3810,6 +6573,11 @@ msgstr ""
 #: theme.json
 msgctxt "Font size name"
 msgid "3X large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display"
 msgstr ""
 
 #: theme.json
@@ -3873,6 +6641,21 @@ msgid "Location page"
 msgstr ""
 
 #: theme.json
+msgctxt "Custom template name"
+msgid "Post: cover"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Post: with sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Post: minimal"
+msgstr ""
+
+#: theme.json
 msgctxt "Template part name"
 msgid "Header"
 msgstr ""
@@ -3894,12 +6677,22 @@ msgstr ""
 
 #: theme.json
 msgctxt "Template part name"
+msgid "Header: sticky"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
 msgid "Footer"
 msgstr ""
 
 #: theme.json
 msgctxt "Template part name"
 msgid "Footer: minimal"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer: big"
 msgstr ""
 
 #: theme.json
@@ -3920,6 +6713,11 @@ msgstr ""
 #: theme.json
 msgctxt "Template part name"
 msgid "Post meta"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Floating call to action"
 msgstr ""
 
 #: theme.json

@@ -42,7 +42,7 @@ $keel_demo_active = Keel_Demo\active_variation_slug();
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"18rem"}} -->
 	<div class="wp-block-group alignwide">
 		<?php foreach ( $keel_demo_variations as $keel_demo_variation ) : ?>
-		<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 		<div class="wp-block-group is-style-card">
 			<?php if ( '' !== $keel_demo_variation['image'] ) : ?>
 			<!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","className":"is-style-soft keel-demo-tile"} -->

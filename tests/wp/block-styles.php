@@ -10,21 +10,25 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_expected = array(
-	'core/button'     => array( 'secondary', 'ghost', 'pill' ),
-	'core/group'      => array( 'card', 'surface', 'band', 'bordered', 'textured', 'wave-bottom' ),
-	'core/image'      => array( 'soft', 'framed' ),
-	'core/list'       => array( 'checkmarks', 'two-column' ),
-	'core/quote'      => array( 'testimonial' ),
-	'core/separator'  => array( 'short', 'wave' ),
-	'core/navigation' => array( 'pill', 'underline' ),
-	'core/details'    => array( 'faq' ),
-	'core/columns'    => array( 'equal-cards' ),
-	'core/cover'      => array( 'band', 'gradient-overlay' ),
-	'core/table'      => array( 'striped', 'compact' ),
-	'core/heading'    => array( 'eyebrow' ),
-	'core/paragraph'  => array( 'lead' ),
-	'core/accordion'  => array( 'faq' ),
-	'core/tabs'       => array( 'boxed' ),
+	'core/button'             => array( 'secondary', 'ghost', 'pill', 'small', 'large', 'light', 'outline-light', 'soft', 'glass', 'link', 'icon-phone', 'icon-search', 'icon-arrow', 'icon-map', 'icon-calendar' ),
+	'core/group'              => array( 'card', 'surface', 'band', 'bordered', 'textured', 'wave-bottom', 'ticket', 'rail', 'paper', 'dot-grid', 'marquee', 'callout-info', 'callout-warm', 'callout-success', 'callout-error', 'search-panel-compact', 'search-panel-flat' ),
+	'core/image'              => array( 'soft', 'framed', 'polaroid' ),
+	'core/media-text'         => array( 'card' ),
+	'core/list'               => array( 'checkmarks', 'two-column', 'crosses' ),
+	'core/quote'              => array( 'testimonial' ),
+	'core/separator'          => array( 'short', 'wave', 'route' ),
+	'core/navigation'         => array( 'pill', 'underline' ),
+	'core/navigation-submenu' => array( 'wide' ),
+	'core/navigation-link'    => array( 'highlight' ),
+	'core/details'            => array( 'faq' ),
+	'core/columns'            => array( 'equal-cards' ),
+	'core/cover'              => array( 'band', 'gradient-overlay', 'tile' ),
+	'core/table'              => array( 'striped', 'compact', 'scroll' ),
+	'core/heading'            => array( 'eyebrow', 'accent', 'ghost' ),
+	'core/paragraph'          => array( 'lead', 'eyebrow-rule', 'small-print' ),
+	'core/accordion'          => array( 'faq' ),
+	'core/tabs'               => array( 'boxed', 'pills' ),
+	'core/gallery'            => array( 'mosaic' ),
 );
 $keel_registry = WP_Block_Styles_Registry::get_instance();
 foreach ( $keel_expected as $keel_block => $keel_names ) {
@@ -42,4 +46,8 @@ $keel_secondary = $keel_registry->get_registered( 'core/button', 'secondary' );
 if ( 'var:preset|color|accent' !== ( $keel_secondary['style_data']['color']['background'] ?? '' ) ) {
 	WP_CLI::error( 'core/button secondary must set style_data.color.background to var:preset|color|accent.' );
 }
-WP_CLI::success( 'block-styles: 27 keel styles registered across 15 blocks.' );
+$keel_total = 0;
+foreach ( $keel_expected as $keel_names ) {
+	$keel_total += count( $keel_names );
+}
+WP_CLI::success( sprintf( 'block-styles: %d keel styles registered across %d blocks.', $keel_total, count( $keel_expected ) ) );

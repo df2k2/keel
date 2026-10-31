@@ -20,9 +20,14 @@ production site: it reads a query string to restyle the page and exists to show 
   clears it.
 - **`wp keel-demo seed`** (`inc/class-seed-command.php`): builds the showcase pages (Home as the
   front page, Variations, Patterns index and one page per category from the registry, Templates,
-  Block styles from `fixtures/kitchen-sink.html`, Style guide, Why Keel, Get Keel), the dental
-  pages under `/dental/`, the Primary menu, the posts page and the site title. Idempotent by slug:
-  run it again after changing a pattern and the pages re-render from the registry.
+  Elements from `keel/elements` with `fixtures/kitchen-sink.html` as its last section, Why Keel,
+  Get Keel), the page-set pages (Journal, Places and three places, Listings and six listings as
+  child pages the Query Loop reads, Events and one event, Deals, About, Team, Careers, Press,
+  Contact map, Visitor info, Coming soon, Maintenance, Thank you, Legal, One page), twelve journal
+  posts across the post formats and the three post templates, the dental pages under `/dental/`,
+  the Primary menu, the posts page and the site title. Idempotent by slug: run it again after
+  changing a pattern and the pages re-render from the registry. The retired Style guide and Block
+  styles pages are removed.
 
 `bin/seed.sh` activates the plugin and runs the command after the M1 seed.
 

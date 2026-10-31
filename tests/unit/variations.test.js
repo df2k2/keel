@@ -26,5 +26,15 @@ test( 'each variation declares exactly the theme palette slugs and passes contra
 			[],
 			`${ file } contrast`
 		);
+		assert.deepEqual(
+			variation.settings.typography.fontFamilies.map( ( f ) => f.slug ),
+			[ 'body', 'display', 'serif' ],
+			`${ file } font families`
+		);
+		assert.equal(
+			variation.styles?.elements?.heading?.typography?.fontWeight,
+			[ 'coral', 'palm' ].includes( file ) ? '500' : undefined,
+			`${ file } heading weight`
+		);
 	}
 } );

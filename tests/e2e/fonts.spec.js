@@ -48,7 +48,7 @@ test( 'preloads follow the active variation', async ( { page } ) => {
 			'fraunces.woff2',
 		] );
 	} finally {
-		apply( 'clinic' );
+		apply( 'coral' );
 	}
 } );
 

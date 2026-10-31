@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 	<h2 class="wp-block-heading"><?php esc_html_e( 'All listings', 'keel' ); ?></h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:query {"queryId":23,"query":{"perPage":8,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+	<!-- wp:query {"queryId":23,"query":{"perPage":8,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"enhancedPagination":true} -->
 	<div class="wp-block-query">
 		<!-- wp:post-template -->
 			<!-- wp:group {"className":"is-style-bordered","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"}} -->

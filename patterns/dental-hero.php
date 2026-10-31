@@ -33,8 +33,8 @@ $keel_quick_links = array(
 			<p class="keel-chip"><?php esc_html_e( 'Next slot: today 2:30 pm', 'keel' ); ?></p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:heading {"level":1,"fontSize":"xxxl"} -->
-			<h1 class="wp-block-heading has-xxxl-font-size"><?php esc_html_e( 'Gentle dentistry, clear prices, same-week appointments', 'keel' ); ?></h1>
+			<!-- wp:heading {"level":1,"fontSize":"display"} -->
+			<h1 class="wp-block-heading has-display-font-size"><?php esc_html_e( 'Gentle dentistry, clear prices, same-week appointments', 'keel' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"fontSize":"lg"} -->

@@ -75,7 +75,7 @@ test( 'fonts.css declares metric fallbacks for all three families', () => {
 	}
 } );
 
-test( 'theme.json and every variation declare body and display with existing font files', () => {
+test( 'theme.json and every variation declare body, display and serif with existing font files', () => {
 	const files = [
 		'theme.json',
 		...readdirSync( 'styles' )
@@ -87,7 +87,7 @@ test( 'theme.json and every variation declare body and display with existing fon
 			JSON.parse( read( file ) ).settings?.typography?.fontFamilies ?? [];
 		assert.deepEqual(
 			families.map( ( f ) => f.slug ),
-			[ 'body', 'display' ],
+			[ 'body', 'display', 'serif' ],
 			`${ file } slugs`
 		);
 		for ( const family of families ) {

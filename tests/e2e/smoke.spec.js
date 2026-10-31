@@ -37,6 +37,8 @@ test( 'only the modules a page uses load', async ( { page } ) => {
 		'carousel.js',
 		'header.js',
 	] );
+	expect( await sources( '/journal/' ) ).toEqual( [ 'header.js' ] );
+	await expect( page.locator( '[data-wp-router-region]' ) ).toHaveCount( 1 );
 } );
 
 test( 'no external requests', async ( { page } ) => {
@@ -68,7 +70,7 @@ test( 'applying the Coral variation changes the primary color token', async ( {
 		);
 		expect( value.toUpperCase() ).toBe( '#B9452F' );
 	} finally {
-		apply( 'harbor' );
+		apply( 'coral' );
 	}
 } );
 
@@ -87,6 +89,6 @@ test( 'applying Night switches to a dark colour scheme', async ( { page } ) => {
 			)
 		).toBe( 'rgb(15, 23, 36)' );
 	} finally {
-		apply( 'clinic' );
+		apply( 'coral' );
 	}
 } );

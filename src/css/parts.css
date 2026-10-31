@@ -71,6 +71,37 @@
 	}
 }
 
+/* Sticky header: stays at the top and gains a shadow once the page has scrolled. */
+
+.keel-header--sticky {
+	position: sticky;
+	inset-block-start: 0;
+}
+
+.keel-header--sticky.is-scrolled {
+	box-shadow: var( --wp--custom--shadow--sm );
+}
+
+/* Floating call to action: two fixed buttons bottom-right on desktop; the mobile bar takes over below 782px. */
+
+.keel-floating-cta {
+	position: fixed;
+	inset-block-end: 1.5rem;
+	inset-inline-end: 1.5rem;
+	z-index: 20;
+}
+
+.keel-floating-cta .wp-block-button__link {
+	box-shadow: var( --wp--custom--shadow--md );
+}
+
+@media ( width <= 782px ) {
+
+	.keel-floating-cta {
+		display: none;
+	}
+}
+
 .keel-mobile-cta-bar {
 	display: none;
 }

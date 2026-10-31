@@ -34,7 +34,7 @@ $keel_services = array(
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"18rem"}} -->
 	<div class="wp-block-group alignwide">
 		<?php foreach ( $keel_services as $keel_service ) : ?>
-		<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 		<div class="wp-block-group is-style-card">
 			<!-- wp:image {"lightbox":{"enabled":false},"width":"24px","height":"24px","sizeSlug":"full","className":"keel-icon"} -->
 			<figure class="wp-block-image size-full is-resized keel-icon"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/' . $keel_service[0] . '.svg' ) ); ?>" alt="" style="width:24px;height:24px"/></figure>

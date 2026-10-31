@@ -12,3 +12,88 @@
 	display: inline-block;
 	margin-block-start: var( --wp--preset--spacing--20 );
 }
+
+/* A query item holding a card is a flex column, so the card can grow to the row's height. */
+
+.wp-block-post-template > li:has( > .is-style-card ) {
+	display: flex;
+	flex-direction: column;
+}
+
+/* A featured image straight inside a Stack card: a column flex item's base size is measured before its width is known, so the percentage-wide image contributes its tiny intrinsic size and the figure collapses. A definite width fixes the measurement. */
+
+.is-style-card.is-layout-flex > .wp-block-post-featured-image {
+	flex: none;
+	inline-size: 100%;
+}
+
+.is-style-card.is-layout-flex > .wp-block-post-featured-image a {
+	block-size: auto;
+}
+
+/* Post formats on journal cards (core prints format-* on every query item and on the body). */
+
+.wp-block-post.format-aside .wp-block-post-title {
+	display: none;
+}
+
+.wp-block-post.format-quote .keel-journal-card__media {
+	display: none;
+}
+
+.wp-block-post.format-quote .wp-block-post-excerpt__excerpt {
+	font-family: var( --wp--preset--font-family--serif );
+	font-size: var( --wp--preset--font-size--xl );
+	font-style: italic;
+	line-height: var( --wp--custom--typography--line-height--snug );
+}
+
+.wp-block-post.format-link .wp-block-post-excerpt__excerpt {
+	color: var( --wp--preset--color--primary );
+	font-weight: 600;
+}
+
+.wp-block-post.format-link .wp-block-post-excerpt__excerpt::after {
+	content: "";
+	display: inline-block;
+	inline-size: 1em;
+	block-size: 1em;
+	margin-inline-start: 0.35em;
+	background: currentcolor;
+	vertical-align: -0.15em;
+	mask: url( ../../../assets/icons/arrow-right.svg ) center / contain no-repeat;
+}
+
+.wp-block-post.format-gallery .keel-journal-card__media::after,
+.wp-block-post.format-video .keel-journal-card__media::after,
+.wp-block-post.format-video .keel-journal-card__media::before {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+}
+
+.wp-block-post.format-gallery .keel-journal-card__media::after {
+	inset: 0;
+	background-image: linear-gradient( 90deg, transparent calc( 50% - 1px ), var( --wp--preset--color--base ) calc( 50% - 1px ), var( --wp--preset--color--base ) calc( 50% + 1px ), transparent calc( 50% + 1px ) ), linear-gradient( 180deg, transparent calc( 50% - 1px ), var( --wp--preset--color--base ) calc( 50% - 1px ), var( --wp--preset--color--base ) calc( 50% + 1px ), transparent calc( 50% + 1px ) );
+}
+
+.wp-block-post.format-video .keel-journal-card__media::after {
+	inset-block-start: 50%;
+	inset-inline-start: 50%;
+	inline-size: 3rem;
+	block-size: 3rem;
+	border-radius: 50%;
+	background: var( --wp--preset--color--base );
+	translate: -50% -50%;
+}
+
+.wp-block-post.format-video .keel-journal-card__media::before {
+	inset-block-start: 50%;
+	inset-inline-start: 50%;
+	z-index: 1;
+	inline-size: 1.25rem;
+	block-size: 1.25rem;
+	background: var( --wp--preset--color--contrast );
+	translate: -40% -50%;
+	mask: url( ../../../assets/icons/play.svg ) center / contain no-repeat;
+}

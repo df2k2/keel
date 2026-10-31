@@ -33,6 +33,12 @@ function register_pattern_categories(): void {
 		'pages'        => array( __( 'Pages', 'keel' ), __( 'Whole-page content for 404, no results, accessibility and the style guide.', 'keel' ) ),
 		'layouts'      => array( __( 'Page layouts', 'keel' ), __( 'Starter pages offered when a new page is created: service, provider, pricing, offer, about, contact and FAQ.', 'keel' ) ),
 		'dental'       => array( __( 'Dental practice', 'keel' ), __( 'A complete dental practice site: sections and pages with fictional copy, prices and people.', 'keel' ) ),
+		'cards'        => array( __( 'Cards', 'keel' ), __( 'Listing, row, tile, mini list, ticket and polaroid cards: equal heights in a row, the footer on the bottom edge.', 'keel' ) ),
+		'elements'     => array( __( 'Elements', 'keel' ), __( 'Small building blocks: section titles, button rows, ratings, prices, chips, callouts, search panels, breadcrumbs and bands.', 'keel' ) ),
+		'places'       => array( __( 'Places', 'keel' ), __( 'Destination and listing pages: heroes with stamps, things to do, itineraries, galleries, price cards and rails.', 'keel' ) ),
+		'events'       => array( __( 'Events and deals', 'keel' ), __( 'Event lists by month, event headers, tickets, deals and featured offers.', 'keel' ) ),
+		'company'      => array( __( 'Company', 'keel' ), __( 'About, team, careers, press, contact and visitor information sections.', 'keel' ) ),
+		'utility'      => array( __( 'Utility pages', 'keel' ), __( 'Coming soon, maintenance, thank you, legal and one-page layouts.', 'keel' ) ),
 	);
 
 	foreach ( $categories as $slug => $category ) {
