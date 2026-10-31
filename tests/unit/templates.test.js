@@ -18,6 +18,10 @@ const TEMPLATES = [
 	'search',
 	'404',
 	'attachment',
+	'single-cover',
+	'single-sidebar',
+	'single-minimal',
+	'author',
 ];
 const PARTS = [
 	'header',
@@ -36,19 +40,22 @@ const PARTS = [
 	'floating-cta',
 ];
 const CUSTOM = {
-	'page-no-title': 'Page without title',
-	'page-landing': 'Landing page',
-	'page-service': 'Service page',
-	'page-location': 'Location page',
+	'page-no-title': [ 'Page without title', [ 'page' ] ],
+	'page-landing': [ 'Landing page', [ 'page' ] ],
+	'page-service': [ 'Service page', [ 'page' ] ],
+	'page-location': [ 'Location page', [ 'page' ] ],
+	'single-cover': [ 'Post: cover', [ 'post' ] ],
+	'single-sidebar': [ 'Post: with sidebar', [ 'post' ] ],
+	'single-minimal': [ 'Post: minimal', [ 'post' ] ],
 };
-const TRANSPARENT = [ 'front-page', 'page-no-title' ];
+const TRANSPARENT = [ 'front-page', 'page-no-title', 'single-cover' ];
 
 const partRefs = ( html ) =>
 	[
 		...html.matchAll( /<!-- wp:template-part \{[^}]*"slug":"([a-z-]+)"/g ),
 	].map( ( match ) => match[ 1 ] );
 
-test( 'thirteen templates with a main landmark and the expected parts', () => {
+test( 'seventeen templates with a main landmark and the expected parts', () => {
 	for ( const name of TEMPLATES ) {
 		const path = `templates/${ name }.html`;
 		assert.ok( existsSync( path ), `${ path } missing` );
@@ -82,14 +89,13 @@ test( 'theme.json lists the custom templates and the fourteen parts', () => {
 		Object.fromEntries(
 			theme.customTemplates.map( ( entry ) => [
 				entry.name,
-				entry.title,
+				[ entry.title, entry.postTypes ],
 			] )
 		),
 		CUSTOM
 	);
 	for ( const entry of theme.customTemplates ) {
 		assert.ok( existsSync( `templates/${ entry.name }.html` ) );
-		assert.deepEqual( entry.postTypes, [ 'page' ] );
 	}
 	assert.deepEqual(
 		theme.templateParts.map( ( part ) => part.name ).sort(),

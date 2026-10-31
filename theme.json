@@ -207,7 +207,10 @@
 		{ "name": "page-no-title", "title": "Page without title", "postTypes": [ "page" ] },
 		{ "name": "page-landing", "title": "Landing page", "postTypes": [ "page" ] },
 		{ "name": "page-service", "title": "Service page", "postTypes": [ "page" ] },
-		{ "name": "page-location", "title": "Location page", "postTypes": [ "page" ] }
+		{ "name": "page-location", "title": "Location page", "postTypes": [ "page" ] },
+		{ "name": "single-cover", "title": "Post: cover", "postTypes": [ "post" ] },
+		{ "name": "single-sidebar", "title": "Post: with sidebar", "postTypes": [ "post" ] },
+		{ "name": "single-minimal", "title": "Post: minimal", "postTypes": [ "post" ] }
 	],
 	"templateParts": [
 		{ "name": "header", "area": "header", "title": "Header" },

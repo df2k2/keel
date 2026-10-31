@@ -8,6 +8,10 @@
 	margin-block-start: 0;
 }
 
+.wp-block-cover .wp-block-cover__inner-container a:where( :not( .wp-block-button__link ) ) {
+	color: inherit;
+}
+
 /* Style: band. */
 
 .wp-block-cover.is-style-band {
