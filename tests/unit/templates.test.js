@@ -126,8 +126,9 @@ test( 'templates and parts are core-only and offline', () => {
 				);
 			}
 			// Text belongs in patterns, where it is translatable; templates and parts only compose.
+			// Text sits between a tag's closing bracket and the next tag; block comments hold JSON, not text.
 			assert.doesNotMatch(
-				html.replace( /<!--[\s\S]*?-->/g, '' ),
+				html,
 				/>\s*[A-Za-z][^<]*</,
 				`${ dir }/${ file } carries literal text`
 			);
