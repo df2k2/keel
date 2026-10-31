@@ -17,6 +17,9 @@ const ICONS = [
 	'close',
 	'chevron-left',
 	'chevron-right',
+	'search',
+	'arrow-right',
+	'mail',
 ];
 const IMAGES = [
 	'placeholder-wide',

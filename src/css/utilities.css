@@ -312,3 +312,33 @@
 	font-weight: 700;
 	line-height: 1;
 }
+
+/* Eyebrow with a rule before it (paragraph style). */
+
+.is-style-eyebrow-rule {
+	display: flex;
+	gap: var( --wp--preset--spacing--30 );
+	align-items: center;
+	color: var( --wp--preset--color--primary );
+	font-size: var( --wp--preset--font-size--xs );
+	font-weight: 700;
+	letter-spacing: var( --wp--custom--typography--letter-spacing--wide );
+	text-transform: uppercase;
+}
+
+.is-style-eyebrow-rule::before {
+	content: "";
+	flex: none;
+	inline-size: 2rem;
+	block-size: 2px;
+	background: currentcolor;
+}
+
+/* Elements page labels: the class, style or slug under each element. */
+
+.keel-element-label {
+	margin: 0;
+	color: color-mix( in srgb, var( --wp--preset--color--contrast ) 72%, var( --wp--preset--color--base ) );
+	font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+	font-size: var( --wp--preset--font-size--xs );
+}

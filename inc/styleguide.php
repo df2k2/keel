@@ -224,6 +224,16 @@ function is_active_palette( array $palette ): bool {
 }
 
 /**
+ * A small mono label naming the class, style or slug of the element shown after it.
+ *
+ * @param string $name Class, style name or pattern slug.
+ * @return string Serialized paragraph block.
+ */
+function element_label( string $name ): string {
+	return '<!-- wp:paragraph {"className":"keel-element-label","fontSize":"xs"} --><p class="keel-element-label has-xs-font-size"><code>' . esc_html( $name ) . '</code></p><!-- /wp:paragraph -->';
+}
+
+/**
  * Block markup for one sample of a registered Keel block style, used by the style guide.
  *
  * @param string $block Block name, e.g. core/table.
@@ -257,6 +267,16 @@ function block_style_sample( string $block, string $style ): string {
 			return '<!-- wp:separator {"className":"' . $class . '"} --><hr class="wp-block-separator has-alpha-channel-opacity ' . $class . '"/><!-- /wp:separator -->';
 		case 'core/navigation':
 			return '<!-- wp:navigation {"overlayMenu":"never","className":"' . $class . '","layout":{"type":"flex"}} --><!-- wp:navigation-link {"label":"' . esc_attr__( 'Home', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Services', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Contact', 'keel' ) . '","url":"#styleguide"} /--><!-- /wp:navigation -->';
+		case 'core/navigation-submenu':
+			return '<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex"}} --><!-- wp:navigation-submenu {"label":"' . esc_attr__( 'Explore', 'keel' ) . '","url":"#styleguide","className":"' . $class . '"} --><!-- wp:navigation-link {"label":"' . esc_attr__( 'Explore', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Beaches', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Trails', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Markets', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Museums', 'keel' ) . '","url":"#styleguide"} /--><!-- /wp:navigation-submenu --><!-- wp:navigation-link {"label":"' . esc_attr__( 'Contact', 'keel' ) . '","url":"#styleguide"} /--><!-- /wp:navigation -->';
+		case 'core/navigation-link':
+			return '<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex"}} --><!-- wp:navigation-link {"label":"' . esc_attr__( 'Home', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Services', 'keel' ) . '","url":"#styleguide"} /--><!-- wp:navigation-link {"label":"' . esc_attr__( 'Book now', 'keel' ) . '","url":"#styleguide","className":"' . $class . '"} /--><!-- /wp:navigation -->';
+		case 'core/gallery':
+			$figures = '';
+			for ( $i = 0; $i < 5; $i++ ) {
+				$figures .= '<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} --><figure class="wp-block-image size-large"><img src="' . ( 0 === $i % 2 ? $wide : $image ) . '" alt=""/></figure><!-- /wp:image -->';
+			}
+			return '<!-- wp:gallery {"linkTo":"none","className":"' . $class . '"} --><figure class="wp-block-gallery has-nested-images columns-default is-cropped ' . $class . '">' . $figures . '</figure><!-- /wp:gallery -->';
 		case 'core/details':
 			return '<!-- wp:details {"className":"' . $class . '"} --><details class="wp-block-details ' . $class . '"><summary>' . esc_html__( 'Do you charge for estimates?', 'keel' ) . '</summary>' . $paragraph . '</details><!-- /wp:details -->';
 		case 'core/columns':

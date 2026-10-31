@@ -14,3 +14,17 @@
 .wp-block-cover .is-style-accent em {
 	color: inherit;
 }
+
+/* Style: ghost (a huge faded word behind the block that follows; the text stays real, so keep it meaningful). */
+
+.wp-block-heading.is-style-ghost {
+	margin-block-end: -0.55em;
+	color: var( --wp--preset--color--contrast );
+	font-size: var( --wp--preset--font-size--display );
+	font-weight: 700;
+	letter-spacing: var( --wp--custom--typography--letter-spacing--tight );
+	line-height: 1;
+	opacity: 0.12;
+	pointer-events: none;
+	user-select: none;
+}

@@ -35,7 +35,7 @@ function block_style_padding( string $step ): array {
  */
 function block_styles(): array {
 	return array(
-		'core/button'     => array(
+		'core/button'             => array(
 			array(
 				'name'       => 'secondary',
 				'label'      => __( 'Secondary', 'keel' ),
@@ -68,8 +68,101 @@ function block_styles(): array {
 					'border' => array( 'radius' => 'var:custom|radius|pill' ),
 				),
 			),
+			array(
+				'name'       => 'small',
+				'label'      => __( 'Small', 'keel' ),
+				'style_data' => array(
+					'typography' => array( 'fontSize' => 'var:preset|font-size|sm' ),
+					'spacing'    => array(
+						'padding' => array(
+							'top'    => '0.5em',
+							'right'  => '1em',
+							'bottom' => '0.5em',
+							'left'   => '1em',
+						),
+					),
+				),
+			),
+			array(
+				'name'       => 'large',
+				'label'      => __( 'Large', 'keel' ),
+				'style_data' => array(
+					'typography' => array( 'fontSize' => 'var:preset|font-size|md' ),
+					'spacing'    => array(
+						'padding' => array(
+							'top'    => '0.85em',
+							'right'  => '1.6em',
+							'bottom' => '0.85em',
+							'left'   => '1.6em',
+						),
+					),
+				),
+			),
+			array(
+				'name'       => 'light',
+				'label'      => __( 'Light', 'keel' ),
+				'style_data' => array(
+					'color' => array(
+						'background' => 'var:preset|color|base',
+						'text'       => 'var:preset|color|contrast',
+					),
+				),
+			),
+			array(
+				'name'       => 'outline-light',
+				'label'      => __( 'Outline light', 'keel' ),
+				'style_data' => array(
+					'color'  => array(
+						'background' => 'transparent',
+						'text'       => 'var:preset|color|base',
+					),
+					'border' => array(
+						'width' => '1px',
+						'style' => 'solid',
+						'color' => 'var:preset|color|base',
+					),
+				),
+			),
+			array(
+				'name'       => 'soft',
+				'label'      => __( 'Soft', 'keel' ),
+				'style_data' => array(
+					'color' => array(
+						'background' => 'var:preset|color|surface',
+						'text'       => 'var:preset|color|primary',
+					),
+				),
+			),
+			array(
+				'name'  => 'glass',
+				'label' => __( 'Glass', 'keel' ),
+			),
+			array(
+				'name'  => 'link',
+				'label' => __( 'Link', 'keel' ),
+			),
+			array(
+				'name'  => 'icon-phone',
+				'label' => __( 'Icon: phone', 'keel' ),
+			),
+			array(
+				'name'  => 'icon-search',
+				'label' => __( 'Icon: search', 'keel' ),
+			),
+			array(
+				'name'  => 'icon-arrow',
+				'label' => __( 'Icon: arrow', 'keel' ),
+			),
+			array(
+				'name'  => 'icon-map',
+				'label' => __( 'Icon: map', 'keel' ),
+			),
+			array(
+				'name'  => 'icon-calendar',
+				'label' => __( 'Icon: calendar', 'keel' ),
+			),
 		),
-		'core/group'      => array(
+		'core/group'              => array(
 			array(
 				'name'       => 'card',
 				'label'      => __( 'Card', 'keel' ),
@@ -132,8 +225,60 @@ function block_styles(): array {
 				'name'  => 'rail',
 				'label' => __( 'Rail', 'keel' ),
 			),
+			array(
+				'name'  => 'paper',
+				'label' => __( 'Paper', 'keel' ),
+			),
+			array(
+				'name'  => 'dot-grid',
+				'label' => __( 'Dot grid', 'keel' ),
+			),
+			array(
+				'name'  => 'marquee',
+				'label' => __( 'Marquee', 'keel' ),
+			),
+			array(
+				'name'  => 'callout-info',
+				'label' => __( 'Callout: info', 'keel' ),
+			),
+			array(
+				'name'  => 'callout-warm',
+				'label' => __( 'Callout: warm', 'keel' ),
+			),
+			array(
+				'name'  => 'callout-success',
+				'label' => __( 'Callout: success', 'keel' ),
+			),
+			array(
+				'name'  => 'callout-error',
+				'label' => __( 'Callout: error', 'keel' ),
+			),
+			array(
+				'name'       => 'search-panel-compact',
+				'label'      => __( 'Search panel: compact', 'keel' ),
+				'style_data' => array(
+					'color'   => array( 'background' => 'var:preset|color|surface' ),
+					'border'  => array( 'radius' => 'var:custom|radius|md' ),
+					'shadow'  => 'var:custom|shadow|sm',
+					'spacing' => array( 'padding' => block_style_padding( '30' ) ),
+				),
+			),
+			array(
+				'name'       => 'search-panel-flat',
+				'label'      => __( 'Search panel: flat', 'keel' ),
+				'style_data' => array(
+					'color'   => array( 'background' => 'var:preset|color|base' ),
+					'border'  => array(
+						'width'  => '1px',
+						'style'  => 'solid',
+						'color'  => 'var:preset|color|border',
+						'radius' => 'var:custom|radius|md',
+					),
+					'spacing' => array( 'padding' => block_style_padding( '40' ) ),
+				),
+			),
 		),
-		'core/image'      => array(
+		'core/image'              => array(
 			array(
 				'name'       => 'soft',
 				'label'      => __( 'Soft corners', 'keel' ),
@@ -159,7 +304,7 @@ function block_styles(): array {
 				'label' => __( 'Polaroid', 'keel' ),
 			),
 		),
-		'core/list'       => array(
+		'core/list'               => array(
 			array(
 				'name'  => 'checkmarks',
 				'label' => __( 'Checkmarks', 'keel' ),
@@ -168,14 +313,18 @@ function block_styles(): array {
 				'name'  => 'two-column',
 				'label' => __( 'Two columns', 'keel' ),
 			),
+			array(
+				'name'  => 'crosses',
+				'label' => __( 'Crosses', 'keel' ),
+			),
 		),
-		'core/quote'      => array(
+		'core/quote'              => array(
 			array(
 				'name'  => 'testimonial',
 				'label' => __( 'Testimonial', 'keel' ),
 			),
 		),
-		'core/separator'  => array(
+		'core/separator'          => array(
 			array(
 				'name'  => 'short',
 				'label' => __( 'Short', 'keel' ),
@@ -184,8 +333,12 @@ function block_styles(): array {
 				'name'  => 'wave',
 				'label' => __( 'Wave', 'keel' ),
 			),
+			array(
+				'name'  => 'route',
+				'label' => __( 'Route', 'keel' ),
+			),
 		),
-		'core/navigation' => array(
+		'core/navigation'         => array(
 			array(
 				'name'  => 'pill',
 				'label' => __( 'Pill', 'keel' ),
@@ -195,19 +348,31 @@ function block_styles(): array {
 				'label' => __( 'Underline', 'keel' ),
 			),
 		),
-		'core/details'    => array(
+		'core/navigation-submenu' => array(
+			array(
+				'name'  => 'wide',
+				'label' => __( 'Wide', 'keel' ),
+			),
+		),
+		'core/navigation-link'    => array(
+			array(
+				'name'  => 'highlight',
+				'label' => __( 'Highlight', 'keel' ),
+			),
+		),
+		'core/details'            => array(
 			array(
 				'name'  => 'faq',
 				'label' => __( 'FAQ', 'keel' ),
 			),
 		),
-		'core/columns'    => array(
+		'core/columns'            => array(
 			array(
 				'name'  => 'equal-cards',
 				'label' => __( 'Equal cards', 'keel' ),
 			),
 		),
-		'core/cover'      => array(
+		'core/cover'              => array(
 			array(
 				'name'  => 'band',
 				'label' => __( 'Band', 'keel' ),
@@ -221,13 +386,13 @@ function block_styles(): array {
 				'label' => __( 'Tile', 'keel' ),
 			),
 		),
-		'core/media-text' => array(
+		'core/media-text'         => array(
 			array(
 				'name'  => 'card',
 				'label' => __( 'Card', 'keel' ),
 			),
 		),
-		'core/table'      => array(
+		'core/table'              => array(
 			array(
 				'name'  => 'striped',
 				'label' => __( 'Striped', 'keel' ),
@@ -236,8 +401,12 @@ function block_styles(): array {
 				'name'  => 'compact',
 				'label' => __( 'Compact', 'keel' ),
 			),
+			array(
+				'name'  => 'scroll',
+				'label' => __( 'Scroll', 'keel' ),
+			),
 		),
-		'core/heading'    => array(
+		'core/heading'            => array(
 			array(
 				'name'       => 'eyebrow',
 				'label'      => __( 'Eyebrow', 'keel' ),
@@ -255,8 +424,12 @@ function block_styles(): array {
 				'name'  => 'accent',
 				'label' => __( 'Accent', 'keel' ),
 			),
+			array(
+				'name'  => 'ghost',
+				'label' => __( 'Ghost', 'keel' ),
+			),
 		),
-		'core/paragraph'  => array(
+		'core/paragraph'          => array(
 			array(
 				'name'       => 'lead',
 				'label'      => __( 'Lead', 'keel' ),
@@ -267,17 +440,39 @@ function block_styles(): array {
 					),
 				),
 			),
+			array(
+				'name'  => 'eyebrow-rule',
+				'label' => __( 'Eyebrow with rule', 'keel' ),
+			),
+			array(
+				'name'       => 'small-print',
+				'label'      => __( 'Small print', 'keel' ),
+				'style_data' => array(
+					'color'      => array( 'text' => 'color-mix(in srgb, var(--wp--preset--color--contrast) 72%, var(--wp--preset--color--base))' ),
+					'typography' => array( 'fontSize' => 'var:preset|font-size|xs' ),
+				),
+			),
 		),
-		'core/accordion'  => array(
+		'core/accordion'          => array(
 			array(
 				'name'  => 'faq',
 				'label' => __( 'FAQ', 'keel' ),
 			),
 		),
-		'core/tabs'       => array(
+		'core/tabs'               => array(
 			array(
 				'name'  => 'boxed',
 				'label' => __( 'Boxed', 'keel' ),
+			),
+			array(
+				'name'  => 'pills',
+				'label' => __( 'Pills', 'keel' ),
+			),
+		),
+		'core/gallery'            => array(
+			array(
+				'name'  => 'mosaic',
+				'label' => __( 'Mosaic', 'keel' ),
 			),
 		),
 	);

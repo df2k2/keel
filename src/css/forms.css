@@ -1,0 +1,83 @@
+/* Forms: fields, states, a switch and a range for any form plugin's markup. Keel ships no forms of its own. */
+
+input:where( :not( [type="checkbox"], [type="radio"], [type="range"], [type="submit"], [type="button"], [type="file"], [type="hidden"] ) ),
+select,
+textarea {
+	inline-size: 100%;
+	min-block-size: 2.75rem;
+	padding: var( --wp--preset--spacing--20 ) var( --wp--preset--spacing--30 );
+	border: 1px solid var( --wp--preset--color--border );
+	border-radius: var( --wp--custom--radius--md );
+	background: var( --wp--preset--color--base );
+	color: var( --wp--preset--color--contrast );
+	font: inherit;
+	accent-color: var( --wp--preset--color--primary );
+}
+
+textarea {
+	min-block-size: 8rem;
+}
+
+:is( input, select, textarea ):user-invalid,
+.is-error:is( input, select, textarea ),
+.is-error :is( input, select, textarea ) {
+	border-color: var( --wp--preset--color--error );
+	box-shadow: inset 0 0 0 1px var( --wp--preset--color--error );
+}
+
+.keel-form-message {
+	padding: var( --wp--preset--spacing--30 ) var( --wp--preset--spacing--40 );
+	border-inline-start: 4px solid var( --wp--preset--color--primary );
+	border-radius: var( --wp--custom--radius--sm );
+	background: color-mix( in srgb, var( --wp--preset--color--primary ) 10%, var( --wp--preset--color--base ) );
+}
+
+.keel-form-message--success {
+	border-color: var( --wp--preset--color--success );
+	background: color-mix( in srgb, var( --wp--preset--color--success ) 10%, var( --wp--preset--color--base ) );
+}
+
+.keel-form-message--error {
+	border-color: var( --wp--preset--color--error );
+	background: color-mix( in srgb, var( --wp--preset--color--error ) 10%, var( --wp--preset--color--base ) );
+}
+
+input[type="checkbox"].keel-switch {
+	position: relative;
+	inline-size: 2.75rem;
+	block-size: 1.5rem;
+	margin: 0;
+	border: 1px solid var( --wp--preset--color--border );
+	border-radius: var( --wp--custom--radius--pill );
+	background: var( --wp--preset--color--surface-alt );
+	vertical-align: middle;
+	cursor: pointer;
+	appearance: none;
+}
+
+input[type="checkbox"].keel-switch::before {
+	content: "";
+	position: absolute;
+	inset-block-start: 2px;
+	inset-inline-start: 2px;
+	inline-size: calc( 1.5rem - 6px );
+	block-size: calc( 1.5rem - 6px );
+	border-radius: 50%;
+	background: var( --wp--preset--color--base );
+	box-shadow: var( --wp--custom--shadow--sm );
+	transition: translate 0.15s ease;
+}
+
+input[type="checkbox"].keel-switch:checked {
+	border-color: var( --wp--preset--color--primary );
+	background: var( --wp--preset--color--primary );
+}
+
+input[type="checkbox"].keel-switch:checked::before {
+	translate: 1.25rem 0;
+}
+
+input[type="range"] {
+	inline-size: 100%;
+	accent-color: var( --wp--preset--color--primary );
+}

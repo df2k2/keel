@@ -1,0 +1,27 @@
+/* core/group style: marquee. The inner row travels back and forth, so no content is duplicated for screen readers; it pauses on hover and focus, and base.css stops it under reduced motion. */
+
+.wp-block-group.is-style-marquee {
+	overflow: hidden;
+	container-type: inline-size;
+}
+
+.wp-block-group.is-style-marquee > .wp-block-group {
+	inline-size: max-content;
+	animation: keel-marquee 24s linear infinite alternate;
+}
+
+.wp-block-group.is-style-marquee:hover > .wp-block-group,
+.wp-block-group.is-style-marquee:focus-within > .wp-block-group {
+	animation-play-state: paused;
+}
+
+@keyframes keel-marquee {
+
+	from {
+		translate: 0 0;
+	}
+
+	to {
+		translate: calc( 100cqw - 100% ) 0;
+	}
+}
