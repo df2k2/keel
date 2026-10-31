@@ -5,3 +5,29 @@
 	color: var( --wp--preset--color--contrast );
 	font-size: var( --wp--preset--font-size--sm );
 }
+
+/* Style: polaroid. A white frame with a deep foot, a soft shadow, a slight tilt and a serif caption. */
+
+.wp-block-image.is-style-polaroid {
+	inline-size: fit-content;
+	padding: 12px 12px 36px;
+	background: var( --wp--preset--color--base );
+	box-shadow: var( --wp--custom--shadow--md );
+	rotate: -2deg;
+}
+
+.wp-block-image.is-style-polaroid:nth-child( even ) {
+	rotate: 2deg;
+}
+
+.wp-block-image.is-style-polaroid img {
+	border-radius: 0;
+}
+
+.wp-block-image.is-style-polaroid figcaption {
+	margin-block-start: var( --wp--preset--spacing--20 );
+	font-family: var( --wp--preset--font-family--serif );
+	font-size: var( --wp--preset--font-size--md );
+	font-style: italic;
+	text-align: center;
+}

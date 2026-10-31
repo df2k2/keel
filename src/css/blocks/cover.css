@@ -22,3 +22,46 @@
 	background-image: linear-gradient( to top, color-mix( in srgb, var( --wp--preset--color--contrast ) 70%, transparent ), transparent );
 	opacity: 1;
 }
+
+/* Card media: a photo at a fixed ratio with a tag on it; the ratio comes from the block's style. */
+
+.wp-block-cover.keel-card__media {
+	min-block-size: auto;
+}
+
+/* Style: tile. A 4:5 photo, a tag or stamp at the top, the title at the foot over a dark gradient. */
+
+.wp-block-cover.is-style-tile {
+	min-block-size: auto;
+	overflow: hidden;
+	border-radius: var( --wp--custom--radius--md );
+	aspect-ratio: 4 / 5;
+}
+
+.wp-block-cover.is-style-tile > .wp-block-cover__background {
+	background-color: transparent;
+	background-image: linear-gradient( to top, color-mix( in srgb, var( --wp--preset--color--contrast ) 60%, transparent ), transparent 65% );
+	opacity: 1;
+}
+
+.wp-block-cover.is-style-tile .wp-block-cover__inner-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-self: stretch;
+	block-size: 100%;
+}
+
+.wp-block-cover.is-style-tile .wp-block-heading {
+	font-size: var( --wp--preset--font-size--xl );
+	font-weight: 500;
+}
+
+.wp-block-cover.is-style-tile a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.wp-block-cover.is-style-tile a:hover {
+	text-decoration: underline;
+}

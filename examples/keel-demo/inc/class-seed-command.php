@@ -19,7 +19,7 @@ class Seed_Command {
 	 *
 	 * @var string[]
 	 */
-	private const CATEGORIES = array( 'hero', 'trust', 'services', 'process', 'team', 'testimonials', 'pricing', 'faq', 'location', 'gallery', 'cta', 'contact', 'footer', 'blog', 'pages', 'layouts', 'dental' );
+	private const CATEGORIES = array( 'hero', 'trust', 'services', 'process', 'team', 'testimonials', 'pricing', 'faq', 'location', 'gallery', 'cta', 'contact', 'footer', 'blog', 'pages', 'layouts', 'dental', 'cards', 'elements', 'places', 'events', 'company', 'utility' );
 
 	/**
 	 * Builds every showcase page, the dental pages, the Primary menu and the front page.

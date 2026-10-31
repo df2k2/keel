@@ -128,7 +128,7 @@ $keel_downloads = array( __( 'Aftercare guide (PDF)', 'keel' ), __( 'Consent for
 
 		<!-- wp:column {"width":"34%"} -->
 		<div class="wp-block-column" style="flex-basis:34%">
-			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 			<div class="wp-block-group is-style-card">
 				<!-- wp:paragraph {"className":"keel-eyebrow"} -->
 				<p class="keel-eyebrow"><?php esc_html_e( 'From', 'keel' ); ?></p>

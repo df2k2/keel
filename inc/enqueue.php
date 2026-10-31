@@ -22,7 +22,10 @@ function enqueue_styles(): void {
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_styles' );
 
 /**
- * Registers one stylesheet per core block from build/css/blocks/, loaded only when that block renders.
+ * Registers the stylesheets under build/css/blocks/, each loaded only when its block renders.
+ *
+ * A file is named after its block (`group.css` for core/group); a block whose rules outgrow the
+ * per-file budget splits into `<block>--<part>.css` files, which register for the same block.
  *
  * @return void
  */
@@ -32,9 +35,10 @@ function enqueue_block_styles(): void {
 		return;
 	}
 	foreach ( $files as $path ) {
-		$name = basename( $path, '.css' );
+		$name  = basename( $path, '.css' );
+		$block = explode( '--', $name, 2 )[0];
 		wp_enqueue_block_style(
-			'core/' . $name,
+			'core/' . $block,
 			array(
 				'handle' => 'keel-block-' . $name,
 				'src'    => get_theme_file_uri( 'build/css/blocks/' . $name . '.css' ),

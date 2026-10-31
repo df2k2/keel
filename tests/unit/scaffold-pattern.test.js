@@ -28,7 +28,7 @@ test( 'scaffold writes a pattern file with the wordpress.org header', () => {
 		assert.ok( source.includes( line ), `missing "${ line }"` );
 	}
 	assert.ok( source.includes( "defined( 'ABSPATH' ) || exit;" ) );
-	assert.ok( CATEGORIES.includes( 'hero' ) && CATEGORIES.length === 17 );
+	assert.ok( CATEGORIES.includes( 'hero' ) && CATEGORIES.length === 23 );
 } );
 
 test( 'invalid slug or unknown category is refused', () => {

@@ -15,3 +15,38 @@
 		padding-inline: 0;
 	}
 }
+
+/* Style: card. The row card: surface, radius, shadow, the photo filling 42 percent. */
+
+.wp-block-media-text.is-style-card {
+	grid-template-columns: 42% 1fr;
+	overflow: hidden;
+	border-radius: var( --wp--custom--radius--md );
+	background: var( --wp--preset--color--surface );
+	box-shadow: var( --wp--custom--shadow--sm );
+}
+
+.wp-block-media-text.is-style-card.has-media-on-the-right {
+	grid-template-columns: 1fr 42%;
+}
+
+.wp-block-media-text.is-style-card .wp-block-media-text__media img {
+	block-size: 100%;
+	border-radius: 0;
+	object-fit: cover;
+}
+
+.wp-block-media-text.is-style-card .wp-block-media-text__content {
+	display: flex;
+	flex-direction: column;
+	gap: var( --wp--preset--spacing--30 );
+	padding: var( --wp--preset--spacing--40 );
+}
+
+.wp-block-media-text.is-style-card .wp-block-media-text__content > * {
+	margin: 0;
+}
+
+.wp-block-media-text.is-style-card .keel-card-footer {
+	margin-block-start: auto;
+}

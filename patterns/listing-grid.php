@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- wp:query {"queryId":22,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"align":"wide"} -->
 	<div class="wp-block-query alignwide">
 		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 			<div class="wp-block-group is-style-card">
 				<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","className":"is-style-soft"} /-->
 

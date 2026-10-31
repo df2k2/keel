@@ -27,7 +27,7 @@ $keel_demo_teasers     = array(
 	<div class="wp-block-columns alignwide">
 		<!-- wp:column {"width":"60%"} -->
 		<div class="wp-block-column" style="flex-basis:60%">
-			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 			<div class="wp-block-group is-style-card">
 				<?php if ( '' !== $keel_demo_dental_shot ) : ?>
 				<!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","className":"is-style-soft keel-demo-tile"} -->
@@ -106,7 +106,7 @@ $keel_demo_teasers     = array(
 		<?php foreach ( $keel_demo_teasers as $keel_demo_teaser ) : ?>
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 			<div class="wp-block-group is-style-card">
 				<!-- wp:heading {"level":3,"fontSize":"lg"} -->
 				<h3 class="wp-block-heading has-lg-font-size"><a href="<?php echo esc_url( home_url( '/patterns/' . $keel_demo_teaser[0] . '/' ) ); ?>"><?php echo esc_html( $keel_demo_teaser[1] ); ?></a></h3>

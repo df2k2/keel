@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="wp-block-columns alignwide">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 			<div class="wp-block-group is-style-card">
 				<!-- wp:image {"lightbox":{"enabled":false},"width":"24px","height":"24px","sizeSlug":"full","className":"keel-icon"} -->
 <figure class="wp-block-image size-full is-resized keel-icon"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/check.svg' ) ); ?>" alt="" style="width:24px;height:24px"/></figure>
@@ -46,7 +46,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 			<div class="wp-block-group is-style-card">
 				<!-- wp:image {"lightbox":{"enabled":false},"width":"24px","height":"24px","sizeSlug":"full","className":"keel-icon"} -->
 <figure class="wp-block-image size-full is-resized keel-icon"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/shield.svg' ) ); ?>" alt="" style="width:24px;height:24px"/></figure>
@@ -70,7 +70,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"is-style-card","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 			<div class="wp-block-group is-style-card">
 				<!-- wp:image {"lightbox":{"enabled":false},"width":"24px","height":"24px","sizeSlug":"full","className":"keel-icon"} -->
 <figure class="wp-block-image size-full is-resized keel-icon"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/icons/calendar.svg' ) ); ?>" alt="" style="width:24px;height:24px"/></figure>

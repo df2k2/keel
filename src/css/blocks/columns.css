@@ -8,6 +8,13 @@
 	margin-block-end: 0;
 }
 
+/* A column holding a card is a flex column, so the card can grow to the row's height. */
+
+.wp-block-column:has( > .is-style-card ) {
+	display: flex;
+	flex-direction: column;
+}
+
 /* Style: equal-cards. */
 
 .wp-block-columns.is-style-equal-cards > .wp-block-column {

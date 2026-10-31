@@ -124,6 +124,14 @@ function block_styles(): array {
 				'name'  => 'wave-bottom',
 				'label' => __( 'Wave bottom', 'keel' ),
 			),
+			array(
+				'name'  => 'ticket',
+				'label' => __( 'Ticket', 'keel' ),
+			),
+			array(
+				'name'  => 'rail',
+				'label' => __( 'Rail', 'keel' ),
+			),
 		),
 		'core/image'      => array(
 			array(
@@ -145,6 +153,10 @@ function block_styles(): array {
 					),
 					'spacing' => array( 'padding' => block_style_padding( '20' ) ),
 				),
+			),
+			array(
+				'name'  => 'polaroid',
+				'label' => __( 'Polaroid', 'keel' ),
 			),
 		),
 		'core/list'       => array(
@@ -203,6 +215,16 @@ function block_styles(): array {
 			array(
 				'name'  => 'gradient-overlay',
 				'label' => __( 'Gradient overlay', 'keel' ),
+			),
+			array(
+				'name'  => 'tile',
+				'label' => __( 'Tile', 'keel' ),
+			),
+		),
+		'core/media-text' => array(
+			array(
+				'name'  => 'card',
+				'label' => __( 'Card', 'keel' ),
 			),
 		),
 		'core/table'      => array(

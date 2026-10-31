@@ -28,3 +28,48 @@
 .wp-block-group.is-style-band a:not( [class] ) {
 	color: inherit;
 }
+
+/* Style: card. A Stack: the column or query item makes it grow, the footer sits on the bottom edge. */
+
+.wp-block-column > .is-style-card,
+.wp-block-post-template > li > .is-style-card {
+	flex: 1 1 auto;
+}
+
+.wp-block-group.is-style-card.is-layout-flex {
+	align-items: stretch;
+}
+
+.wp-block-group.is-style-card > .wp-block-buttons:last-child,
+.is-style-card > .keel-card-footer {
+	margin-block-start: auto;
+}
+
+.is-style-card .wp-block-heading a:not( :hover ) {
+	text-decoration: none;
+}
+
+/* The card's photo bleeds to the card edges (the card pads 40 on every side). */
+
+.wp-block-group.is-style-card > .keel-card__media {
+	margin-block-start: calc( -1 * var( --wp--preset--spacing--40 ) );
+	margin-inline: calc( -1 * var( --wp--preset--spacing--40 ) );
+	overflow: hidden;
+	border-start-start-radius: var( --wp--custom--radius--md );
+	border-start-end-radius: var( --wp--custom--radius--md );
+}
+
+/* Style: rail. A scroll-snap row; no buttons, the cards' own links are the keyboard path. */
+
+.wp-block-group.is-style-rail {
+	padding-block-end: var( --wp--preset--spacing--20 );
+	overflow: auto hidden;
+	overscroll-behavior-inline: contain;
+	scroll-snap-type: inline mandatory;
+	scrollbar-width: none;
+}
+
+.wp-block-group.is-style-rail > * {
+	flex: 0 0 min( 80vw, 22rem );
+	scroll-snap-align: start;
+}

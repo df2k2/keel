@@ -12,7 +12,7 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
-<!-- wp:group {"align":"wide","className":"is-style-card","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"wide","className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group alignwide is-style-card">
 	<!-- wp:columns {"verticalAlignment":"center"} -->
 	<div class="wp-block-columns are-vertically-aligned-center">

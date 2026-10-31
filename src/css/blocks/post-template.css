@@ -12,3 +12,10 @@
 	display: inline-block;
 	margin-block-start: var( --wp--preset--spacing--20 );
 }
+
+/* A query item holding a card is a flex column, so the card can grow to the row's height. */
+
+.wp-block-post-template > li:has( > .is-style-card ) {
+	display: flex;
+	flex-direction: column;
+}

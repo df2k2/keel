@@ -11,15 +11,16 @@ defined( 'ABSPATH' ) || exit;
 
 $keel_expected = array(
 	'core/button'     => array( 'secondary', 'ghost', 'pill' ),
-	'core/group'      => array( 'card', 'surface', 'band', 'bordered', 'textured', 'wave-bottom' ),
-	'core/image'      => array( 'soft', 'framed' ),
+	'core/group'      => array( 'card', 'surface', 'band', 'bordered', 'textured', 'wave-bottom', 'ticket', 'rail' ),
+	'core/image'      => array( 'soft', 'framed', 'polaroid' ),
+	'core/media-text' => array( 'card' ),
 	'core/list'       => array( 'checkmarks', 'two-column' ),
 	'core/quote'      => array( 'testimonial' ),
 	'core/separator'  => array( 'short', 'wave' ),
 	'core/navigation' => array( 'pill', 'underline' ),
 	'core/details'    => array( 'faq' ),
 	'core/columns'    => array( 'equal-cards' ),
-	'core/cover'      => array( 'band', 'gradient-overlay' ),
+	'core/cover'      => array( 'band', 'gradient-overlay', 'tile' ),
 	'core/table'      => array( 'striped', 'compact' ),
 	'core/heading'    => array( 'eyebrow', 'accent' ),
 	'core/paragraph'  => array( 'lead' ),
@@ -42,4 +43,4 @@ $keel_secondary = $keel_registry->get_registered( 'core/button', 'secondary' );
 if ( 'var:preset|color|accent' !== ( $keel_secondary['style_data']['color']['background'] ?? '' ) ) {
 	WP_CLI::error( 'core/button secondary must set style_data.color.background to var:preset|color|accent.' );
 }
-WP_CLI::success( 'block-styles: 28 keel styles registered across 15 blocks.' );
+WP_CLI::success( 'block-styles: 33 keel styles registered across 16 blocks.' );

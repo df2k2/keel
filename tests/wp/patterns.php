@@ -104,6 +104,18 @@ const KEEL_PATTERNS    = array(
 	'dental-landing-implants',
 	'dental-about',
 	'dental-contact',
+	'card-listing',
+	'card-listing-amenities',
+	'card-row',
+	'cards-row-list',
+	'tile',
+	'tiles-grid',
+	'mini-list',
+	'mini-list-posts',
+	'ticket',
+	'tickets-list',
+	'polaroid-trio',
+	'rail-cards',
 );
 const KEEL_H1_PATTERNS = array( 'hero-image', 'hero-split', 'hero-video', 'hero-text', 'hero-booking', 'page-service-detail', 'page-provider', 'page-pricing', 'page-landing-offer', 'page-about', 'page-contact', 'page-faq', 'styleguide', 'dental-hero', 'dental-home', 'dental-service-whitening', 'dental-service-implants', 'dental-provider', 'dental-pricing', 'dental-landing-implants', 'dental-about', 'dental-contact', 'blog-list', '404-content', 'accessibility-statement' );
 
