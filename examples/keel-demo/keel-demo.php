@@ -3,7 +3,7 @@
  * Plugin Name: Keel demo
  * Plugin URI: https://github.com/df2k2/keel
  * Description: Showcase-only pieces for the Keel demo site: showcase patterns, the per-request variation switcher, the measured facts band and the wp keel-demo seed command. Not for production sites.
- * Version: 0.3.0
+ * Version: 0.3.1
  * Requires at least: 7.1
  * Requires PHP: 8.3
  * Author: Chris Snedaker
@@ -18,7 +18,7 @@ namespace Keel_Demo;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION = '0.3.0';
+const VERSION = '0.3.1';
 const FILE    = __FILE__;
 
 require __DIR__ . '/inc/facts.php';

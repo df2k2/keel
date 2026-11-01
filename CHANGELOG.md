@@ -4,6 +4,18 @@ All notable changes to Keel are recorded here. The format follows Keep a Changel
 
 ## Unreleased
 
+## 0.3.1 (2026-10-31)
+
+Child theme support, learnt from building the first site on Keel. The header actions are a
+template part, `parts/header-actions.html`, which the sticky header pulls in, so a child changes the
+buttons by overriding one small file instead of copying a header. A child's own `header` part can
+stick or sit over a cover by setting `keel-header--sticky` or `keel-header--transparent` on its root
+block, and `keel_header_part_classes` filters the classes from PHP. Font preloads follow the family
+the headings use (`keel_preload_font_slugs` to override), so headings set in the serif no longer
+download the display face. The author box and the comments part no longer use the Avatar block,
+which fetched from Gravatar and broke the zero-third-party promise. The child theme example under
+`examples/keel-child` shows all of it.
+
 ## 0.3.0 (2026-10-31)
 
 Elements (M1.6). The type scale matched to a travel-theme reference: body 16 to 17 px, card

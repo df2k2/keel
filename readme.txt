@@ -4,7 +4,7 @@ Tags: full-site-editing, block-patterns, block-styles, accessibility-ready, cust
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 0.3.0
+Stable tag: 0.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ A security-first block theme for local service businesses.
 
 Keel is a block theme for local service businesses: fast and accessible by construction, with zero third-party requests, output ready for a strict content security policy, curated patterns in place of a page builder, and a companion plugin that carries hardening and monitoring. Everything is core blocks and theme.json, so the content stays portable.
 
-* Seventeen templates and fourteen template parts, including service, location and landing page templates, three post templates (cover, with sidebar, minimal), an author archive, a transparent header, a sticky header, a header with a utility bar, a big footer, a floating call to action and a mobile call-to-action bar.
+* Seventeen templates and fifteen template parts, including service, location and landing page templates, three post templates (cover, with sidebar, minimal), an author archive, a transparent header, a sticky header, a header with a utility bar, a big footer, a floating call to action and a mobile call-to-action bar.
 * One hundred and eighty-five patterns in twenty-three categories: heroes, trust, services, process, team, testimonials, pricing, FAQ, location, gallery, calls to action, contact, footers, blog and journal, cards (listing, row, tile, mini list, ticket, polaroid), elements (section titles, button rows, ratings, prices, search panel, chips, callouts, tables, breadcrumbs, marquee), places and listings, events and deals, company and utility sections, 404 and an accessibility statement.
 * Twenty-six starter page layouts offered when a new page is created: service detail, provider profile, pricing, landing offer, about, contact, FAQ, journal, places, place, listings, listing, events, event, deals, about with story, team, careers, press, contact with map, visitor information, coming soon, maintenance, thank you, legal and one page.
 * An elements page that names every element the theme ships with its class, style or pattern: colours with contrast ratios, type, spacing, shape, buttons, badges and prices, forms, search, cards, journal and team and reviews, decorations, tabs and filters, itinerary and steps, deals, callouts, tables, rails, pagination, stats and media, newsletter and footer, every block style, icons and variations, read from the active styles each time it renders.
@@ -48,6 +48,9 @@ Keel is presentation only. Use any form plugin that outputs standard blocks insi
 Yes. Use a child theme (an example ships in the repository under examples/keel-child) or the site editor; Keel never writes to its own files.
 
 == Changelog ==
+
+= 0.3.1 =
+* Child theme support: the header actions are a template part, header modifiers from a class or the keel_header_part_classes filter, font preloads follow the headings' family (keel_preload_font_slugs), no Avatar block in the author box or the comments, and a fuller child theme example.
 
 = 0.3.0 =
 * The type scale with a display size, the serif family and accent headings, Coral as the showcase default; equal-height Stack cards and the card family; thirty-seven block styles, ninety-one patterns, six page sets with nineteen page layouts, three post templates and the author archive, post formats, the elements page that replaces the style guide, three new parts.

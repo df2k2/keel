@@ -14,8 +14,8 @@ if ( 17 !== count( $keel_templates ) ) {
 	WP_CLI::error( 'Expected 17 templates, found ' . count( $keel_templates ) . '.' );
 }
 $keel_parts = get_block_templates( array(), 'wp_template_part' );
-if ( 14 !== count( $keel_parts ) ) {
-	WP_CLI::error( 'Expected 14 template parts, found ' . count( $keel_parts ) . '.' );
+if ( 15 !== count( $keel_parts ) ) {
+	WP_CLI::error( 'Expected 15 template parts, found ' . count( $keel_parts ) . '.' );
 }
 $keel_service = get_block_template( 'keel//page-service' );
 if ( ! $keel_service instanceof WP_Block_Template || ! str_contains( $keel_service->content, 'wp:template-part {"slug":"cta-band"' ) ) {
