@@ -1,10 +1,10 @@
 === Keel ===
 Contributors: df2k2
-Tags: full-site-editing, block-patterns, block-styles, accessibility-ready, custom-colors, custom-logo, editor-style, translation-ready, rtl-language-support, wide-blocks
+Tags: full-site-editing, block-patterns, block-styles, style-variations, post-formats, accessibility-ready, custom-colors, custom-logo, editor-style, translation-ready, rtl-language-support, wide-blocks, blog, portfolio
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 0.3.1
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,14 +16,14 @@ Keel is a block theme for local service businesses: fast and accessible by const
 
 * Seventeen templates and fifteen template parts, including service, location and landing page templates, three post templates (cover, with sidebar, minimal), an author archive, a transparent header, a sticky header, a header with a utility bar, a big footer, a floating call to action and a mobile call-to-action bar.
 * One hundred and eighty-five patterns in twenty-three categories: heroes, trust, services, process, team, testimonials, pricing, FAQ, location, gallery, calls to action, contact, footers, blog and journal, cards (listing, row, tile, mini list, ticket, polaroid), elements (section titles, button rows, ratings, prices, search panel, chips, callouts, tables, breadcrumbs, marquee), places and listings, events and deals, company and utility sections, 404 and an accessibility statement.
-* Twenty-six starter page layouts offered when a new page is created: service detail, provider profile, pricing, landing offer, about, contact, FAQ, journal, places, place, listings, listing, events, event, deals, about with story, team, careers, press, contact with map, visitor information, coming soon, maintenance, thank you, legal and one page.
+* Twenty-eight starter page layouts offered when a new page is created: service detail, provider profile, pricing, landing offer, about, contact, FAQ, journal, places, place, listings, listing, events, event, deals, about with story, team, careers, press, contact with map, visitor information, coming soon, maintenance, thank you, legal, one page, the elements page and an accessibility statement.
 * An elements page that names every element the theme ships with its class, style or pattern: colours with contrast ratios, type, spacing, shape, buttons, badges and prices, forms, search, cards, journal and team and reviews, decorations, tabs and filters, itinerary and steps, deals, callouts, tables, rails, pagination, stats and media, newsletter and footer, every block style, icons and variations, read from the active styles each time it renders.
 * Cards of equal height in every row with the footer on the bottom edge, a photo-first card anatomy, post formats with their own card looks, and enhanced pagination on the query grids.
 * A dental practice pattern pack: thirteen sections and eight pages for a fictional practice, the shape for further vertical packs.
 * Sixty-five block styles across nineteen blocks: buttons (sizes, light, glass, soft, link, icon buttons), groups (card, band, ticket, rail, paper, dot grid, marquee, callouts, search panels), images, lists, quotes, separators, navigation, details, columns, covers, tables, headings, paragraphs, galleries, Media and Text, the Accordion and the Tabs blocks.
 * Seven style variations: Harbor, Clinic, Slate, Coral, Palm, Night and Contrast (WCAG AAA colours, no shadows, 2 pixel borders). Coral and Palm set headings in Fraunces with an italic accent style.
 * Three self-hosted fonts as three families, body, display and serif (Figtree, Bricolage Grotesque, Fraunces), with metric-matched fallbacks, so text never jumps.
-* Three tiny Interactivity API behaviours (transparent header, announcement dismiss, testimonial carousel) that load only on pages that use them; static pages load no JavaScript at all.
+* Four tiny Interactivity API behaviours (transparent header, announcement dismiss, testimonial carousel, marquee pause) that load only on pages that use them; static pages load no JavaScript at all.
 * WCAG 2.2 AA by construction: one h1 per page, landmarks, a plain HTML skip link, visible focus, 24 pixel targets, reduced-motion support, and automated accessibility checks in the theme's test suite.
 * Ships with a Spanish (es_ES) translation.
 
@@ -48,6 +48,9 @@ Keel is presentation only. Use any form plugin that outputs standard blocks insi
 Yes. Use a child theme (an example ships in the repository under examples/keel-child) or the site editor; Keel never writes to its own files.
 
 == Changelog ==
+
+= 1.0.0 =
+* First stable release. The zip ships the unminified CSS and JavaScript sources beside the built files; the marquee style gains a Pause and Play button so moving content can be stopped without hovering; new tags (style-variations, post-formats, blog, portfolio); the screenshot shows the dental practice home built from shipped patterns.
 
 = 0.3.1 =
 * Child theme support: the header actions are a template part, header modifiers from a class or the keel_header_part_classes filter, font preloads follow the headings' family (keel_preload_font_slugs), no Avatar block in the author box or the comments, and a fuller child theme example.

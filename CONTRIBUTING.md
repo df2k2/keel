@@ -87,8 +87,8 @@ active `body` and `display` families are preloaded.
 
 ## Interactivity
 
-Three stores in `src/js` (`keel/header`, `keel/announcement`, `keel/carousel`) are built by esbuild
-into `build/js` and registered in `inc/interactivity.php`. Directives are added in `render_block`
+Four stores in `src/js` (`keel/header`, `keel/announcement`, `keel/carousel`, `keel/marquee`) are
+built by esbuild into `build/js` and registered in `inc/interactivity.php`. Directives are added in `render_block`
 filters, never in pattern or part markup, so the editor only ever sees core blocks. A store is
 enqueued only when its template part or pattern renders; `page-landing` loads no JavaScript.
 

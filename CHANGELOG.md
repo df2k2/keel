@@ -4,6 +4,17 @@ All notable changes to Keel are recorded here. The format follows Keep a Changel
 
 ## Unreleased
 
+## 1.0.0 (2026-11-02)
+
+First stable release, prepared for the wordpress.org theme directory. The release zip now carries
+`src/` beside `build/`, so the unminified CSS and JavaScript ship with their minified twins as the
+directory requires. The marquee group style gains a Pause and Play button, wired by a fourth
+Interactivity store, `keel/marquee`, so moving content can be stopped without hovering
+(WCAG 2.2.2); reduced motion still stops the animation in CSS and hides the button. New tags:
+`style-variations`, `post-formats`, `blog` and `portfolio`. The theme screenshot is now the dental
+practice home, built only from shipped patterns behind a short menu, in place of the showcase
+landing page. Spanish strings for the new control. Keel stays the theme's name.
+
 ## 0.3.1 (2026-10-31)
 
 Child theme support, learnt from building the first site on Keel. The header actions are a

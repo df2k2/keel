@@ -1,6 +1,7 @@
-/* core/group style: marquee. The inner row travels back and forth, so no content is duplicated for screen readers; it pauses on hover and focus, and base.css stops it under reduced motion. */
+/* core/group style: marquee. The inner row travels back and forth, so no content is duplicated for screen readers; it pauses on hover and focus, a Pause button (added at render by inc/interactivity.php) stops it for everyone else, and base.css stops it under reduced motion. */
 
 .wp-block-group.is-style-marquee {
+	position: relative;
 	overflow: hidden;
 	container-type: inline-size;
 }
@@ -11,8 +12,36 @@
 }
 
 .wp-block-group.is-style-marquee:hover > .wp-block-group,
-.wp-block-group.is-style-marquee:focus-within > .wp-block-group {
+.wp-block-group.is-style-marquee:focus-within > .wp-block-group,
+.wp-block-group.is-style-marquee.is-paused > .wp-block-group {
 	animation-play-state: paused;
+}
+
+.keel-marquee__toggle {
+	position: absolute;
+	inset-block-start: 50%;
+	inset-inline-end: var( --wp--preset--spacing--30 );
+	min-inline-size: 2.75rem;
+	min-block-size: 2rem;
+	padding: var( --wp--preset--spacing--10 ) var( --wp--preset--spacing--30 );
+	border: 0;
+	border-radius: var( --wp--custom--radius--pill );
+	background: var( --wp--preset--color--base );
+	box-shadow: inset 0 0 0 1px var( --wp--preset--color--border );
+	color: var( --wp--preset--color--contrast );
+	font: inherit;
+	font-size: var( --wp--preset--font-size--xs );
+	font-weight: 600;
+	line-height: 1.2;
+	translate: 0 -50%;
+	cursor: pointer;
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+
+	.keel-marquee__toggle {
+		display: none;
+	}
 }
 
 @keyframes keel-marquee {

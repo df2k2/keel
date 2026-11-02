@@ -12,12 +12,12 @@ defined( 'ABSPATH' ) || exit;
 const HEADER_PARTS = array( 'header', 'header-centered', 'header-transparent', 'header-utility', 'header-sticky' );
 
 /**
- * Registers the three script modules; each is enqueued only when its part or pattern renders.
+ * Registers the four script modules; each is enqueued only when its part or pattern renders.
  *
  * @return void
  */
 function register_script_modules(): void {
-	foreach ( array( 'header', 'announcement', 'carousel' ) as $name ) {
+	foreach ( array( 'header', 'announcement', 'carousel', 'marquee' ) as $name ) {
 		wp_register_script_module(
 			'keel-' . $name,
 			get_theme_file_uri( 'build/js/' . $name . '.js' ),
@@ -241,3 +241,50 @@ function filter_action_buttons( string $content, array $block ): string {
 	return $content;
 }
 add_filter( 'render_block_core/button', __NAMESPACE__ . '\\filter_action_buttons', 10, 2 );
+
+/**
+ * Adds a pause control to a marquee group. The row moves on its own and hover is no control for
+ * touch or keyboard, so a button toggles the paused class (WCAG 2.2.2); reduced motion stops the
+ * animation in CSS and hides the button. The editor never sees the button: it is added at render.
+ *
+ * @param string               $content Rendered group.
+ * @param array<string, mixed> $block   Parsed block.
+ * @return string Rendered group with directives and the control.
+ */
+function filter_marquee_group( string $content, array $block ): string {
+	if ( ! block_has_class( $block, 'is-style-marquee' ) ) {
+		return $content;
+	}
+	// Only the inner group moves; a marquee without one (the block-style sample) has nothing to pause.
+	$processor = new \WP_HTML_Tag_Processor( $content );
+	if ( ! $processor->next_tag() || ! $processor->next_tag( array( 'class_name' => 'wp-block-group' ) ) ) {
+		return $content;
+	}
+	wp_enqueue_script_module( 'keel-marquee' );
+	$pause   = __( 'Pause', 'keel' );
+	$content = add_directives(
+		$content,
+		array(
+			'data-wp-interactive'      => 'keel/marquee',
+			'data-wp-context'          => (string) wp_json_encode(
+				array(
+					'paused' => false,
+					'pause'  => $pause,
+					'play'   => __( 'Play', 'keel' ),
+				)
+			),
+			'data-wp-class--is-paused' => 'context.paused',
+		)
+	);
+	$button  = sprintf(
+		'<button type="button" class="keel-marquee__toggle" data-wp-on--click="actions.toggle" data-wp-text="state.label">%s</button>',
+		esc_html( $pause )
+	);
+	$end     = strrpos( $content, '</' );
+	if ( false === $end ) {
+		return $content;
+	}
+	// The control is the group's last child, after the moving row, so it comes last in reading order.
+	return substr( $content, 0, $end ) . $button . substr( $content, $end );
+}
+add_filter( 'render_block_core/group', __NAMESPACE__ . '\\filter_marquee_group', 10, 2 );

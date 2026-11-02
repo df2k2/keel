@@ -8,12 +8,11 @@
 A security-first WordPress block theme for local service businesses: fast and accessible by
 construction, zero third-party requests, no JavaScript on pages that do not need it, and output
 ready for a strict content security policy. Everything is core blocks and `theme.json`, so the
-content stays portable and no page builder is involved. "Keel" is a working codename; the theme
-ships with a rename script.
+content stays portable and no page builder is involved.
 
 Requires WordPress 7.1 or later and PHP 8.3 or later. Licensed GPL-2.0-or-later.
 
-![The Keel showcase home page in the Coral variation: a serif headline with an italic accent, two buttons and a row of chips over a warm off-white background](screenshot.png)
+![The dental practice demo home in the Coral variation: a serif headline, a booking button, a phone button, treatment chips and a photo, built only from the theme's own patterns](screenshot.png)
 
 ## Contents
 
@@ -89,8 +88,9 @@ keep updated and the most often compromised. Keel takes the opposite position:
 - **Three self-hosted fonts** as three roles, body, display and serif (Figtree, Bricolage Grotesque,
   Fraunces), subset to Latin with metric-matched fallbacks so text never jumps. Only the roman
   faces of the active families are preloaded.
-- **Three Interactivity API stores** (transparent header, announcement dismiss, testimonial
-  carousel) of roughly 400 bytes each, loaded only where their part or pattern renders.
+- **Four Interactivity API stores** (transparent header, announcement dismiss, testimonial
+  carousel, marquee pause) of roughly 400 bytes each, loaded only where their part or pattern
+  renders. Moving content always has a Pause button, and reduced motion stops it outright.
 - **Prerender on hover** through core's speculation rules, so the next page is already painted
   when the visitor clicks.
 - **A Spanish (es_ES) translation**, a child theme example under `examples/keel-child`, and a demo
@@ -153,7 +153,7 @@ Building from source also needs Node 24 or later, Composer 2 and Docker (for `wp
 Or with WP-CLI:
 
 ```bash
-wp theme install keel-0.3.1.zip --activate
+wp theme install keel-1.0.0.zip --activate
 ```
 
 Do not install the repository checkout directly: the compiled CSS and JavaScript under `build/`
@@ -166,10 +166,10 @@ CycloneDX SBOM. To check the checksum and the signature:
 
 ```bash
 sha256sum --ignore-missing -c SHA256SUMS
-cosign verify-blob --bundle keel-0.3.1.zip.sigstore.json \
+cosign verify-blob --bundle keel-1.0.0.zip.sigstore.json \
   --certificate-identity-regexp '^https://github.com/df2k2/keel/' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com \
-  keel-0.3.1.zip
+  keel-1.0.0.zip
 ```
 
 The certificate identity proves the zip was built by this repository's release workflow on
@@ -187,11 +187,11 @@ npm run package          # writes dist/keel-<version>.zip and dist/keel-manifest
 
 Upload the zip from `dist/` as above, or copy the built checkout to `wp-content/themes/keel`.
 
-### Rename the theme
+### Fork under another name
 
-Keel is a codename. To ship under your own name, run the rename script before packaging. It
-rewrites the slug, text domain, constants and namespace prefixes in every tracked text file
-except the licence, the changelog and `docs/`:
+To ship a fork under your own name, run the rename script before packaging. It rewrites the slug,
+text domain, constants and namespace prefixes in every tracked text file except the licence, the
+changelog and `docs/`:
 
 ```bash
 bin/rename.sh my-theme "My Theme" --dry-run   # preview
@@ -307,7 +307,7 @@ inc/           setup, enqueue, fonts, block styles, interactivity, speculation, 
 languages/     keel.pot and the es_ES translation
 parts/         fifteen template parts
 patterns/      185 pattern files, one per pattern
-src/           CSS (PostCSS, per-block files) and the three Interactivity stores
+src/           CSS (PostCSS, per-block files) and the four Interactivity stores; ships in the zip beside build/
 styles/        seven style variations
 templates/     seventeen block templates
 tests/         unit (node:test), wp (WP-CLI), e2e (Playwright), budgets and contrast pairs
@@ -369,10 +369,11 @@ end-to-end tests. Regenerate the POT file with `npm run i18n:pot` and compile `.
 
 ## Status
 
-Keel is at version 0.3.1 and under active development ahead of a 1.0. The theme is built to pass
-Theme Check and the wordpress.org theme review requirements, and Theme Check runs in CI. The
-companion hardening and monitoring plugin is a separate project and is not in this repository.
-Breaking changes before 1.0 are recorded in the changelog.
+Keel 1.0.0 is the first stable release, prepared for submission to the wordpress.org theme
+directory: Theme Check runs in CI, the zip carries the unminified sources beside the built files,
+and the accessibility-ready requirements are met by construction. The companion hardening and
+monitoring plugin is a separate project and is not in this repository. Every change is recorded
+in the changelog.
 
 ## Documentation
 
