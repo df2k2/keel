@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-02T06:46:46+00:00\n"
+"POT-Creation-Date: 2026-11-02T06:55:01+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: keel\n"
@@ -332,11 +332,11 @@ msgstr ""
 msgid "Next testimonial"
 msgstr ""
 
-#: inc/interactivity.php:259
+#: inc/interactivity.php:264
 msgid "Pause"
 msgstr ""
 
-#: inc/interactivity.php:268
+#: inc/interactivity.php:273
 msgid "Play"
 msgstr ""
 
