@@ -220,3 +220,23 @@ test( 'the cover template survives a post without a featured image', async ( {
 	await expect( page.locator( '.wp-block-cover img' ) ).toHaveCount( 0 );
 	expect( errors ).toEqual( [] );
 } );
+
+test( 'the marquee pauses and resumes from its button', async ( { page } ) => {
+	await page.goto( '/elements/' );
+	const marquee = page.locator( '.wp-block-group.is-style-marquee' ).first();
+	await marquee.scrollIntoViewIfNeeded();
+	const pause = marquee.getByRole( 'button', { name: 'Pause' } );
+	await expect( pause ).toBeVisible();
+	await pause.click();
+	await expect( marquee ).toHaveClass( /is-paused/ );
+	await page.mouse.move( 0, 0 );
+	expect(
+		await marquee
+			.locator( ':scope > .wp-block-group' )
+			.evaluate( ( el ) => getComputedStyle( el ).animationPlayState )
+	).toBe( 'paused' );
+	const play = marquee.getByRole( 'button', { name: 'Play' } );
+	await expect( play ).toBeVisible();
+	await play.click();
+	await expect( marquee ).not.toHaveClass( /is-paused/ );
+} );

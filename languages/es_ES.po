@@ -1403,3 +1403,11 @@ msgstr "Palmera"
 msgctxt "Style variation name"
 msgid "Slate"
 msgstr "Pizarra"
+
+#: inc/interactivity.php
+msgid "Pause"
+msgstr "Pausar"
+
+#: inc/interactivity.php
+msgid "Play"
+msgstr "Reproducir"

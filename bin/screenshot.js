@@ -3,13 +3,14 @@
  * Captures the showcase home page in every variation, the dental home in Coral and Clinic, and
  * six Coral pages from the seeded wp-env site: docs/review/m1-6-<name>.png at 1200 by 900 for
  * review, 600 by 450 JPEG tiles into the demo plugin's assets for the variations strip (they
- * count against the image budget), and screenshot.png (the showcase home in Coral).
+ * count against the image budget), and screenshot.png (the dental home in Coral, behind a short menu).
  *
- * Usage: node bin/screenshot.js   (wp-env running and seeded)
+ * Usage: node bin/screenshot.js [--screenshot-only]   (wp-env running and seeded)
+ *   --screenshot-only skips the review set and the tiles and writes screenshot.png alone.
  */
 import { chromium } from '@playwright/test';
 import { execSync } from 'node:child_process';
-import { copyFileSync, mkdirSync } from 'node:fs';
+import { mkdirSync } from 'node:fs';
 
 const BASE = process.env.WP_BASE_URL ?? 'http://localhost:8888';
 // Coral last: it is the demo default and must be the variation left applied.
@@ -31,6 +32,7 @@ const CORAL_PAGES = [
 ];
 const REVIEW = 'docs/review';
 const ASSETS = 'examples/keel-demo/assets';
+const ONLY_SCREENSHOT = process.argv.includes( '--screenshot-only' );
 
 mkdirSync( REVIEW, { recursive: true } );
 mkdirSync( `${ ASSETS }/variations`, { recursive: true } );
@@ -55,34 +57,57 @@ const capture = async ( url, review, asset ) => {
 	}
 	process.stdout.write( `${ review }${ asset ? ` ${ asset }` : '' }\n` );
 };
-for ( const slug of VARIATIONS ) {
-	apply( slug );
+if ( ! ONLY_SCREENSHOT ) {
+	for ( const slug of VARIATIONS ) {
+		apply( slug );
+		await capture(
+			`${ BASE }/`,
+			`${ REVIEW }/m1-6-${ slug }.png`,
+			`${ ASSETS }/variations/${ slug }.jpg`
+		);
+		if ( slug === 'clinic' ) {
+			await capture(
+				`${ BASE }/dental/`,
+				`${ REVIEW }/m1-6-dental-clinic.png`
+			);
+		}
+	}
+	// Coral again: its own tile did not exist yet when the loop reached it.
 	await capture(
 		`${ BASE }/`,
-		`${ REVIEW }/m1-6-${ slug }.png`,
-		`${ ASSETS }/variations/${ slug }.jpg`
+		`${ REVIEW }/m1-6-coral.png`,
+		`${ ASSETS }/variations/coral.jpg`
 	);
-	if ( slug === 'clinic' ) {
-		await capture(
-			`${ BASE }/dental/`,
-			`${ REVIEW }/m1-6-dental-clinic.png`
-		);
+	await capture(
+		`${ BASE }/dental/`,
+		`${ REVIEW }/m1-6-dental.png`,
+		`${ ASSETS }/dental.jpg`
+	);
+	for ( const [ path, name ] of CORAL_PAGES ) {
+		await capture( `${ BASE }${ path }`, `${ REVIEW }/m1-6-${ name }.png` );
 	}
 }
-// Coral again: its own tile did not exist yet when the loop reached it.
-await capture(
-	`${ BASE }/`,
-	`${ REVIEW }/m1-6-coral.png`,
-	`${ ASSETS }/variations/coral.jpg`
+// screenshot.png: the dental home, a page built only from shipped patterns, shown as a practice's
+// own site rather than the showcase (which reads as an advert, and the directory refuses those).
+// A short menu stands in for the showcase one (the header's navigation has no ref, so the most
+// recently published navigation post wins) and the practice is the site title; both are restored.
+const wp = ( args ) =>
+	execSync( `npx wp-env run cli wp ${ args }`, { stdio: 'pipe' } )
+		.toString()
+		.trim()
+		.split( '\n' )
+		.pop()
+		.trim();
+const title = wp( 'option get blogname' );
+const menu = wp(
+	'post create wp-content/themes/keel/tests/fixtures/screenshot-menu.html --post_type=wp_navigation --post_status=publish --post_title="Screenshot menu" --post_name=screenshot-menu --porcelain'
 );
-await capture(
-	`${ BASE }/dental/`,
-	`${ REVIEW }/m1-6-dental.png`,
-	`${ ASSETS }/dental.jpg`
-);
-for ( const [ path, name ] of CORAL_PAGES ) {
-	await capture( `${ BASE }${ path }`, `${ REVIEW }/m1-6-${ name }.png` );
+try {
+	wp( 'option update blogname "Bright Harbor Dental"' );
+	await capture( `${ BASE }/dental/`, 'screenshot.png' );
+	process.stdout.write( 'screenshot.png (dental home, Coral)\n' );
+} finally {
+	wp( `post delete ${ menu } --force` );
+	wp( `option update blogname "${ title }"` );
 }
-copyFileSync( `${ REVIEW }/m1-6-coral.png`, 'screenshot.png' );
-process.stdout.write( 'screenshot.png (showcase home, Coral)\n' );
 await browser.close();

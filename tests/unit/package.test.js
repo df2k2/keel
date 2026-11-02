@@ -14,7 +14,6 @@ const zipEntryNames = ( zipPath ) =>
 test( 'release file list excludes every dev path and includes build output', () => {
 	const files = releaseFiles( '.' );
 	for ( const bad of [
-		'src/',
 		'bin/',
 		'tests/',
 		'.github/',
@@ -40,6 +39,9 @@ test( 'release file list excludes every dev path and includes build output', () 
 		'functions.php',
 		'templates/index.html',
 		'build/css/keel.css',
+		// The directory requires the unminified originals beside every minified file.
+		'src/css/keel.css',
+		'src/js/header.js',
 		'styles/coral.json',
 		'patterns/hero-text.php',
 		'LICENSE',
@@ -48,6 +50,7 @@ test( 'release file list excludes every dev path and includes build output', () 
 	}
 	assert.deepEqual( files, [ ...files ].sort() );
 	assert.ok( EXCLUDED.includes( 'tests' ) );
+	assert.ok( ! EXCLUDED.includes( 'src' ) );
 } );
 
 test( 'zip contains keel/ prefix and the manifest', async () => {
@@ -59,11 +62,7 @@ test( 'zip contains keel/ prefix and the manifest', async () => {
 	const names = zipEntryNames( result.zipPath );
 	assert.ok( names.includes( 'keel/keel-manifest.json' ) );
 	assert.ok( names.includes( 'keel/style.css' ) );
-	assert.ok(
-		! names.some(
-			( n ) =>
-				n.startsWith( 'keel/src/' ) || n.startsWith( 'keel/tests/' )
-		)
-	);
+	assert.ok( names.includes( 'keel/src/css/keel.css' ) );
+	assert.ok( ! names.some( ( n ) => n.startsWith( 'keel/tests/' ) ) );
 	assert.ok( names.every( ( n ) => n.startsWith( 'keel/' ) ) );
 } );

@@ -5,4 +5,4 @@
  * @package Keel
  */
 
-define( 'KEEL_VERSION', '0.3.1' );
+define( 'KEEL_VERSION', '1.0.0' );

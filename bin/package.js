@@ -19,7 +19,6 @@ import { buildManifest } from './build-manifest.js';
 
 /** Directories and files that never ship. Dotfiles and dot-directories are excluded as well. */
 export const EXCLUDED = [
-	'src',
 	'bin',
 	'tests',
 	'examples',
