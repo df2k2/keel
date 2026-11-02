@@ -8,3 +8,6 @@ playwright-report/
 .lighthouseci/
 # Chrome profile directories Lighthouse writes under WSL
 C:*
+
+# Internal design notes stay out of the public repository
+docs/2026-10-27-keel-theme-design.md
