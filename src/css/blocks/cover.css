@@ -84,3 +84,11 @@
 	font-weight: 600;
 	text-decoration: none;
 }
+
+/* Right-to-left. Core pins a Cover's content position to the physical side (it sets direction: ltr on the block),
+   so "top left" stays left on an RTL site. Keel's own covers use the position to mean the start edge: the tag on
+   card media, the title on a tile, the post title over the cover header. These mirror; other covers follow core. */
+
+[dir="rtl"] .wp-block-cover:is( .keel-card__media, .keel-journal-card__media, .keel-place-hero, .keel-post-cover, .is-style-tile ) {
+	direction: rtl;
+}

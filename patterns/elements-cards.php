@@ -24,24 +24,24 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php echo Keel\Theme\element_label( 'keel/card-listing' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
 
-	<!-- wp:group {"layout":{"type":"constrained","contentSize":"24rem","justifyContent":"left"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"24rem","justifyContent":"left"}} -->
+	<div class="wp-block-group keel-justify-start">
 		<!-- wp:pattern {"slug":"keel/card-listing"} /-->
 	</div>
 	<!-- /wp:group -->
 
 	<?php echo Keel\Theme\element_label( 'keel/card-listing-amenities' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
 
-	<!-- wp:group {"layout":{"type":"constrained","contentSize":"24rem","justifyContent":"left"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"24rem","justifyContent":"left"}} -->
+	<div class="wp-block-group keel-justify-start">
 		<!-- wp:pattern {"slug":"keel/card-listing-amenities"} /-->
 	</div>
 	<!-- /wp:group -->
 
 	<?php echo Keel\Theme\element_label( 'keel/card-row (media-text .is-style-card)' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
 
-	<!-- wp:group {"layout":{"type":"constrained","contentSize":"44rem","justifyContent":"left"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"44rem","justifyContent":"left"}} -->
+	<div class="wp-block-group keel-justify-start">
 		<!-- wp:pattern {"slug":"keel/card-row"} /-->
 	</div>
 	<!-- /wp:group -->
@@ -52,16 +52,16 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php echo Keel\Theme\element_label( 'keel/mini-list' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
 
-	<!-- wp:group {"layout":{"type":"constrained","contentSize":"36rem","justifyContent":"left"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"36rem","justifyContent":"left"}} -->
+	<div class="wp-block-group keel-justify-start">
 		<!-- wp:pattern {"slug":"keel/mini-list"} /-->
 	</div>
 	<!-- /wp:group -->
 
 	<?php echo Keel\Theme\element_label( 'keel/ticket (group .is-style-ticket)' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
 
-	<!-- wp:group {"layout":{"type":"constrained","contentSize":"28rem","justifyContent":"left"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"28rem","justifyContent":"left"}} -->
+	<div class="wp-block-group keel-justify-start">
 		<!-- wp:pattern {"slug":"keel/ticket"} /-->
 	</div>
 	<!-- /wp:group -->

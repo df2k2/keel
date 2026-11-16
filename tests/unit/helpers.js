@@ -62,3 +62,35 @@ export function scanBuiltCss( dir ) {
 	}
 	return found;
 }
+
+const URL_PAYLOAD = /url\((?:"[^"]*"|'[^']*'|[^)]*)\)/g;
+const PHYSICAL =
+	/(?<![-\w])(?:(?:padding|margin|border)-(?:left|right)(?:-[a-z]+)*|left|right)\s*:|(?:text-align|float|clear)\s*:\s*(?:left|right)\b/g;
+
+/**
+ * Finds every left or right declaration in the CSS files under a directory. The sources are written
+ * with logical properties; a physical one in the build means a build step rewrote them, which pins
+ * the layout to left-to-right.
+ *
+ * @param {string} dir Directory to scan recursively.
+ * @return {string[]} The offending declarations, prefixed with their file path.
+ */
+export function scanPhysicalCss( dir ) {
+	const found = [];
+	if ( ! existsSync( dir ) ) {
+		throw new Error( `ENOENT ${ dir }` );
+	}
+	for ( const entry of readdirSync( dir ) ) {
+		const path = join( dir, entry );
+		if ( statSync( path ).isDirectory() ) {
+			found.push( ...scanPhysicalCss( path ) );
+		} else if ( path.endsWith( '.css' ) ) {
+			// Inline SVG payloads carry attributes that are not CSS declarations.
+			const css = read( path ).replace( URL_PAYLOAD, 'url()' );
+			for ( const match of css.matchAll( PHYSICAL ) ) {
+				found.push( `${ path }: ${ match[ 0 ] }` );
+			}
+		}
+	}
+	return found;
+}

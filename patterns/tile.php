@@ -14,8 +14,8 @@ defined( 'ABSPATH' ) || exit;
 
 $keel_image = get_theme_file_uri( 'assets/images/placeholder-portrait.svg' );
 ?>
-<!-- wp:group {"layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
-<div class="wp-block-group">
+<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"22rem","justifyContent":"left"}} -->
+<div class="wp-block-group keel-justify-start">
 	<!-- wp:cover {"url":"<?php echo esc_url( $keel_image ); ?>","dimRatio":0,"contentPosition":"bottom left","className":"is-style-tile","layout":{"type":"constrained"}} -->
 	<div class="wp-block-cover has-custom-content-position is-position-bottom-left is-style-tile"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( $keel_image ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
 		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->

@@ -371,3 +371,12 @@
 .wp-block-cover .keel-eyebrow {
 	color: inherit;
 }
+
+/* A constrained group justified left whose content should sit at the start edge. Core writes that justification
+   as physical margins (margin-left: 0), so on a right-to-left site the content stays on the left. The class
+   restates it with logical margins; both rules are !important, and this one is the more specific. */
+
+.keel-justify-start.is-layout-constrained > :where( :not( .alignleft ):not( .alignright ):not( .alignfull ) ) {
+	margin-inline: 0 auto !important;
+}
+

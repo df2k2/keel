@@ -32,8 +32,8 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php echo Keel\Theme\element_label( 'keel/map-card' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
 
-	<!-- wp:group {"layout":{"type":"constrained","contentSize":"40rem","justifyContent":"left"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"40rem","justifyContent":"left"}} -->
+	<div class="wp-block-group keel-justify-start">
 		<!-- wp:pattern {"slug":"keel/map-card"} /-->
 	</div>
 	<!-- /wp:group -->

@@ -32,8 +32,11 @@ add_filter(
 	}
 );
 
+// On after_setup_theme, not init: core reads the text direction when it first builds the style
+// registry, during block registration on init. Set any later, the page carries dir="rtl" but loads
+// the left-to-right core stylesheets, and the render is not the one an RTL site gets.
 add_action(
-	'init',
+	'after_setup_theme',
 	static function (): void {
 		if ( '1' === keel_test_switch( 'keel_rtl' ) && isset( $GLOBALS['wp_locale'] ) ) {
 			$GLOBALS['wp_locale']->text_direction = 'rtl';
