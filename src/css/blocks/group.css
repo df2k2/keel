@@ -66,6 +66,20 @@
 	border-start-end-radius: var( --wp--custom--radius--md );
 }
 
+/* A card whose post has no featured image. The media box then holds only the corner tag, which sits out of flow:
+   the box collapses and clips the tag away, while its link still takes keyboard focus. Without a photo the box
+   becomes an ordinary row of the card and the tag an ordinary chip in it. */
+
+.wp-block-group.is-style-card > .keel-card__media:not( :has( img ) ) {
+	inline-size: auto;
+	margin: 0;
+	overflow: visible;
+}
+
+.keel-card__media:not( :has( img ) ) > .keel-corner {
+	position: static;
+}
+
 /* Style: rail. A scroll-snap row; no buttons, the cards' own links are the keyboard path. */
 
 .wp-block-group.is-style-rail {
