@@ -240,3 +240,38 @@ test( 'the marquee pauses and resumes from its button', async ( { page } ) => {
 	await play.click();
 	await expect( marquee ).not.toHaveClass( /is-paused/ );
 } );
+
+test( 'full-width buttons in a vertical stack sit one under the other', async ( {
+	page,
+} ) => {
+	for ( const width of [ 360, 1280 ] ) {
+		await page.setViewportSize( { width, height: 844 } );
+		await page.goto( '/listings/harbor-view-inn/' );
+		const boxes = await page
+			.locator( '.wp-block-buttons.is-vertical' )
+			.first()
+			.locator( '.wp-block-button' )
+			.evaluateAll( ( buttons ) =>
+				buttons.map( ( button ) => {
+					const rect = button.getBoundingClientRect();
+					return {
+						top: rect.top,
+						bottom: rect.bottom,
+						left: rect.left,
+						right: rect.right,
+					};
+				} )
+			);
+		expect( boxes ).toHaveLength( 2 );
+		expect( boxes[ 1 ].top ).toBeGreaterThanOrEqual( boxes[ 0 ].bottom );
+		expect( Math.abs( boxes[ 1 ].left - boxes[ 0 ].left ) ).toBeLessThan(
+			1
+		);
+		expect( Math.abs( boxes[ 1 ].right - boxes[ 0 ].right ) ).toBeLessThan(
+			1
+		);
+		expect(
+			await page.evaluate( () => document.documentElement.scrollWidth )
+		).toBeLessThanOrEqual( width );
+	}
+} );

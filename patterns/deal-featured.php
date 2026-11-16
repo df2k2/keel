@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 $keel_image = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 ?>
 <!-- wp:media-text {"mediaType":"image","mediaWidth":45,"imageFill":true,"align":"wide","className":"is-style-card"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill-element is-style-card" style="grid-template-columns:45% auto"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url( $keel_image ); ?>" alt="" class="size-full"/></figure><div class="wp-block-media-text__content">
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill-element is-style-card" style="grid-template-columns:45% auto"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url( $keel_image ); ?>" alt="" style="object-position:50% 50%"/></figure><div class="wp-block-media-text__content">
 	<!-- wp:paragraph {"className":"keel-status keel-status--accent"} -->
 	<p class="keel-status keel-status--accent"><?php esc_html_e( 'This week only', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->

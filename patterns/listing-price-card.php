@@ -43,12 +43,12 @@ $keel_meta = array(
 
 	<!-- wp:buttons {"layout":{"type":"flex","orientation":"vertical"}} -->
 	<div class="wp-block-buttons">
-		<!-- wp:button {"width":100,"className":"is-style-icon-calendar"} -->
-		<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-icon-calendar"><a class="wp-block-button__link wp-element-button" href="#book"><?php esc_html_e( 'Check availability', 'keel' ); ?></a></div>
+		<!-- wp:button {"className":"is-style-icon-calendar","style":{"dimensions":{"width":"100%"}}} -->
+		<div class="wp-block-button is-style-icon-calendar"><a class="wp-block-button__link wp-element-button" href="#book"><?php esc_html_e( 'Check availability', 'keel' ); ?></a></div>
 		<!-- /wp:button -->
 
-		<!-- wp:button {"width":100,"className":"is-style-soft"} -->
-		<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-soft"><a class="wp-block-button__link wp-element-button" href="#message"><?php esc_html_e( 'Message the host', 'keel' ); ?></a></div>
+		<!-- wp:button {"className":"is-style-soft","style":{"dimensions":{"width":"100%"}}} -->
+		<div class="wp-block-button is-style-soft"><a class="wp-block-button__link wp-element-button" href="#message"><?php esc_html_e( 'Message the host', 'keel' ); ?></a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->

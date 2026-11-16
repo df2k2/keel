@@ -9,6 +9,14 @@
 	text-decoration: none;
 }
 
+/* A full-width button in a vertical stack. Core gives it a flex-basis of 100%, which is meant for rows: in a
+   column inside a Stack card it resolves against the stack's height and pushes the next button into a second
+   column, off the edge of a phone. */
+
+.wp-block-buttons.is-vertical > .wp-block-button.wp-block-button__width-100 {
+	flex-basis: auto;
+}
+
 /* Styles: glass and link, and the icon family (small, large, light, outline-light and soft are tokens in block-styles.php). */
 
 .wp-block-button.is-style-glass .wp-block-button__link {
