@@ -27,14 +27,13 @@ $keel_days = array(
 	<!-- wp:accordion {"className":"is-style-faq keel-itinerary"} -->
 	<div role="group" class="wp-block-accordion is-style-faq keel-itinerary">
 		<?php foreach ( $keel_days as $keel_i => $keel_day ) : ?>
-			<?php $keel_open = 0 === $keel_i ? '{"openByDefault":true} ' : ''; ?>
-		<!-- wp:accordion-item <?php echo $keel_open; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static JSON, no user input. ?>-->
-		<div class="wp-block-accordion-item<?php echo 0 === $keel_i ? ' is-open' : ''; ?>">
-		<!-- wp:accordion-heading <?php echo $keel_open; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static JSON, no user input. ?>-->
+		<!-- wp:accordion-item <?php echo 0 === $keel_i ? wp_json_encode( array( 'openByDefault' => true ) ) . ' ' : ''; ?>-->
+		<div class="wp-block-accordion-item<?php echo esc_attr( 0 === $keel_i ? ' is-open' : '' ); ?>">
+		<!-- wp:accordion-heading <?php echo 0 === $keel_i ? wp_json_encode( array( 'openByDefault' => true ) ) . ' ' : ''; ?>-->
 		<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><span class="keel-day"><?php echo esc_html( $keel_day[0] ); ?></span> <?php echo esc_html( $keel_day[1] ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 		<!-- /wp:accordion-heading -->
 
-		<!-- wp:accordion-panel <?php echo $keel_open; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static JSON, no user input. ?>-->
+		<!-- wp:accordion-panel <?php echo 0 === $keel_i ? wp_json_encode( array( 'openByDefault' => true ) ) . ' ' : ''; ?>-->
 		<div role="region" class="wp-block-accordion-panel">
 		<!-- wp:paragraph -->
 		<p><?php echo esc_html( $keel_day[2] ); ?></p>

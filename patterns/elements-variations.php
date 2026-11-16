@@ -27,7 +27,7 @@ $keel_variations = Keel\Theme\style_variations();
 	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
 	<div class="wp-block-group">
 		<!-- wp:paragraph -->
-		<p><strong><?php echo esc_html( $keel_variation['title'] ); ?></strong><?php echo Keel\Theme\is_active_palette( $keel_variation['palette'] ) ? ' <span class="keel-chip">' . esc_html__( 'active', 'keel' ) . '</span>' : ''; ?></p>
+		<p><strong><?php echo esc_html( $keel_variation['title'] ); ?></strong><?php echo wp_kses_post( Keel\Theme\is_active_palette( $keel_variation['palette'] ) ? ' <span class="keel-chip">' . __( 'active', 'keel' ) . '</span>' : '' ); ?></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->

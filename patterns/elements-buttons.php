@@ -37,7 +37,7 @@ $keel_buttons = array(
 		<div class="wp-block-group">
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
-				<!-- wp:button <?php echo '' !== $keel_button[0] ? '{"className":"' . esc_attr( $keel_button[0] ) . '"} ' : ''; ?>-->
+				<!-- wp:button <?php echo '' !== $keel_button[0] ? wp_json_encode( array( 'className' => $keel_button[0] ) ) . ' ' : ''; ?>-->
 				<div class="wp-block-button <?php echo esc_attr( $keel_button[0] ); ?>"><a class="wp-block-button__link wp-element-button" href="#buttons"><?php echo esc_html( $keel_button[1] ); ?></a></div>
 				<!-- /wp:button -->
 			</div>

@@ -61,13 +61,13 @@ $keel_sample   = __( 'Clear prices, honest advice, work that lasts', 'keel' );
 	<p class="has-display-font-family has-display-font-size" style="font-weight:600;line-height:1.1;letter-spacing:-0.015em"><?php esc_html_e( 'Display and heading one (shown as a paragraph: this page already has its h1)', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 	<?php for ( $keel_level = 2; $keel_level <= 6; $keel_level++ ) : ?>
-	<!-- wp:heading {"level":<?php echo (int) $keel_level; ?>} -->
-	<h<?php echo (int) $keel_level; ?> class="wp-block-heading">
+	<!-- wp:heading {"level":<?php echo esc_html( (string) $keel_level ); ?>} -->
+	<h<?php echo esc_html( (string) $keel_level ); ?> class="wp-block-heading">
 		<?php
 		/* translators: %d: heading level from 2 to 6. */
 		echo esc_html( sprintf( __( 'Heading level %d', 'keel' ), $keel_level ) );
 		?>
-	</h<?php echo (int) $keel_level; ?>>
+	</h<?php echo esc_html( (string) $keel_level ); ?>>
 	<!-- /wp:heading -->
 	<?php endfor; ?>
 

@@ -225,7 +225,7 @@ if ( 4 !== substr_count( $keel_faq, '<details' ) || 4 !== substr_count( $keel_fa
 	WP_CLI::error( 'keel/faq must render four details elements named keel-faq.' );
 }
 $keel_accordion = do_blocks( '<!-- wp:pattern {"slug":"keel/faq-accordion"} /-->' );
-if ( 4 !== substr_count( $keel_accordion, 'class="wp-block-accordion-item ' ) || 1 !== substr_count( $keel_accordion, ' is-open"' ) ) {
+if ( 4 !== substr_count( $keel_accordion, 'class="wp-block-accordion-item ' ) || 1 !== preg_match_all( '/class="wp-block-accordion-item (?:[^"]* )?is-open[ "]/', $keel_accordion ) ) {
 	WP_CLI::error( 'keel/faq-accordion must render four accordion items with exactly the first one open.' );
 }
 $keel_gallery = do_blocks( '<!-- wp:pattern {"slug":"keel/gallery"} /-->' );

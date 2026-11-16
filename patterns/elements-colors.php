@@ -59,7 +59,7 @@ $keel_pairs   = Keel\Theme\contrast_pairs();
 			? Keel\Theme\contrast_ratio( $keel_palette[ $keel_pair['fg'] ]['color'], $keel_palette[ $keel_pair['bg'] ]['color'] )
 			: 0.0;
 		?>
-	<tr><td><?php echo esc_html( $keel_pair['fg'] ); ?></td><td><?php echo esc_html( $keel_pair['bg'] ); ?></td><td><?php echo esc_html( number_format_i18n( $keel_ratio, 2 ) ); ?></td><td><?php echo esc_html( number_format_i18n( $keel_pair['min'], 1 ) ); ?></td><td><?php echo $keel_ratio >= $keel_pair['min'] ? esc_html__( 'Pass', 'keel' ) : esc_html__( 'Fail', 'keel' ); ?></td></tr>
+	<tr><td><?php echo esc_html( $keel_pair['fg'] ); ?></td><td><?php echo esc_html( $keel_pair['bg'] ); ?></td><td><?php echo esc_html( number_format_i18n( $keel_ratio, 2 ) ); ?></td><td><?php echo esc_html( number_format_i18n( $keel_pair['min'], 1 ) ); ?></td><td><?php echo esc_html( $keel_ratio >= $keel_pair['min'] ? __( 'Pass', 'keel' ) : __( 'Fail', 'keel' ) ); ?></td></tr>
 	<?php endforeach; ?>
 	</tbody></table></figure>
 	<!-- /wp:table -->
