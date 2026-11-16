@@ -42,7 +42,7 @@
 	break-inside: avoid;
 }
 
-/* Style: crosses (the checkmarks shape with an X in the error colour, for "not included" lists). */
+/* Style: crosses (the checkmarks shape with an X in the error color, for "not included" lists). */
 
 .wp-block-list.is-style-crosses {
 	padding-inline-start: 0;

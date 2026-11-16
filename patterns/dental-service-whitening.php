@@ -20,13 +20,13 @@ $keel_image  = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 $keel_steps  = array(
 	array( __( 'Before', 'keel' ), __( 'A hygiene visit first so the gel reaches clean enamel, then a shade check and photos so you can see the change.', 'keel' ) ),
 	array( __( 'During', 'keel' ), __( 'About an hour in the chair. Gums are protected, the gel goes on in three short rounds, and you can pause at any time.', 'keel' ) ),
-	array( __( 'After', 'keel' ), __( 'Custom trays and gel to top up at home. Avoid dark drinks for 48 hours; most people keep the result for two years.', 'keel' ) ),
+	array( __( 'After', 'keel' ), __( 'Custom trays and gel to touch up at home. Avoid dark drinks for 48 hours; most people keep the result for two years.', 'keel' ) ),
 );
 $keel_prices = array(
 	array( __( 'Whitening consultation', 'keel' ), __( 'free', 'keel' ) ),
 	array( __( 'In-chair whitening with trays', 'keel' ), '$390' ),
 	array( __( 'Take-home trays only', 'keel' ), '$220' ),
-	array( __( 'Top-up gel (4 syringes)', 'keel' ), '$60' ),
+	array( __( 'Touch-up gel (4 syringes)', 'keel' ), '$60' ),
 );
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
@@ -89,7 +89,7 @@ $keel_prices = array(
 				<li><?php esc_html_e( 'Staining from coffee, tea, wine or smoking', 'keel' ); ?></li>
 				<!-- /wp:list-item -->
 				<!-- wp:list-item -->
-				<li><?php esc_html_e( 'A wedding, interview or photo day in the diary', 'keel' ); ?></li>
+				<li><?php esc_html_e( 'A wedding, interview or photo day on the calendar', 'keel' ); ?></li>
 				<!-- /wp:list-item -->
 				<!-- wp:list-item -->
 				<li><?php esc_html_e( 'Teeth that have darkened with age', 'keel' ); ?></li>

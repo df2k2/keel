@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"className":"is-style-lead"} -->
-	<p class="is-style-lead"><?php esc_html_e( 'Offers from the businesses in the guide. We list them; they honour them.', 'keel' ); ?></p>
+	<p class="is-style-lead"><?php esc_html_e( 'Offers from the businesses in the guide. We list them; they honor them.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

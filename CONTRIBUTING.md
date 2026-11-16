@@ -54,7 +54,7 @@ Families `body`, `display` and `serif` are roles, so patterns never name a typef
 Figtree in every variation; `display` is Bricolage Grotesque in Harbor, Slate and Night, Fraunces
 in Coral and Palm, and Figtree in Clinic and Contrast; `serif` is Fraunces everywhere, so a child
 theme or a pattern can reach it without redeclaring font files (the heading `accent` style sets an
-emphasised phrase in it). Every variation lists all three families, because a variation's list
+emphasized phrase in it). Every variation lists all three families, because a variation's list
 replaces the theme's. All three are OFL fonts, subset to Latin from a pinned google/fonts commit by
 `npm run build:fonts` and shipped under `assets/fonts/` with Capsize-generated `size-adjust`
 fallbacks (Arial for the sans faces, Georgia for Fraunces); Fraunces italic is a static weight-400
@@ -126,7 +126,7 @@ migrate a child theme or a vertical pack).
 `contrast_ratio()`, `active_font_families()`, `style_variations()`, `block_style_sample()`, which
 returns the sample markup for one registered block style, and `element_label()`, the small mono
 label that names an element's class, style or pattern. Add a sample when you add a style and the
-block-styles section shows it; add a labelled entry to the matching `elements-*` section when you
+block-styles section shows it; add a labeled entry to the matching `elements-*` section when you
 add a pattern or a utility, so the page keeps naming everything the theme ships. The demo appends
 its kitchen sink to the page as the "Every core block" section.
 

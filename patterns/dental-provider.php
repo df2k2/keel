@@ -22,7 +22,7 @@ $keel_schedule = array(
 	array( __( 'Tuesday', 'keel' ), __( '11 am to 7 pm', 'keel' ) ),
 	array( __( 'Wednesday', 'keel' ), __( '7 am to 3 pm', 'keel' ) ),
 	array( __( 'Thursday', 'keel' ), __( '11 am to 7 pm', 'keel' ) ),
-	array( __( 'Saturday', 'keel' ), __( '8 am to 1 pm, alternate weeks', 'keel' ) ),
+	array( __( 'Saturday', 'keel' ), __( '8 am to 1 pm, every other week', 'keel' ) ),
 );
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
@@ -76,7 +76,7 @@ $keel_schedule = array(
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'Sofia qualified in 2008, spent a year in a hospital emergency department and opened Bright Harbor in 2009 with one chair and a promise: nobody leaves in pain, and nobody is sold treatment they do not need. She still takes the 7 am appointments.', 'keel' ); ?></p>
+	<p><?php esc_html_e( 'Sofia graduated from dental school in 2008, spent a year in a hospital emergency department and opened Bright Harbor in 2009 with one chair and a promise: nobody leaves in pain, and nobody is sold treatment they do not need. She still takes the 7 am appointments.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:heading -->
@@ -86,7 +86,7 @@ $keel_schedule = array(
 	<!-- wp:list {"className":"is-style-two-column"} -->
 	<ul class="wp-block-list is-style-two-column">
 		<!-- wp:list-item -->
-		<li><?php esc_html_e( 'Check-ups and hygiene', 'keel' ); ?></li>
+		<li><?php esc_html_e( 'Checkups and hygiene', 'keel' ); ?></li>
 		<!-- /wp:list-item -->
 
 		<!-- wp:list-item -->

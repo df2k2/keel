@@ -226,7 +226,7 @@
 	}
 }
 
-/* Mobile CTA bar icons (single-colour masks that follow the button text colour). */
+/* Mobile CTA bar icons (single-color masks that follow the button text color). */
 
 .keel-cta-call .wp-block-button__link::before {
 	mask-image: url( ../../assets/icons/phone.svg );

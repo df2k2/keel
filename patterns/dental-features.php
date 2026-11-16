@@ -17,7 +17,7 @@ $keel_features = array(
 	array( 'clock', __( 'Early, late and Saturday', 'keel' ), __( 'Appointments from 7 am, until 7 pm on Tuesdays and Thursdays, and Saturday mornings.', 'keel' ) ),
 	array( 'message', __( 'Nervous patients welcome', 'keel' ), __( 'A quiet room, numbing gel before every injection and a stop signal you choose.', 'keel' ) ),
 	array( 'calendar', __( '0% payment plans', 'keel' ), __( 'Spread any treatment over 6 to 24 months with no interest and no deposit.', 'keel' ) ),
-	array( 'shield', __( '40+ insurers accepted', 'keel' ), __( 'We check your cover before the visit and bill your insurer directly.', 'keel' ) ),
+	array( 'shield', __( '40+ insurers accepted', 'keel' ), __( 'We check your coverage before the visit and bill your insurer directly.', 'keel' ) ),
 );
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->

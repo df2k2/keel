@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'Small labels and the price formats. Chips are quiet, badges carry colour, tags sit on photos, status labels say what is left.', 'keel' ); ?></p>
+	<p><?php esc_html_e( 'Small labels and the price formats. Chips are quiet, badges carry color, tags sit on photos, status labels say what is left.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<?php echo Keel\Theme\element_label( '.keel-chip, .keel-badge' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>

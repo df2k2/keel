@@ -23,7 +23,7 @@
 	min-block-size: 2.75rem;
 }
 
-/* Style: highlight (one menu item as a pill in the primary colour). */
+/* Style: highlight (one menu item as a pill in the primary color). */
 
 .wp-block-navigation-item.is-style-highlight > .wp-block-navigation-item__content {
 	padding-inline: var( --wp--preset--spacing--30 );

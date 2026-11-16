@@ -22,7 +22,7 @@ $keel_logo = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","fontSize":"sm"} -->
-	<p class="has-text-align-center has-sm-font-size"><?php esc_html_e( 'Send us your plan details when you book and we confirm your cover before the visit.', 'keel' ); ?></p>
+	<p class="has-text-align-center has-sm-font-size"><?php esc_html_e( 'Send us your plan details when you book and we confirm your coverage before the visit.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center","verticalAlignment":"center"}} -->

@@ -43,7 +43,7 @@
 	text-underline-offset: 0.15em;
 }
 
-/* Icon buttons: a mask icon beside the label that follows the text colour. */
+/* Icon buttons: a mask icon beside the label that follows the text color. */
 
 .wp-block-button[class*="is-style-icon-"] .wp-block-button__link {
 	gap: 0.5em;

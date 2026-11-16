@@ -13,8 +13,8 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_buttons = array(
-	array( '', __( 'Default', 'keel' ), __( 'Primary fill. Hover and active darken the fill toward the contrast colour; focus shows the two-tone ring.', 'keel' ) ),
-	array( 'is-style-outline', __( 'Outline (core)', 'keel' ), __( 'Core style: a border in the current text colour and no fill.', 'keel' ) ),
+	array( '', __( 'Default', 'keel' ), __( 'Primary fill. Hover and active darken the fill toward the contrast color; focus shows the two-tone ring.', 'keel' ) ),
+	array( 'is-style-outline', __( 'Outline (core)', 'keel' ), __( 'Core style: a border in the current text color and no fill.', 'keel' ) ),
 	array( 'is-style-secondary', __( 'Secondary', 'keel' ), __( 'Accent fill for the second action on a page.', 'keel' ) ),
 	array( 'is-style-ghost', __( 'Ghost', 'keel' ), __( 'Primary text and border on a transparent background, for quiet actions.', 'keel' ) ),
 	array( 'is-style-pill', __( 'Pill', 'keel' ), __( 'The default button with the pill radius.', 'keel' ) ),

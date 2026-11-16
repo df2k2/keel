@@ -13,9 +13,9 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_tickets = array(
-	array( '14', __( 'Saturday 14 March, 7 pm', 'keel' ), __( 'Harbor night market', 'keel' ), __( 'Riverside green · Free entry, tickets for the tastings', 'keel' ), __( 'From', 'keel' ), '$12' ),
-	array( '21', __( 'Saturday 21 March, 6 am', 'keel' ), __( 'Sunrise regatta', 'keel' ), __( 'North beach · Watch from the pier for free', 'keel' ), __( 'Entry', 'keel' ), '$40' ),
-	array( '28', __( 'Saturday 28 March, 10 am', 'keel' ), __( 'Old town walking tour', 'keel' ), __( 'Meets at the clock tower · Ninety minutes', 'keel' ), __( 'Per person', 'keel' ), '$15' ),
+	array( '14', __( 'Saturday, March 14, 7 pm', 'keel' ), __( 'Harbor night market', 'keel' ), __( 'Riverside green · Free admission, tickets for the tastings', 'keel' ), __( 'From', 'keel' ), '$12' ),
+	array( '21', __( 'Saturday, March 21, 6 am', 'keel' ), __( 'Sunrise regatta', 'keel' ), __( 'North beach · Watch from the pier for free', 'keel' ), __( 'Admission', 'keel' ), '$40' ),
+	array( '28', __( 'Saturday, March 28, 10 am', 'keel' ), __( 'Old town walking tour', 'keel' ), __( 'Meets at the clock tower · Ninety minutes', 'keel' ), __( 'Per person', 'keel' ), '$15' ),
 );
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->

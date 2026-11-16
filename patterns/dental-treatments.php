@@ -14,7 +14,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_treatments = array(
-	array( 'check', '#check-ups', __( 'Check-up and hygiene', 'keel' ), __( 'A full examination, x-rays if needed and a professional clean, in one visit.', 'keel' ), '$85' ),
+	array( 'check', '#check-ups', __( 'Checkup and hygiene', 'keel' ), __( 'A full examination, x-rays if needed and a professional cleaning, in one visit.', 'keel' ), '$85' ),
 	array( 'star', '#whitening', __( 'Teeth whitening', 'keel' ), __( 'In-chair whitening with take-home trays, two to eight shades lighter.', 'keel' ), '$390' ),
 	array( 'shield', '#implants', __( 'Dental implants', 'keel' ), __( 'A permanent replacement tooth, placed by our surgeon and finished in-house.', 'keel' ), '$2,400' ),
 	array( 'calendar', '#aligners', __( 'Clear aligners', 'keel' ), __( 'Nearly invisible straightening, checked every six weeks, typically 6 to 14 months.', 'keel' ), '$2,900' ),

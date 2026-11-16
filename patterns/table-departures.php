@@ -13,10 +13,10 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_rows = array(
-	array( __( 'Sat 14 Mar', 'keel' ), __( 'Harbor to the islands', 'keel' ), 'success', __( 'Guaranteed', 'keel' ), '$48' ),
-	array( __( 'Sun 15 Mar', 'keel' ), __( 'Sunrise reef run', 'keel' ), 'warning', __( '3 seats left', 'keel' ), '$65' ),
-	array( __( 'Sat 21 Mar', 'keel' ), __( 'River bend by kayak', 'keel' ), '', __( 'New', 'keel' ), '$40' ),
-	array( __( 'Sun 22 Mar', 'keel' ), __( 'Old town walk', 'keel' ), 'success', __( 'Guaranteed', 'keel' ), '$15' ),
+	array( __( 'Sat, Mar 14', 'keel' ), __( 'Harbor to the islands', 'keel' ), 'success', __( 'Guaranteed', 'keel' ), '$48' ),
+	array( __( 'Sun, Mar 15', 'keel' ), __( 'Sunrise reef run', 'keel' ), 'warning', __( '3 seats left', 'keel' ), '$65' ),
+	array( __( 'Sat, Mar 21', 'keel' ), __( 'River bend by kayak', 'keel' ), '', __( 'New', 'keel' ), '$40' ),
+	array( __( 'Sun, Mar 22', 'keel' ), __( 'Old town walk', 'keel' ), 'success', __( 'Guaranteed', 'keel' ), '$15' ),
 );
 ?>
 <!-- wp:table {"className":"is-style-striped"} -->

@@ -25,7 +25,7 @@ $keel_map = get_theme_file_uri( 'assets/images/placeholder-map.svg' );
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"className":"is-style-lead"} -->
-	<p class="is-style-lead"><?php esc_html_e( 'Call, book online or send a message. A person answers the phone during opening hours, and messages are answered within one working day.', 'keel' ); ?></p>
+	<p class="is-style-lead"><?php esc_html_e( 'Call, book online or send a message. A person answers the phone during office hours, and messages are answered within one business day.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:columns {"align":"wide"} -->
@@ -45,7 +45,7 @@ $keel_map = get_theme_file_uri( 'assets/images/placeholder-map.svg' );
 			<!-- /wp:group -->
 
 			<!-- wp:image {"lightbox":{"enabled":false},"sizeSlug":"full","className":"is-style-framed"} -->
-			<figure class="wp-block-image size-full is-style-framed"><img src="<?php echo esc_url( $keel_map ); ?>" alt="<?php esc_attr_e( 'Map placeholder: 123 Harbor Street, Suite 4, Stuart, Florida', 'keel' ); ?>"/><figcaption class="wp-element-caption"><?php esc_html_e( 'Free parking behind the building. The entrance is level, with a ramp from the car park.', 'keel' ); ?></figcaption></figure>
+			<figure class="wp-block-image size-full is-style-framed"><img src="<?php echo esc_url( $keel_map ); ?>" alt="<?php esc_attr_e( 'Map placeholder: 123 Harbor Street, Suite 4, Stuart, Florida', 'keel' ); ?>"/><figcaption class="wp-element-caption"><?php esc_html_e( 'Free parking behind the building. The entrance is level, with a ramp from the parking lot.', 'keel' ); ?></figcaption></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

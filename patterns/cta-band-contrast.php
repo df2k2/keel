@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","fontSize":"lg"} -->
-	<p class="has-text-align-center has-lg-font-size"><?php esc_html_e( 'Talk to a real person. No call centres, no bots.', 'keel' ); ?></p>
+	<p class="has-text-align-center has-lg-font-size"><?php esc_html_e( 'Talk to a real person. No call centers, no bots.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->

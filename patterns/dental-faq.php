@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 
 $keel_questions = array(
 	array( __( 'I am scared of the dentist. What do you do differently?', 'keel' ), __( 'You choose a stop signal before we begin, every injection is preceded by numbing gel, and we book extra time so nothing is rushed. Many patients also bring headphones.', 'keel' ) ),
-	array( __( 'Do you take my insurance?', 'keel' ), __( 'We work with more than forty insurers and bill them directly. Send your plan details when you book and we confirm your cover before the visit.', 'keel' ) ),
+	array( __( 'Do you take my insurance?', 'keel' ), __( 'We work with more than forty insurers and bill them directly. Send your plan details when you book and we confirm your coverage before the visit.', 'keel' ) ),
 	array( __( 'How do the 0% plans work?', 'keel' ), __( 'Any treatment over $300 can be spread over 6 to 24 months with no interest, no deposit and no fees, subject to a quick approval at the desk.', 'keel' ) ),
 	array( __( 'What counts as an emergency?', 'keel' ), __( 'Pain that keeps you awake, a broken or knocked-out tooth, swelling, or a lost crown or filling. Call before noon and you are seen the same day.', 'keel' ) ),
 );

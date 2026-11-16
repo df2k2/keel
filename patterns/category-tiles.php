@@ -13,7 +13,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_tiles = array(
-	array( 'check', __( 'Check-ups', 'keel' ), '#services' ),
+	array( 'check', __( 'Checkups', 'keel' ), '#services' ),
 	array( 'shield', __( 'Protection', 'keel' ), '#plans' ),
 	array( 'clock', __( 'Same day', 'keel' ), '#urgent' ),
 	array( 'star', __( 'Premium', 'keel' ), '#premium' ),

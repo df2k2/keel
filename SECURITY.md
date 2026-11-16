@@ -5,7 +5,7 @@ vulnerability reporting form at https://github.com/df2k2/keel/security/advisorie
 open a public issue for a security problem.
 
 - We acknowledge every report within 72 hours.
-- High and critical issues are fixed within 30 days of acknowledgement, usually sooner.
+- High and critical issues are fixed within 30 days of acknowledgment, usually sooner.
 - Disclosure is coordinated with the reporter; we credit reporters who want credit.
 - Security fixes are called out in `CHANGELOG.md` and in release notes.
 

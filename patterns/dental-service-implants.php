@@ -19,8 +19,8 @@ defined( 'ABSPATH' ) || exit;
 $keel_image  = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 $keel_steps  = array(
 	array( __( 'Before', 'keel' ), __( 'A 3D scan and a free consultation. You get a written plan with the full price and the timeline before anything is booked.', 'keel' ) ),
-	array( __( 'During', 'keel' ), __( 'Placing the root takes about forty minutes under local anaesthetic, with sedation available. Most people are back at work the next day.', 'keel' ) ),
-	array( __( 'After', 'keel' ), __( 'The root heals for three months, then the crown is fitted in one visit. Reviews at two weeks and one year are included.', 'keel' ) ),
+	array( __( 'During', 'keel' ), __( 'Placing the root takes about forty minutes under local anesthetic, with sedation available. Most people are back at work the next day.', 'keel' ) ),
+	array( __( 'After', 'keel' ), __( 'The root heals for three months, then the crown is fitted in one visit. Follow-up visits at two weeks and one year are included.', 'keel' ) ),
 );
 $keel_prices = array(
 	array( __( 'Implant consultation with 3D scan', 'keel' ), __( 'free', 'keel' ) ),

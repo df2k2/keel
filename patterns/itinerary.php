@@ -13,7 +13,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_days = array(
-	array( '1', __( 'Day 1: Arrive and settle in', 'keel' ), __( 'Check in, walk the harbour front and eat early at the fish counter before the crowd.', 'keel' ), array( __( 'Harbour walk at golden hour', 'keel' ), __( 'Dinner at the Boathouse Kitchen', 'keel' ), __( 'Tide check for tomorrow', 'keel' ) ) ),
+	array( '1', __( 'Day 1: Arrive and settle in', 'keel' ), __( 'Check in, walk the harbor front and eat early at the fish counter before the crowd.', 'keel' ), array( __( 'Harbor walk at golden hour', 'keel' ), __( 'Dinner at the Boathouse Kitchen', 'keel' ), __( 'Tide check for tomorrow', 'keel' ) ) ),
 	array( '2', __( 'Day 2: On the water', 'keel' ), __( 'A sunrise paddle, a long lunch and the sandbar at low tide.', 'keel' ), array( __( 'Sunrise paddle on the inlet', 'keel' ), __( 'Low tide at the sandbar', 'keel' ), __( 'Sunset from the pier', 'keel' ) ) ),
 	array( '3', __( 'Day 3: Old town and home', 'keel' ), __( 'Coffee in the old town, the Saturday market and one last swim.', 'keel' ), array( __( 'The Saturday market', 'keel' ), __( 'Old town walking tour', 'keel' ), __( 'A last swim at Harbor Point Beach', 'keel' ) ) ),
 );

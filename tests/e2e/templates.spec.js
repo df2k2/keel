@@ -43,7 +43,7 @@ const PAGES = [
 	[ '/a-day-on-the-water/', 200, true ],
 	[ '/the-quiet-season/', 200, true ],
 	[ '/what-the-tide-tables-say/', 200, true ],
-	[ '/one-line-from-the-harbourmaster/', 200, true ],
+	[ '/one-line-from-the-harbormaster/', 200, true ],
 	[ '/author/admin/', 200, true ],
 ];
 
@@ -97,7 +97,7 @@ test( 'header becomes solid after scrolling and transparent only over a cover', 
 	await page.evaluate( () => window.scrollTo( 0, 400 ) );
 	await expect( header ).toHaveClass( /is-scrolled/ );
 	await page.goto( '/transparent-plain/' );
-	// The solid header is the base colour of whichever variation is applied.
+	// The solid header is the base color of whichever variation is applied.
 	const base = await page.evaluate( () => {
 		const probe = document.createElement( 'div' );
 		probe.style.backgroundColor = getComputedStyle(
@@ -203,7 +203,7 @@ test( 'format labels appear only on formatted posts', async ( { page } ) => {
 	await expect(
 		page.locator( '.wp-block-post-terms a[href*="/type/"]' )
 	).toHaveCount( 0 );
-	await page.goto( '/one-line-from-the-harbourmaster/' );
+	await page.goto( '/one-line-from-the-harbormaster/' );
 	const label = page.locator( '.wp-block-post-terms a[href*="/type/"]' );
 	await expect( label ).toHaveCount( 1 );
 	await expect( label ).toHaveText( 'Quote' );

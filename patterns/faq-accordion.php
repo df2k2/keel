@@ -16,7 +16,7 @@ $keel_questions = array(
 	array( __( 'Do you charge for estimates?', 'keel' ), __( 'No. Every visit starts with a free inspection and a written quote, and you decide before any work begins.', 'keel' ) ),
 	array( __( 'Can I pay monthly?', 'keel' ), __( 'Yes. Plans from 6 to 24 months at 0% interest are available on most work, subject to approval.', 'keel' ) ),
 	array( __( 'How soon can you come out?', 'keel' ), __( 'Most jobs are scheduled within the week, and same-day slots are held every morning for urgent calls.', 'keel' ) ),
-	array( __( 'What if something goes wrong afterwards?', 'keel' ), __( 'Call us. Every job is guaranteed in writing, and a return visit under the guarantee costs nothing.', 'keel' ) ),
+	array( __( 'What if something goes wrong afterward?', 'keel' ), __( 'Call us. Every job is guaranteed in writing, and a return visit under the guarantee costs nothing.', 'keel' ) ),
 );
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"48rem"}} -->

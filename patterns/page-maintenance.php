@@ -9,7 +9,7 @@
  * Template Types: page
  * Post Types: page
  * Block Types: core/post-content
- * Description: A maintenance page for the Page without title template: a centred panel with a subscribe row.
+ * Description: A maintenance page for the Page without title template: a centered panel with a subscribe row.
  *
  * @package Keel
  */

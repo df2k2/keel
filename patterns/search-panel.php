@@ -14,8 +14,8 @@ defined( 'ABSPATH' ) || exit;
 
 $keel_tabs = array(
 	array( __( 'Places', 'keel' ), __( 'Where to?', 'keel' ), array( __( 'All', 'keel' ), __( 'Beaches', 'keel' ), __( 'Trails', 'keel' ), __( 'Museums', 'keel' ) ) ),
-	array( __( 'Stays', 'keel' ), __( 'Town or neighbourhood', 'keel' ), array( __( 'All', 'keel' ), __( 'Hotels', 'keel' ), __( 'Rentals', 'keel' ), __( 'Camping', 'keel' ) ) ),
-	array( __( 'Events', 'keel' ), __( 'What is on?', 'keel' ), array( __( 'All', 'keel' ), __( 'This weekend', 'keel' ), __( 'Markets', 'keel' ), __( 'Music', 'keel' ) ) ),
+	array( __( 'Stays', 'keel' ), __( 'Town or neighborhood', 'keel' ), array( __( 'All', 'keel' ), __( 'Hotels', 'keel' ), __( 'Rentals', 'keel' ), __( 'Camping', 'keel' ) ) ),
+	array( __( 'Events', 'keel' ), __( 'What is happening?', 'keel' ), array( __( 'All', 'keel' ), __( 'This weekend', 'keel' ), __( 'Markets', 'keel' ), __( 'Music', 'keel' ) ) ),
 );
 ?>
 <!-- wp:group {"className":"keel-search-panel is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->

@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 	<h1 class="wp-block-heading is-style-accent has-xxxl-font-size">
 	<?php
 	/* translators: 1: opening em tag, 2: closing em tag. */
-	printf( esc_html__( 'What is %1$son%2$s', 'keel' ), '<em>', '</em>' );
+	printf( esc_html__( 'What is %1$shappening%2$s', 'keel' ), '<em>', '</em>' );
 	?>
 	</h1>
 	<!-- /wp:heading -->

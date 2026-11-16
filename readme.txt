@@ -68,6 +68,7 @@ keel-manifest.json, at the root of the zip, lists the SHA-256 hash of every file
 * Theme directory review: the portfolio tag is removed; the Feather icons ship their full MIT license in assets/icons/LICENSE-feather.txt; the theme declares custom-logo support; every pattern output passes through an escaping function; this readme gains build instructions; the zip no longer carries the font digest list.
 * Right-to-left: the built CSS keeps its logical properties (the build had been rewriting them to left and right), so layouts mirror; card tags, tiles, the cover post header and start-aligned groups mirror too.
 * Accessibility: a visible focus ring on search fields with the button inside and on card photos; dismissing the announcement bar moves focus to the next control; the floating buttons no longer cover a focused footer link; a card without a featured image shows its tag.
+* American English throughout: spelling, dates with the month first, and wording in every pattern, label and document. Ninety-two source strings change, and the Spanish translation follows them.
 * Fixes: full-width buttons in a vertical stack sit one under the other (the listing price card overflowed a phone); seventy blocks in twenty-nine patterns and one template no longer show the editor's invalid-content warning.
 
 = 1.0.0 =

@@ -11,7 +11,7 @@ namespace Keel\Theme;
 defined( 'ABSPATH' ) || exit;
 
 /**
- * The palette in effect: the theme's colours, overridden by the user's (custom origin). Core's
+ * The palette in effect: the theme's colors, overridden by the user's (custom origin). Core's
  * default palette is left out because it is not part of Keel.
  *
  * @return array<string, array{name: string, color: string}> Slug => name and hex.
@@ -123,10 +123,10 @@ function contrast_pairs(): array {
 }
 
 /**
- * Relative luminance of a hex colour per WCAG 2.x.
+ * Relative luminance of a hex color per WCAG 2.x.
  *
- * @param string $hex Colour as #RGB or #RRGGBB.
- * @return float Luminance between 0 and 1, or -1 when the value is not a hex colour.
+ * @param string $hex Color as #RGB or #RRGGBB.
+ * @return float Luminance between 0 and 1, or -1 when the value is not a hex color.
  */
 function relative_luminance( string $hex ): float {
 	$clean = ltrim( trim( $hex ), '#' );
@@ -146,11 +146,11 @@ function relative_luminance( string $hex ): float {
 }
 
 /**
- * WCAG contrast ratio between two hex colours.
+ * WCAG contrast ratio between two hex colors.
  *
- * @param string $hex_a First colour.
- * @param string $hex_b Second colour.
- * @return float Ratio between 1 and 21, or 0 when either value is not a hex colour.
+ * @param string $hex_a First color.
+ * @param string $hex_b Second color.
+ * @return float Ratio between 1 and 21, or 0 when either value is not a hex color.
  */
 function contrast_ratio( string $hex_a, string $hex_b ): float {
 	$a = relative_luminance( $hex_a );
@@ -244,7 +244,7 @@ function block_style_sample( string $block, string $style ): string {
 	$class = 'is-style-' . $style;
 	$image = esc_url( get_theme_file_uri( 'assets/images/placeholder-square.svg' ) );
 	$wide  = esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) );
-	$text  = esc_html__( 'Sample text for this style. Enough words to show the spacing and the colour.', 'keel' );
+	$text  = esc_html__( 'Sample text for this style. Enough words to show the spacing and the color.', 'keel' );
 	$items = array( esc_html__( 'Licensed and insured', 'keel' ), esc_html__( 'Same-day appointments', 'keel' ), esc_html__( 'Written guarantee', 'keel' ), esc_html__( 'Plain-language advice', 'keel' ) );
 	$list  = '';
 	foreach ( $items as $item ) {
@@ -287,7 +287,7 @@ function block_style_sample( string $block, string $style ): string {
 		case 'core/media-text':
 			return '<!-- wp:media-text {"mediaType":"image","mediaWidth":42,"className":"' . $class . '"} --><div class="wp-block-media-text is-stacked-on-mobile ' . $class . '" style="grid-template-columns:42% auto"><figure class="wp-block-media-text__media"><img src="' . $wide . '" alt=""/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":4,"fontSize":"lg"} --><h4 class="wp-block-heading has-lg-font-size">' . esc_html__( 'A row card', 'keel' ) . '</h4><!-- /wp:heading -->' . $paragraph . '</div></div><!-- /wp:media-text -->';
 		case 'core/table':
-			$row = '<tr><td>' . esc_html__( 'Check-up', 'keel' ) . '</td><td>$85</td><td>' . esc_html__( '30 minutes', 'keel' ) . '</td></tr>';
+			$row = '<tr><td>' . esc_html__( 'Checkup', 'keel' ) . '</td><td>$85</td><td>' . esc_html__( '30 minutes', 'keel' ) . '</td></tr>';
 			return '<!-- wp:table {"className":"' . $class . '"} --><figure class="wp-block-table ' . $class . '"><table><thead><tr><th>' . esc_html__( 'Service', 'keel' ) . '</th><th>' . esc_html__( 'Price', 'keel' ) . '</th><th>' . esc_html__( 'Duration', 'keel' ) . '</th></tr></thead><tbody>' . $row . $row . $row . '</tbody></table></figure><!-- /wp:table -->';
 		case 'core/heading':
 			return '<!-- wp:heading {"level":4,"className":"' . $class . '"} --><h4 class="wp-block-heading ' . $class . '">' . esc_html__( 'A heading in this style', 'keel' ) . '</h4><!-- /wp:heading -->';

@@ -26,12 +26,12 @@ $keel_demo_templates = array(
 	array( 'attachment', __( 'A media attachment page.', 'keel-demo' ), '' ),
 	array( 'single-cover', __( 'Post: cover. The featured image fills a full-bleed cover with the title and meta over it; narrow content below.', 'keel-demo' ), '/a-day-on-the-water/' ),
 	array( 'single-sidebar', __( 'Post: with sidebar. Content beside the author box and a mini list of more posts.', 'keel-demo' ), '/what-the-tide-tables-say/' ),
-	array( 'single-minimal', __( 'Post: minimal. Title, meta and content on the minimal footer, nothing else.', 'keel-demo' ), '/one-line-from-the-harbourmaster/' ),
+	array( 'single-minimal', __( 'Post: minimal. Title, meta and content on the minimal footer, nothing else.', 'keel-demo' ), '/one-line-from-the-harbormaster/' ),
 	array( 'author', __( 'Author archive: avatar, name and biography above the posts.', 'keel-demo' ), '/author/admin/' ),
 );
 $keel_demo_parts     = array(
 	array( 'header', __( 'Logo, site title and the primary navigation.', 'keel-demo' ) ),
-	array( 'header-centered', __( 'Stacked logo and navigation, centred.', 'keel-demo' ) ),
+	array( 'header-centered', __( 'Stacked logo and navigation, centered.', 'keel-demo' ) ),
 	array( 'header-transparent', __( 'Transparent over a leading cover, solid once scrolled.', 'keel-demo' ) ),
 	array( 'header-utility', __( 'The standard header with the utility bar (hours, address, phone) above it.', 'keel-demo' ) ),
 	array( 'header-sticky', __( 'Sticks to the top with a search button and a primary button beside the navigation.', 'keel-demo' ) ),

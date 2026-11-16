@@ -17,7 +17,7 @@ $keel_demo_sections = array(
 	),
 	array(
 		__( 'Gates, not promises', 'keel-demo' ),
-		__( 'Twelve checks protect the main branch: unit tests, WordPress integration tests, browser tests with axe on every template, Lighthouse, Theme Check, PHPStan at level 6, WordPress coding standards, a scan for forbidden constructs, translation completeness, licence and dependency audits. A change that breaks one does not merge.', 'keel-demo' ),
+		__( 'Twelve checks protect the main branch: unit tests, WordPress integration tests, browser tests with axe on every template, Lighthouse, Theme Check, PHPStan at level 6, WordPress coding standards, a scan for forbidden constructs, translation completeness, license and dependency audits. A change that breaks one does not merge.', 'keel-demo' ),
 	),
 	array(
 		__( 'Signed releases', 'keel-demo' ),

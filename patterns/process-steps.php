@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'Call, text or send the form. We confirm a time that suits you the same day.', 'keel' ); ?></p>
+				<p><?php esc_html_e( 'Call, text or send the form. We confirm a time that works for you the same day.', 'keel' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

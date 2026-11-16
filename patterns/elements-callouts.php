@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'Four group styles with a coloured edge, a tint and an icon: info, warm, success and error.', 'keel' ); ?></p>
+	<p><?php esc_html_e( 'Four group styles with a colored edge, a tint and an icon: info, warm, success and error.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<?php echo Keel\Theme\element_label( 'group .is-style-callout-info, -warm, -success, -error' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>

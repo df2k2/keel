@@ -38,6 +38,15 @@ below the footer and scroll padding keeps a focused element above them. A journa
 without a featured image clipped its category tag away while the link stayed focusable; the tag
 now shows as a chip.
 
+American English. The theme's copy, comments and documents used British spelling and usage in
+places; all of it is American now. Spelling (color, center, labor, license, neighborhood, harbor,
+anesthetic, checkup), dates with the month before the day ("Saturday, March 14"), and wording
+(parking lot, business day, office hours, inquire, "what is happening", bike rentals) change in 92
+source strings. The eleven of those that the Spanish translation covers keep their translations.
+The Composer script `analyse` is now `analyze`; PHPStan's own command name is unchanged. Two demo
+slugs follow their titles: `one-line-from-the-harbormaster` and `old-town-bike-rentals`. The
+theme screenshot and the review screenshots are regenerated from the new copy.
+
 Other fixes. Two full-width buttons in a vertical stack sat side by side inside a Stack card and
 pushed 20 pixels off a phone screen (the listing price card): core's `flex-basis: 100%` reads as a
 height in a column. Seventy blocks in twenty-nine patterns and the single-cover template failed the

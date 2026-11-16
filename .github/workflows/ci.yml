@@ -25,7 +25,7 @@ jobs:
           coverage: none
       - run: composer install --no-interaction --no-progress --prefer-dist
       - run: composer lint
-      - run: composer analyse
+      - run: composer analyze
       - run: bash bin/check-forbidden.sh
 
   js-css-lint:

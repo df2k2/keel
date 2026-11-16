@@ -61,7 +61,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- wp:group {"className":"is-style-paper","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group is-style-paper">
 		<!-- wp:paragraph {"className":""} -->
-		<p class=""><?php esc_html_e( 'A paper grain over the surface colour, for a note or an aside.', 'keel' ); ?></p>
+		<p class=""><?php esc_html_e( 'A paper grain over the surface color, for a note or an aside.', 'keel' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
@@ -71,7 +71,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- wp:group {"className":"is-style-dot-grid","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group is-style-dot-grid">
 		<!-- wp:paragraph {"className":""} -->
-		<p class=""><?php esc_html_e( 'A dot grid on the base colour, wider than the textured style.', 'keel' ); ?></p>
+		<p class=""><?php esc_html_e( 'A dot grid on the base color, wider than the textured style.', 'keel' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->

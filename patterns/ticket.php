@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"className":"keel-eyebrow"} -->
-			<p class="keel-eyebrow"><?php echo esc_html( __( 'Saturday 14 March, 7 pm', 'keel' ) ); ?></p>
+			<p class="keel-eyebrow"><?php echo esc_html( __( 'Saturday, March 14, 7 pm', 'keel' ) ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading {"level":3,"fontSize":"lg"} -->
@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) || exit;
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"fontSize":"sm"} -->
-			<p class="has-sm-font-size"><?php echo esc_html( __( 'Riverside green · Free entry, tickets for the tastings', 'keel' ) ); ?></p>
+			<p class="has-sm-font-size"><?php echo esc_html( __( 'Riverside green · Free admission, tickets for the tastings', 'keel' ) ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

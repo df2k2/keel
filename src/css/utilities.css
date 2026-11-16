@@ -44,7 +44,7 @@
 	}
 }
 
-/* Decorative icons: single-colour SVG images inverted on dark surfaces. */
+/* Decorative icons: single-color SVG images inverted on dark surfaces. */
 
 .keel-icon {
 	margin: 0;
@@ -152,14 +152,14 @@
 	font-size: var( --wp--preset--font-size--lg );
 }
 
-/* Before and after: centred labels under the framed images. */
+/* Before and after: centered labels under the framed images. */
 
 .keel-before-after .wp-element-caption {
 	font-weight: 600;
 	text-align: center;
 }
 
-/* Style guide: colour swatches and the spacing scale bars. */
+/* Style guide: color swatches and the spacing scale bars. */
 
 .keel-swatch {
 	min-block-size: 4.5rem;

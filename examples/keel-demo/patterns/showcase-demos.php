@@ -84,7 +84,7 @@ $keel_demo_teasers     = array(
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'Every card, button, badge, callout, table and rail the theme ships, named with its class or pattern, plus colours, type and every block style, read from the active variation each time the page renders.', 'keel-demo' ); ?></p>
+				<p><?php esc_html_e( 'Every card, button, badge, callout, table and rail the theme ships, named with its class or pattern, plus colors, type and every block style, read from the active variation each time the page renders.', 'keel-demo' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph -->

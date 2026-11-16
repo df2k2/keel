@@ -16,7 +16,7 @@ if ( ! defined( 'WP_DEBUG' ) || ! WP_DEBUG ) {
  * Reads a test switch from the query string.
  *
  * @param string $name Query variable.
- * @return string Sanitised value, or an empty string.
+ * @return string Sanitized value, or an empty string.
  */
 function keel_test_switch( string $name ): string {
 	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only, debug-only test switch.

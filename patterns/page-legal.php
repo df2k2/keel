@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"className":"is-style-small-print"} -->
-	<p class="is-style-small-print"><?php esc_html_e( 'Last updated: 1 March 2027', 'keel' ); ?></p>
+	<p class="is-style-small-print"><?php esc_html_e( 'Last updated: March 1, 2027', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:pattern {"slug":"keel/legal-contents"} /-->

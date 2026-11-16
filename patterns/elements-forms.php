@@ -39,7 +39,7 @@ $keel_fields = array( __( 'Name', 'keel' ), __( 'Email', 'keel' ), __( 'Phone', 
 	<!-- /wp:paragraph -->
 
 	<!-- wp:paragraph {"className":"keel-form-message keel-form-message--success"} -->
-	<p class="keel-form-message keel-form-message--success"><?php esc_html_e( 'Sent. We reply within a working day.', 'keel' ); ?></p>
+	<p class="keel-form-message keel-form-message--success"><?php esc_html_e( 'Sent. We reply within a business day.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:paragraph {"fontSize":"sm"} -->

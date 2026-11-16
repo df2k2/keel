@@ -9,7 +9,7 @@
   "config": { "allow-plugins": { "dealerdirect/phpcodesniffer-composer-installer": true } },
   "scripts": {
     "lint": "phpcs",
-    "analyse": "phpstan analyse --memory-limit=1G"
+    "analyze": "phpstan analyse --memory-limit=1G"
   },
   "require-dev": {
     "wp-coding-standards/wpcs": "^3.4",

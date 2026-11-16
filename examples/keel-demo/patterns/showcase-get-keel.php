@@ -15,7 +15,7 @@ $keel_demo_steps = array(
 	array( __( 'Download', 'keel-demo' ), __( 'Get the release zip from GitHub. Releases are built in CI from a tag; the page lists every asset.', 'keel-demo' ), $keel_demo_facts['release_url'], __( 'Latest release', 'keel-demo' ) ),
 	array( __( 'Verify', 'keel-demo' ), __( 'Check the zip against the manifest and signatures with the command in the README before you upload it anywhere.', 'keel-demo' ), 'https://github.com/df2k2/keel#readme', __( 'Verification steps', 'keel-demo' ) ),
 	array( __( 'Install', 'keel-demo' ), __( 'Appearance, Themes, Add New, Upload Theme. Keel needs WordPress 7.1.3 and PHP 8.3 or newer, and nothing else.', 'keel-demo' ), '', '' ),
-	array( __( 'Extend', 'keel-demo' ), __( 'Keep your changes in a child theme: the repository ships a minimal one that overrides a single colour.', 'keel-demo' ), 'https://github.com/df2k2/keel/tree/main/examples/keel-child', __( 'Child theme example', 'keel-demo' ) ),
+	array( __( 'Extend', 'keel-demo' ), __( 'Keep your changes in a child theme: the repository ships a minimal one that overrides a single color.', 'keel-demo' ), 'https://github.com/df2k2/keel/tree/main/examples/keel-child', __( 'Child theme example', 'keel-demo' ) ),
 	array( __( 'Follow', 'keel-demo' ), __( 'Every change is in the changelog with its version. Updates come as new signed releases.', 'keel-demo' ), 'https://github.com/df2k2/keel/blob/main/CHANGELOG.md', __( 'Changelog', 'keel-demo' ) ),
 );
 ?>

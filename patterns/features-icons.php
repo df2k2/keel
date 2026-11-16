@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 $keel_features = array(
 	array( 'clock', __( 'Open early and late', 'keel' ), __( 'Appointments from 7 am and until 7 pm on weekdays.', 'keel' ) ),
-	array( 'shield', __( 'Guaranteed work', 'keel' ), __( 'Every job carries a written guarantee, no small print.', 'keel' ) ),
+	array( 'shield', __( 'Guaranteed work', 'keel' ), __( 'Every job carries a written guarantee, no fine print.', 'keel' ) ),
 	array( 'calendar', __( 'Book in two minutes', 'keel' ), __( 'Choose a time online and get a reminder the day before.', 'keel' ) ),
 	array( 'message', __( 'Plain-language advice', 'keel' ), __( 'You get the options, the prices and our honest recommendation.', 'keel' ) ),
 );

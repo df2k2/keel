@@ -45,7 +45,7 @@ defined( 'ABSPATH' ) || exit;
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item -->
-					<li><?php esc_html_e( '30-day labour warranty', 'keel' ); ?></li>
+					<li><?php esc_html_e( '30-day labor warranty', 'keel' ); ?></li>
 					<!-- /wp:list-item -->
 				</ul>
 				<!-- /wp:list -->
@@ -89,7 +89,7 @@ defined( 'ABSPATH' ) || exit;
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item -->
-					<li><?php esc_html_e( 'Two-year parts and labour warranty', 'keel' ); ?></li>
+					<li><?php esc_html_e( 'Two-year parts and labor warranty', 'keel' ); ?></li>
 					<!-- /wp:list-item -->
 				</ul>
 				<!-- /wp:list -->

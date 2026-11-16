@@ -254,7 +254,7 @@ msgid "Standard"
 msgstr "Estándar"
 
 #: patterns/accessibility-statement.php:36
-msgid "This site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. Pages are built with semantic HTML, sufficient colour contrast, visible focus styles and full keyboard support."
+msgid "This site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. Pages are built with semantic HTML, sufficient color contrast, visible focus styles and full keyboard support."
 msgstr "Este sitio pretende cumplir las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.2 en el nivel AA. Las páginas se construyen con HTML semántico, contraste de color suficiente, estilos de foco visibles y compatibilidad total con el teclado."
 
 #: patterns/accessibility-statement.php:40
@@ -382,7 +382,7 @@ msgid "Still have questions?"
 msgstr "¿Todavía tiene preguntas?"
 
 #: patterns/cta-band-contrast.php:22
-msgid "Talk to a real person. No call centres, no bots."
+msgid "Talk to a real person. No call centers, no bots."
 msgstr "Hable con una persona de verdad. Sin centralitas ni robots."
 
 #: patterns/cta-band-primary.php
@@ -460,7 +460,7 @@ msgid "Are you licensed and insured?"
 msgstr "¿Tienen licencia y seguro?"
 
 #: patterns/faq.php:32
-msgid "Yes. We hold a current state licence and carry full liability and workers compensation insurance."
+msgid "Yes. We hold a current state license and carry full liability and workers compensation insurance."
 msgstr "Sí. Contamos con licencia estatal vigente y con seguro completo de responsabilidad civil y de accidentes laborales."
 
 #: patterns/faq.php:38
@@ -476,7 +476,7 @@ msgid "What areas do you serve?"
 msgstr "¿Qué zonas atienden?"
 
 #: patterns/faq.php:48
-msgid "The whole county and the neighbouring towns. Call us if you are not sure and we will tell you straight away."
+msgid "The whole county and the neighboring towns. Call us if you are not sure and we will tell you right away."
 msgstr "Todo el condado y las localidades vecinas. Llámenos si tiene dudas y se lo diremos al momento."
 
 #: patterns/footer-columns.php
@@ -688,7 +688,7 @@ msgid "Written quote before work"
 msgstr "Presupuesto por escrito antes del trabajo"
 
 #: patterns/pricing-table.php:48
-msgid "30-day labour warranty"
+msgid "30-day labor warranty"
 msgstr "Garantía de 30 días en mano de obra"
 
 #: patterns/pricing-table.php:56
@@ -710,7 +710,7 @@ msgid "Same-week scheduling"
 msgstr "Cita en la misma semana"
 
 #: patterns/pricing-table.php:92
-msgid "Two-year parts and labour warranty"
+msgid "Two-year parts and labor warranty"
 msgstr "Dos años de garantía en piezas y mano de obra"
 
 #: patterns/pricing-table.php:110
@@ -747,7 +747,7 @@ msgid "Tell us what you need"
 msgstr "Cuéntenos qué necesita"
 
 #: patterns/process-steps.php:36
-msgid "Call, text or send the form. We confirm a time that suits you the same day."
+msgid "Call, text or send the form. We confirm a time that works for you the same day."
 msgstr "Llame, escriba o envíe el formulario. Le confirmamos una hora que le convenga el mismo día."
 
 #: patterns/process-steps.php:52
@@ -805,7 +805,7 @@ msgid "Background-checked, uniformed technicians"
 msgstr "Técnicos uniformados y con antecedentes verificados"
 
 #: patterns/service-detail.php:40
-msgid "Parts and labour guaranteed for two years"
+msgid "Parts and labor guaranteed for two years"
 msgstr "Piezas y mano de obra garantizadas durante dos años"
 
 #: patterns/service-detail.php:44
@@ -871,7 +871,7 @@ msgstr "Más información"
 #: patterns/services-grid-3.php:60
 #: patterns/services-grid-4.php:60
 #: patterns/services-grid-6.php:60
-msgid "New equipment fitted right, with the paperwork handled."
+msgid "New equipment installed right, with the paperwork handled."
 msgstr "Equipos nuevos bien instalados, con el papeleo resuelto."
 
 #: patterns/services-grid-3.php:84
@@ -951,7 +951,7 @@ msgid "Owner and lead technician"
 msgstr "Propietario y técnico principal"
 
 #: patterns/team-grid.php:40
-msgid "Twenty years on the tools and still answers the phone."
+msgid "Twenty years in the field and still answers the phone."
 msgstr "Veinte años con las herramientas y sigue contestando al teléfono."
 
 #: patterns/team-grid.php:56
@@ -975,7 +975,7 @@ msgid "Senior technician"
 msgstr "Técnico sénior"
 
 #: patterns/team-grid.php:88
-msgid "Diagnostics specialist with a reputation for tidy work."
+msgid "Diagnostics specialist with a reputation for neat work."
 msgstr "Especialista en diagnóstico con fama de trabajo pulcro."
 
 #: patterns/team-grid.php:104

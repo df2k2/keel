@@ -99,7 +99,7 @@ The eighteen requirements and how Keel meets each:
 | Landmarks with names | header, nav, main, footer in every template; search forms named after their label; the carousel is a named region |
 | Keyboard navigation | e2e keyboard journey: skip link, menu, accordion, carousel, lightbox; mobile menu traps focus and makes the page inert; dismissing the announcement moves focus to the next control; fixed buttons never cover a focused link |
 | Controls with names, roles, states | dismiss, previous, next and the marquee Pause/Play buttons carry labels; details and tabs are core blocks |
-| Form fields labelled | the Search block label is the form's `aria-label`; the contact shell relies on the form plugin's labels |
+| Form fields labeled | the Search block label is the form's `aria-label`; the contact shell relies on the form plugin's labels |
 | Meaningful headings | one `h1` per page, heroes and layouts carry it, every other pattern starts at `h2`; eyebrows are paragraphs |
 | Underlined links in text | `theme.json` sets `text-decoration: underline` on content links |
 | No ambiguous link text | patterns name their destination in the link text |

@@ -23,7 +23,7 @@
 	mask-repeat: no-repeat, repeat-x;
 }
 
-/* Style: band. Core writes the band's link colour behind :where(), which loses to the base link rule. */
+/* Style: band. Core writes the band's link color behind :where(), which loses to the base link rule. */
 
 .wp-block-group.is-style-band a:not( [class] ) {
 	color: inherit;
@@ -95,7 +95,7 @@
 	scroll-snap-align: start;
 }
 
-/* Styles: paper (a grain over the surface colour) and dot grid (a wide dot pattern on the base colour). */
+/* Styles: paper (a grain over the surface color) and dot grid (a wide dot pattern on the base color). */
 
 .wp-block-group.is-style-paper {
 	padding: var( --wp--preset--spacing--50 ) var( --wp--preset--spacing--40 );
