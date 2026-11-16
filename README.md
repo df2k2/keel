@@ -22,7 +22,7 @@ Requires WordPress 7.1 or later and PHP 8.3 or later. Licensed GPL-2.0-or-later.
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Getting started](#getting-started)
-- [Customising](#customising)
+- [Customizing](#customizing)
 - [Development](#development)
 - [Quality gates](#quality-gates)
 - [Releases](#releases)
@@ -71,7 +71,7 @@ keep updated and the most often compromised. Keel takes the opposite position:
   maintenance, thank you, legal, one page and more. The dental pack adds eight pages for a
   fictional practice.
 - **An elements page** (`keel/elements`) that names every element the theme ships with the class,
-  style or pattern that makes it: colours with contrast ratios, type, spacing, shape, buttons,
+  style or pattern that makes it: colors with contrast ratios, type, spacing, shape, buttons,
   badges, forms, cards, callouts, tables, pagination and every block style, read from the active
   global styles each time it renders.
 - **Sixty-five block styles across nineteen blocks**: button sizes and looks (light, glass, soft,
@@ -119,7 +119,7 @@ in each of the seven looks; the page shots are all in Coral unless noted.
 
 | Elements page | Journal | Events |
 | --- | --- | --- |
-| ![Elements page: colour swatches with slugs and hex values under a row of section chips](docs/review/m1-6-elements.png) | ![Journal: a featured article cover above a row of filter chips](docs/review/m1-6-journal.png) | ![Events: a month of ticket cards with dates, prices and a Get tickets button](docs/review/m1-6-events.png) |
+| ![Elements page: color swatches with slugs and hex values under a row of section chips](docs/review/m1-6-elements.png) | ![Journal: a featured article cover above a row of filter chips](docs/review/m1-6-journal.png) | ![Events: a month of ticket cards with dates, prices and a Get tickets button](docs/review/m1-6-events.png) |
 
 | Place page | Listing detail | Dental demo (Coral) |
 | --- | --- | --- |
@@ -153,7 +153,7 @@ Building from source also needs Node 24 or later, Composer 2 and Docker (for `wp
 Or with WP-CLI:
 
 ```bash
-wp theme install keel-1.0.0.zip --activate
+wp theme install keel-1.0.1.zip --activate
 ```
 
 Do not install the repository checkout directly: the compiled CSS and JavaScript under `build/`
@@ -166,10 +166,10 @@ CycloneDX SBOM. To check the checksum and the signature:
 
 ```bash
 sha256sum --ignore-missing -c SHA256SUMS
-cosign verify-blob --bundle keel-1.0.0.zip.sigstore.json \
+cosign verify-blob --bundle keel-1.0.1.zip.sigstore.json \
   --certificate-identity-regexp '^https://github.com/df2k2/keel/' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com \
-  keel-1.0.0.zip
+  keel-1.0.1.zip
 ```
 
 The certificate identity proves the zip was built by this repository's release workflow on
@@ -190,7 +190,7 @@ Upload the zip from `dist/` as above, or copy the built checkout to `wp-content/
 ### Fork under another name
 
 To ship a fork under your own name, run the rename script before packaging. It rewrites the slug,
-text domain, constants and namespace prefixes in every tracked text file except the licence, the
+text domain, constants and namespace prefixes in every tracked text file except the license, the
 changelog and `docs/`:
 
 ```bash
@@ -203,7 +203,7 @@ bin/rename.sh my-theme "My Theme"
 After activation:
 
 1. **Pick a look.** Go to **Appearance → Editor → Styles** and choose one of the seven variations.
-   Everything else in Styles (colours, type, spacing) still applies on top.
+   Everything else in Styles (colors, type, spacing) still applies on top.
 2. **Choose a header and footer.** In the Site Editor open **Patterns → Template parts** and swap
    the `Header` or `Footer` part for one of the alternatives (centered, transparent, with utility
    bar, sticky; minimal or big footer). The announcement bar, mobile call-to-action bar and
@@ -220,18 +220,18 @@ After activation:
    contact shell pattern and the theme styles it.
 
 The elements page pattern (`keel/elements`) is a useful first page on a new site: it shows every
-colour, type size, button and block style of the look you picked, with the class or style name to
+color, type size, button and block style of the look you picked, with the class or style name to
 reach it.
 
-## Customising
+## Customizing
 
 **Child theme.** Copy `examples/keel-child` to `wp-content/themes/keel-child` and activate it. Its
 `theme.json` merges over the parent's, and any file dropped into `templates/`, `parts/` or
-`patterns/` overrides the parent's by name. The example recolours `primary` and replaces the header
+`patterns/` overrides the parent's by name. The example recolors `primary` and replaces the header
 buttons through `parts/header-actions.html`. See [the child theme README](examples/keel-child/README.md).
 
-**Header behaviour without copying a header.** Give your own header part's root block the class
-`keel-header--sticky` or `keel-header--transparent` and Keel wires the scroll behaviour. From PHP,
+**Header behavior without copying a header.** Give your own header part's root block the class
+`keel-header--sticky` or `keel-header--transparent` and Keel wires the scroll behavior. From PHP,
 `keel_header_part_classes` filters those classes.
 
 **Headings in another family.** Set `styles.elements.heading.typography.fontFamily` in a child's
@@ -298,7 +298,7 @@ contrast gate and the forbidden-construct gate before every commit.
 ### Project layout
 
 ```
-assets/        fonts (Latin subsets with OFL licences), icons, placeholder images
+assets/        fonts (Latin subsets with OFL licenses), icons with the Feather MIT license, placeholder images
 bin/           build, package, seed, screenshot, scaffold, rename and gate scripts
 build/         compiled CSS and JS (gitignored; created by npm run build)
 docs/          patterns.md (generated) and review screenshots
@@ -364,13 +364,12 @@ for response times and the supported-version policy. Please do not open a public
 The text domain is `keel` and every string in templates, parts and patterns is translatable. A
 Spanish (es_ES) translation ships in `languages/`; it was written by the builder and is awaiting
 review by a native speaker, so corrections are welcome. Right-to-left layouts are covered by the
-end-to-end tests. Regenerate the POT file with `npm run i18n:pot` and compile `.po` to `.mo` with
+end-to-end tests, which render the key pages in both directions and check that they mirror. Regenerate the POT file with `npm run i18n:pot` and compile `.po` to `.mo` with
 `npm run i18n:build`.
 
 ## Status
 
-Keel 1.0.0 is the first stable release, prepared for submission to the wordpress.org theme
-directory: Theme Check runs in CI, the zip carries the unminified sources beside the built files,
+Keel 1.0.1 follows the first theme directory review of 1.0.0, the first stable release: Theme Check runs in CI, the zip carries the unminified sources beside the built files,
 and the accessibility-ready requirements are met by construction. The companion hardening and
 monitoring plugin is a separate project and is not in this repository. Every change is recorded
 in the changelog.
@@ -397,8 +396,10 @@ Keel is licensed under the [GNU General Public License v2 or later](LICENSE). Bu
   Mathieu Triay. SIL Open Font License 1.1.
 - **Fraunces**, copyright 2020 The Fraunces Project Authors, Undercase Type, Phaedra Charles and
   Flavia Zimbardi. SIL Open Font License 1.1.
-- **Icons** in `assets/icons` are adapted from [Feather Icons](https://github.com/feathericons/feather), MIT License.
+- **Icons** in `assets/icons`, and the icon shapes inline in the list and callout styles, are adapted from
+  [Feather Icons](https://github.com/feathericons/feather), copyright 2013-2023 Cole Bemis. MIT License.
 - **Placeholder images** in `assets/images` are original work released under the GPL with the theme.
 
-The font licences are in `assets/fonts/`. The dental demo describes a fictional practice; any
+The font licenses are in `assets/fonts/` and the Feather license is in
+`assets/icons/LICENSE-feather.txt`. The dental demo describes a fictional practice; any
 resemblance to a real business is coincidental.
