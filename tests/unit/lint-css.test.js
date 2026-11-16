@@ -24,6 +24,22 @@ test( 'built CSS keeps logical properties, so right-to-left sites mirror', () =>
 	);
 } );
 
-test( 'scanner catches physical declarations and skips inline SVG', () => {
-	assert.equal( scanPhysicalCss( 'tests/fixtures/css-physical' ).length, 6 );
+test( 'scanner catches physical declarations and skips inline SVG and logical ones', () => {
+	assert.deepEqual(
+		scanPhysicalCss( 'tests/fixtures/css-physical' ).map( ( hit ) =>
+			hit.replace( /^.*: /, '' )
+		),
+		[
+			'padding-left:',
+			'margin-right:',
+			'left:',
+			'border-left-width:',
+			'text-align:left',
+			'float:right',
+			'border-top-left-radius:',
+			'border-bottom-right-radius:',
+			'scroll-margin-left:',
+			'scroll-padding-right:',
+		]
+	);
 } );

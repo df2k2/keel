@@ -64,8 +64,10 @@ export function scanBuiltCss( dir ) {
 }
 
 const URL_PAYLOAD = /url\((?:"[^"]*"|'[^']*'|[^)]*)\)/g;
+// Sides (padding-left, scroll-margin-right, border-left-width, left), corners (border-top-left-radius) and
+// the left and right keywords of text-align, float and clear: every physical twin a logical property has.
 const PHYSICAL =
-	/(?<![-\w])(?:(?:padding|margin|border)-(?:left|right)(?:-[a-z]+)*|left|right)\s*:|(?:text-align|float|clear)\s*:\s*(?:left|right)\b/g;
+	/(?<![-\w])(?:(?:(?:scroll-)?(?:padding|margin)|border)-(?:left|right)(?:-[a-z]+)*|border-(?:top|bottom)-(?:left|right)-radius|left|right)\s*:|(?:text-align|float|clear)\s*:\s*(?:left|right)\b/g;
 
 /**
  * Finds every left or right declaration in the CSS files under a directory. The sources are written

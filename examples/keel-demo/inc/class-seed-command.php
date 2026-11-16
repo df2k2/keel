@@ -22,6 +22,20 @@ class Seed_Command {
 	private const CATEGORIES = array( 'hero', 'trust', 'services', 'process', 'team', 'testimonials', 'pricing', 'faq', 'location', 'gallery', 'cta', 'contact', 'footer', 'blog', 'pages', 'layouts', 'dental', 'cards', 'elements', 'places', 'events', 'company', 'utility' );
 
 	/**
+	 * Paths an earlier version seeded and this one does not, each with its post type. The seed finds its
+	 * items by slug, so a renamed or dropped one would otherwise stay on a reseeded site beside its
+	 * replacement. The last two are kept as first seeded, old spelling included, to match what is stored.
+	 *
+	 * @var array<string, string>
+	 */
+	private const RETIRED = array(
+		'style-guide'                     => 'page',
+		'block-styles'                    => 'page',
+		'listings/old-town-bike-hire'     => 'page',
+		'one-line-from-the-harbourmaster' => 'post',
+	);
+
+	/**
 	 * Builds every showcase page, the dental pages, the Primary menu and the front page.
 	 *
 	 * ## EXAMPLES
@@ -36,8 +50,8 @@ class Seed_Command {
 		$pages     = array();
 		$thumbnail = $this->placeholder_id();
 
-		foreach ( array( 'style-guide', 'block-styles' ) as $retired ) {
-			$old = get_page_by_path( $retired );
+		foreach ( self::RETIRED as $retired => $post_type ) {
+			$old = get_page_by_path( $retired, OBJECT, $post_type );
 			if ( $old instanceof \WP_Post ) {
 				wp_delete_post( $old->ID, true );
 				\WP_CLI::line( sprintf( '  removed /%s/', $retired ) );

@@ -12,13 +12,13 @@ Review items. The `portfolio` tag is removed: the theme has no portfolio layout.
 ship their full MIT license, with the copyright line, in `assets/icons/LICENSE-feather.txt`, and
 `readme.txt` points to it. `inc/setup.php` declares `custom-logo` support, which every header part
 already used through the Site Logo block. Every pattern output that was not wrapped in an escaping
-function now is, and the accordion patterns write their open-by-default attribute as static markup
-in place of an echoed variable. `readme.txt` gains a Development section with the build steps. The
+function now is, and the accordion patterns encode their open-by-default attribute with
+`wp_json_encode()` at the echo, in place of an echoed variable. `readme.txt` gains a Development section with the build steps. The
 release zip keeps `keel-manifest.json` and drops `assets/fonts/manifest.json`, which only the unit
 tests read.
 
 Right-to-left. The sources were written with logical properties, but the build rewrote every one
-of them to its left-to-right twin (72 physical declarations in the built CSS and no logical ones),
+of them to its left-to-right twin (74 physical declarations in the built CSS and no logical ones),
 so nothing mirrored on an RTL site. `postcss.config.js` now turns the logical features of
 postcss-preset-env off, and a unit test fails if a physical declaration reaches `build/css`. The
 `?keel_rtl=1` test switch set the direction on `init`, after core had built its style registry, so
@@ -44,8 +44,9 @@ anesthetic, checkup), dates with the month before the day ("Saturday, March 14")
 (parking lot, business day, office hours, inquire, "what is happening", bike rentals) change in 92
 source strings. The eleven of those that the Spanish translation covers keep their translations.
 The Composer script `analyse` is now `analyze`; PHPStan's own command name is unchanged. Two demo
-slugs follow their titles: `one-line-from-the-harbormaster` and `old-town-bike-rentals`. The
-theme screenshot and the review screenshots are regenerated from the new copy.
+slugs follow their titles: `one-line-from-the-harbormaster` and `old-town-bike-rentals`, and a
+reseed removes the items under the old slugs. The theme screenshot and the review screenshots are
+regenerated from the new copy.
 
 Other fixes. Two full-width buttons in a vertical stack sat side by side inside a Stack card and
 pushed 20 pixels off a phone screen (the listing price card): core's `flex-basis: 100%` reads as a

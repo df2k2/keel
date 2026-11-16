@@ -83,7 +83,7 @@ The review asked for two fixes, four tag checks and offered four optional improv
   screen reader, by ear, is still worth doing by hand before the second review.
 - **Build instructions.** `readme.txt`, Development.
 - **Escaping.** Thirteen outputs that had no outer escaping call now have one, and nine echoes of
-  a static JSON attribute are static markup.
+  a JSON attribute held in a variable now encode it with `wp_json_encode()` at the echo.
 - **Author field.** `Author:` in `style.css` and `Contributors:` in `readme.txt` both say `df2k2`,
   which is the wordpress.org username the theme is uploaded from, so neither line changes.
 - **Manifest files.** `keel-manifest.json` stays, as the record a copy of the theme can be checked

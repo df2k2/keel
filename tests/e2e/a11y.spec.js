@@ -242,6 +242,45 @@ test( 'a card without a featured image still shows its tag', async ( {
 	).toBe( true );
 } );
 
+// The photo-less rule must leave a Cover alone. A Cover with a fixed or repeated background saves a div in
+// place of its img, and one with a video saves a video, so "no img" is not "no photo".
+for ( const [ name, tag, className ] of [
+	[ 'fixed', 'div', 'wp-block-cover__image-background has-parallax' ],
+	[ 'video', 'video', 'wp-block-cover__video-background' ],
+] ) {
+	test( `a card's Cover with a ${ name } background keeps its bleed`, async ( {
+		page,
+	} ) => {
+		await page.goto( '/listings/harbor-view-inn/' );
+		const media = page
+			.locator(
+				'.wp-block-group.is-style-card > .wp-block-cover.keel-card__media'
+			)
+			.first();
+		const box = () =>
+			media.evaluate( ( el ) => {
+				const style = getComputedStyle( el );
+				return {
+					margin: style.marginInlineStart,
+					overflow: style.overflow,
+					width: el.getBoundingClientRect().width,
+				};
+			} );
+		const before = await box();
+		expect( parseFloat( before.margin ) ).toBeLessThan( 0 );
+		await media.evaluate(
+			( el, [ tagName, classes ] ) => {
+				const background = el.ownerDocument.createElement( tagName );
+				background.className = classes;
+				el.querySelector( 'img' ).replaceWith( background );
+			},
+			[ tag, className ]
+		);
+		expect( await media.locator( 'img' ).count() ).toBe( 0 );
+		expect( await box() ).toEqual( before );
+	} );
+}
+
 test( 'the floating buttons never cover a focused footer link', async ( {
 	page,
 } ) => {

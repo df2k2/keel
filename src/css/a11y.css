@@ -6,6 +6,9 @@
 	box-shadow: 0 0 0 calc( var( --wp--custom--focus--offset ) + 2px ) var( --wp--preset--color--base );
 }
 
+/* The two rules below repeat the ring's declarations on purpose. Joined to the rule above in one selector list,
+   a browser that cannot parse :has() would drop the whole list, and every control would lose its ring. */
+
 /* Search with the button inside. Core removes the field's own outline there, because the wrapper carries the
    border, and gives the wrapper nothing in return: a focused field looks exactly like an idle one. The wrapper
    wears the ring while its field has focus. */
