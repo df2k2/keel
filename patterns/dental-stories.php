@@ -14,7 +14,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_stories = array(
-	array( __( 'I had not seen a dentist in nine years because I was terrified. Dr. Ramirez talked me through every step and stopped when I raised my hand. Two visits later my teeth are fixed and I am not scared any more.', 'keel' ), __( 'Dana M., Stuart', 'keel' ) ),
+	array( __( 'I had not seen a dentist in nine years because I was terrified. Dr. Ramirez talked me through every step and stopped when I raised my hand. Two visits later my teeth are fixed and I am not scared anymore.', 'keel' ), __( 'Dana M., Stuart', 'keel' ) ),
 	array( __( 'The implant price on the website was the price I paid. Dr. Tanaka placed it in forty minutes and the crown fits like my own tooth.', 'keel' ), __( 'Marcus T., Jensen Beach', 'keel' ) ),
 	array( __( 'Both kids actually ask to go. Dr. Haddad lets them hold the mirror and they leave with a sticker and clean teeth.', 'keel' ), __( 'Lauren K., Palm City', 'keel' ) ),
 );

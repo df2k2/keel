@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) || exit;
 					<!-- wp:buttons -->
 					<div class="wp-block-buttons">
 						<!-- wp:button {"fontSize":"sm"} -->
-						<div class="wp-block-button has-custom-font-size has-sm-font-size"><a class="wp-block-button__link wp-element-button" href="#contact"><?php esc_html_e( 'Enquire', 'keel' ); ?></a></div>
+						<div class="wp-block-button has-custom-font-size has-sm-font-size"><a class="wp-block-button__link wp-element-button" href="#contact"><?php esc_html_e( 'Inquire', 'keel' ); ?></a></div>
 						<!-- /wp:button -->
 
 						<!-- wp:button {"className":"is-style-ghost","fontSize":"sm"} -->

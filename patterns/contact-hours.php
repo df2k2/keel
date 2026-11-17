@@ -16,7 +16,7 @@ $keel_hours = array(
 	array( __( 'Monday to Friday', 'keel' ), __( '9 am to 5 pm', 'keel' ) ),
 	array( __( 'Saturday', 'keel' ), __( '9 am to 1 pm', 'keel' ) ),
 	array( __( 'Sunday', 'keel' ), __( 'Closed', 'keel' ) ),
-	array( __( 'Public holidays', 'keel' ), __( '10 am to 2 pm', 'keel' ) ),
+	array( __( 'Holidays', 'keel' ), __( '10 am to 2 pm', 'keel' ) ),
 );
 ?>
 <!-- wp:columns {"align":"wide"} -->
@@ -24,7 +24,7 @@ $keel_hours = array(
 	<!-- wp:column {"width":"60%"} -->
 	<div class="wp-block-column" style="flex-basis:60%">
 		<!-- wp:heading {"level":2,"fontSize":"xl"} -->
-		<h2 class="wp-block-heading has-xl-font-size"><?php esc_html_e( 'Visitor centre hours', 'keel' ); ?></h2>
+		<h2 class="wp-block-heading has-xl-font-size"><?php esc_html_e( 'Visitor center hours', 'keel' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:table {"className":"is-style-compact"} -->

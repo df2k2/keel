@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 <!-- wp:group {"className":"keel-subscribe","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"40rem"}} -->
 <div class="wp-block-group keel-subscribe">
 	<!-- wp:paragraph {"fontSize":"sm"} -->
-	<p class="has-sm-font-size"><strong><?php esc_html_e( 'Monthly tips, no noise.', 'keel' ); ?></strong> <?php esc_html_e( 'One email a month with what is on and what is new.', 'keel' ); ?></p>
+	<p class="has-sm-font-size"><strong><?php esc_html_e( 'Monthly tips, no noise.', 'keel' ); ?></strong> <?php esc_html_e( 'One email a month with what is happening and what is new.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:search {"label":"<?php esc_attr_e( 'Email address for the newsletter', 'keel' ); ?>","showLabel":false,"placeholder":"<?php esc_attr_e( 'you@example.com', 'keel' ); ?>","buttonText":"<?php esc_attr_e( 'Subscribe', 'keel' ); ?>","buttonPosition":"button-inside","className":"keel-subscribe__field"} /-->

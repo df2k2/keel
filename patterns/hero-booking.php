@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 $keel_image       = get_theme_file_uri( 'assets/images/placeholder-portrait.svg' );
 $keel_quick_links = array(
-	'#services' => __( 'Check-ups', 'keel' ),
+	'#services' => __( 'Checkups', 'keel' ),
 	'#repairs'  => __( 'Repairs', 'keel' ),
 	'#plans'    => __( 'Plans', 'keel' ),
 	'#urgent'   => __( 'Same day', 'keel' ),

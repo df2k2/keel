@@ -64,7 +64,7 @@ $keel_focus  = is_string( $keel_custom['focus']['ring'] ?? null ) ? $keel_custom
 			<p class="has-sm-font-size"><code>border</code><br>
 			<?php
 			/* translators: %s: border width such as 1px. */
-			echo esc_html( sprintf( __( '%s solid, in the border colour', 'keel' ), $keel_border ) );
+			echo esc_html( sprintf( __( '%s solid, in the border color', 'keel' ), $keel_border ) );
 			?>
 			</p>
 			<!-- /wp:paragraph -->
@@ -81,7 +81,7 @@ $keel_focus  = is_string( $keel_custom['focus']['ring'] ?? null ) ? $keel_custom
 	<p>
 	<?php
 	/* translators: %s: the focus ring value such as "2px solid var(--wp--preset--color--primary)". */
-	echo esc_html( sprintf( __( 'Every focusable element shows a two-tone ring: %s, with a halo in the base colour so it stays visible on any background. Press Tab to see it on the button below.', 'keel' ), $keel_focus ) );
+	echo esc_html( sprintf( __( 'Every focusable element shows a two-tone ring: %s, with a halo in the base color so it stays visible on any background. Press Tab to see it on the button below.', 'keel' ), $keel_focus ) );
 	?>
 	</p>
 	<!-- /wp:paragraph -->

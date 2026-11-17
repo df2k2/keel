@@ -20,7 +20,7 @@ $keel_meta  = array(
 );
 ?>
 <!-- wp:media-text {"mediaType":"image","mediaWidth":42,"imageFill":true,"className":"is-style-card"} -->
-<div class="wp-block-media-text is-stacked-on-mobile is-image-fill-element is-style-card" style="grid-template-columns:42% auto"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url( $keel_image ); ?>" alt="" class="size-full"/></figure><div class="wp-block-media-text__content">
+<div class="wp-block-media-text is-stacked-on-mobile is-image-fill-element is-style-card" style="grid-template-columns:42% auto"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url( $keel_image ); ?>" alt="" style="object-position:50% 50%"/></figure><div class="wp-block-media-text__content">
 	<!-- wp:paragraph {"className":"keel-tag"} -->
 	<p class="keel-tag"><?php echo esc_html( __( 'Tour', 'keel' ) ); ?></p>
 	<!-- /wp:paragraph -->

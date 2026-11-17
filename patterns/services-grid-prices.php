@@ -13,7 +13,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_services = array(
-	array( 'check', __( 'Check-up', 'keel' ), __( 'A full inspection with a written report the same day.', 'keel' ), '$85' ),
+	array( 'check', __( 'Checkup', 'keel' ), __( 'A full inspection with a written report the same day.', 'keel' ), '$85' ),
 	array( 'shield', __( 'Protection plan', 'keel' ), __( 'Two visits a year and priority scheduling.', 'keel' ), '$19/mo' ),
 	array( 'clock', __( 'Same-day repair', 'keel' ), __( 'Call before noon and we are there before close.', 'keel' ), '$120' ),
 	array( 'star', __( 'Premium service', 'keel' ), __( 'Our most thorough package, with a two-year guarantee.', 'keel' ), '$390' ),

@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Elements: colours
+ * Title: Elements: colors
  * Slug: keel/elements-colors
  * Categories: keel/pages
- * Keywords: elements, colours, palette, contrast
+ * Keywords: elements, colors, palette, contrast
  * Viewport Width: 1200
  * Inserter: no
  *
@@ -17,12 +17,12 @@ $keel_pairs   = Keel\Theme\contrast_pairs();
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
-	<!-- wp:heading {"anchor":"colours"} -->
-	<h2 class="wp-block-heading" id="colours"><?php esc_html_e( 'Colours', 'keel' ); ?></h2>
+	<!-- wp:heading {"anchor":"colors"} -->
+	<h2 class="wp-block-heading" id="colors"><?php esc_html_e( 'Colors', 'keel' ); ?></h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'The twelve palette slugs every pattern and block style is built on. Values are read from the active variation and your Styles edits, so this page always shows the colours in use.', 'keel' ); ?></p>
+	<p><?php esc_html_e( 'The twelve palette slugs every pattern and block style is built on. Values are read from the active variation and your Styles edits, so this page always shows the colors in use.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"12rem"}} -->
@@ -59,7 +59,7 @@ $keel_pairs   = Keel\Theme\contrast_pairs();
 			? Keel\Theme\contrast_ratio( $keel_palette[ $keel_pair['fg'] ]['color'], $keel_palette[ $keel_pair['bg'] ]['color'] )
 			: 0.0;
 		?>
-	<tr><td><?php echo esc_html( $keel_pair['fg'] ); ?></td><td><?php echo esc_html( $keel_pair['bg'] ); ?></td><td><?php echo esc_html( number_format_i18n( $keel_ratio, 2 ) ); ?></td><td><?php echo esc_html( number_format_i18n( $keel_pair['min'], 1 ) ); ?></td><td><?php echo $keel_ratio >= $keel_pair['min'] ? esc_html__( 'Pass', 'keel' ) : esc_html__( 'Fail', 'keel' ); ?></td></tr>
+	<tr><td><?php echo esc_html( $keel_pair['fg'] ); ?></td><td><?php echo esc_html( $keel_pair['bg'] ); ?></td><td><?php echo esc_html( number_format_i18n( $keel_ratio, 2 ) ); ?></td><td><?php echo esc_html( number_format_i18n( $keel_pair['min'], 1 ) ); ?></td><td><?php echo esc_html( $keel_ratio >= $keel_pair['min'] ? __( 'Pass', 'keel' ) : __( 'Fail', 'keel' ) ); ?></td></tr>
 	<?php endforeach; ?>
 	</tbody></table></figure>
 	<!-- /wp:table -->

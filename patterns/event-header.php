@@ -13,7 +13,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_meta = array(
-	array( 'calendar', __( 'Saturday 14 March, 7 to 10 pm', 'keel' ) ),
+	array( 'calendar', __( 'Saturday, March 14, 7 to 10 pm', 'keel' ) ),
 	array( 'map-pin', __( 'Riverside green', 'keel' ) ),
 	array( 'clock', __( 'Doors 6:30 pm', 'keel' ) ),
 );

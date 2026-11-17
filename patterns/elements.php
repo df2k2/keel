@@ -3,7 +3,7 @@
  * Title: Page: elements
  * Slug: keel/elements
  * Categories: keel/layouts
- * Keywords: elements, colours, typography, spacing, block styles
+ * Keywords: elements, colors, typography, spacing, block styles
  * Viewport Width: 1400
  * Inserter: yes
  * Template Types: page
@@ -16,7 +16,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_sections = array(
-	'colours'         => __( 'Colours', 'keel' ),
+	'colors'          => __( 'Colors', 'keel' ),
 	'typography'      => __( 'Typography', 'keel' ),
 	'spacing'         => __( 'Spacing', 'keel' ),
 	'shape'           => __( 'Shape', 'keel' ),

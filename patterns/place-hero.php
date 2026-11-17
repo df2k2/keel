@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 $keel_image = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 ?>
 <!-- wp:cover {"url":"<?php echo esc_url( $keel_image ); ?>","dimRatio":55,"overlayColor":"contrast","isUserOverlayColor":true,"minHeight":64,"minHeightUnit":"vh","contentPosition":"bottom left","align":"full","className":"keel-place-hero","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-left keel-place-hero" style="min-height:64vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( $keel_image ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-55 has-background-dim"></span><div class="wp-block-cover__inner-container">
+<div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-left keel-place-hero" style="min-height:64vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( $keel_image ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-60 has-background-dim"></span><div class="wp-block-cover__inner-container">
 	<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
 	<div class="wp-block-group">
 		<!-- wp:paragraph {"className":"keel-tag"} -->

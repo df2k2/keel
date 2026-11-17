@@ -14,7 +14,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_groups = array(
-	array( __( 'Check-ups and hygiene', 'keel' ), array( array( __( 'New patient examination', 'keel' ), '$85' ), array( __( 'Hygiene visit (30 minutes)', 'keel' ), '$95' ), array( __( 'Digital x-rays (set)', 'keel' ), '$45' ), array( __( 'Children under 12', 'keel' ), '$60' ) ) ),
+	array( __( 'Checkups and hygiene', 'keel' ), array( array( __( 'New patient examination', 'keel' ), '$85' ), array( __( 'Hygiene visit (30 minutes)', 'keel' ), '$95' ), array( __( 'Digital x-rays (set)', 'keel' ), '$45' ), array( __( 'Children under 12', 'keel' ), '$60' ) ) ),
 	array( __( 'Cosmetic', 'keel' ), array( array( __( 'In-chair whitening with trays', 'keel' ), '$390' ), array( __( 'Composite bonding, per tooth', 'keel' ), '$180' ), array( __( 'Porcelain veneer, per tooth', 'keel' ), '$950' ), array( __( 'Clear aligners, full course', 'keel' ), __( 'from $2,900', 'keel' ) ) ) ),
 	array( __( 'Restorative', 'keel' ), array( array( __( 'White filling', 'keel' ), __( 'from $160', 'keel' ) ), array( __( 'Crown', 'keel' ), __( 'from $1,100', 'keel' ) ), array( __( 'Single implant with crown', 'keel' ), __( 'from $2,400', 'keel' ) ), array( __( 'Emergency visit, same day', 'keel' ), '$120' ) ) ),
 );
@@ -26,7 +26,7 @@ $keel_groups = array(
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'Every price includes the examination, the local anaesthetic and the follow-up. Where a treatment depends on what we find, the range is confirmed in writing before we start.', 'keel' ); ?></p>
+	<p><?php esc_html_e( 'Every price includes the examination, the local anesthetic and the follow-up. Where a treatment depends on what we find, the range is confirmed in writing before we start.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"20rem"}} -->

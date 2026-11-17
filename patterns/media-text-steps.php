@@ -16,7 +16,7 @@ $keel_image = get_theme_file_uri( 'assets/images/placeholder-square.svg' );
 $keel_steps = array(
 	array( __( 'Step one: we listen', 'keel' ), __( 'Tell us what is going on and what you want to happen. We ask the questions that matter and nothing more.', 'keel' ) ),
 	array( __( 'Step two: a clear plan', 'keel' ), __( 'You get the options with prices, and our honest recommendation on which to choose.', 'keel' ) ),
-	array( __( 'Step three: the work, done right', 'keel' ), __( 'We arrive when we said we would, finish on the day and check in a week later.', 'keel' ) ),
+	array( __( 'Step three: the work, done right', 'keel' ), __( 'We arrive when we said we would, finish the same day and check in a week later.', 'keel' ) ),
 );
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->

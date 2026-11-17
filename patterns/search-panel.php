@@ -14,8 +14,8 @@ defined( 'ABSPATH' ) || exit;
 
 $keel_tabs = array(
 	array( __( 'Places', 'keel' ), __( 'Where to?', 'keel' ), array( __( 'All', 'keel' ), __( 'Beaches', 'keel' ), __( 'Trails', 'keel' ), __( 'Museums', 'keel' ) ) ),
-	array( __( 'Stays', 'keel' ), __( 'Town or neighbourhood', 'keel' ), array( __( 'All', 'keel' ), __( 'Hotels', 'keel' ), __( 'Rentals', 'keel' ), __( 'Camping', 'keel' ) ) ),
-	array( __( 'Events', 'keel' ), __( 'What is on?', 'keel' ), array( __( 'All', 'keel' ), __( 'This weekend', 'keel' ), __( 'Markets', 'keel' ), __( 'Music', 'keel' ) ) ),
+	array( __( 'Stays', 'keel' ), __( 'Town or neighborhood', 'keel' ), array( __( 'All', 'keel' ), __( 'Hotels', 'keel' ), __( 'Rentals', 'keel' ), __( 'Camping', 'keel' ) ) ),
+	array( __( 'Events', 'keel' ), __( 'What is happening?', 'keel' ), array( __( 'All', 'keel' ), __( 'This weekend', 'keel' ), __( 'Markets', 'keel' ), __( 'Music', 'keel' ) ) ),
 );
 ?>
 <!-- wp:group {"className":"keel-search-panel is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
@@ -43,8 +43,8 @@ $keel_tabs = array(
 				<!-- wp:group {"className":"keel-filter-chips","layout":{"type":"flex","flexWrap":"wrap"}} -->
 				<div class="wp-block-group keel-filter-chips">
 					<?php foreach ( $keel_chips as $keel_i => $keel_chip ) : ?>
-					<!-- wp:paragraph {"className":"keel-chip<?php echo 0 === $keel_i ? ' is-active' : ''; ?>"} -->
-					<p class="keel-chip<?php echo 0 === $keel_i ? ' is-active' : ''; ?>"><a href="#filter"><?php echo esc_html( $keel_chip ); ?></a></p>
+					<!-- wp:paragraph {"className":"keel-chip<?php echo esc_attr( 0 === $keel_i ? ' is-active' : '' ); ?>"} -->
+					<p class="keel-chip<?php echo esc_attr( 0 === $keel_i ? ' is-active' : '' ); ?>"><a href="#filter"><?php echo esc_html( $keel_chip ); ?></a></p>
 					<!-- /wp:paragraph -->
 					<?php endforeach; ?>
 				</div>

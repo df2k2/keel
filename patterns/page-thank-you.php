@@ -9,7 +9,7 @@
  * Template Types: page
  * Post Types: page
  * Block Types: core/post-content
- * Description: A thank-you page for the Page without title template: a centred panel with one next step.
+ * Description: A thank-you page for the Page without title template: a centered panel with one next step.
  *
  * @package Keel
  */
@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","className":"is-style-lead"} -->
-	<p class="has-text-align-center is-style-lead"><?php esc_html_e( 'Your message is in. A real person reads every one and replies within a working day.', 'keel' ); ?></p>
+	<p class="has-text-align-center is-style-lead"><?php esc_html_e( 'Your message is in. A real person reads every one and replies within a business day.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->

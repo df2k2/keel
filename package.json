@@ -1,6 +1,6 @@
 {
   "name": "keel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "A security-first block theme for local service businesses.",
@@ -12,7 +12,7 @@
     "build": "npm run build:css && npm run build:js",
     "lint:js": "wp-scripts lint-js src bin tests",
     "lint:css": "wp-scripts lint-style \"src/**/*.css\"",
-    "lint:php": "composer lint && composer analyse",
+    "lint:php": "composer lint && composer analyze",
     "check:contrast": "node bin/check-contrast.js",
     "test:unit": "node --test \"tests/unit/**/*.test.js\"",
     "package": "node bin/package.js",
@@ -58,6 +58,7 @@
     "subset-font": "2.9.0"
   },
   "overrides": {
+    "isomorphic-git": "~1.38.6",
     "serialize-javascript": "^7.1.4"
   }
 }

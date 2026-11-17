@@ -1,7 +1,7 @@
 /**
  * keel/announcement: dismisses the announcement bar for the session.
  */
-import { store, getContext } from '@wordpress/interactivity';
+import { store, getContext, getElement } from '@wordpress/interactivity';
 
 const key = ( id ) => `keel-announcement-${ id }`;
 
@@ -21,6 +21,27 @@ function write( id ) {
 	}
 }
 
+const FOCUSABLE =
+	'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), summary, [tabindex]:not([tabindex="-1"])';
+
+/**
+ * Moves focus to the first focusable element after the bar. Hiding the bar removes the button that
+ * held focus; left alone, focus falls back to the document and a screen reader starts over from the top.
+ *
+ * @param {Element} bar The announcement bar.
+ */
+function focusAfter( bar ) {
+	let passed = false;
+	for ( const candidate of bar.ownerDocument.querySelectorAll( FOCUSABLE ) ) {
+		if ( bar.contains( candidate ) ) {
+			passed = true;
+		} else if ( passed && candidate.getClientRects().length > 0 ) {
+			candidate.focus();
+			return;
+		}
+	}
+}
+
 store( 'keel/announcement', {
 	callbacks: {
 		restore() {
@@ -31,8 +52,15 @@ store( 'keel/announcement', {
 	actions: {
 		dismiss() {
 			const context = getContext();
+			const bar = getElement().ref?.closest(
+				'[data-wp-interactive="keel/announcement"]'
+			);
+			const hadFocus = bar?.contains( bar.ownerDocument.activeElement );
 			context.dismissed = true;
 			write( context.id );
+			if ( bar && hadFocus ) {
+				focusAfter( bar );
+			}
 		},
 	},
 } );

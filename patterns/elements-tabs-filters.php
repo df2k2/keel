@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- wp:tab-panels -->
 		<div class="wp-block-tab-panels">
 			<!-- wp:tab-panel {"label":"<?php esc_attr_e( 'Overview', 'keel' ); ?>"} -->
-			<section role="tabpanel" tabindex="0" class="wp-block-tab-panel"><!-- wp:paragraph --><p><?php esc_html_e( 'Pill tabs: the selected one is filled in the primary colour.', 'keel' ); ?></p><!-- /wp:paragraph --></section>
+			<section role="tabpanel" tabindex="0" class="wp-block-tab-panel"><!-- wp:paragraph --><p><?php esc_html_e( 'Pill tabs: the selected one is filled in the primary color.', 'keel' ); ?></p><!-- /wp:paragraph --></section>
 			<!-- /wp:tab-panel -->
 
 			<!-- wp:tab-panel {"label":"<?php esc_attr_e( 'Details', 'keel' ); ?>"} -->

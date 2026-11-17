@@ -56,7 +56,7 @@ $keel_rows  = array(
 	<!-- /wp:group -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'Press enquiries: ', 'keel' ); ?><a href="mailto:press@example.com">press@example.com</a>. <?php esc_html_e( 'Same-day replies on weekdays.', 'keel' ); ?></p>
+	<p><?php esc_html_e( 'Press inquiries: ', 'keel' ); ?><a href="mailto:press@example.com">press@example.com</a>. <?php esc_html_e( 'Same-day replies on weekdays.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

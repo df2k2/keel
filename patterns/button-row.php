@@ -38,7 +38,7 @@ $keel_on_dark = array(
 	<!-- wp:buttons {"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
 	<div class="wp-block-buttons">
 		<?php foreach ( $keel_buttons as $keel_button ) : ?>
-		<!-- wp:button <?php echo '' !== $keel_button[0] ? '{"className":"' . esc_attr( $keel_button[0] ) . '"} ' : ''; ?>-->
+		<!-- wp:button <?php echo '' !== $keel_button[0] ? wp_json_encode( array( 'className' => $keel_button[0] ) ) . ' ' : ''; ?>-->
 		<div class="wp-block-button <?php echo esc_attr( $keel_button[0] ); ?>"><a class="wp-block-button__link wp-element-button" href="#buttons"><?php echo esc_html( $keel_button[1] ); ?></a></div>
 		<!-- /wp:button -->
 		<?php endforeach; ?>

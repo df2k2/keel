@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Keel 1.0.0\n"
+"Project-Id-Version: Keel 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/df2k2/keel/issues\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-02T06:55:01+00:00\n"
+"POT-Creation-Date: 2026-11-16T19:58:42+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: keel\n"
@@ -534,12 +534,12 @@ msgstr ""
 msgid "Keel: %s"
 msgstr ""
 
-#: inc/setup.php:49
+#: inc/setup.php:51
 msgid "Skip to content"
 msgstr ""
 
 #. translators: %s: tab name such as Places.
-#: inc/setup.php:65
+#: inc/setup.php:67
 #: patterns/button-row.php:25
 #: patterns/elements-forms.php:27
 #: patterns/elements-search.php:18
@@ -552,7 +552,7 @@ msgid "Search"
 msgstr ""
 
 #: inc/styleguide.php:247
-msgid "Sample text for this style. Enough words to show the spacing and the colour."
+msgid "Sample text for this style. Enough words to show the spacing and the color."
 msgstr ""
 
 #: inc/styleguide.php:248
@@ -640,7 +640,7 @@ msgstr ""
 #: inc/styleguide.php:290
 #: patterns/page-pricing.php:19
 #: patterns/services-grid-prices.php:16
-msgid "Check-up"
+msgid "Checkup"
 msgstr ""
 
 #: inc/styleguide.php:290
@@ -744,7 +744,7 @@ msgid "Standard"
 msgstr ""
 
 #: patterns/accessibility-statement.php:36
-msgid "This site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. Pages are built with semantic HTML, sufficient colour contrast, visible focus styles and full keyboard support."
+msgid "This site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. Pages are built with semantic HTML, sufficient color contrast, visible focus styles and full keyboard support."
 msgstr ""
 
 #: patterns/accessibility-statement.php:40
@@ -913,7 +913,7 @@ msgid "Your reservation is confirmed. A text with the meeting point arrives the 
 msgstr ""
 
 #: patterns/callouts.php:19
-msgid "The sunrise tour on Saturday is cancelled for weather. Rebook free or get a refund."
+msgid "The sunrise tour on Saturday is canceled for weather. Rebook free or get a refund."
 msgstr ""
 
 #: patterns/card-listing-amenities.php
@@ -1131,7 +1131,7 @@ msgstr ""
 #: patterns/cards-row-list.php:18
 #: patterns/place-things-to-do.php:19
 #: patterns/rail-cards.php:19
-msgid "Mains from"
+msgid "Entrees from"
 msgstr ""
 
 #: patterns/cards-row-list.php:18
@@ -1155,7 +1155,7 @@ msgstr ""
 #: patterns/cards-row-list.php:19
 #: patterns/place-things-to-do.php:20
 #: patterns/rail-cards.php:20
-msgid "Old Town Bike Hire"
+msgid "Old Town Bike Rentals"
 msgstr ""
 
 #: patterns/cards-row-list.php:19
@@ -1222,7 +1222,7 @@ msgid "November to April"
 msgstr ""
 
 #: patterns/careers-openings.php:18
-msgid "Visitor centre host"
+msgid "Visitor center host"
 msgstr ""
 
 #: patterns/careers-openings.php:18
@@ -1251,7 +1251,7 @@ msgstr ""
 #: patterns/category-tiles.php:16
 #: patterns/dental-hero.php:18
 #: patterns/hero-booking.php:17
-msgid "Check-ups"
+msgid "Checkups"
 msgstr ""
 
 #: patterns/category-tiles.php:17
@@ -1375,7 +1375,7 @@ msgid "Closed"
 msgstr ""
 
 #: patterns/contact-hours.php:19
-msgid "Public holidays"
+msgid "Holidays"
 msgstr ""
 
 #: patterns/contact-hours.php:19
@@ -1383,7 +1383,7 @@ msgid "10 am to 2 pm"
 msgstr ""
 
 #: patterns/contact-hours.php:27
-msgid "Visitor centre hours"
+msgid "Visitor center hours"
 msgstr ""
 
 #: patterns/contact-hours.php:45
@@ -1463,7 +1463,7 @@ msgid "Still have questions?"
 msgstr ""
 
 #: patterns/cta-band-contrast.php:22
-msgid "Talk to a real person. No call centres, no bots."
+msgid "Talk to a real person. No call centers, no bots."
 msgstr ""
 
 #: patterns/cta-band-primary.php
@@ -1667,11 +1667,11 @@ msgid "Dr. Tanaka joins"
 msgstr ""
 
 #: patterns/dental-about.php:22
-msgid "Implants and surgery come in-house, so patients stop travelling to a specialist across the county."
+msgid "Implants and surgery come in-house, so patients stop traveling to a specialist across the county."
 msgstr ""
 
 #: patterns/dental-about.php:23
-msgid "The nervous-patient programme"
+msgid "The nervous-patient program"
 msgstr ""
 
 #: patterns/dental-about.php:23
@@ -1687,7 +1687,7 @@ msgid "Still on Harbor Street, still answering the phone ourselves, still seeing
 msgstr ""
 
 #: patterns/dental-about.php:34
-msgid "A neighbourhood practice since 2009"
+msgid "A neighborhood practice since 2009"
 msgstr ""
 
 #: patterns/dental-about.php:38
@@ -1762,7 +1762,7 @@ msgid "Contact and directions"
 msgstr ""
 
 #: patterns/dental-contact.php:28
-msgid "Call, book online or send a message. A person answers the phone during opening hours, and messages are answered within one working day."
+msgid "Call, book online or send a message. A person answers the phone during office hours, and messages are answered within one business day."
 msgstr ""
 
 #: patterns/dental-contact.php:38
@@ -1778,7 +1778,7 @@ msgid "Map placeholder: 123 Harbor Street, Suite 4, Stuart, Florida"
 msgstr ""
 
 #: patterns/dental-contact.php:48
-msgid "Free parking behind the building. The entrance is level, with a ramp from the car park."
+msgid "Free parking behind the building. The entrance is level, with a ramp from the parking lot."
 msgstr ""
 
 #: patterns/dental-contact.php:60
@@ -1909,7 +1909,7 @@ msgid "Do you take my insurance?"
 msgstr ""
 
 #: patterns/dental-faq.php:18
-msgid "We work with more than forty insurers and bill them directly. Send your plan details when you book and we confirm your cover before the visit."
+msgid "We work with more than forty insurers and bill them directly. Send your plan details when you book and we confirm your coverage before the visit."
 msgstr ""
 
 #: patterns/dental-faq.php:19
@@ -1968,7 +1968,7 @@ msgid "40+ insurers accepted"
 msgstr ""
 
 #: patterns/dental-features.php:20
-msgid "We check your cover before the visit and bill your insurer directly."
+msgid "We check your coverage before the visit and bill your insurer directly."
 msgstr ""
 
 #: patterns/dental-features.php:26
@@ -2036,7 +2036,7 @@ msgid "We work with 40+ insurers"
 msgstr ""
 
 #: patterns/dental-insurers.php:25
-msgid "Send us your plan details when you book and we confirm your cover before the visit."
+msgid "Send us your plan details when you book and we confirm your coverage before the visit."
 msgstr ""
 
 #. translators: %d: position of the logo in the row.
@@ -2140,7 +2140,7 @@ msgstr ""
 
 #: patterns/dental-price-list.php:17
 #: patterns/dental-provider.php:89
-msgid "Check-ups and hygiene"
+msgid "Checkups and hygiene"
 msgstr ""
 
 #: patterns/dental-price-list.php:17
@@ -2227,7 +2227,7 @@ msgid "Price list"
 msgstr ""
 
 #: patterns/dental-price-list.php:29
-msgid "Every price includes the examination, the local anaesthetic and the follow-up. Where a treatment depends on what we find, the range is confirmed in writing before we start."
+msgid "Every price includes the examination, the local anesthetic and the follow-up. Where a treatment depends on what we find, the range is confirmed in writing before we start."
 msgstr ""
 
 #: patterns/dental-price-list.php:42
@@ -2289,7 +2289,7 @@ msgid "Thursday"
 msgstr ""
 
 #: patterns/dental-provider.php:25
-msgid "8 am to 1 pm, alternate weeks"
+msgid "8 am to 1 pm, every other week"
 msgstr ""
 
 #: patterns/dental-provider.php:35
@@ -2309,7 +2309,7 @@ msgid "About Dr. Ramirez"
 msgstr ""
 
 #: patterns/dental-provider.php:79
-msgid "Sofia qualified in 2008, spent a year in a hospital emergency department and opened Bright Harbor in 2009 with one chair and a promise: nobody leaves in pain, and nobody is sold treatment they do not need. She still takes the 7 am appointments."
+msgid "Sofia graduated from dental school in 2008, spent a year in a hospital emergency department and opened Bright Harbor in 2009 with one chair and a promise: nobody leaves in pain, and nobody is sold treatment they do not need. She still takes the 7 am appointments."
 msgstr ""
 
 #: patterns/dental-provider.php:83
@@ -2365,11 +2365,11 @@ msgid "During"
 msgstr ""
 
 #: patterns/dental-service-implants.php:22
-msgid "Placing the root takes about forty minutes under local anaesthetic, with sedation available. Most people are back at work the next day."
+msgid "Placing the root takes about forty minutes under local anesthetic, with sedation available. Most people are back at work the next day."
 msgstr ""
 
 #: patterns/dental-service-implants.php:23
-msgid "The root heals for three months, then the crown is fitted in one visit. Reviews at two weeks and one year are included."
+msgid "The root heals for three months, then the crown is fitted in one visit. Follow-up visits at two weeks and one year are included."
 msgstr ""
 
 #: patterns/dental-service-implants.php:26
@@ -2508,7 +2508,7 @@ msgid "About an hour in the chair. Gums are protected, the gel goes on in three 
 msgstr ""
 
 #: patterns/dental-service-whitening.php:23
-msgid "Custom trays and gel to top up at home. Avoid dark drinks for 48 hours; most people keep the result for two years."
+msgid "Custom trays and gel to touch up at home. Avoid dark drinks for 48 hours; most people keep the result for two years."
 msgstr ""
 
 #: patterns/dental-service-whitening.php:26
@@ -2520,7 +2520,7 @@ msgid "Take-home trays only"
 msgstr ""
 
 #: patterns/dental-service-whitening.php:29
-msgid "Top-up gel (4 syringes)"
+msgid "Touch-up gel (4 syringes)"
 msgstr ""
 
 #: patterns/dental-service-whitening.php:47
@@ -2536,7 +2536,7 @@ msgid "Staining from coffee, tea, wine or smoking"
 msgstr ""
 
 #: patterns/dental-service-whitening.php:92
-msgid "A wedding, interview or photo day in the diary"
+msgid "A wedding, interview or photo day on the calendar"
 msgstr ""
 
 #: patterns/dental-service-whitening.php:95
@@ -2554,7 +2554,7 @@ msgid "Dental: patient stories"
 msgstr ""
 
 #: patterns/dental-stories.php:17
-msgid "I had not seen a dentist in nine years because I was terrified. Dr. Ramirez talked me through every step and stopped when I raised my hand. Two visits later my teeth are fixed and I am not scared any more."
+msgid "I had not seen a dentist in nine years because I was terrified. Dr. Ramirez talked me through every step and stopped when I raised my hand. Two visits later my teeth are fixed and I am not scared anymore."
 msgstr ""
 
 #: patterns/dental-stories.php:17
@@ -2587,11 +2587,11 @@ msgid "Dental: treatments"
 msgstr ""
 
 #: patterns/dental-treatments.php:17
-msgid "Check-up and hygiene"
+msgid "Checkup and hygiene"
 msgstr ""
 
 #: patterns/dental-treatments.php:17
-msgid "A full examination, x-rays if needed and a professional clean, in one visit."
+msgid "A full examination, x-rays if needed and a professional cleaning, in one visit."
 msgstr ""
 
 #: patterns/dental-treatments.php:18
@@ -2673,7 +2673,7 @@ msgid "Badges and prices"
 msgstr ""
 
 #: patterns/elements-badges-prices.php:22
-msgid "Small labels and the price formats. Chips are quiet, badges carry colour, tags sit on photos, status labels say what is left."
+msgid "Small labels and the price formats. Chips are quiet, badges carry color, tags sit on photos, status labels say what is left."
 msgstr ""
 
 #: patterns/elements-badges-prices.php:30
@@ -2731,7 +2731,7 @@ msgid "Default"
 msgstr ""
 
 #: patterns/elements-buttons.php:16
-msgid "Primary fill. Hover and active darken the fill toward the contrast colour; focus shows the two-tone ring."
+msgid "Primary fill. Hover and active darken the fill toward the contrast color; focus shows the two-tone ring."
 msgstr ""
 
 #: patterns/elements-buttons.php:17
@@ -2739,7 +2739,7 @@ msgid "Outline (core)"
 msgstr ""
 
 #: patterns/elements-buttons.php:17
-msgid "Core style: a border in the current text colour and no fill."
+msgid "Core style: a border in the current text color and no fill."
 msgstr ""
 
 #: patterns/elements-buttons.php:18
@@ -2778,7 +2778,7 @@ msgid "Callouts"
 msgstr ""
 
 #: patterns/elements-callouts.php:22
-msgid "Four group styles with a coloured edge, a tint and an icon: info, warm, success and error."
+msgid "Four group styles with a colored edge, a tint and an icon: info, warm, success and error."
 msgstr ""
 
 #: patterns/elements-cards.php
@@ -2792,16 +2792,16 @@ msgstr ""
 
 #: patterns/elements-colors.php
 msgctxt "Pattern title"
-msgid "Elements: colours"
+msgid "Elements: colors"
 msgstr ""
 
 #: patterns/elements-colors.php:21
 #: patterns/elements.php:19
-msgid "Colours"
+msgid "Colors"
 msgstr ""
 
 #: patterns/elements-colors.php:25
-msgid "The twelve palette slugs every pattern and block style is built on. Values are read from the active variation and your Styles edits, so this page always shows the colours in use."
+msgid "The twelve palette slugs every pattern and block style is built on. Values are read from the active variation and your Styles edits, so this page always shows the colors in use."
 msgstr ""
 
 #: patterns/elements-colors.php:47
@@ -2885,11 +2885,11 @@ msgid "Six places, one coast"
 msgstr ""
 
 #: patterns/elements-decorations.php:64
-msgid "A paper grain over the surface colour, for a note or an aside."
+msgid "A paper grain over the surface color, for a note or an aside."
 msgstr ""
 
 #: patterns/elements-decorations.php:74
-msgid "A dot grid on the base colour, wider than the textured style."
+msgid "A dot grid on the base color, wider than the textured style."
 msgstr ""
 
 #: patterns/elements-footer.php
@@ -2965,7 +2965,7 @@ msgid "That does not look like an email address. Check it and try again."
 msgstr ""
 
 #: patterns/elements-forms.php:42
-msgid "Sent. We reply within a working day."
+msgid "Sent. We reply within a business day."
 msgstr ""
 
 #: patterns/elements-forms.php:46
@@ -2991,7 +2991,7 @@ msgid "Icons"
 msgstr ""
 
 #: patterns/elements-icons.php:24
-msgid "Twelve single-colour SVG files in the theme, placed as Image blocks with the keel-icon class so they invert on dark bands. Decorative: every one has an empty alt."
+msgid "Twelve single-color SVG files in the theme, placed as Image blocks with the keel-icon class so they invert on dark bands. Decorative: every one has an empty alt."
 msgstr ""
 
 #: patterns/elements-itinerary-steps.php
@@ -3094,7 +3094,7 @@ msgstr ""
 #. translators: %s: border width such as 1px.
 #: patterns/elements-shape.php:67
 #, php-format
-msgid "%s solid, in the border colour"
+msgid "%s solid, in the border color"
 msgstr ""
 
 #: patterns/elements-shape.php:77
@@ -3104,7 +3104,7 @@ msgstr ""
 #. translators: %s: the focus ring value such as "2px solid var(--wp--preset--color--primary)".
 #: patterns/elements-shape.php:84
 #, php-format
-msgid "Every focusable element shows a two-tone ring: %s, with a halo in the base colour so it stays visible on any background. Press Tab to see it on the button below."
+msgid "Every focusable element shows a two-tone ring: %s, with a halo in the base color so it stays visible on any background. Press Tab to see it on the button below."
 msgstr ""
 
 #: patterns/elements-shape.php:92
@@ -3173,7 +3173,7 @@ msgid "Reviews"
 msgstr ""
 
 #: patterns/elements-tabs-filters.php:36
-msgid "Pill tabs: the selected one is filled in the primary colour."
+msgid "Pill tabs: the selected one is filled in the primary color."
 msgstr ""
 
 #: patterns/elements-tabs-filters.php:40
@@ -3308,7 +3308,7 @@ msgid "Event header"
 msgstr ""
 
 #: patterns/event-header.php:16
-msgid "Saturday 14 March, 7 to 10 pm"
+msgid "Saturday, March 14, 7 to 10 pm"
 msgstr ""
 
 #: patterns/event-header.php:18
@@ -3404,7 +3404,7 @@ msgid "Most jobs are scheduled within the week, and same-day slots are held ever
 msgstr ""
 
 #: patterns/faq-accordion.php:19
-msgid "What if something goes wrong afterwards?"
+msgid "What if something goes wrong afterward?"
 msgstr ""
 
 #: patterns/faq-accordion.php:19
@@ -3426,7 +3426,7 @@ msgid "Are you licensed and insured?"
 msgstr ""
 
 #: patterns/faq.php:32
-msgid "Yes. We hold a current state licence and carry full liability and workers compensation insurance."
+msgid "Yes. We hold a current state license and carry full liability and workers compensation insurance."
 msgstr ""
 
 #: patterns/faq.php:40
@@ -3438,7 +3438,7 @@ msgid "What areas do you serve?"
 msgstr ""
 
 #: patterns/faq.php:48
-msgid "The whole county and the neighbouring towns. Call us if you are not sure and we will tell you straight away."
+msgid "The whole county and the neighboring towns. Call us if you are not sure and we will tell you right away."
 msgstr ""
 
 #: patterns/feature-article.php
@@ -3476,7 +3476,7 @@ msgid "Guaranteed work"
 msgstr ""
 
 #: patterns/features-icons.php:17
-msgid "Every job carries a written guarantee, no small print."
+msgid "Every job carries a written guarantee, no fine print."
 msgstr ""
 
 #: patterns/features-icons.php:18
@@ -3605,7 +3605,7 @@ msgid "(555) 555-0100"
 msgstr ""
 
 #: patterns/footer-big.php:83
-msgid "Visitor centre open daily 9 am to 5 pm."
+msgid "Visitor center open daily 9 am to 5 pm."
 msgstr ""
 
 #: patterns/footer-big.php:83
@@ -3828,11 +3828,11 @@ msgid "Day 1: Arrive and settle in"
 msgstr ""
 
 #: patterns/itinerary.php:16
-msgid "Check in, walk the harbour front and eat early at the fish counter before the crowd."
+msgid "Check in, walk the harbor front and eat early at the fish counter before the crowd."
 msgstr ""
 
 #: patterns/itinerary.php:16
-msgid "Harbour walk at golden hour"
+msgid "Harbor walk at golden hour"
 msgstr ""
 
 #: patterns/itinerary.php:16
@@ -3973,7 +3973,7 @@ msgstr ""
 
 #: patterns/listing-grid.php:35
 #: patterns/listing-list.php:37
-msgid "Enquire"
+msgid "Inquire"
 msgstr ""
 
 #: patterns/listing-included.php
@@ -4140,7 +4140,7 @@ msgid "Step three: the work, done right"
 msgstr ""
 
 #: patterns/media-text-steps.php:19
-msgid "We arrive when we said we would, finish on the day and check in a week later."
+msgid "We arrive when we said we would, finish the same day and check in a week later."
 msgstr ""
 
 #: patterns/media-text-steps.php:25
@@ -4228,7 +4228,7 @@ msgid "New patient offer"
 msgstr ""
 
 #: patterns/offer-card.php:24
-msgid "First check-up for $49"
+msgid "First checkup for $49"
 msgstr ""
 
 #: patterns/offer-card.php:28
@@ -4236,7 +4236,7 @@ msgid "Includes the full inspection and a written plan, a $120 value. One per ho
 msgstr ""
 
 #: patterns/offer-card.php:32
-msgid "Ends 31 March"
+msgid "Ends March 31"
 msgstr ""
 
 #: patterns/offer-card.php:38
@@ -4285,7 +4285,7 @@ msgstr ""
 
 #: patterns/page-coming-soon.php
 msgctxt "Pattern description"
-msgid "A coming-soon page for the Page without title template: a centred panel with a subscribe row."
+msgid "A coming-soon page for the Page without title template: a centered panel with a subscribe row."
 msgstr ""
 
 #: patterns/page-coming-soon.php:22
@@ -4356,7 +4356,7 @@ msgid "Deals, %1$swhile they last%2$s"
 msgstr ""
 
 #: patterns/page-deals.php:31
-msgid "Offers from the businesses in the guide. We list them; they honour them."
+msgid "Offers from the businesses in the guide. We list them; they honor them."
 msgstr ""
 
 #: patterns/page-deals.php:47
@@ -4402,7 +4402,7 @@ msgstr ""
 #. translators: 1: opening em tag, 2: closing em tag.
 #: patterns/page-events.php:25
 #, php-format
-msgid "What is %1$son%2$s"
+msgid "What is %1$shappening%2$s"
 msgstr ""
 
 #: patterns/page-events.php:31
@@ -4501,7 +4501,7 @@ msgid "Privacy %1$spolicy%2$s"
 msgstr ""
 
 #: patterns/page-legal.php:31
-msgid "Last updated: 1 March 2027"
+msgid "Last updated: March 1, 2027"
 msgstr ""
 
 #: patterns/page-legal.php:41
@@ -4596,7 +4596,7 @@ msgstr ""
 
 #: patterns/page-maintenance.php
 msgctxt "Pattern description"
-msgid "A maintenance page for the Page without title template: a centred panel with a subscribe row."
+msgid "A maintenance page for the Page without title template: a centered panel with a subscribe row."
 msgstr ""
 
 #: patterns/page-maintenance.php:22
@@ -4687,7 +4687,7 @@ msgid "Page: pricing"
 msgstr ""
 
 #: patterns/page-pricing.php:19
-msgid "Check-ups and prevention"
+msgid "Checkups and prevention"
 msgstr ""
 
 #: patterns/page-pricing.php:19
@@ -4716,7 +4716,7 @@ msgid "from $390"
 msgstr ""
 
 #: patterns/page-pricing.php:20
-msgid "Same-day callout"
+msgid "Same-day service call"
 msgstr ""
 
 #: patterns/page-pricing.php:21
@@ -4838,7 +4838,7 @@ msgid "Jordan Lee"
 msgstr ""
 
 #: patterns/page-provider.php:50
-msgid "Twenty years on the tools, a 4.9 rating from 310 reviews, and a habit of explaining things until they make sense."
+msgid "Twenty years in the field, a 4.9 rating from 310 reviews, and a habit of explaining things until they make sense."
 msgstr ""
 
 #: patterns/page-provider.php:60
@@ -4854,7 +4854,7 @@ msgid "Jordan founded the practice in 2009 after a decade with a national firm, 
 msgstr ""
 
 #: patterns/page-provider.php:88
-msgid "Routine check-ups"
+msgid "Routine checkups"
 msgstr ""
 
 #: patterns/page-provider.php:92
@@ -5001,7 +5001,7 @@ msgstr ""
 
 #: patterns/page-thank-you.php
 msgctxt "Pattern description"
-msgid "A thank-you page for the Page without title template: a centred panel with one next step."
+msgid "A thank-you page for the Page without title template: a centered panel with one next step."
 msgstr ""
 
 #: patterns/page-thank-you.php:22
@@ -5015,7 +5015,7 @@ msgid "Thank you, %1$swe have it%2$s"
 msgstr ""
 
 #: patterns/page-thank-you.php:35
-msgid "Your message is in. A real person reads every one and replies within a working day."
+msgid "Your message is in. A real person reads every one and replies within a business day."
 msgstr ""
 
 #: patterns/page-thank-you.php:41
@@ -5127,7 +5127,7 @@ msgstr ""
 #: patterns/place-things-to-do.php:21
 #: patterns/place-things-to-do.php:22
 #: patterns/tickets-list.php:17
-msgid "Entry"
+msgid "Admission"
 msgstr ""
 
 #: patterns/place-things-to-do.php:21
@@ -5265,7 +5265,7 @@ msgid "Press kit"
 msgstr ""
 
 #: patterns/press-kit.php:59
-msgid "Press enquiries: "
+msgid "Press inquiries: "
 msgstr ""
 
 #: patterns/press-kit.php:59
@@ -5308,7 +5308,7 @@ msgid "Written quote before work"
 msgstr ""
 
 #: patterns/pricing-table.php:48
-msgid "30-day labour warranty"
+msgid "30-day labor warranty"
 msgstr ""
 
 #: patterns/pricing-table.php:56
@@ -5330,7 +5330,7 @@ msgid "Same-week scheduling"
 msgstr ""
 
 #: patterns/pricing-table.php:92
-msgid "Two-year parts and labour warranty"
+msgid "Two-year parts and labor warranty"
 msgstr ""
 
 #: patterns/pricing-table.php:110
@@ -5367,7 +5367,7 @@ msgid "Tell us what you need"
 msgstr ""
 
 #: patterns/process-steps.php:36
-msgid "Call, text or send the form. We confirm a time that suits you the same day."
+msgid "Call, text or send the form. We confirm a time that works for you the same day."
 msgstr ""
 
 #: patterns/process-steps.php:52
@@ -5443,7 +5443,7 @@ msgid "Casey Nguyen"
 msgstr ""
 
 #: patterns/profiles-grid.php:20
-msgid "Writer, family days out"
+msgid "Writer, family outings"
 msgstr ""
 
 #: patterns/profiles-grid.php:20
@@ -5468,7 +5468,7 @@ msgid "This season"
 msgstr ""
 
 #: patterns/promo-band.php:36
-msgid "Spring check-ups: book two, the second is half price"
+msgid "Spring checkups: book two, the second is half price"
 msgstr ""
 
 #: patterns/promo-band.php:40
@@ -5613,7 +5613,7 @@ msgid "Stays"
 msgstr ""
 
 #: patterns/search-panel.php:17
-msgid "Town or neighbourhood"
+msgid "Town or neighborhood"
 msgstr ""
 
 #: patterns/search-panel.php:17
@@ -5629,7 +5629,7 @@ msgid "Camping"
 msgstr ""
 
 #: patterns/search-panel.php:18
-msgid "What is on?"
+msgid "What is happening?"
 msgstr ""
 
 #: patterns/search-panel.php:18
@@ -5691,7 +5691,7 @@ msgid "Background-checked, uniformed technicians"
 msgstr ""
 
 #: patterns/service-detail.php:40
-msgid "Parts and labour guaranteed for two years"
+msgid "Parts and labor guaranteed for two years"
 msgstr ""
 
 #: patterns/service-detail.php:44
@@ -5748,7 +5748,7 @@ msgstr ""
 #: patterns/services-grid-3.php:60
 #: patterns/services-grid-4.php:60
 #: patterns/services-grid-6.php:60
-msgid "New equipment fitted right, with the paperwork handled."
+msgid "New equipment installed right, with the paperwork handled."
 msgstr ""
 
 #: patterns/services-grid-3.php:84
@@ -5852,7 +5852,7 @@ msgid "Everyday"
 msgstr ""
 
 #: patterns/services-tabs.php:18
-msgid "Check-ups and inspections"
+msgid "Checkups and inspections"
 msgstr ""
 
 #: patterns/services-tabs.php:18
@@ -5868,7 +5868,7 @@ msgid "Custom installations"
 msgstr ""
 
 #: patterns/services-tabs.php:26
-msgid "Same-day callouts"
+msgid "Same-day service calls"
 msgstr ""
 
 #: patterns/services-tabs.php:26
@@ -5969,7 +5969,7 @@ msgid "Monthly tips, no noise."
 msgstr ""
 
 #: patterns/subscribe-inline.php:18
-msgid "One email a month with what is on and what is new."
+msgid "One email a month with what is happening and what is new."
 msgstr ""
 
 #: patterns/subscribe-inline.php:21
@@ -6071,7 +6071,7 @@ msgid "Table: departures"
 msgstr ""
 
 #: patterns/table-departures.php:16
-msgid "Sat 14 Mar"
+msgid "Sat, Mar 14"
 msgstr ""
 
 #: patterns/table-departures.php:16
@@ -6079,7 +6079,7 @@ msgid "Harbor to the islands"
 msgstr ""
 
 #: patterns/table-departures.php:17
-msgid "Sun 15 Mar"
+msgid "Sun, Mar 15"
 msgstr ""
 
 #: patterns/table-departures.php:17
@@ -6087,7 +6087,7 @@ msgid "Sunrise reef run"
 msgstr ""
 
 #: patterns/table-departures.php:18
-msgid "Sat 21 Mar"
+msgid "Sat, Mar 21"
 msgstr ""
 
 #: patterns/table-departures.php:18
@@ -6095,7 +6095,7 @@ msgid "River bend by kayak"
 msgstr ""
 
 #: patterns/table-departures.php:19
-msgid "Sun 22 Mar"
+msgid "Sun, Mar 22"
 msgstr ""
 
 #: patterns/table-departures.php:19
@@ -6120,7 +6120,7 @@ msgid "Owner and lead technician"
 msgstr ""
 
 #: patterns/team-grid.php:40
-msgid "Twenty years on the tools and still answers the phone."
+msgid "Twenty years in the field and still answers the phone."
 msgstr ""
 
 #: patterns/team-grid.php:60
@@ -6136,7 +6136,7 @@ msgid "Senior technician"
 msgstr ""
 
 #: patterns/team-grid.php:88
-msgid "Diagnostics specialist with a reputation for tidy work."
+msgid "Diagnostics specialist with a reputation for neat work."
 msgstr ""
 
 #: patterns/team-grid.php:108
@@ -6214,7 +6214,7 @@ msgstr ""
 
 #: patterns/ticket.php:26
 #: patterns/tickets-list.php:16
-msgid "Saturday 14 March, 7 pm"
+msgid "Saturday, March 14, 7 pm"
 msgstr ""
 
 #: patterns/ticket.php:30
@@ -6224,7 +6224,7 @@ msgstr ""
 
 #: patterns/ticket.php:34
 #: patterns/tickets-list.php:16
-msgid "Riverside green · Free entry, tickets for the tastings"
+msgid "Riverside green · Free admission, tickets for the tastings"
 msgstr ""
 
 #: patterns/tickets-list.php
@@ -6233,7 +6233,7 @@ msgid "Tickets list"
 msgstr ""
 
 #: patterns/tickets-list.php:17
-msgid "Saturday 21 March, 6 am"
+msgid "Saturday, March 21, 6 am"
 msgstr ""
 
 #: patterns/tickets-list.php:17
@@ -6245,7 +6245,7 @@ msgid "North beach · Watch from the pier for free"
 msgstr ""
 
 #: patterns/tickets-list.php:18
-msgid "Saturday 28 March, 10 am"
+msgid "Saturday, March 28, 10 am"
 msgstr ""
 
 #: patterns/tickets-list.php:18

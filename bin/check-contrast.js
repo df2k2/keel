@@ -17,7 +17,7 @@ import { fileURLToPath } from 'node:url';
  * @return {number} Luminance between 0 and 1.
  */
 /**
- * Normalises a CSS hex color to six lowercase hex digits, or null when it is not a hex color.
+ * Normalizes a CSS hex color to six lowercase hex digits, or null when it is not a hex color.
  *
  * @param {string} value Color as #RGB or #RRGGBB.
  * @return {string|null} Six hex digits without the hash, or null.

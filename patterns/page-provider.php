@@ -47,7 +47,7 @@ $keel_schedule = array(
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"className":"is-style-lead"} -->
-			<p class="is-style-lead"><?php esc_html_e( 'Twenty years on the tools, a 4.9 rating from 310 reviews, and a habit of explaining things until they make sense.', 'keel' ); ?></p>
+			<p class="is-style-lead"><?php esc_html_e( 'Twenty years in the field, a 4.9 rating from 310 reviews, and a habit of explaining things until they make sense.', 'keel' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"className":"keel-chip"} -->
@@ -85,7 +85,7 @@ $keel_schedule = array(
 	<!-- wp:list {"className":"is-style-two-column"} -->
 	<ul class="wp-block-list is-style-two-column">
 		<!-- wp:list-item -->
-		<li><?php esc_html_e( 'Routine check-ups', 'keel' ); ?></li>
+		<li><?php esc_html_e( 'Routine checkups', 'keel' ); ?></li>
 		<!-- /wp:list-item -->
 
 		<!-- wp:list-item -->

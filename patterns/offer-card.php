@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- /wp:paragraph -->
 
 		<!-- wp:heading {"level":3} -->
-		<h3 class="wp-block-heading"><?php esc_html_e( 'First check-up for $49', 'keel' ); ?></h3>
+		<h3 class="wp-block-heading"><?php esc_html_e( 'First checkup for $49', 'keel' ); ?></h3>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph -->
@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- /wp:paragraph -->
 
 		<!-- wp:paragraph {"fontSize":"sm"} -->
-		<p class="has-sm-font-size"><strong><?php esc_html_e( 'Ends 31 March', 'keel' ); ?></strong></p>
+		<p class="has-sm-font-size"><strong><?php esc_html_e( 'Ends March 31', 'keel' ); ?></strong></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:buttons -->

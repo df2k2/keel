@@ -74,7 +74,7 @@ test( 'applying the Coral variation changes the primary color token', async ( {
 	}
 } );
 
-test( 'applying Night switches to a dark colour scheme', async ( { page } ) => {
+test( 'applying Night switches to a dark color scheme', async ( { page } ) => {
 	apply( 'night' );
 	try {
 		await page.goto( '/' );

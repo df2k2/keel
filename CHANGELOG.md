@@ -4,6 +4,57 @@ All notable changes to Keel are recorded here. The format follows Keep a Changel
 
 ## Unreleased
 
+## 1.0.1 (2026-11-16)
+
+The fixes from the first theme directory review, and what testing for them turned up.
+
+Review items. The `portfolio` tag is removed: the theme has no portfolio layout. The Feather icons
+ship their full MIT license, with the copyright line, in `assets/icons/LICENSE-feather.txt`, and
+`readme.txt` points to it. `inc/setup.php` declares `custom-logo` support, which every header part
+already used through the Site Logo block. Every pattern output that was not wrapped in an escaping
+function now is, and the accordion patterns encode their open-by-default attribute with
+`wp_json_encode()` at the echo, in place of an echoed variable. `readme.txt` gains a Development section with the build steps. The
+release zip keeps `keel-manifest.json` and drops `assets/fonts/manifest.json`, which only the unit
+tests read.
+
+Right-to-left. The sources were written with logical properties, but the build rewrote every one
+of them to its left-to-right twin (74 physical declarations in the built CSS and no logical ones),
+so nothing mirrored on an RTL site. `postcss.config.js` now turns the logical features of
+postcss-preset-env off, and a unit test fails if a physical declaration reaches `build/css`. The
+`?keel_rtl=1` test switch set the direction on `init`, after core had built its style registry, so
+the page carried `dir="rtl"` with the left-to-right core stylesheets; it now runs on
+`after_setup_theme`. Core pins a Cover's content position and a constrained group's left
+justification to the physical side, so Keel's own uses of them as "start" now mirror: card media,
+tiles, the place hero, the cover post header (new class `keel-post-cover`) and the sample groups
+(new class `keel-justify-start`). The end-to-end suite renders twenty pages at three widths in
+RTL and checks eight start-edge components for an exact mirror image.
+
+Accessibility. A Search block with the button inside showed no focus indicator, because core
+removes the field's outline there; the wrapper now wears the ring. The link over a card's photo
+had its ring clipped away by the photo's rounded box; the box wears it. Dismissing the
+announcement bar dropped focus to the document; it moves to the next control. The floating call
+and book buttons covered the footer's last link at the end of the page; the page reserves room
+below the footer and scroll padding keeps a focused element above them. A journal card for a post
+without a featured image clipped its category tag away while the link stayed focusable; the tag
+now shows as a chip.
+
+American English. The theme's copy, comments and documents used British spelling and usage in
+places; all of it is American now. Spelling (color, center, labor, license, neighborhood, harbor,
+anesthetic, checkup), dates with the month before the day ("Saturday, March 14"), and wording
+(parking lot, business day, office hours, inquire, "what is happening", bike rentals) change in 92
+source strings. The eleven of those that the Spanish translation covers keep their translations.
+The Composer script `analyse` is now `analyze`; PHPStan's own command name is unchanged. Two demo
+slugs follow their titles: `one-line-from-the-harbormaster` and `old-town-bike-rentals`, and a
+reseed removes the items under the old slugs. The theme screenshot and the review screenshots are
+regenerated from the new copy.
+
+Other fixes. Two full-width buttons in a vertical stack sat side by side inside a Stack card and
+pushed 20 pixels off a phone screen (the listing price card): core's `flex-basis: 100%` reads as a
+height in a column. Seventy blocks in twenty-nine patterns and the single-cover template failed the
+block editor's validation and showed the invalid-content warning: Cover blocks with an aspect
+ratio or a 50 or 55 percent overlay, accordion items open by default, Media and Text blocks with
+image fill, and the style guide's accordion sample. All 7,631 blocks now validate.
+
 ## 1.0.0 (2026-11-02)
 
 First stable release, prepared for the wordpress.org theme directory. The release zip now carries
@@ -17,7 +68,7 @@ landing page. Spanish strings for the new control. Keel stays the theme's name.
 
 ## 0.3.1 (2026-10-31)
 
-Child theme support, learnt from building the first site on Keel. The header actions are a
+Child theme support, learned from building the first site on Keel. The header actions are a
 template part, `parts/header-actions.html`, which the sticky header pulls in, so a child changes the
 buttons by overriding one small file instead of copying a header. A child's own `header` part can
 stick or sit over a cover by setting `keel-header--sticky` or `keel-header--transparent` on its root
@@ -34,7 +85,7 @@ titles 18 to 20, h2 30 to 38, h1 40 to 56 and a new `display` size of 48 to 68 f
 headings at weight 600 with tight tracking, line heights 1.1, 1.35 and 1.65, buttons at 15 px,
 navigation at the small size. A third font family, `serif` (Fraunces), in theme.json and every
 variation; Coral and Palm set headings to 500 and Coral is the showcase default; the heading
-`accent` style renders an emphasised phrase in the serif italic and the accent colour; Fraunces
+`accent` style renders an emphasized phrase in the serif italic and the accent color; Fraunces
 italic is now a static 400 instance. Cards are Stacks: every card in a row shares its height and
 the footer sits on the bottom edge (`bin/migrate-cards.js` rewrote the 94 existing patterns), with
 a photo-first anatomy (tag on the image, meta row, price footer) and the card family: listing, row,
@@ -70,7 +121,7 @@ patterns for the fictional Bright Harbor Dental. Nine new block styles (table st
 compact, heading eyebrow, paragraph lead, list two-column, group textured and wave-bottom, cover
 gradient-overlay, accordion faq, tabs boxed) with base rules for the Accordion, Tabs, Table,
 Media and Text, Pullquote and Social Icons blocks; button hover and active states in theme.json;
-the Contrast variation (AAA colours, no shadows, 2 px borders); the header with utility bar part;
+the Contrast variation (AAA colors, no shadows, 2 px borders); the header with utility bar part;
 descriptions on every pattern category. Tooling: the `keel-demo` plugin under `examples/`
 (showcase patterns, measured facts band, `?variation=` switcher, `wp keel-demo seed`), the
 kitchen sink fixture, `npm run docs:patterns`, screenshots per variation, and the showcase and

@@ -22,6 +22,20 @@ class Seed_Command {
 	private const CATEGORIES = array( 'hero', 'trust', 'services', 'process', 'team', 'testimonials', 'pricing', 'faq', 'location', 'gallery', 'cta', 'contact', 'footer', 'blog', 'pages', 'layouts', 'dental', 'cards', 'elements', 'places', 'events', 'company', 'utility' );
 
 	/**
+	 * Paths an earlier version seeded and this one does not, each with its post type. The seed finds its
+	 * items by slug, so a renamed or dropped one would otherwise stay on a reseeded site beside its
+	 * replacement. The last two are kept as first seeded, old spelling included, to match what is stored.
+	 *
+	 * @var array<string, string>
+	 */
+	private const RETIRED = array(
+		'style-guide'                     => 'page',
+		'block-styles'                    => 'page',
+		'listings/old-town-bike-hire'     => 'page',
+		'one-line-from-the-harbourmaster' => 'post',
+	);
+
+	/**
 	 * Builds every showcase page, the dental pages, the Primary menu and the front page.
 	 *
 	 * ## EXAMPLES
@@ -36,8 +50,8 @@ class Seed_Command {
 		$pages     = array();
 		$thumbnail = $this->placeholder_id();
 
-		foreach ( array( 'style-guide', 'block-styles' ) as $retired ) {
-			$old = get_page_by_path( $retired );
+		foreach ( self::RETIRED as $retired => $post_type ) {
+			$old = get_page_by_path( $retired, OBJECT, $post_type );
 			if ( $old instanceof \WP_Post ) {
 				wp_delete_post( $old->ID, true );
 				\WP_CLI::line( sprintf( '  removed /%s/', $retired ) );
@@ -155,7 +169,7 @@ class Seed_Command {
 			array( 'harbor-view-inn', 'Harbor View Inn', 'Twelve rooms over the water, breakfast on the deck and bikes at the door.' ),
 			array( 'the-boathouse-kitchen', 'The Boathouse Kitchen', 'Fish from the morning boats and a short menu that changes with the catch.' ),
 			array( 'reef-and-river-charters', 'Reef and River Charters', 'Half-day and full-day charters with a captain who knows every sandbar.' ),
-			array( 'old-town-bike-hire', 'Old Town Bike Hire', 'Comfortable cruisers, child seats and a map of the quiet lanes.' ),
+			array( 'old-town-bike-rentals', 'Old Town Bike Rentals', 'Comfortable cruisers, child seats and a map of the quiet lanes.' ),
 			array( 'sandbar-paddle-tours', 'Sandbar Paddle Tours', 'Sunrise paddles on glassy water before the wind picks up.' ),
 			array( 'the-lantern-bookshop', 'The Lantern Bookshop', 'Maps, tide tables, local history and a cat on the counter.' ),
 		);
@@ -204,7 +218,7 @@ class Seed_Command {
 			array( 'what-the-tide-tables-say', 'What the tide tables say', 'standard', 'single-sidebar', true, false, 'Reading the tables is easy once someone shows you. Here is the ten-minute version, and why it matters for the beaches.' ),
 			array( 'the-quiet-season', 'The quiet season', 'standard', 'single-cover', false, false, 'September is empty, warm and cheap. A case for the month nobody books.' ),
 			array( 'packing-light-for-a-long-weekend', 'Packing light for a long weekend', 'standard', '', true, false, 'Three days, one bag, no regrets. The list we hand to friends.' ),
-			array( 'one-line-from-the-harbourmaster', 'One line from the harbourmaster', 'quote', 'single-minimal', true, false, 'If the pelicans are sitting on the pilings, you should be too.' ),
+			array( 'one-line-from-the-harbormaster', 'One line from the harbormaster', 'quote', 'single-minimal', true, false, 'If the pelicans are sitting on the pilings, you should be too.' ),
 			array( 'the-view-from-the-jetty', 'The view from the jetty', 'image', '', true, false, 'Last light on the pier, the week the mullet ran.' ),
 			array( 'six-frames-from-the-market', 'Six frames from the market', 'gallery', 'single-cover', true, false, 'Bread, fish, fiddles and one very patient dog: the Saturday market in six pictures.' ),
 			array( 'how-the-bridge-opens', 'How the bridge opens', 'video', 'single-sidebar', true, false, 'Ninety seconds of the drawbridge doing its thing, with the tender explaining the schedule.' ),

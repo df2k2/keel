@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 $keel_tabs = array(
 	array(
 		__( 'Everyday', 'keel' ),
-		array( __( 'Check-ups and inspections', 'keel' ), __( 'Cleaning and tune-ups', 'keel' ), __( 'Small repairs on the spot', 'keel' ) ),
+		array( __( 'Checkups and inspections', 'keel' ), __( 'Cleaning and tune-ups', 'keel' ), __( 'Small repairs on the spot', 'keel' ) ),
 	),
 	array(
 		__( 'Specialist', 'keel' ),
@@ -23,7 +23,7 @@ $keel_tabs = array(
 	),
 	array(
 		__( 'Urgent', 'keel' ),
-		array( __( 'Same-day callouts', 'keel' ), __( 'After-hours line', 'keel' ), __( 'Temporary fixes while parts arrive', 'keel' ) ),
+		array( __( 'Same-day service calls', 'keel' ), __( 'After-hours line', 'keel' ), __( 'Temporary fixes while parts arrive', 'keel' ) ),
 	),
 );
 ?>

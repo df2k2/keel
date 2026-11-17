@@ -15,8 +15,8 @@ defined( 'ABSPATH' ) || exit;
 $keel_image = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 $keel_rows  = array(
 	array( __( 'Tour', 'keel' ), __( 'Sunrise paddle on the inlet', 'keel' ), __( 'Two hours on glassy water before the wind picks up, with a guide who knows every sandbar.', 'keel' ), __( 'Per person', 'keel' ), '$65', array( array( 'clock', __( 'Half day', 'keel' ) ), array( 'map-pin', __( 'Town dock', 'keel' ) ), array( 'star', __( '5.0 (41)', 'keel' ) ) ) ),
-	array( __( 'Food', 'keel' ), __( 'The Boathouse Kitchen', 'keel' ), __( 'Fish from the morning boats, a long deck and a short menu that changes with the catch.', 'keel' ), __( 'Mains from', 'keel' ), '$24', array( array( 'clock', __( 'Noon to 10 pm', 'keel' ) ), array( 'map-pin', __( 'Riverside', 'keel' ) ), array( 'star', __( '4.7 (820)', 'keel' ) ) ) ),
-	array( __( 'Rental', 'keel' ), __( 'Old Town Bike Hire', 'keel' ), __( 'Comfortable cruisers, child seats and a map of the quiet lanes, open every day of the season.', 'keel' ), __( 'Per day', 'keel' ), '$28', array( array( 'clock', __( '9 am to 6 pm', 'keel' ) ), array( 'map-pin', __( 'Old town', 'keel' ) ), array( 'star', __( '4.9 (233)', 'keel' ) ) ) ),
+	array( __( 'Food', 'keel' ), __( 'The Boathouse Kitchen', 'keel' ), __( 'Fish from the morning boats, a long deck and a short menu that changes with the catch.', 'keel' ), __( 'Entrees from', 'keel' ), '$24', array( array( 'clock', __( 'Noon to 10 pm', 'keel' ) ), array( 'map-pin', __( 'Riverside', 'keel' ) ), array( 'star', __( '4.7 (820)', 'keel' ) ) ) ),
+	array( __( 'Rental', 'keel' ), __( 'Old Town Bike Rentals', 'keel' ), __( 'Comfortable cruisers, child seats and a map of the quiet lanes, open every day of the season.', 'keel' ), __( 'Per day', 'keel' ), '$28', array( array( 'clock', __( '9 am to 6 pm', 'keel' ) ), array( 'map-pin', __( 'Old town', 'keel' ) ), array( 'star', __( '4.9 (233)', 'keel' ) ) ) ),
 );
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
@@ -26,7 +26,7 @@ $keel_rows  = array(
 		$keel_meta = $keel_row[5];
 		?>
 	<!-- wp:media-text {"mediaType":"image","mediaWidth":42,"imageFill":true,"className":"is-style-card"} -->
-	<div class="wp-block-media-text is-stacked-on-mobile is-image-fill-element is-style-card" style="grid-template-columns:42% auto"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url( $keel_image ); ?>" alt="" class="size-full"/></figure><div class="wp-block-media-text__content">
+	<div class="wp-block-media-text is-stacked-on-mobile is-image-fill-element is-style-card" style="grid-template-columns:42% auto"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url( $keel_image ); ?>" alt="" style="object-position:50% 50%"/></figure><div class="wp-block-media-text__content">
 		<!-- wp:paragraph {"className":"keel-tag"} -->
 		<p class="keel-tag"><?php echo esc_html( $keel_row[0] ); ?></p>
 		<!-- /wp:paragraph -->

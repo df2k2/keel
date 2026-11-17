@@ -23,7 +23,7 @@ $keel_amenities = array( __( 'Wi-Fi', 'keel' ), __( 'Parking', 'keel' ), __( 'Po
 <!-- wp:group {"className":"is-style-card","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group is-style-card">
 	<!-- wp:cover {"url":"<?php echo esc_url( $keel_image ); ?>","dimRatio":0,"contentPosition":"top left","className":"keel-card__media","style":{"dimensions":{"aspectRatio":"4/3"}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-cover has-custom-content-position is-position-top-left keel-card__media" style="aspect-ratio:4/3;"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( $keel_image ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
+	<div class="wp-block-cover has-custom-content-position is-position-top-left keel-card__media"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( $keel_image ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
 		<!-- wp:paragraph {"className":"keel-tag"} -->
 		<p class="keel-tag"><?php echo esc_html( __( 'Stay', 'keel' ) ); ?></p>
 		<!-- /wp:paragraph -->

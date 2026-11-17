@@ -57,7 +57,7 @@ defined( 'ABSPATH' ) || exit;
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'New equipment fitted right, with the paperwork handled.', 'keel' ); ?></p>
+				<p><?php esc_html_e( 'New equipment installed right, with the paperwork handled.', 'keel' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph -->

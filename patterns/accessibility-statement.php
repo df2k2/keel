@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'This site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. Pages are built with semantic HTML, sufficient colour contrast, visible focus styles and full keyboard support.', 'keel' ); ?></p>
+	<p><?php esc_html_e( 'This site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. Pages are built with semantic HTML, sufficient color contrast, visible focus styles and full keyboard support.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:heading -->

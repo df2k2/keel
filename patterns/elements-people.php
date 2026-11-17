@@ -32,16 +32,16 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php echo Keel\Theme\element_label( 'keel/profile-card' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
 
-	<!-- wp:group {"layout":{"type":"constrained","contentSize":"24rem","justifyContent":"left"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"24rem","justifyContent":"left"}} -->
+	<div class="wp-block-group keel-justify-start">
 		<!-- wp:pattern {"slug":"keel/profile-card"} /-->
 	</div>
 	<!-- /wp:group -->
 
 	<?php echo Keel\Theme\element_label( 'keel/review-card' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Block markup built from an escaped string. ?>
 
-	<!-- wp:group {"layout":{"type":"constrained","contentSize":"24rem","justifyContent":"left"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"className":"keel-justify-start","layout":{"type":"constrained","contentSize":"24rem","justifyContent":"left"}} -->
+	<div class="wp-block-group keel-justify-start">
 		<!-- wp:pattern {"slug":"keel/review-card"} /-->
 	</div>
 	<!-- /wp:group -->

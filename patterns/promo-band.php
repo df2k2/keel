@@ -33,7 +33,7 @@ $keel_image = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading -->
-			<h2 class="wp-block-heading"><?php esc_html_e( 'Spring check-ups: book two, the second is half price', 'keel' ); ?></h2>
+			<h2 class="wp-block-heading"><?php esc_html_e( 'Spring checkups: book two, the second is half price', 'keel' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->

@@ -19,6 +19,8 @@ function setup(): void {
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'build/css/editor.css' );
 	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'quote', 'video', 'link' ) );
+	// Every header part prints the logo with the Site Logo block; the support makes that explicit.
+	add_theme_support( 'custom-logo' );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
 

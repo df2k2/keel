@@ -44,6 +44,8 @@ export const EXCLUDED = [
 	'SECURITY.md',
 	'CHANGELOG.md',
 	'keel-manifest.json',
+	// Digests of the font files, read by the unit tests; keel-manifest.json already lists every shipped file.
+	'assets/fonts/manifest.json',
 ];
 
 /**

@@ -3,7 +3,7 @@
  * Builds the theme's web fonts from pinned upstream sources: downloads each
  * variable TTF from the google/fonts repository at a fixed commit, verifies its
  * digest, subsets it to Latin as a variable WOFF2 (pinning or narrowing axes),
- * writes the OFL licence texts, a digest manifest of the output, and the
+ * writes the OFL license texts, a digest manifest of the output, and the
  * metric-matched fallback font-face rules in src/css/fonts.css.
  *
  * Usage: node bin/build-fonts.js   (needs network access to raw.githubusercontent.com)
@@ -74,7 +74,7 @@ export const SOURCES = [
 	},
 ];
 
-/** Licence texts, pinned the same way. */
+/** License texts, pinned the same way. */
 export const LICENSES = [
 	{
 		file: 'OFL-figtree.txt',
@@ -190,7 +190,7 @@ function formatFontFaces( css ) {
 }
 
 /**
- * Builds every font file, licence, the manifest and the fallback stylesheet.
+ * Builds every font file, license, the manifest and the fallback stylesheet.
  *
  * @param {{root?:string, fetchBuffer?:(url:string)=>Promise<Buffer>}} options Paths and downloader.
  * @return {Promise<{written:string[], unpinned:string[]}>} Written paths and any digests still to pin.

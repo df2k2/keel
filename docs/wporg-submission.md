@@ -7,11 +7,12 @@ the review process page on 2026-11-02.
 ## Before you upload
 
 1. **Account.** The `Contributors:` line in `readme.txt` must be a wordpress.org username. It says
-   `df2k2`, and `https://profiles.wordpress.org/df2k2/` returned 404 on 2026-11-02: register that
-   username or change the line to the account you will upload from.
-2. **Zip.** Use the release asset, not a local build: `keel-1.0.0.zip` from
-   `https://github.com/df2k2/keel/releases/tag/v1.0.0`. It was built by the release workflow, is
-   signed, and carries `src/` beside `build/` as the directory requires for minified files.
+   `df2k2`, which is the account the theme is uploaded from; `Author:` in `style.css` carries the
+   same name.
+2. **Zip.** Use the release asset, not a local build: `keel-1.0.1.zip` from
+   `https://github.com/df2k2/keel/releases/tag/v1.0.1`. It was built by the release workflow, is
+   signed, and carries `src/` beside `build/` as the directory requires for minified files. The
+   folder inside the zip is `keel`, the same as for 1.0.0.
 3. **Upload** at `https://wordpress.org/themes/upload/`. One theme per author may be in the queue
    at a time. The uploader runs Theme Check first; CI runs the same check on every pull request.
 4. **Watch the Trac ticket.** A ticket with no reply from the author for seven days can be closed.
@@ -37,17 +38,56 @@ Paste or adapt these where a reviewer asks.
   filter to switch core's own speculative loading from prefetch to prerender on hover. Nothing is
   added; a core feature is configured through the filter core provides for it.
 - **Minified files.** `build/css` and `build/js` are minified by PostCSS and esbuild; the originals
-  are in `src/css` and `src/js` inside the zip. `keel-manifest.json` lists every file with its hash.
+  are in `src/css` and `src/js` inside the zip, and `readme.txt` has the build steps under
+  Development. `keel-manifest.json` lists every shipped file with its hash; the theme does not
+  read it.
 - **Bundled resources.** Three OFL fonts (Figtree, Bricolage Grotesque, Fraunces) with their
-  licences under `assets/fonts/`, icons adapted from Feather (MIT), placeholder SVGs that are
-  original GPL work. All credited in `readme.txt` under Copyright. No remote requests of any kind;
-  the e2e suite fails on one.
+  licenses under `assets/fonts/`, icons adapted from Feather with the full MIT license in
+  `assets/icons/LICENSE-feather.txt`, placeholder SVGs that are original GPL work. All credited in
+  `readme.txt` under Copyright. No remote requests of any kind; the e2e suite fails on one.
 - **Screenshot.** The dental practice home, built only from patterns in the zip, behind a
   five-item menu. The practice is fictional and the patterns say so in their descriptions.
 - **Tags.** `post-formats` is backed by `add_theme_support( 'post-formats', ... )` in
   `inc/setup.php`; `style-variations` by the seven files under `styles/`; `blog` by the journal
-  templates, post formats and three post templates; `portfolio` by the gallery, before-and-after,
-  listing grid and provider profile patterns.
+  templates, post formats and three post templates. `custom-logo` is backed by
+  `add_theme_support( 'custom-logo' )` and the Site Logo block in all five header parts.
+  `custom-colors` is met through Global Styles: the twelve palette slugs in `theme.json` and the
+  editor's color controls, with no Customizer panel, which is how Twenty Twenty-Five carries the
+  same tag. `rtl-language-support`: the CSS is written and built with logical properties (a unit
+  test fails on a physical one in `build/css`) and the e2e suite renders twenty pages at three
+  widths in RTL and checks eight start-edge components for an exact mirror image. `portfolio` was
+  dropped after the first review: the theme has no portfolio layout.
+
+## The first review (1.0.0) and the reply
+
+The review asked for two fixes, four tag checks and offered four optional improvements. What
+1.0.1 does about each, to paste or adapt in the ticket:
+
+- **`portfolio` tag.** Removed from `style.css` and `readme.txt`.
+- **Feather license.** The full MIT text with its copyright line is in
+  `assets/icons/LICENSE-feather.txt`, referenced from the Copyright section of `readme.txt`.
+  `assets/icons` holds fifteen SVG files, not sixteen; the notice also covers the six icon shapes
+  written inline in the list and callout styles.
+- **`custom-colors`.** Kept. Colors are set through Global Styles and the editor, the mechanism
+  the default block themes use for the same tag.
+- **`custom-logo`.** Kept. `add_theme_support( 'custom-logo' )` is now in `inc/setup.php`.
+- **`rtl-language-support`.** Kept, after testing found and fixed a real fault: the build was
+  rewriting the sources' logical properties to left and right. Tested with the Arabic language
+  pack and with the suite's RTL switch: 27 pages at three widths, compared box by box against
+  their left-to-right render. Two differences remain and both are core's: Media and Text keeps its
+  media on the physical side, and the lightbox trigger keeps its corner.
+- **`accessibility-ready`.** Kept. A keyboard pass over the header navigation, mobile menu, search
+  forms, announcement bar, carousel, accordion and tabs, and a focus check on 1,481 tab stops
+  across twelve pages at two widths, found and fixed five faults (see the changelog). The
+  accessibility tree was checked for names, roles and states on each component. A pass with a
+  screen reader, by ear, is still worth doing by hand before the second review.
+- **Build instructions.** `readme.txt`, Development.
+- **Escaping.** Thirteen outputs that had no outer escaping call now have one, and nine echoes of
+  a JSON attribute held in a variable now encode it with `wp_json_encode()` at the echo.
+- **Author field.** `Author:` in `style.css` and `Contributors:` in `readme.txt` both say `df2k2`,
+  which is the wordpress.org username the theme is uploaded from, so neither line changes.
+- **Manifest files.** `keel-manifest.json` stays, as the record a copy of the theme can be checked
+  against, and is described in `readme.txt`. `assets/fonts/manifest.json` no longer ships.
 
 ## Accessibility-ready tag
 
@@ -57,22 +97,23 @@ The eighteen requirements and how Keel meets each:
 | --- | --- |
 | Skip-to-content link | plain HTML link at `wp_body_open`, visible on focus |
 | Landmarks with names | header, nav, main, footer in every template; search forms named after their label; the carousel is a named region |
-| Keyboard navigation | e2e keyboard journey: skip link, menu, accordion, carousel, lightbox; mobile menu traps focus and makes the page inert |
+| Keyboard navigation | e2e keyboard journey: skip link, menu, accordion, carousel, lightbox; mobile menu traps focus and makes the page inert; dismissing the announcement moves focus to the next control; fixed buttons never cover a focused link |
 | Controls with names, roles, states | dismiss, previous, next and the marquee Pause/Play buttons carry labels; details and tabs are core blocks |
-| Form fields labelled | the Search block label is the form's `aria-label`; the contact shell relies on the form plugin's labels |
+| Form fields labeled | the Search block label is the form's `aria-label`; the contact shell relies on the form plugin's labels |
 | Meaningful headings | one `h1` per page, heroes and layouts carry it, every other pattern starts at `h2`; eyebrows are paragraphs |
 | Underlined links in text | `theme.json` sets `text-decoration: underline` on content links |
 | No ambiguous link text | patterns name their destination in the link text |
-| Colour contrast | every pair in `tests/contrast-pairs.json` checked at 4.5:1 text and 3:1 UI by `npm run check:contrast`; Contrast variation at AAA |
+| Color contrast | every pair in `tests/contrast-pairs.json` checked at 4.5:1 text and 3:1 UI by `npm run check:contrast`; Contrast variation at AAA |
 | Alternative text | shipped images are decorative placeholders with empty alt or named icons |
 | Audio, video, animation | no autoplay media; the carousel moves only on command; the marquee has a Pause button and stops under reduced motion |
 | Reflow, resize, text spacing | fluid type and spacing tokens, no fixed heights on text containers |
 | No unexpected context changes | no auto-submit, no focus changes on input |
 | New-window warning | no links open new windows |
-| Hover or focus content | submenus are core Navigation behaviour; the marquee pauses on hover and focus-within |
+| Hover or focus content | submenus are core Navigation behavior; the marquee pauses on hover and focus-within |
 | Accessibility statement | the `keel/accessibility-statement` pattern and page layout |
 | No inaccessible plugins required | the theme recommends none |
-| Screen reader text | `.screen-reader-text` styled in `src/css/base.css` |
+| Screen reader text | `.screen-reader-text` styled in `src/css/a11y.css` |
+| Visible focus | one ring for every control: 2 pixels in the primary color with a base-color halo; where core or a clipped box would hide it (a search field with the button inside, a card photo) the wrapper wears it |
 
 The tag adds a second review. Submitting without it and adding it in an update is also allowed.
 

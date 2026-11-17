@@ -21,7 +21,7 @@ $keel_icons = array( 'calendar', 'check', 'chevron-left', 'chevron-right', 'cloc
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'Twelve single-colour SVG files in the theme, placed as Image blocks with the keel-icon class so they invert on dark bands. Decorative: every one has an empty alt.', 'keel' ); ?></p>
+	<p><?php esc_html_e( 'Twelve single-color SVG files in the theme, placed as Image blocks with the keel-icon class so they invert on dark bands. Decorative: every one has an empty alt.', 'keel' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"8rem"}} -->

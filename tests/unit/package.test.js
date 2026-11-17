@@ -26,6 +26,7 @@ test( 'release file list excludes every dev path and includes build output', () 
 		'README.md',
 		'eslint.config.js',
 		'.githooks/',
+		'assets/fonts/manifest.json',
 	] ) {
 		assert.ok(
 			! files.some( ( f ) => f.startsWith( bad ) || f === bad ),
@@ -45,6 +46,8 @@ test( 'release file list excludes every dev path and includes build output', () 
 		'styles/coral.json',
 		'patterns/hero-text.php',
 		'LICENSE',
+		'assets/fonts/OFL-figtree.txt',
+		'assets/icons/LICENSE-feather.txt',
 	] ) {
 		assert.ok( files.includes( good ), `${ good } must ship` );
 	}

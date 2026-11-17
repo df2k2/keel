@@ -37,7 +37,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- /wp:list-item -->
 
 		<!-- wp:list-item -->
-		<li><?php esc_html_e( 'Parts and labour guaranteed for two years', 'keel' ); ?></li>
+		<li><?php esc_html_e( 'Parts and labor guaranteed for two years', 'keel' ); ?></li>
 		<!-- /wp:list-item -->
 
 		<!-- wp:list-item -->

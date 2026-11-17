@@ -3,7 +3,7 @@
  * Title: Utility panel
  * Slug: keel/utility-panel
  * Categories: keel/utility
- * Keywords: coming soon, maintenance, thank you, panel, centred
+ * Keywords: coming soon, maintenance, thank you, panel, centered
  * Viewport Width: 900
  * Inserter: yes
  *

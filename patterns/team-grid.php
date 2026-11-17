@@ -37,7 +37,7 @@ defined( 'ABSPATH' ) || exit;
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'Twenty years on the tools and still answers the phone.', 'keel' ); ?></p>
+				<p><?php esc_html_e( 'Twenty years in the field and still answers the phone.', 'keel' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -85,7 +85,7 @@ defined( 'ABSPATH' ) || exit;
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'Diagnostics specialist with a reputation for tidy work.', 'keel' ); ?></p>
+				<p><?php esc_html_e( 'Diagnostics specialist with a reputation for neat work.', 'keel' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

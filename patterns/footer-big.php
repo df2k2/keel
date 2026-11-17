@@ -80,7 +80,7 @@ $keel_plan    = array( __( 'Itineraries', 'keel' ), __( 'Visitor information', '
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"fontSize":"sm"} -->
-			<p class="has-sm-font-size"><?php esc_html_e( 'Visitor centre open daily 9 am to 5 pm.', 'keel' ); ?><br><?php esc_html_e( 'Closed Tuesdays in summer.', 'keel' ); ?></p>
+			<p class="has-sm-font-size"><?php esc_html_e( 'Visitor center open daily 9 am to 5 pm.', 'keel' ); ?><br><?php esc_html_e( 'Closed Tuesdays in summer.', 'keel' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->

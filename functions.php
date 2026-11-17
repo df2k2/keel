@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'KEEL_VERSION', '1.0.0' );
+define( 'KEEL_VERSION', '1.0.1' );
 
 require get_theme_file_path( 'inc/setup.php' );
 require get_theme_file_path( 'inc/enqueue.php' );

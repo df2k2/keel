@@ -102,6 +102,21 @@
 	}
 }
 
+/* The buttons sit over the bottom corner of the page. Without room below the footer, its last row can scroll no
+   further and a link there stays hidden behind them while it has focus (WCAG 2.4.11). The scroll padding makes
+   the browser bring a focused element to rest above the buttons, not under them. */
+
+@media ( width > 782px ) {
+
+	:root:has( .keel-floating-cta ) {
+		scroll-padding-block-end: 9rem;
+	}
+
+	body:has( .keel-floating-cta ) {
+		padding-block-end: 9rem;
+	}
+}
+
 .keel-mobile-cta-bar {
 	display: none;
 }
@@ -211,7 +226,7 @@
 	}
 }
 
-/* Mobile CTA bar icons (single-colour masks that follow the button text colour). */
+/* Mobile CTA bar icons (single-color masks that follow the button text color). */
 
 .keel-cta-call .wp-block-button__link::before {
 	mask-image: url( ../../assets/icons/phone.svg );

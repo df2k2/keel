@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 $keel_roles = array(
 	array( __( 'Editor, places and trails', 'keel' ), array( array( 'map-pin', __( 'Harbor district office', 'keel' ) ), array( 'clock', __( 'Full time', 'keel' ) ) ) ),
 	array( __( 'Photographer, seasonal', 'keel' ), array( array( 'map-pin', __( 'On the water, mostly', 'keel' ) ), array( 'clock', __( 'November to April', 'keel' ) ) ) ),
-	array( __( 'Visitor centre host', 'keel' ), array( array( 'map-pin', __( 'Riverside green', 'keel' ) ), array( 'clock', __( 'Weekends', 'keel' ) ) ) ),
+	array( __( 'Visitor center host', 'keel' ), array( array( 'map-pin', __( 'Riverside green', 'keel' ) ), array( 'clock', __( 'Weekends', 'keel' ) ) ) ),
 );
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"52rem"}} -->

@@ -19,8 +19,8 @@ defined( 'ABSPATH' ) || exit;
 $keel_image      = get_theme_file_uri( 'assets/images/placeholder-wide.svg' );
 $keel_milestones = array(
 	array( '2009', __( 'One chair on Harbor Street', 'keel' ), __( 'Dr. Ramirez opens with a single treatment room and a promise that nobody leaves in pain.', 'keel' ) ),
-	array( '2013', __( 'Dr. Tanaka joins', 'keel' ), __( 'Implants and surgery come in-house, so patients stop travelling to a specialist across the county.', 'keel' ) ),
-	array( '2018', __( 'The nervous-patient programme', 'keel' ), __( 'Longer appointments, a quiet room and the stop signal become standard for anyone who asks.', 'keel' ) ),
+	array( '2013', __( 'Dr. Tanaka joins', 'keel' ), __( 'Implants and surgery come in-house, so patients stop traveling to a specialist across the county.', 'keel' ) ),
+	array( '2018', __( 'The nervous-patient program', 'keel' ), __( 'Longer appointments, a quiet room and the stop signal become standard for anyone who asks.', 'keel' ) ),
 	array( '2026', __( 'Four dentists, 2,300 reviews', 'keel' ), __( 'Still on Harbor Street, still answering the phone ourselves, still seeing emergencies the same day.', 'keel' ) ),
 );
 ?>
@@ -31,7 +31,7 @@ $keel_milestones = array(
 		<!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
 			<!-- wp:heading {"level":1} -->
-			<h1 class="wp-block-heading"><?php esc_html_e( 'A neighbourhood practice since 2009', 'keel' ); ?></h1>
+			<h1 class="wp-block-heading"><?php esc_html_e( 'A neighborhood practice since 2009', 'keel' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"className":"is-style-lead"} -->

@@ -16,8 +16,8 @@
 defined( 'ABSPATH' ) || exit;
 
 $keel_groups = array(
-	array( __( 'Check-ups and prevention', 'keel' ), array( array( __( 'Check-up', 'keel' ), '$85' ), array( __( 'Full inspection with report', 'keel' ), '$120' ), array( __( 'Annual plan (two visits)', 'keel' ), '$19/mo' ) ) ),
-	array( __( 'Repairs', 'keel' ), array( array( __( 'Minor repair', 'keel' ), __( 'from $120', 'keel' ) ), array( __( 'Major repair', 'keel' ), __( 'from $390', 'keel' ) ), array( __( 'Same-day callout', 'keel' ), '$60' ) ) ),
+	array( __( 'Checkups and prevention', 'keel' ), array( array( __( 'Checkup', 'keel' ), '$85' ), array( __( 'Full inspection with report', 'keel' ), '$120' ), array( __( 'Annual plan (two visits)', 'keel' ), '$19/mo' ) ) ),
+	array( __( 'Repairs', 'keel' ), array( array( __( 'Minor repair', 'keel' ), __( 'from $120', 'keel' ) ), array( __( 'Major repair', 'keel' ), __( 'from $390', 'keel' ) ), array( __( 'Same-day service call', 'keel' ), '$60' ) ) ),
 	array( __( 'Replacements', 'keel' ), array( array( __( 'Standard replacement', 'keel' ), __( 'from $2,400', 'keel' ) ), array( __( 'Premium replacement', 'keel' ), __( 'from $3,900', 'keel' ) ), array( __( 'Removal of the old unit', 'keel' ), __( 'included', 'keel' ) ) ) ),
 	array( __( 'Families', 'keel' ), array( array( __( 'Children under 12', 'keel' ), '$60' ), array( __( 'Family plan (up to 4)', 'keel' ), '$49/mo' ), array( __( 'Second household visit', 'keel' ), __( 'half price', 'keel' ) ) ) ),
 	array( __( 'Urgent', 'keel' ), array( array( __( 'Same-day assessment', 'keel' ), '$120' ), array( __( 'After-hours visit', 'keel' ), '$220' ), array( __( 'Temporary fix', 'keel' ), __( 'from $90', 'keel' ) ) ) ),

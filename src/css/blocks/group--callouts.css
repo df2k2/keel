@@ -1,4 +1,4 @@
-/* core/group styles: callouts. A 4px edge in the kind's colour, a 10 percent tint and a mask icon before the text. */
+/* core/group styles: callouts. A 4px edge in the kind's color, a 10 percent tint and a mask icon before the text. */
 
 .wp-block-group[class*="is-style-callout-"] {
 	--keel-callout: var( --wp--preset--color--primary );

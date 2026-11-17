@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- wp:details {"className":"is-style-faq"} -->
 	<details class="wp-block-details is-style-faq" name="keel-faq"><summary><?php esc_html_e( 'Are you licensed and insured?', 'keel' ); ?></summary>
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'Yes. We hold a current state licence and carry full liability and workers compensation insurance.', 'keel' ); ?></p>
+		<p><?php esc_html_e( 'Yes. We hold a current state license and carry full liability and workers compensation insurance.', 'keel' ); ?></p>
 		<!-- /wp:paragraph -->
 	</details>
 	<!-- /wp:details -->
@@ -45,7 +45,7 @@ defined( 'ABSPATH' ) || exit;
 	<!-- wp:details {"className":"is-style-faq"} -->
 	<details class="wp-block-details is-style-faq" name="keel-faq"><summary><?php esc_html_e( 'What areas do you serve?', 'keel' ); ?></summary>
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'The whole county and the neighbouring towns. Call us if you are not sure and we will tell you straight away.', 'keel' ); ?></p>
+		<p><?php esc_html_e( 'The whole county and the neighboring towns. Call us if you are not sure and we will tell you right away.', 'keel' ); ?></p>
 		<!-- /wp:paragraph -->
 	</details>
 	<!-- /wp:details -->
