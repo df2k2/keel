@@ -58,6 +58,7 @@
     "subset-font": "2.9.0"
   },
   "overrides": {
+    "isomorphic-git": "~1.38.6",
     "serialize-javascript": "^7.1.4"
   }
 }
